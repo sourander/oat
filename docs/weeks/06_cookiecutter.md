@@ -6,9 +6,16 @@ Tähän tulee ohjeistus siitä, kuinka voit luoda oman oppimispäiväkirjasi kä
 * Git (for Windows)
 * Pythonin asennettuna
 
-## Asennettavat komponentit
+## 6.1: Video-ohje (TODO)
 
-### Paketinhallinta
+Kaikesta alla olevasa tulee tähän linkki YouTube-videoon, jossa demonstroidaan vaihe vaiheelta koko prosessi. Alla oleva tekstimuotoinen ohje on tarkoitettu tueksi videolle ja toimii hyvänä muistilistana, jos olet jo kerran katsonut videon.
+
+
+## 6.2 Teksti-ohje
+
+### 6.2.1 Asennettavat komponentit
+
+#### Paketinhallinta
 
 === "Windows"
 
@@ -19,7 +26,7 @@ Tähän tulee ohjeistus siitä, kuinka voit luoda oman oppimispäiväkirjasi kä
     Asenna Homebrew-paketinhallinta jos sinulla ei jo ole. Seuraa [Homebrew-sivuston ohjeita](https://brew.sh/).
 
 
-### Python
+#### Python
 
 === "Windows"
 
@@ -34,7 +41,7 @@ Tähän tulee ohjeistus siitä, kuinka voit luoda oman oppimispäiväkirjasi kä
     Suosittelen asentamaan sekä pyenv että Pythonin Homebrew-paketinhallinnan kautta. Tähän löytyy ohjeet [Python-Perusteet -kurssilta](https://sourander.github.io/python-perusteet/asennus/macOS/#asenna-pyenv)
 
 
-### Pipx
+#### Pipx
 
 === "Windows"
 
@@ -64,7 +71,7 @@ Tähän tulee ohjeistus siitä, kuinka voit luoda oman oppimispäiväkirjasi kä
 
     Kun olet lisännyt `pipx`:n binäärit PATH:iin, käynnistyä terminaali uudelleen. Turvallisinta on käynnistää koko kone, jos et ole varma, mikä PATH on ja missä välissä se ladataan.
 
-### Cookiecutter
+#### Cookiecutter
 
 Kun Python on asennettu, voit asentaa Cookiecutterin komentoriviltä. Tämä komento on sama kaikissa käyttöjärjestelmissä (koska `pipx` hoitaa alustariippuvuudet):
 
@@ -79,7 +86,7 @@ cookiecutter --version
 which cookiecutter
 ```
 
-## Cookiecutter-templaatin käyttö
+### 6.2.2 Cookiecutter-templaatin käyttö
 
 Mene projektikansioon ja aja seuraava komento:
 

@@ -2,7 +2,7 @@
 
 ## 4.1 Yleistä lähteviittauksesta
 
-Lähdeviittaukset tehdään Vancouver-tyyliä **mukaillen**. Huomaa sana **mukaillen**. Opinnäytetyössä, akateemisissa julkaisuissa ja muissa raporteissa tulet noudattamaan esimerkiksi APA tai Vancouver lähdeviittausta orjallisesti ohjeiden mukaisesti. Oppimimispäiväkirjassa on riittävää, että käytät lähdeviittauksia, jotka ovat ymmärrettäviä ja johdonmukaisia. Voit käyttää tämän dokumentin lähdeviittauksia tyylillisenä ohjenuorana. Oppimispäiväkirjassa jätetään muun muassa viittauspäivämäärä pois, koska se selviää kontekstista, ja sivunumerot, koska GitLab-maustettu Markdown ei salli niiden sisällyttämistä Footnoten sisään.
+Lähdeviittaukset tehdään Vancouver-tyyliä **mukaillen**. Huomaa sana **mukaillen**. Opinnäytetyössä, akateemisissa julkaisuissa ja muissa raporteissa tulet noudattamaan esimerkiksi APA tai Vancouver lähdeviittausta orjallisesti ohjeiden mukaisesti. Oppimimispäiväkirjassa on riittävää, että käytät lähdeviittauksia, jotka ovat ymmärrettäviä ja johdonmukaisia. Voit käyttää tämän dokumentin lähdeviittauksia tyylillisenä ohjenuorana. Oppimispäiväkirjassa jätetään muun muassa viittauspäivämäärä pois, koska se selviää kontekstista, ja sivunumerot, koska Markdown ei salli niiden sisällyttämistä Footnoten sisään.
 
 ## 4.2 OAT-spec
 
@@ -13,13 +13,13 @@ Kuten opinnäytetyön tekijän oppaassa neuvotaan [^fcfce3], lähdeviite koostuu
 | Tekstin sisällä  | [1]                         | [^fff999]                            |
 | Lähdeluettelossa | 1: Tekijä. Teos. Ynnä. Muut | [^fff999]: Tekijä. Teos. Ynnä. Muut. |
 
-Huomaa, että lähdeviitteet voivat olla joko viitteitä, kuten edellä olevassa kappaleessa, tai suoria lainauksia, kuten tämä: "Lähteet numeroidaan lähdeluetteloon juoksevasti eli siinä järjestyksessä, missä ne esiintyvät tekstissä." [^fcfce3]
+Huomaa, että lähdeviitteet voivat olla joko viitteitä, kuten edellä olevassa kappaleessa, tai suoria lainauksia, kuten tämä: *"Lähteet numeroidaan lähdeluetteloon juoksevasti eli siinä järjestyksessä, missä ne esiintyvät tekstissä."* [^fcfce3]
 
-Jos pohdit, että miksi me poikkeamme Vancouver-speksistä näin rankasti, niin syy on selvä. Me emme tuota PDF-tiedostoa Theseukseen vaan Markdown-tiedoston GitLab-versionhallintaan. GitLab korvaa häshit numeroille meidän puolestamme ja tekee niistä tiedostonsisäiset linkit. Kokeile klikata jotakin tämän dokumentin tekstinsisäistä viitettä. Kokeile myös klikata lähdeluettelossa näkyviä viitteitä tai niiden perässä olevia nuolia.
+Jos pohdit, että miksi me poikkeamme Vancouver-speksistä näin rankasti, niin syy on selvä. Me emme tuota PDF-tiedostoa Theseukseen vaan staattisen Mkdocs-dokumentaatiosivuston. Material for MkDocs korvaa häshit numeroille meidän puolestamme ja tekee niistä tiedostonsisäiset linkit. Kokeile klikata jotakin tämän dokumentin tekstinsisäistä viitettä. Kokeile myös klikata lähdeluettelossa näkyviä viitteitä tai niiden perässä olevia nuolia.
 
 ## 4.3 Lähdeviitteet ja tieteellinen tieto
 
-Tieteellisen tiedon suurin arvo ei johdu siitä, että tieto olisi totta [^40c08c]. Tieteellisen tiedon arvo on sen toistettavuudessa, läpinäkyvyydessä ja uusiutuvuudessa.  Tämän vuoksi on tärkeää, että lähdeviitteet ja hypoteesin synty ovat yksiselitteisiä ja johdonmukaisia. Wikipedia on huono lähde: sillä on useita eri kirjoittajia, ja on vaikea sanoa, mitä siellä on milloinkin lukenut kenenkin sanomana. Wikipedia on hyvä lähde tiedon pläräilyyn *ensimmäisellä kerralla*, mutta tieto pitäisi varmistaa lähteistä - ja näihin Wikipedian artikkelit itsekin viittaavat. Suuret kielimallit kuten ChatGPT tai Bard ovat vielä huonompia lähteitä kuin Wikipedia. Kielimallin kanssa keskustelusta voi saada hyviä ideoita, näkökulmia ja jopa sattumanvaraisesti oikeita vastauksia kysymyksiisi, mutta tämä ei ole millään tavoin tieteellisesti pätevä tapa hankkia tietoa. Kielimalli luo lauseita, jotka vaikuttavat oikeilta. Kielimalli ei tarkista faktoja tai punnitse tutkimustapojaan: se vain liimailee sopivia asioita yhteen.
+Tieteellisen tiedon suurin arvo ei johdu siitä, että tieto olisi totta [^40c08c]. Tieteellisen tiedon arvo on sen toistettavuudessa, läpinäkyvyydessä ja uusiutuvuudessa. Tämän vuoksi on tärkeää, että lähdeviitteet ja hypoteesin synty ovat yksiselitteisiä ja johdonmukaisia. Wikipedia on huono lähde: sillä on useita eri kirjoittajia, ja on vaikea sanoa, mitä siellä on milloinkin lukenut kenenkin sanomana. Wikipedia on hyvä lähde tiedon pläräilyyn *ensimmäisellä kerralla*, mutta tieto pitäisi varmistaa lähteistä - ja näihin Wikipedian artikkelit itsekin viittaavat. Suuret kielimallit kuten ChatGPT tai Bard ovat vielä huonompia lähteitä kuin Wikipedia. Kielimallin kanssa keskustelusta voi saada hyviä ideoita, näkökulmia ja jopa sattumanvaraisesti oikeita vastauksia kysymyksiisi, mutta tämä ei ole millään tavoin tieteellisesti pätevä tapa hankkia tietoa. Kielimalli luo lauseita, jotka vaikuttavat oikeilta. Kielimalli ei tarkista faktoja tai punnitse tutkimustapojaan: se vain liimailee sopivia asioita yhteen.
 
 ![image-20240107135006931](../images/chatgpt.png)
 
@@ -31,7 +31,7 @@ HUOM! Ethän siis käytä kielimalleja lähteinä! Se laskee arvosanaasi.
 
 Alla koodilohkossa on esimerkki lähdeviitteestä. Käytä tätä ohjetta apuna, kun kirjoitat omia lähdeviitteitäsi.
 
-```
+```md title="esimerkki.md"
 # Tämä osuus on jossain runkotekstissä
 
 Tämä kappale hyödyntää GitLab-maustettua Markdownia [^1739a4]. Markdown on sekä kehittäjäystävällinen merkintäkieli tai syntaksi että ohjelmisto, joka kääntää tätä kieltä HTML:ksi [^d1a7a7]. 

@@ -1,12 +1,16 @@
-# Kurssin nimi tähän
+#  Johdanto
 
-**Etunimi Sukunimi**
+??? warning "What is this page?!"
 
-Kirjoita oppimispäiväkirja indeksisivulle, eli tähän kyseiseen tiedostoon (`/docs/index.md`) lyhyet johdanto. Mikäli työskentelet pienryhmässä, voit esimerkiksi esitellä lyhyesti ryhmäsi jäsenet. Voit myös kirjoittaa itsellesi talteen asioita, jotka haluat oppia kurssin aikana, tai sanallistaa aiemman kokemuksesi aihepiiristä. Tämä antaa lukijalle hieman kontekstia.
+    This is a writing and style guide for your learning diary. You should arrive after being instructed to do so. If you are not sure, ask your teacher.
 
-## Choose your language
+**Name Surname**
 
-Note that you can write either in Finnish :flag_fi: or English :flag_gb: :flag_us: unless otherwise stated in the course. Feel free to rename e.g. ´self-evalution.md` to `itsearviointi.md` if you prefer Finnish.
+Kirjoita oppimispäiväkirja indeksisivulle, eli tähän kyseiseen tiedostoon (`/docs/index.md`), lyhyt johdanto. Mikäli työskentelet pienryhmässä, voit esimerkiksi esitellä lyhyesti ryhmäsi jäsenet. Voit myös kirjoittaa itsellesi talteen asioita, jotka haluat oppia kurssin aikana, tai sanallistaa aiemman kokemuksesi aihepiiristä. Tämä antaa lukijalle hieman kontekstia.
+
+## Choose your language (:flag_fi: :flag_gb: :flag_us:)
+
+Note that you can write either in Finnish or English unless otherwise stated in the course. Feel free to rename e.g. ´self-evalution.md` to `itsearviointi.md` if you prefer Finnish.
 
 ## TODO-lista
 

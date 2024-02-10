@@ -8,7 +8,7 @@ Lähdeviitteiden Mikäli lähdeviitteiden numeroinnin pitäminen järjestyksess�
 
 Pitkä kappale näyttäytyy Visual Studio Codessa yhtenä rivinä, mikä tekee tekstin lukemisesta hankalaa. Tämän voi korjata lisäämällä word wrap -ominaisuuden. Tämä kannattaa asettaa siten, että se on aktiivinen nimenomaan Markdown-tiedostojen kanssa. Avaa `View => Command Palette` ja etsi `Preferences: Open User Settings (JSON)`. Lisää tiedostoon seuraavat rivit:
 
-```js
+```json title="settings.json"
 {
     // JSON:ssa voi olla aiemmin luomiasi asetuksia, esimerkiksi:
     // ...
