@@ -1,8 +1,8 @@
 #  Johdanto
 
-??? warning "What is this page?!"
+??? warning "Mikä tämä sivu on?!"
 
-    This is a writing and style guide for your learning diary. You should arrive after being instructed to do so. If you are not sure, ask your teacher.
+    Tämä on kirjoitus- ja tyyliluettelo oppimispäiväkirjaasi varten. Olet todennäköisesti saanut linkin joltakin kurssilta tänne. Oppimispäiväkirjoja kirjoitetaan tyypillisesti yksi per kurssi. Tutustu materiaaliin ja aloita tämän jälkeen oman oppimispäiväkirjasi kirjoittaminen. Jos et ole varma, kysy opettajaltasi.
 
 **Name Surname**
 
@@ -25,6 +25,6 @@ Index-sivu on mainio paikka myös TODO-listalle. Voit toki käyttää myös jota
     - [ ] 04: Lähdeviittaukset
     - [ ] 05: Viimeistely
     - [ ] 06: Cookiecutter
-- [ ] Lue myös itsearvioinnin ohje.
+- [ ] Lue itsearviointi-sivu.
 - [ ] Luo oma oppimispäiväkirja -sivusto Cookiecutterilla
-
+- [ ] Kirjoita Cookiecutterin runkotekstiin ensimmäinen viikkokirjoitus
