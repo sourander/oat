@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  site:
+    container_name: oppimispaivakirja-container
+    image: kamk/oppimispaivakirja:latest
+    build:
+      context: .
+      dockerfile: Dockerfile-oat
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./arviointi/public:/app/public

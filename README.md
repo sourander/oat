@@ -1,138 +1,125 @@
-# Skeleton for Documentation Project
+# Oppimispäiväkirjan arviointityökalu (OAT)
 
-## Dependencies
-* Python >=3.10
-* Python Poetry
+Tämä repositorio sisältää:
 
-## How to use
+* oppimispäiväkirjan arviontityökalun (OAT)
+    * HTML+JavaScript -sovellus
+    * Aja dockerilla (`docker compose up --build`)
+* oppimispäiväkirjan kirjoittamiseen liittyvät yleiset säännöt
+    * Material for Mkdocs
+    * Aja lokaalisti (`poetry run mkdocs serve`)
+    * ... tai käy [Github Pages -hostatussa versiossa](https://sourander.github.io/oat).
+ 
+Huomaa, että tässä repositoriossa annetut ohjeet ovat yleisiä ja kurssikohtaiset ohjeet löytyvät kurssin omasta repositoriosta. Mikäli kurssiohjeissa on ristiriitaa tämän repositorion ohjeiden kanssa, noudatetaan kurssikohtaisia ohjeita.
 
-To create a new documentation project using this skeleton, do the following:
+## OAT - käyttö
 
-### 1. Instance template repository
-
-Create a repository from this template. This is guided in the [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-
-### 2. Clone locally and set up Python Env
-
-You need to have Python (`3.10` or newer) installed. You also need to have [Python Poetry installed](https://python-poetry.org/docs/#installation).
+Arviointityökalu vaatii Dockerin ja Docker Composen asennuksen. Windowsilla ja macOS:lla helpoin tapa on asentaa Docker Desktop.
 
 ```bash
-# Clone
-git clone 'new-repo-url'
-
-# Update your Python Poetry and install dependencies
-# Ignoring the root package(s), because we have none.
-poetry self update
-poetry install --no-root
+# Aja palvelin
+# Palvelin sammuu ctrl+c näppäinyhdistelmällä
+docker compose up
 ```
 
-### 3. Define the LICENSE
+Tämän jälkeen voit navigoida verkkoselaimella kahteen eri osoitteeseen: 
 
-Use the formula in the `LICENSE.template` file. Fill in the Jinja-like slots (e.g. `{{ project }} => Project's Name`) and rename the file to `LICENSE`.
+* Oppimispäiväkirjan arviointityökalu: [localhost:3000](http://localhost:3000).
+* Oppimispäiväkirjan kirjoitusohjeet: [localhost:8000](http://localhost:8000)
 
-### 4. Define the copyright info also into site
+## Oppimispäiväkirja: yleiset säännöt
 
-Edit the following block to contain the information you need:
+Oppimispäiväkirjan kirjoitusohjeet on kirjoitettu ulkonäöllisesti samaan muotoon, mihin sinun tulisi kirjoittaa oppimispäiväkirjasi.
 
-```yaml
-# TODO: Replace the copyright with correct. Also add LICENCE file. Template included.
-copyright: |
-  Copyright &copy; 2023 <a href="https://www.example.com">Example Organization</a>. 
-  Licenced under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">XX-XX-XX 4.0</a>
+Löydät sen täältä: [Oppimispäiväkirja 101 (Markdown)](docs/docs/oppimispaivakirja-101.md)
+
+## Oppimispäiväkirjan lähteiden järjestäminen
+
+Lähdeviitteet päätyvät helposti väärään järjestykseen tai lähdeluetteloon saattaa unohtua lähde, johon ei enää viitata runkotekstissä. GitLab järjestää lähteet esiintymisjärjestyksen mukaan automaattisesti `Display rendered file`- eli HTML-näkymässä ja antaa niille juoksevan numeron. 
+
+GitLab ei kuitenkaan huolehti siitä, ovatko lähdeluettelon kaikki lähteet käytetty runkotekstissä. Tämä on opiskelijan vastuulla. Suosittelen kehittämään tavan testata tämän automaattisesti. Helppokäyttöinen keino on esiteltynä `scripts`-kansiossa. Sen käyttö ohjeistetaan alla.
+
+### Vaihe 1: Uniikkien tunnisteiden käyttö
+
+Unohda juoksevat lukujonot, jotka kuuluvat tyypilliseen Vancouver-lähdeviittausjärjestelmään. 
+
+* Vaihtoehto A: Generoi lähteiden tunnisteet MD5 hashin avulla. Skripti pitää MD5-häshistä vain ensimmäiset 6 merkkiä. 
+* Vaihtoehto B: Keksi tunnisteet eli lyhyet aliakset itse.
+
+```bash
+# Vaihetoehto A:ta varten löytyy skripti
+$ python scripts/hash_ref.py 'Example. *Example Domain*. http://www.example.com'
+d4c00b
 ```
 
-### 5. Modify Docs
+### Vaihe 2: Lähdeluettelon otsikko
 
-Modify the contents of `docs/`. You `.pages` files if you need other than `[a-z]` ordering for your MarkDown files or, say, a navigation item that contains special characters (e.g. `TCP/IP`) or custom capitalization (e.g. `LaTeX `).
+Tiedoston **täytyy sisältää** rivi, joka on muotoa `# Lähdeluettelo` tai `## Lähdeluettelo`. Tämä rivi on pakollinen, sillä vaiheessa kolme ajettava skripti etsii sen avulla lähdeluettelon alun.
 
-File naming: Use only ASCII characters and underscores in file names.
+### Vaihe 3: Lähdeluettelon tarkistaminen ja järjestäminen
 
-## 6. Run local build
+Kun sinun lähdeviitteesi edustavat sopivaa muotoa, eli `[^tunniste]`, voit tarkistaa lähdeluettelon ja runkotekstin lähdeviitteiden yhteneväisyyden skriptillä. Skripti myös järjestää lähdeluettelon lähdeviitteiden esiintymisjärjestyksen mukaan.
 
-To build the project locally to `site/` and to run a web server, you can simply run `poetry run mkdocs serve`. Visit the site at `localhost:8080`.
-
-### 7. Build in GitHub Pages
-
-Merge to `master` branch in any Repository. The scripts at `.github/workflows/` will be executed by Github Actions.
-
-Sadly, GitHub will not automatically publish your Pages as could be expected. You need to visit the **Settings | 
-Pages** (at `https://github.com/<username>/<reponame>/settings/pages`). There, under heading **Build and 
-deployment**, choose Branch as `gh-pages` and path as `/ (root)`. Click Save. From now on, your Pages should be 
-updated whenever you push to master. You should see a workflow with a title *pages build and deployment* in your 
-Actions after each push.
-
-## Batteries Included?
-
-This template comes with two plugins: 
-* [MkDocs static i18n](https://github.com/ultrabug/mkdocs-static-i18n) for multilanguage
-* [MkDocs Awesome Pages](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin) for page ordering
-
-
-## Need support for multilanguage?
-
-Add the following to the `mkdocs.yml` file:
-
-```yaml
-plugins:
-  - i18n:
-      docs_structure: suffix
-      default_language: en
-      languages:
-        en:
-          name: English
-          build: true
-        fi:
-          name: Finnish
-          build: true
-      # You can translate navigation items here if need be
-      nav_translations:
-        fi:
-          Some Headline: Jokin otsikko
+```bash
+# Skripti ajetaan näin:
+$ python scripts/reorder_references.py $PATH_TO_FILE
 ```
 
-Add and install dependency: `poetry add mkdocs-static-i18n`. After this, you are ready to add alternative language files. Check [i18n Docs](https://github.com/ultrabug/mkdocs-static-i18n) for further information.
+Skriptin ajamisen jälkeen:
 
-**NOTE:** You will need to modify the `.pages` files if you are using both Awesome Pages and i18n together. Example below.
+* In A but not in B:
+    * Tekstissä esiintyvät lähteet, jotka eivät ole lähdeluettelossa, listataan terminaaliin. Niitä ei kuitenkaan poisteta tekstistä: tee tämä manuaalisesti tai lisää lähdeviite lähdeluetteloon.
+* In B but not in A:
+    * Lähdeluettelossa olevat lähteet, joita ei ole käytetty runkotekstissä, poistetaan lähdeluettelosta. Miksi? Koska näille ei voida määrittää järjestystä.
+* Jäljelle jääneet lähdeluettelon lähteet ovat esiintymisjärjestyksessä
 
-```yaml
-nav:
-    - index.md         # Without i18n
-    - ... | index*.md  # With i18n
+### Käytännön esimerkki
+
+Alla näkyvän kuvitteellisen tiedoston (`example.md`) sisältö on kirjoitettu englanniksi, jotta se erottuu paremmin ohjetekstin sisällöstä. Tiedosto sisältää seuraavat rivit:
+
+```markdown
+# Example
+
+This is an example for reordering references in a markdown file. [^abc123]
+
+Containing a couple [^def456] of lines. This reference is not used in the reference list: [^unused].
+
+Any containing multiple references. Note that the first occurance of [^ghi789] an reference ID mattes. For example, this appears for the second time: [^abc123].
+
+# Lähdeluettelo
+
+[^ghi789]: This occurs as the 3rd in the body text
+[^def456]: This occurs as the 2nd in the body text
+[^abc123]: This occurs as the 1st in the body text
+[^nonexist]: This reference does not exist in the body text
 ```
 
+Kun ajat skriptin `python reorder_references.py example.md`, näytöllesi tulostuu:
 
-
-## How to access
-
-The URI for the GitHub Pages is `https://<username>.github.io/<repo_name>/`. The *pages build and deployment* 
-workflow will output a link to this page.
-
-## How to squash history
-
-Let's say you have started working on a repository created using this template repo. In the beginning, your repo has been Private, and now you want to make it Public. You want to make sure there is nothing in the history that would, say, violate copyrights or include passphrases. To do this, you could squash all the commits into one. First, make sure you have committed your changes to origin **and have backed up your project**. You may lose your work if you screw up. You have been warned. To do this, do:
-
-```sh
-# Create a new orphan branch named 'new-master' based on the 'master' branch.
-# An orphan branch is a new branch that has no commit history from the source branch.
-git checkout --orphan new-master master
-
-# Create a new initial commit for the orphan branch, providing a commit message.
-# This commit serves as the starting point for your squashed commit history.
-git commit -m "Squashed all commits"
-
-# Overwrite the reference of the 'master' branch with the new orphan branch,
-# effectively replacing the old history with the new commit you just created.
-git branch -M new-master master
-
-# Forcefully push the changes to the remote repository.
-# This overwrites the remote 'master' branch with your new history.
-git push --force
+```bash
+$ python reorder_references.py example.md
+[INFO] Reading file: example.md
+[Warning] Reference 'unused' found in the body text but not in the reference list.
+[Warning] Reference 'nonexist' not found in the body text.
+[INFO] Overwriting file: example.md
 ```
 
-If you have the project cloned on other machines, they will need to either remove the directory and clone the project again, OR, run the following commands:
+Tiedoston uusi sisältö näkyy alla.
 
-```sh
-git fetch origin
-git reset --hard origin/master
+```markdown
+# Example
+
+This is an example for reordering references in a markdown file. [^abc123]
+
+Containing a couple [^def456] of lines. This reference is not used in the reference list: [^unused].
+
+Any containing multiple references. Note that the first occurance of [^ghi789] an reference ID mattes. For example, this appears for the second time: [^abc123].
+
+Operaation jälkeen tiedoston sisältö on seuraava:
+
+# Lähdeluettelo
+
+[^abc123]: This occurs as the 1st in the body text
+[^def456]: This occurs as the 2nd in the body text
+[^ghi789]: This occurs as the 3rd in the body text
 ```
