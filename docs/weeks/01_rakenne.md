@@ -49,7 +49,7 @@ graph LR
 
 **Kuvio 1:** *Esimerkki sisäkkäisistä otsikoista. Ethän käydä tason n otsikkoa, jos se on ainut laatuaan. Kuvioille, kuville, kuvaajille tai muille visuaalisille elementeille on hyvä antaa kuvateksti. Rivi, jota luet juuri nyt, toimii esimerkkinä sellaisesta.*
 
-Huomaa, että viikkoihin sidotut otsikot ovat numeroituja, mutta viikosta riippumattomat otsikot eivät ole. Näitä ovat esimerkiksi `Itsearviointi` ja `Johdanto`.
+Viikosta riippumattomia otsikoita ei tarvitse numeroita. Näitä ovat esimerkiksi `Itsearviointi` ja `Johdanto`.
 
 ## 1.3 Muut muotoilut
 
@@ -63,13 +63,7 @@ Voit käyttää kaikkia niitä Markdown-kielen ominaisuuksia, joita Material for
     # Tämä on koodilohko
     print("Olen koodilohko!")
     ```
-
 * Käytä yksinkertaisiin kuvaajiin mermaidia.
-
-    ```mermaid
-    A --> B
-    ```
-
 * Käytä kuvia, kun haluat näyttää jotain visuaalista.
     * Kuvaajia voit luoda esimerkiksi [excalidraw](https://excalidraw.com/) -sivustolla.
     * Muistathan tarkistaa netistä löytämiesi kuvien tekijänoikeudet!
