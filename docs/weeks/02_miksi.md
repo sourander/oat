@@ -6,6 +6,8 @@ Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. A
 
 Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemalla opittava aihe, tutkimalla aihetta, kirjaamalla **hypoteesin**, todistamalla hypoteesin oikeaksi tai vääräksi, ja toistamalla kunnes kokonaisuus kestää kasassa. Tämä muistuttaa hyvin lähelle perinteistä tieteellistä menetelmää, ja "tutkiva oppiminen" on tähän läheisesti liittyvä termi [^40c08c]. Fyysikko Richard Feynmanin mukaan nimetty tekniikka, "Feynman Techinique", myötäilee samaa kaavaa [^1fbb24], joskin lisää siihen *"explain it like I'm 5"*-selitysvaiheen.
 
+## 2.1 Miksi vs. miten
+
 Ei siis riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja. On tärkeää pohtia ja selvittää, **miksi** jokin asia on kuten se on. Oppimispäiväkirja on samalla askel sitä kohti, että otat omasta oppimisestasi vastuuta. Sinä olet se, joka opiskelee ja oppii. Opettaja on valmentaja ja apu.
 
 > A good dashboard/report is more likely to get you promoted than any code you write. <br> - merry_go_byebye
@@ -24,6 +26,20 @@ Ei siis riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja.
 
 Yllä on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat jakavat toisilleen "alan salaisuuksia" [^057387]. Keskustelun kommenteissa on toistuvana teemana, että koodin kirjoittaminen on vain osa ohjelmistokehittäjän työtä. Tärkeämpää on osata ratkaista liiketoiminnan ongelmia, osata kommunikoida ja osata esitellä omaa työtä. Muun muassa näitä taitoja kehittää oppimispäiväkirjan kirjoittaminen.
 
+## 2.2 Oppiminen ei ole pikajuoksu
+
+Oppiminen ei tapahdu heti eikä kerrasta. Se ei ole 100 metrin pikajuoksu. Se on lähempänä maratonia kuin pikajuoksua, mutta ei ole aivan sekään. [^cf45f2] Oppiminen ei myöskään tapahdu siten, että joku muu (opettaja) kaataa sinun päähäsi tietoa. Päinvastoin, oppiminen on aktiivista toimintaa, jossa sinä itse olet pääosassa. Mikäli oppiminen tuntuu liian helpolta, et todennäköisesti opi mitään. Tätä voi verrata kuntosaliharjoitteluun: voit kehittyä vain, jos nostat painoja, jotka ovat riittävän lähellä omaa maksimia. Kun kehityt, maksimi nousee, ja myös haastetta pitää kasvattaa. Tämä ei ole hatusta vedettyä pohdintaa, vaan aihetta ovat tutkineet muiden muassa Stanfordin yliopiston tohtori Robert A Bjork. Aihetta "desireable difficulties" kansantajuistaa esimerkiksi David Didau sekä blogissaan [^036faa] että kirjassa *What if everything you knew about education was wrong?* [^9a6809].
+
+Aivan kuten pyöräilyä opetellessa apupyörät ovat ok, tai laskettelua opetellessa auraus on tärkeä vaihe, niin myös tietojenkäsittelyyn liittyviä taitoja opetellessa apukeinot ovat hyödyllisiä - mutta niistä kannattaa luopua heti kun pystyy. ChatGPT on yhdenlainen apupyörä, joka voi auttaa, mutta älä nojaudu siihen liikaa. Tee virheitä, lue dokumentaatiota, kysyä neuvoa, opi virheitä.
+
+* Tarvitset toistoja
+* Tarvitset realistisia pieniä tavoitteita (vtr. "oma maksimi")
+* Teet virheitä. Se on ok.
+
+!!! tip
+
+    Tämä sama oppimispäiväkirjan ohje on voimassa kaikkien opiskeluvuosien ajan, mutta arvosteluasteikkoa tulkitessa otetaan huomioon se, että opit asioita matkan varrella. Tämä tarkoittaa, että ensimmäisen opiskeluvuoden oppimispäiväkirjat eivät ole samalla tasolla  kuin viimeisen vuodet oppimispäiväkirjat. Tämä on hyväksyttävää. Tämä on jopa toivottavaa. Tämä tarkoittaa, että olet oppinut jotakin.
+
 ## Lähdeluettelo
 
 [^a029a4]: Bransford, J. D., Brown, A. & Cocking, R. *Miten opimme: Aivot, mieli, kokemus ja koulu* (A. Penttilä, suom.). Helsinki: WSOY. 2004.
@@ -32,3 +48,6 @@ Yllä on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat
 [^7ef5f9]: Karnorfsky, H. *Learning by Writing*. https://www.cold-takes.com/learning-by-writing/
 [^1fbb24]: Osmani, A. Write about what you learn. It pushes you to understand topics better. 2023. https://addyosmani.com/blog/write-learn/
 [^057387]: r/ExperiencedDevs. *What industry secret do you know that most software developers never figure out?* https://www.reddit.com/r/ExperiencedDevs/comments/1anuk2a/what_industry_secret_do_you_know_that_most/
+[^cf45f2]: Collegial. *Learning is not a sprint.* https://www.collegial.com/insights/learning-is-not-sprinting
+[^036faa]: Didau, D. *Deliberately difficult – why it's better to make learning harder*. https://learningspy.co.uk/featured/deliberately-difficult-focussing-on-learning-rather-than-progress-2/
+[^9a6809]: Didau, D. 2015. *What if everything you knew about education was wrong?*. [Apple Books e-kirja]. Crown House Publishing.
