@@ -8,6 +8,22 @@ Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemal
 
 Ei siis riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja. On tärkeää pohtia ja selvittää, **miksi** jokin asia on kuten se on. Oppimispäiväkirja on samalla askel sitä kohti, että otat omasta oppimisestasi vastuuta. Sinä olet se, joka opiskelee ja oppii. Opettaja on valmentaja ja apu.
 
+> A good dashboard/report is more likely to get you promoted than any code you write. <br> - merry_go_byebye
+>
+> The code itself is barely one of the top three most important parts of your job. <br> - herbal_broccoli
+>
+> Your prowess in live demos can greatly set you apart from your peers. <br> - nox010
+>
+> The best software developers write less code, not more. Code is a liability, not an asset. <br> - Tony_OpDev
+>
+> How to f\*\*\*\*\*n google. Most of what we're doing was already done by someone else. If you can find the answer, that's fine. Who cares. <br> - cherrypick84
+>
+> Your job isn’t to write code, your job is to solve business problems. <br> - oceandocent
+>
+> You do not write programs for computers. You write them for people. <br> - pemungkah
+
+Yllä on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat jakavat toisilleen "alan salaisuuksia" [^057387]. Keskustelun kommenteissa on toistuvana teemana, että koodin kirjoittaminen on vain osa ohjelmistokehittäjän työtä. Tärkeämpää on osata ratkaista liiketoiminnan ongelmia, osata kommunikoida ja osata esitellä omaa työtä. Muun muassa näitä taitoja kehittää oppimispäiväkirjan kirjoittaminen.
+
 ## Lähdeluettelo
 
 [^a029a4]: Bransford, J. D., Brown, A. & Cocking, R. *Miten opimme: Aivot, mieli, kokemus ja koulu* (A. Penttilä, suom.). Helsinki: WSOY. 2004.
@@ -15,3 +31,4 @@ Ei siis riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja.
 [^40c08c]: Hakkarainen, K., Lonka, K. & Lipponen, L. *Tutkiva oppiminen: Järki, tunteet ja kulttuuri oppimisen sytyttäjinä*. Helsinki: WSOY. 2004.
 [^7ef5f9]: Karnorfsky, H. *Learning by Writing*. https://www.cold-takes.com/learning-by-writing/
 [^1fbb24]: Osmani, A. Write about what you learn. It pushes you to understand topics better. 2023. https://addyosmani.com/blog/write-learn/
+[^057387]: r/ExperiencedDevs. *What industry secret do you know that most software developers never figure out?* https://www.reddit.com/r/ExperiencedDevs/comments/1anuk2a/what_industry_secret_do_you_know_that_most/
