@@ -1,14 +1,15 @@
 # 6: Cookiecutter-templaatin käyttö
 
-Tähän tulee ohjeistus siitä, kuinka voit luoda oman oppimispäiväkirjasi käyttämällä Cookiecutter-templaattia. Tarvitset siihen:
+Oppimispäiväkirjaa ei tarvitse aluttaa aivan tyhjästä. Voit käyttää valmista Cookiecutter-templaattia, joka luo valmiin rakenteen oppimispäiväkirjalle.  Tarvitset siihen seuraavat ohelmat:
 
-* Windows tai macOS
 * Git (for Windows)
-* Pythonin asennettuna
+* Python
 
 ## 6.1: Video-ohje (TODO)
 
-Kaikesta alla olevasa tulee tähän linkki YouTube-videoon, jossa demonstroidaan vaihe vaiheelta koko prosessi. Alla oleva tekstimuotoinen ohje on tarkoitettu tueksi videolle ja toimii hyvänä muistilistana, jos olet jo kerran katsonut videon.
+Tähän tulee linkki YouTube-videoon, jossa demonstroidaan vaihe vaiheelta koko prosessi. 
+
+Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. Tarkemmat ohjeet löytyvät kustakin vaiheesta löytyvistä linkeistä eli kyseisten ohjelmien omilta sivuilta.
 
 
 ## 6.2 Teksti-ohje

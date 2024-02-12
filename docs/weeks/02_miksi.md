@@ -1,14 +1,44 @@
 # 2: Miksi oppimispäiväkirja?
 
-National Research Council:n komitean mukaan [^a029a4] tyypillisesti opetussuunnitelmat korostavat enemmän muistia kuin ongelmanratkaisua. Oppikirjoissa on faktoja, jotka opiskelija opettalee ulkoa, ja kirjoittaa tentissä oikeisiin kohtiin. Tämä on sekä oppilaalle että opettajalle selkeä ja helppo tapa arvioida oppimista. Ongelmaton se ei kuitenkaan ole. Kuten Bransford ja kumppanit toteaa, tämä aiheuttaa ns. kilometrin leveää ja senttimetrin syvää osaamista. Tämä tarkoittaa, että opiskelija osaa ulkoa faktoja, mutta ei osaa soveltaa niitä. Ongelma on erityisen vakava tietotekniikan alalla, jossa teknologia kehittyy nopeasti. Työntekijät odottavat työntekijöiltä ongelmanratkaisutaitoja, ei ulkoa opeteltuja faktoja [^e883b6].
+National Research Council:n komitean mukaan opetussuunnitelmat korostavat tyypillisesti enemmän muistia kuin ongelmanratkaisua [^a029a4]. Oppikirjoissa on faktoja, jotka opiskelija opettelee ulkoa ja kirjoittaa tentissä oikeisiin kohtiin. Tämä on sekä oppilaalle että opettajalle selkeä ja helppo tapa arvioida oppimista. Helppoudestaan huolimatta se ei ole ongelmaton. Kuten Bransford ja kumppanit toteavat, tenttiin pänttääminen aiheuttaa ns. kilometrin leveää ja senttimetrin syvää osaamista. Tämä tarkoittaa, että opiskelija osaa ulkoa faktoja, mutta ei osaa soveltaa niitä. Ongelma on erityisen vakava tietotekniikan alalla, jossa teknologia kehittyy nopeasti. Työntekijät odottavat työntekijöiltä ongelmanratkaisutaitoja, ei ulkoa opeteltuja faktoja [^e883b6].
 
-Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. Asiantuntijat ovat tehokkaita ongelmanratkaisijoita, tiedon etsijiä ja tiedon soveltajia. Hakkarainen ja kumppanit [^40c08c] tiivistävät, että: *"kirjoittaminen on kaikkein tärkein ajattelemaan oppimisen väline."* 2000-luvun työntekijä ei voi olettaa saavansa esihenkilöltä yksiselitteisiä työtehtäviä. Olet ammattikorkeakoulussa valmistamassa itseäsi työelämään, joten työelämän tavat toimia on hyvä ottaa käyttöön jo nyt. Oppimispäiväkirja on yksi tapa harjoitella kirjoittamista ja ajattelua sekä saattaa ajattelu näkyväksi.
+Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. Asiantuntijat ovat tehokkaita ongelmanratkaisijoita, tiedonhakijoita ja tiedon soveltajia. Hakkarainen ja kumppanit [^40c08c] tiivistävät, että: *"kirjoittaminen on kaikkein tärkein ajattelemaan oppimisen väline."* Oppimispäiväkirjan tavoitteena on siis auttaa sinua kehittymään asiantuntijaksi. 2000-luvun työntekijä ei voi olettaa saavansa esihenkilöltä yksiselitteisiä työtehtäviä. Olet ammattikorkeakoulussa valmistamassa itseäsi työelämään, joten työelämän tavat toimia on hyvä ottaa käyttöön jo nyt. Oppimispäiväkirja on yksi tapa harjoitella kirjoittamista ja ajattelua sekä saattaa ajattelu näkyväksi.
 
-Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemalla opittava aihe, tutkimalla aihetta, kirjaamalla **hypoteesin**, todistamalla hypoteesin oikeaksi tai vääräksi, ja toistamalla kunnes kokonaisuus kestää kasassa. Tämä muistuttaa hyvin lähelle perinteistä tieteellistä menetelmää, ja "tutkiva oppiminen" on tähän läheisesti liittyvä termi [^40c08c]. Fyysikko Richard Feynmanin mukaan nimetty tekniikka, "Feynman Techinique", myötäilee samaa kaavaa [^1fbb24], joskin lisää siihen *"explain it like I'm 5"*-selitysvaiheen.
+Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemalla opittava aihe, tutkimalla aihetta, kirjaamalla **hypoteesin**, todistamalla hypoteesin oikeaksi tai vääräksi, ja toistamalla kunnes kokonaisuus kestää kasassa. Tämä muistuttaa hyvin lähelle perinteistä *tieteellistä menetelmää*. Myös "tutkiva oppiminen" on tähän läheisesti liittyvä termi [^40c08c]. Tähän liitty myös läheisesti fyysikko Richard Feynmanin mukaan nimetty tekniikka, "Feynman Techinique" [^1fbb24], joskin Feynmanin lisänä on ELI5 (*"Explain Like I'm 5"*) -selitysvaihe.
+
+!!! tip
+
+    Jos ELI5 on vieras käsite, kannattaa tutustua `r/explainlikeimfive`-subreddittiin, jossa käyttäjät kysyvät monimutkaisia asioita. Muut käyttäjät pyrkivät vastaamaan kysymyksiin kaikesta ylimääräisestä teknisestä kielestä riisuttuna.
+
+    Esimerkki: [ELI5 How is the internet maintained? Who pays for its maintenence?](https://www.reddit.com/r/explainlikeimfive/comments/1aoorgr/eli5_how_is_the_internet_maintained_who_pays_for/)
 
 ## 2.1 Miksi vs. miten
 
-Ei siis riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja. On tärkeää pohtia ja selvittää, **miksi** jokin asia on kuten se on. Oppimispäiväkirja on samalla askel sitä kohti, että otat omasta oppimisestasi vastuuta. Sinä olet se, joka opiskelee ja oppii. Opettaja on valmentaja ja apu.
+Ei riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja. Ei myöskään riitä, että oppimispäiväkirjasi on tutoriaalimainen lista vaiheita. On tärkeää pohtia ja selvittää, **miksi** jokin asia on kuten se on. 
+
+!!! warning "Huono esimerkki"
+
+    1. Asensin Ubuntun. Se on kuulemma hyvä Linux.
+    2. Työpöytä näytti tavalliselta. Vaihdoin taustakuvan.
+    3. Asensin ohjelmia klikkaamalla "asenna" -nappia.
+    4. Ei ollut vaikeuksia.
+    5. Opin juttuja Linuxista.
+
+!!! tip "Parannusehdotuksia"
+
+    Kuvittele vierellesi aiheesta tietämätön utelias lapsi. Vastaa hänen esittämiin kysymyksiinsä. Näitä voivat olla ==esimerkiksi==:
+
+    * Mikä on Linux?
+    * Miten Linux eroaa Windowsista?
+    * Onko käyttöjärjestelmä pakollinen?
+    * Mikä on Ubuntu?
+    * Miksi se on hyvä?
+    * Miksi tuossa lukee 22.04 LTS?
+    * Miksi työpöydän taustakuvassa on meduusa?
+
+Oppimispäiväkirja on askel sitä kohti, että otat omasta oppimisestasi vastuuta. Sinä olet se, joka opiskelee ja oppii. Opettaja on valmentaja ja apu. Oppimispäiväkirja on se artefakti, jolla teet oppimisprosessistasi näkyvän, jotta opettajalla on jokin mahdollisuus antaa sinulle tekemistäsi vastaava arvosana. Se on siis kaksisuuntainen väline, joka palvelee sekä sinua että opettajaa.
+
+Alla on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat jakavat toisilleen "alan salaisuuksia" [^057387]. Keskustelun kommenteissa on toistuvana teemana, että koodin kirjoittaminen on vain osa ohjelmistokehittäjän työtä. Tärkeämpää on osata ratkaista liiketoiminnan ongelmia, osata kommunikoida ja osata esitellä omaa työtä. Muun muassa näitä taitoja kehittää oppimispäiväkirjan kirjoittaminen.
 
 > A good dashboard/report is more likely to get you promoted than any code you write. <br> - merry_go_byebye
 >
@@ -24,17 +54,18 @@ Ei siis riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja.
 >
 > You do not write programs for computers. You write them for people. <br> - pemungkah
 
-Yllä on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat jakavat toisilleen "alan salaisuuksia" [^057387]. Keskustelun kommenteissa on toistuvana teemana, että koodin kirjoittaminen on vain osa ohjelmistokehittäjän työtä. Tärkeämpää on osata ratkaista liiketoiminnan ongelmia, osata kommunikoida ja osata esitellä omaa työtä. Muun muassa näitä taitoja kehittää oppimispäiväkirjan kirjoittaminen.
+
 
 ## 2.2 Oppiminen ei ole pikajuoksu
 
-Oppiminen ei tapahdu heti eikä kerrasta. Se ei ole 100 metrin pikajuoksu. Se on lähempänä maratonia kuin pikajuoksua, mutta ei ole aivan sekään. [^cf45f2] Oppiminen ei myöskään tapahdu siten, että joku muu (opettaja) kaataa sinun päähäsi tietoa. Päinvastoin, oppiminen on aktiivista toimintaa, jossa sinä itse olet pääosassa. Mikäli oppiminen tuntuu liian helpolta, et todennäköisesti opi mitään. Tätä voi verrata kuntosaliharjoitteluun: voit kehittyä vain, jos nostat painoja, jotka ovat riittävän lähellä omaa maksimia. Kun kehityt, maksimi nousee, ja myös haastetta pitää kasvattaa. Tämä ei ole hatusta vedettyä pohdintaa, vaan aihetta ovat tutkineet muiden muassa Stanfordin yliopiston tohtori Robert A Bjork. Aihetta "desireable difficulties" kansantajuistaa esimerkiksi David Didau sekä blogissaan [^036faa] että kirjassa *What if everything you knew about education was wrong?* [^9a6809].
+Oppiminen ei tapahdu heti eikä kerrasta. Se ei ole 100 metrin pikajuoksu. Se on lähempänä maratonia kuin pikajuoksua, mutta ei ole aivan maraton myöskään [^cf45f2]. Oppiminen ei myöskään tapahdu siten, että joku muu (opettaja) kaataa sinun päähäsi tietoa. Päinvastoin, oppiminen on aktiivista toimintaa, jossa **sinä itse olet pääosassa**. Mikäli oppiminen tuntuu liian helpolta, et todennäköisesti opi mitään. Tätä voi verrata kuntosaliharjoitteluun: voit kehittyä vain, jos nostat painoja, jotka ovat riittävän lähellä omaa maksimia. Kun kehityt, maksimi nousee, ja myös haastetta pitää kasvattaa. Tämä ei ole hatusta vedettyä pohdintaa, vaan aihetta on tutkinut muiden muassa Robert A Bjork. Aihetta "desireable difficulties" kansantajuistaa esimerkiksi David Didau sekä blogissaan [^036faa] että kirjassa *What if everything you knew about education was wrong?* [^9a6809].
 
-Aivan kuten pyöräilyä opetellessa apupyörät ovat ok, tai laskettelua opetellessa auraus on tärkeä vaihe, niin myös tietojenkäsittelyyn liittyviä taitoja opetellessa apukeinot ovat hyödyllisiä - mutta niistä kannattaa luopua heti kun pystyy. ChatGPT on yhdenlainen apupyörä, joka voi auttaa, mutta älä nojaudu siihen liikaa. Tee virheitä, lue dokumentaatiota, kysyä neuvoa, opi virheitä.
+Aivan kuten pyöräilyä opetellessa apupyörät ovat apuväline, tai laskettelua opetellessa auraus on tärkeä vaihe, niin myös tietojenkäsittelyyn liittyviä taitoja opetellessa apukeinot ovat hyödyllisiä - mutta niistä kannattaa luopua heti kun pystyy. ChatGPT on yhdenlainen apupyörä, joka voi auttaa, mutta älä nojaudu siihen liikaa. Tee virheitä, lue dokumentaatiota, kysyä neuvoa, opi virheitä.
 
 * Tarvitset toistoja
 * Tarvitset realistisia pieniä tavoitteita (vtr. "oma maksimi")
-* Teet virheitä. Se on ok.
+* Joudut sietämään epävarmuutta.
+* Teet virheitä. Se on ok!
 
 !!! tip
 

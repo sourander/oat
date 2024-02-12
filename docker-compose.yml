@@ -6,7 +6,7 @@ services:
     image: kamk/oppimispaivakirja:latest
     build:
       context: .
-      dockerfile: Dockerfile-oat
+      dockerfile: oat.Dockerfile
     ports:
       - "3000:3000"
     volumes:

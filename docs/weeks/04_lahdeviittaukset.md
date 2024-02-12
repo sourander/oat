@@ -6,16 +6,26 @@ Lähdeviittaukset tehdään Vancouver-tyyliä **mukaillen**. Huomaa sana **mukai
 
 ## 4.2 OAT-spec
 
-Kuten opinnäytetyön tekijän oppaassa neuvotaan [^fcfce3], lähdeviite koostuu kahdesta osasta: **tekstiviitteestä** ja **lähdeluettelon vastineesta**. Tekstiviittauksen sisällä on viittauksen tunniste, joka on tyypillisessä Vancoucer-lähdeviittauksessa numero, mutta meillä on käytössämme opinnäytetyön arviointityökalun aivan oma lähdeviittauksen spesifikaatio (lyh. OAT-spec). Saat käyttää numeroa, mutta numeroinnin ylläpito käsin on haastavaa. Meidän OAT-specin suositus on siis käyttää MD5-tiivisteeseen (eli "häshiin") perustuvaa lyhyttä merkkijonoa. Tätä on selvennetty alla olevassa taulukossa.
+Kuten opinnäytetyön tekijän oppaassa neuvotaan [^fcfce3], lähdeviite koostuu kahdesta osasta: **tekstiviitteestä** ja **lähdeluettelon vastineesta**. Tekstiviittauksen sisällä on viittauksen tunniste, joka on tyypillisessä Vancoucer-lähdeviittauksessa numero, mutta meillä on käytössämme opinnäytetyön ==arviointityökalun oma spesifikaatio== (lyhyesti OAT-spec). OAT-spec sallii tyypillisen numeron käytön, mutta numeroinnin ylläpito käsin on haastavaa. Meidän OAT-specin suositus on siis käyttää jotakin aliasta tai MD5-tiivisteeseen (eli "häshiin") perustuvaa lyhyttä merkkijonoa. Vancouverin ja OAT-specin eroa on havainnollistettu alla olevassa taulukossa.
 
-|                  | Vancouver                   | OAT-spec                             |
-| ---------------- | --------------------------- | ------------------------------------ |
-| Tekstin sisällä  | [1]                         | [^fff999]                            |
-| Lähdeluettelossa | 1: Tekijä. Teos. Ynnä. Muut | [^fff999]: Tekijä. Teos. Ynnä. Muut. |
+|                  | Vancouver                     | OAT-spec                               |
+| ---------------- | ----------------------------- | -------------------------------------- |
+| Tekstin sisällä  | `[1]`                         | `[^fff999]`                            |
+| Lähdeluettelossa | `1: Tekijä. Teos. Ynnä. Muut` | `[^fff999]: Tekijä. Teos. Ynnä. Muut.` |
 
-Huomaa, että lähdeviitteet voivat olla joko viitteitä, kuten edellä olevassa kappaleessa, tai suoria lainauksia, kuten tämä: *"Lähteet numeroidaan lähdeluetteloon juoksevasti eli siinä järjestyksessä, missä ne esiintyvät tekstissä."* [^fcfce3]
+Alla luettelossa verrattuna kaksi OAT-specin suosittelemaa vaihtoehtoa: aliaksen käyttö ja MD5-tiivisteen käyttö.
 
-Jos pohdit, että miksi me poikkeamme Vancouver-speksistä näin rankasti, niin syy on selvä. Me emme tuota PDF-tiedostoa Theseukseen vaan staattisen Mkdocs-dokumentaatiosivuston. Material for MkDocs korvaa häshit numeroille meidän puolestamme ja tekee niistä tiedostonsisäiset linkit. Kokeile klikata jotakin tämän dokumentin tekstinsisäistä viitettä. Kokeile myös klikata lähdeluettelossa näkyviä viitteitä tai niiden perässä olevia nuolia.
+|                  | Alias                         | MD5-tiiviste (6 merkkiä)  |
+| ---------------- | ----------------------------- | ------------------------- |
+| Tekstin sisällä  | `[^linuxbible]`               | `[^fcfce3]`               |
+| Lähdeluettelossa | `[^linuxbible]: Lorem ipsum.` | `[^fcfce3]: Lorem ipsum.` |
+
+Huomaa, että lähdeviitteet voivat olla joko **viitteitä**, kuten edellä olevassa kappaleessa, tai **suoria lainauksia**, kuten tämä: *"Lähteet numeroidaan lähdeluetteloon juoksevasti eli siinä järjestyksessä, missä ne esiintyvät tekstissä."[^fcfce3]*  Suorat lainaukset kuuluu asettaa lainausmerkkien väliin.
+
+Jos pohdit, että miksi me poikkeamme Vancouver-speksistä näin rankasti, niin syitä on useita. 
+
+1. Me emme tuota PDF-tiedostoa Theseukseen vaan staattisen Mkdocs-dokumentaatiosivuston. 
+2. Material for MkDocs korvaa häshit numeroille meidän puolestamme ja tekee niistä tiedostonsisäiset linkit. Kokeile klikata jotakin tämän dokumentin tekstinsisäistä viitettä. Kokeile myös klikata lähdeluettelossa näkyviä viitteitä tai niiden perässä olevia nuolia.
 
 ## 4.3 Lähdeviitteet ja tieteellinen tieto
 
@@ -25,7 +35,9 @@ Tieteellisen tiedon suurin arvo ei johdu siitä, että tieto olisi totta [^40c08
 
 **Kuvio 3:** *ChatGPT vastaa väärin esimerkiksi tähän yksinkertaiseen matemaattiseen tehtävään. Se suoritti matemaattiset operaatiot sääntöjen mukaisessa järjestyksessä, mutta tyri lopulta yhteenlaskun. Oikea vastaus on 14691.*
 
-HUOM! Ethän siis käytä kielimalleja lähteinä! Se laskee arvosanaasi.
+!!! warning
+
+    Ethän siis käytä kielimalleja lähteinä! Se laskee arvosanaasi.
 
 ## 4.2 Lähdeviittausesimerkki
 
