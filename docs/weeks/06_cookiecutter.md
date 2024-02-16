@@ -1,9 +1,10 @@
 # 6: Cookiecutter-templaatin käyttö
 
-Oppimispäiväkirjaa ei tarvitse aluttaa aivan tyhjästä. Voit käyttää valmista Cookiecutter-templaattia, joka luo valmiin rakenteen oppimispäiväkirjalle.  Tarvitset siihen seuraavat ohelmat:
+Oppimispäiväkirjaa ei tarvitse aluttaa aivan tyhjästä. Voit käyttää valmista Cookiecutter-templaattia, joka luo valmiin rakenteen oppimispäiväkirjalle.  Tarvitset siihen seuraavat ohjelmat:
 
 * Git (for Windows)
 * Python
+* Docker (Desktop)
 
 ## 6.1: Video-ohje (TODO)
 
