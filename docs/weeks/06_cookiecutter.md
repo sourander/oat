@@ -93,10 +93,26 @@ which cookiecutter
 Mene projektikansioon ja aja seuraava komento:
 
 ```bash
-cookiecutter <TODO: lisää tähän url myöhemmin>
+# Koko url
+cookiecutter gh:sourander/kamk-cookiecutters
 ```
 
-Tämä komento kysyy sinulta muutamia kysymyksiä, kuten projektin nimen, tekijän nimen ja mahdollisesti muutaman muun kysymyksen. ==ÄLÄ RÄMPYTÄ ENTERIÄ.== Vastaa kysymyksiin huolella. Cookiecutter luo projektille rungon (boilerplate) näiden vastauksien perusteella. Syntyvä kansiorakenne muistuttaa alla olevaa. Tarkista yllä linkitetystä gitistä tarkka sisältö. Huomaa, että `{{cookiecutter._container}}` ja `{{cookiecutter._docker_container}}` ovat muuttujia, jotka korvataan vastauksillasi.
+Tämä komento kysyy sinulta muutamia kysymyksiä, joista ensimmäisessä sinua pyydetään valitsemaan yksi templaatti monien joukosta. Kysymys ja oikea vastaus (tässä kontekstissa) näkyvät alla:
+
+```plaintext
+Select template:
+1 - Oppimispäiväkirja (MkDocs learning diary)   <= Valitse tämä
+2 - ... (...)
+3 - ... (...)
+4 - ... (...)
+Choose from 1, 2 [1]:  <= Paina Enter
+```
+
+Oppimispäiväkirjan templaatti kysyy projektin nimen, tekijän nimen ja mahdollisesti muutaman muun kysymyksen. ==ÄLÄ RÄMPYTÄ ENTERIÄ.== Vastaa kysymyksiin huolella. Cookiecutter luo projektille rungon (boilerplate) näiden vastauksien perusteella. Syntyvä kansiorakenne muistuttaa alla olevaa. Tarkista yllä linkitetystä gitistä tarkka sisältö. Huomaa, että `{{cookiecutter._container}}` ovat muuttujia, jotka korvataan vastauksillasi.
+
+!!! tip
+
+    Lue tarkemmat ohjeet [kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) -GitHub-reposta.
 
 Myös tiedostojen sisällä on rivejä, joihin injektoidaan vastauksesi.
 
@@ -118,5 +134,5 @@ Myös tiedostojen sisällä on rivejä, joihin injektoidaan vastauksesi.
     │   │       ├── {{cookiecutter.__week_nro_plus}}_entry.md
     │   │       └── {{cookiecutter.__week_nro}}_entry.md
     │   └── mkdocs.yml
-    └── {{cookiecutter._docker_container}}
+    └── docker-compose-docs.yml
 ```
