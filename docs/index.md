@@ -1,12 +1,15 @@
+---
+hide:
+    toc: true
+---
+
 #  Johdanto
 
 ??? warning "Mikä tämä sivu on?!"
 
     Tämä on kirjoitus- ja tyyliohje oppimispäiväkirjaasi varten, ja se palvelee hyvin samaa tarkoitusta kuin opinnäytetyön mallipohja. Oppimispäiväkirjoja kirjoitetaan tyypillisesti yksi per kurssi. Tutustu materiaaliin ja aloita tämän jälkeen oman oppimispäiväkirjasi kirjoittaminen. Jos et ole varma, kysy opettajaltasi.
 
-**Name Surname**
-
-Oppimispäiväkirja alkaa tämän esimerkkisivuston tavoin Johdanto-sivulla. Kirjoita se index-tiedostoon (`/docs/index.md`). Mikäli työskentelet pienryhmässä, voit esimerkiksi esitellä lyhyesti ryhmäsi jäsenet. Voit myös kirjoittaa itsellesi talteen asioita, jotka haluat oppia kurssin aikana, tai sanallistaa aiemman kokemuksesi aihepiiristä. Tämä antaa lukijalle hieman kontekstia.
+Oppimispäiväkirja alkaa tämän esimerkkisivuston tavoin Johdanto-sivulla. Kirjoita se index-tiedostoon (`docs/index.md`) Ethän luo tuota tiedostoa turhaan itse — käytä cookiecutter-templaattia, joka esitellään tässä materiaalissa! Voit kirjoittaa Johdantoon talteen asioita, jotka haluat oppia kurssin aikana eli odotukset kurssin suhteen. Johdannossa on hyvä myös sanallistaa aiemman kokemuksesi aihepiiristä. Tämä antaa lukijalle hieman kontekstia.
 
 ## Choose your language (:flag_fi: :flag_gb: :flag_us:)
 
