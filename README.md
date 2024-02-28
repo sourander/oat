@@ -1,4 +1,4 @@
-# Oppimispäivä, Arviointityökalu ja Tilpehööri (OAT)
+# Oppimispäiväkirja, Arviointityökalu ja Tilpehööri (OAT)
 
 Tämä repositorio sisältää:
 
