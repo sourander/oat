@@ -1,5 +1,7 @@
 version: '3'
 
+name: oat
+
 services:
   site:
     container_name: oppimispaivakirja-container
