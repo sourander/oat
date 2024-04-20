@@ -14,7 +14,7 @@ Alla on hyvin tyypillinen lainaus LinkedIn:stä, joka kuvastaa sitä, kuinka sen
 > 
 > \- Franco Fernando @ LinkedIn [^71b747]
 
-## 2.1 Kirjoittamalla oppiminen
+## Kirjoittamalla oppiminen
 
 Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemalla opittava aihe, tutkimalla aihetta, kirjaamalla **hypoteesin**, todistamalla hypoteesin oikeaksi tai vääräksi, ja toistamalla kunnes kokonaisuus kestää kasassa. Tämä muistuttaa hyvin lähelle perinteistä *tieteellistä menetelmää*. Myös "tutkiva oppiminen" on tähän läheisesti liittyvä termi [^40c08c]. Tähän liitty myös läheisesti fyysikko Richard Feynmanin mukaan nimetty tekniikka, "Feynman Techinique" [^1fbb24], joskin Feynmanin lisänä on ELI5 (*"Explain Like I'm 5"*) -selitysvaihe.
 
@@ -24,7 +24,7 @@ Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemal
 
     Esimerkki: [ELI5 How is the internet maintained? Who pays for its maintenence?](https://www.reddit.com/r/explainlikeimfive/comments/1aoorgr/eli5_how_is_the_internet_maintained_who_pays_for/)
 
-## 2.2 Miksi vs. miten
+### Miksi vs. miten
 
 Ei riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja. Ei myöskään riitä, että oppimispäiväkirjasi on tutoriaalimainen lista vaiheita. On tärkeää pohtia ja selvittää, **miksi** jokin asia on kuten se on. 
 
@@ -68,7 +68,7 @@ Alla on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat 
 
 
 
-## 2.3 Oppiminen ei ole pikajuoksu
+### Oppiminen ei ole pikajuoksu
 
 Oppiminen ei tapahdu heti eikä kerrasta. Se ei ole 100 metrin pikajuoksu. Se on lähempänä maratonia kuin pikajuoksua, mutta ei ole aivan maraton myöskään [^cf45f2]. Oppiminen ei myöskään tapahdu siten, että joku muu (opettaja) kaataa sinun päähäsi tietoa. Päinvastoin, oppiminen on aktiivista toimintaa, jossa **sinä itse olet pääosassa**. Mikäli oppiminen tuntuu liian helpolta, et todennäköisesti opi mitään. Tätä voi verrata kuntosaliharjoitteluun: voit kehittyä vain, jos nostat painoja, jotka ovat riittävän lähellä omaa maksimia. Kun kehityt, maksimi nousee, ja myös haastetta pitää kasvattaa. Tämä ei ole hatusta vedettyä pohdintaa, vaan aihetta on tutkinut muiden muassa Robert A Bjork. Aihetta "desireable difficulties" kansantajuistaa esimerkiksi David Didau sekä blogissaan [^036faa] että kirjassa *What if everything you knew about education was wrong?* [^9a6809].
 

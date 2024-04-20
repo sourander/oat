@@ -6,22 +6,24 @@ Oppimispäiväkirjaa ei tarvitse aluttaa aivan tyhjästä. Voit käyttää valmi
 * Python
 * Docker (Desktop)
 
-## 6.1: Video-ohje (TODO)
+## Video-ohje
 
-Tähän tulee linkki YouTube-videoon, jossa demonstroidaan vaihe vaiheelta koko prosessi. 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=MXtB3dFRJiHQoBzj&amp;list=PL7AbISYtmmfhgUS3G77OcR1sdETJiQ6f4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. Tarkemmat ohjeet löytyvät kustakin vaiheesta löytyvistä linkeistä eli kyseisten ohjelmien omilta sivuilta.
+**Video 1**: *Soittolista [Cookiecutter ja oppimispäiväkirja](https://youtube.com/playlist?list=PL7AbISYtmmfhgUS3G77OcR1sdETJiQ6f4&si=u33F0Kglh0tqy04c) sisältää useita videoita, jotka käsittelevät templaatin käyttöönottoa.*
+
+Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. Huomaa, että opettajan kirjoittamat ohjeet vanhenevat, joten tarkista viimeisemmät ohjeet kunkin ohjelmiston omilta sivuilta. Jos esimerkiksi jokin `scoop`-komento antaa virheilmoituksen, niin se voi johtua siitä, että `scoop` on päivittynyt ja API on muuttunut. Ilmoitathan tästä opettajalle, jos huomaat jotain vanhentunutta, jotta opettaja osaa tiedottaa muutoksesta ja mahdollisesti päivittää ohjeet.
 
 
-## 6.2 Teksti-ohje
+## Teksti-ohje
 
-### 6.2.1 Asennettavat komponentit
+### Asennettavat komponentit
 
 #### Paketinhallinta
 
 === "Windows"
 
-    Asennetaan Scoop-paketinhallinta. Seuraa [Scoop-sivuston ohjeita](https://scoop.sh/).
+    Asennetaan Scoop-paketinhallinta. Seuraa [Scoop-sivuston ohjeita](https://scoop.sh/). Komento pitää ajaa PowerShellissä. Jos et osaa, katso video-ohje yltä.
 
 === "macOS"
 
@@ -40,7 +42,7 @@ Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. T
 
 === "macOS"
 
-    Suosittelen asentamaan sekä pyenv että Pythonin Homebrew-paketinhallinnan kautta. Tähän löytyy ohjeet [Python-Perusteet -kurssilta](https://sourander.github.io/python-perusteet/asennus/macOS/#asenna-pyenv)
+    Suosittelen asentamaan **pyenv**:n, jolla asennat käyttämäsi Pythonin version. Asenna pyenv Homebrew-paketinhallinnan kautta. Tähän löytyy ohjeet [Python-Perusteet -kurssilta](https://sourander.github.io/python-perusteet/asennus/macOS/#asenna-pyenv)
 
 
 #### Pipx
@@ -88,14 +90,30 @@ cookiecutter --version
 which cookiecutter
 ```
 
-### 6.2.2 Cookiecutter-templaatin käyttö
+### Cookiecutter-templaatin käyttö
 
 Mene projektikansioon ja aja seuraava komento:
 
 ```bash
-# Koko url
-cookiecutter gh:sourander/kamk-cookiecutters
+# Lyhenne gh: viittaa GitHubiin
+# Myös koko url toimii
+winpty cookiecutter gh:sourander/kamk-cookiecutters
 ```
+
+=== "Windows"
+
+    ```bash
+    # Git Bash vaatii winpty-komennon eteen
+    # Muutoin ääkköset eivät toimi
+    winpty cookiecutter gh:sourander/kamk-cookiecutters -f
+    ```
+
+=== "macOS"
+
+    ```bash
+    # Käytä templaattia
+    cookiecutter gh:sourander/kamk-cookiecutters -f
+    ```
 
 Tämä komento kysyy sinulta muutamia kysymyksiä, joista ensimmäisessä sinua pyydetään valitsemaan yksi templaatti monien joukosta. Kysymys ja oikea vastaus (tässä kontekstissa) näkyvät alla:
 
@@ -112,27 +130,4 @@ Oppimispäiväkirjan templaatti kysyy projektin nimen, tekijän nimen ja mahdoll
 
 !!! tip
 
-    Lue tarkemmat ohjeet [kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) -GitHub-reposta.
-
-Myös tiedostojen sisällä on rivejä, joihin injektoidaan vastauksesi.
-
-```
-.
-├── your.txt
-├── current.txt
-├── files.txt
-├── ...
-└── {{cookiecutter._container}}     <= new directory
-    ├── Dockerfile
-    ├── docs
-    │   ├── docs
-    │   │   ├── images
-    │   │   │   └── placeholder.svg
-    │   │   ├── index.md
-    │   │   ├── self-evaluation.md
-    │   │   └── weeks
-    │   │       ├── {{cookiecutter.__week_nro_plus}}_entry.md
-    │   │       └── {{cookiecutter.__week_nro}}_entry.md
-    │   └── mkdocs.yml
-    └── docker-compose-docs.yml
-```
+    Lue tarkemmat ohjeet [kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) -GitHub-reposta. Tutustu samalla repositorion rakenteeseen ja `cookiecutter.json`-tiedostoon. Cookiecutter on tehokas työkalu, joka auttaa sinua luomaan samankaltaisia projektirunkoja nopeasti.
