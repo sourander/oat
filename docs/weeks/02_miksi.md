@@ -16,7 +16,7 @@ Alla on hyvin tyypillinen lainaus LinkedIn:stä, joka kuvastaa sitä, kuinka sen
 
 ## Kirjoittamalla oppiminen
 
-Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemalla opittava aihe, tutkimalla aihetta, kirjaamalla **hypoteesin**, todistamalla hypoteesin oikeaksi tai vääräksi, ja toistamalla kunnes kokonaisuus kestää kasassa. Tämä muistuttaa hyvin lähelle perinteistä *tieteellistä menetelmää*. Myös "tutkiva oppiminen" on tähän läheisesti liittyvä termi [^40c08c]. Tähän liitty myös läheisesti fyysikko Richard Feynmanin mukaan nimetty tekniikka, "Feynman Techinique" [^1fbb24], joskin Feynmanin lisänä on ELI5 (*"Explain Like I'm 5"*) -selitysvaihe.
+Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemalla opittava aihe, tutkimalla aihetta, kirjaamalla **hypoteesin**, todistamalla hypoteesin oikeaksi tai vääräksi, ja toistamalla kunnes kokonaisuus kestää kasassa. Tämä muistuttaa hyvin lähelle perinteistä *tieteellistä menetelmää*. Myös "tutkiva oppiminen" on tähän läheisesti liittyvä termi [^40c08c]. Tähän liitty myös läheisesti fyysikko Richard Feynmanin mukaan nimetty tekniikka, "Feynman Techinique" [^68dfb8], joskin Feynmanin lisänä on ELI5 (*"Explain Like I'm 5"*) -selitysvaihe.
 
 !!! tip
 
