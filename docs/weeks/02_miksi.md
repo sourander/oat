@@ -1,5 +1,39 @@
 # 2: Miksi oppimispäiväkirja?
 
+## Arvostelun näkökulma
+
+Yksi vastaus otsikon kysymykseen on, että *"jotta opettajalla olisi jokin artefakti, jonka perusteella arvioida osaamistasi."* Huomaa, että oppimispäiväkirja ei ole siis pelkästään itsereflektiivistä kirjoittamista, vaan se on myös todistus sinun osaamisestasi. Ota tämä huomioon kirjoittaessasi oppimispäiväkirjaa.
+
+Arvioinnin pohjalla toimivat meta-arviointikriteerit näet klikkaamalla auki alla olevan laatikon. Itse arvointikriteerit esitellään kunkin kurssin alussa, mutta tyypillisesti ne löytyvät [Oppimispäiväkirja, Arviointityökalu ja Tilpehööri (OAT)](https://github.com/sourander/oat/) repositoriosta. Ohjeet `README.md`-tiedostossa.
+
+??? tip "Meta-arviointikriteerit"
+
+    Alla on meta-arvointikriteerit, jotka löytyvät [Pedagoginen toimintamalli 2022 - cKAMK 2.0](https://www.theseus.fi/handle/10024/508415) julkaisusta [^c3add6]. Nämä kriteerit toimivat oppimispäiväkirjan arviointikriteereiden perustana. Jos haluat nähdä muiden kuin kiitettävien arvosanojen kriteerit, lue alkuperäinen julkaisu.
+
+    **Kiitettävä (5)**
+    
+    Opiskelija osaa suhteessa osaamistavoitteisiin:
+    
+    **Tiedot**:
+    
+    * käyttää asiantuntevasti ja laaja-alaisesti ammattialansa käsitteitä sekä yhdistää niitä
+    kokonaisuuksiksi.
+    
+    **Taidot**:
+
+    * analysoida, vertailla, yhdistellä ja valita tietoa sekä esittää vaihtoehtoisia toimintatapoja
+    * analysoida, reflektoida ja arvioida kriittisesti omaa osaamistaan ja ammattialansa toimintatapoja hankkimansa tiedon avulla
+    * toimia itsenäisesti, vastuullisesti, aloitteellisesti ja joustavasti kulloisessakin oppimis- ja toimintaympäristössä
+    * valita ja arvioida kriittisesti ammattialansa tekniikoita ja malleja sekä käyttää niitä toiminnassaan.
+    
+    **Asenteet**:
+
+    * toimia asiakaslähtöisesti, tavoitteellisesti ja työelämää kehittävästi
+    * toimia ryhmän jäsenenä edistäen ja kehittäen ryhmän toimintaa
+    * soveltaa kriittisesti ammattieettisiä periaatteita toiminnassaan.
+
+## Asiantuntijaksi kehittyminen
+
 National Research Council:n komitean mukaan opetussuunnitelmat korostavat tyypillisesti enemmän muistia kuin ongelmanratkaisua [^a029a4]. Oppikirjoissa on faktoja, jotka opiskelija opettelee ulkoa ja kirjoittaa tentissä oikeisiin kohtiin. Tämä on sekä oppilaalle että opettajalle selkeä ja helppo tapa arvioida oppimista. Helppoudestaan huolimatta se ei ole ongelmaton. Kuten Bransford ja kumppanit toteavat, tenttiin pänttääminen aiheuttaa ns. kilometrin leveää ja senttimetrin syvää osaamista. Tämä tarkoittaa, että opiskelija osaa ulkoa faktoja, mutta ei osaa soveltaa niitä. Ongelma on erityisen vakava tietotekniikan alalla, jossa teknologia kehittyy nopeasti. Työntekijät odottavat työntekijöiltä ongelmanratkaisutaitoja, ei ulkoa opeteltuja faktoja [^e883b6].
 
 Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. Asiantuntijat ovat tehokkaita ongelmanratkaisijoita, tiedonhakijoita ja tiedon soveltajia. Hakkarainen ja kumppanit [^40c08c] tiivistävät, että: *"kirjoittaminen on kaikkein tärkein ajattelemaan oppimisen väline."* Oppimispäiväkirjan tavoitteena on siis auttaa sinua kehittymään asiantuntijaksi. 2000-luvun työntekijä ei voi olettaa saavansa esihenkilöltä yksiselitteisiä työtehtäviä. Olet ammattikorkeakoulussa valmistamassa itseäsi työelämään, joten työelämän tavat toimia on hyvä ottaa käyttöön jo nyt. Oppimispäiväkirja on yksi tapa harjoitella kirjoittamista ja ajattelua sekä saattaa ajattelu näkyväksi.
@@ -85,6 +119,7 @@ Aivan kuten pyöräilyä opetellessa apupyörät ovat apuväline, tai laskettelu
 
 ## Lähdeluettelo
 
+[^c3add6]: Oikarinen, A. *Arviointikriteerit osaamisen arvioinnissa*. 2022. Julkaistu teoksessa *Pedagoginen toimintamalli 2022 - cKAMK 2.0* (toim. Dahl, P., Rajander, T. & Saari, M). https://www.theseus.fi/handle/10024/508415
 [^a029a4]: Bransford, J. D., Brown, A. & Cocking, R. *Miten opimme: Aivot, mieli, kokemus ja koulu* (A. Penttilä, suom.). Helsinki: WSOY. 2004.
 [^e883b6]: Myllymäki, M., Laine, S. & Hakala, I. *ICT-alan rekrytointiselvitys Keski-Pohjanmaalla*. 2023. https://cinetcampus.fi/site/assets/files/2246/ict-rekry_raportti.pdf
 [^40c08c]: Hakkarainen, K., Lonka, K. & Lipponen, L. *Tutkiva oppiminen: Järki, tunteet ja kulttuuri oppimisen sytyttäjinä*. Helsinki: WSOY. 2004.

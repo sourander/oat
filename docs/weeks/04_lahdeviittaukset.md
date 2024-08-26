@@ -55,6 +55,9 @@ Tämä kappale hyödyntää GitLab-maustettua Markdownia [^1739a4]. Markdown on 
 [^d1a7a7]: Gruber, J. Daring Fireball: Markdown. https://daringfireball.net/projects/markdown/
 ```
 
+## Tulevaisuuden näkymät
+
+Tulet tarvitsemaan lähdeviitteitä myöhemmin opiskelussasi, viimeistään kirjoittaessasi opinnäytetyötäsi. On siis hyvä, että harjoittelet lähdeviitteiden käyttöä jo nyt. Lähdeviitteiden hallintaa voi helpottaa käyttämällä jotakin viitteidenhallintajärjestelmää, kuten [Zoteroa](https://www.zotero.org/) tai [Mendeley Cite](https://www.mendeley.com/reference-management/mendeley-cite). Näihin kannattaa tutustua jo hyvissä ajoin ennen opinnäytetyön kirjoittamista. Voit kokeilla niitä jo nyt, jos haluat, mutta valitettavasti niitä ei ole integroitu tähän oppimispäiväkirjaan - eli ne eivät osaa OAT-speciä.
 
 ## Lähdeluettelo
 
