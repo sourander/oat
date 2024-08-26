@@ -4,7 +4,7 @@ Tämä repositorio sisältää:
 
 * oppimispäiväkirjan arviontityökalun ("The A in OAT")
     * HTML+JavaScript -sovellus
-    * Aja dockerilla (`docker compose up --build`)
+    * Aja dockerilla (`docker compose up -d`)
 * oppimispäiväkirjan kirjoitusohjeen ("The Big-O")
     * Material for Mkdocs
     * Aja lokaalisti (`poetry run mkdocs serve`)

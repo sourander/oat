@@ -14,7 +14,7 @@ Huomaathan, että oppimispäiväkirjan tekstissä saa kuulua sinun oma äänesi.
 
 !!! tip
 
-    Kannattaa tutustua muiden oppilaiden kirjoittamiin opinnäytetöihin. Millainen niiden rakenne on? Millaista on kieli? Tunnistatko mielestäsi hyvän opinnäytetyön huonosta. Miten?
+    Kannattaa tutustua muiden opiskelijoiden kirjoittamiin opinnäytetöihin. Millainen niiden rakenne on? Millaista on kieli? Tunnistatko mielestäsi hyvän opinnäytetyön huonosta. Miten?
 
 !!! tip
 
