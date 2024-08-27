@@ -29,6 +29,14 @@ Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. H
 
     Asenna Homebrew-paketinhallinta jos sinulla ei jo ole. Seuraa [Homebrew-sivuston ohjeita](https://brew.sh/).
 
+=== "Ubuntu"
+
+    Debian-pohjaisissa jakeluissa on apt-paketinhallinta valmiina. Aja kuitenkin seuraavat komennot päivittääksesi paketinhallinnan:
+
+    ```bash
+    sudo apt update && sudo apt upgrade -y
+    ```
+
 
 #### Python
 
@@ -43,6 +51,22 @@ Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. H
 === "macOS"
 
     Suosittelen asentamaan **pyenv**:n, jolla asennat käyttämäsi Pythonin version. Asenna pyenv Homebrew-paketinhallinnan kautta. Tähän löytyy ohjeet [Python-Perusteet -kurssilta](https://sourander.github.io/python-perusteet/asennus/macOS/#asenna-pyenv)
+
+=== "Ubuntu"
+
+    Suosittelen asentamaan **pyenv**:n, jolla asennat käyttämäsi Pythonin version. Asenna pyenv apt-paketinhallinnan kautta. Tarkista päivitetyt ohjeet pyenv:n dokumentaatiosta. Alla komennot, jotka toimivat ainakin 2024:
+
+    ```bash
+    # Install suggested build environment
+    sudo apt install build-essential libssl-dev \
+        zlib1g-dev libbz2-dev libreadline-dev \
+        libsqlite3-dev curl git libncursesw5-dev \
+        xz-utils tk-dev libxml2-dev libxmlsec1-dev \
+        libffi-dev liblzma-dev
+
+    # Run installation script
+    curl https://pyenv.run | bash
+    ```
 
 
 #### Pipx
@@ -71,6 +95,18 @@ Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. H
     pipx ensurepath
     ```
 
+=== "Ubuntu"
+
+    Asenna pipx apt:lla:
+
+    ```bash
+    # Install pipx
+    sudo apt install pipx
+
+    # Add to path
+    pipx ensurepath
+    ```
+
 !!! info
 
     Kun olet lisännyt `pipx`:n binäärit PATH:iin, käynnistyä terminaali uudelleen. Turvallisinta on käynnistää koko kone, jos et ole varma, mikä PATH on ja missä välissä se ladataan.
@@ -92,13 +128,7 @@ which cookiecutter
 
 ### Cookiecutter-templaatin käyttö
 
-Mene projektikansioon ja aja seuraava komento:
-
-```bash
-# Lyhenne gh: viittaa GitHubiin
-# Myös koko url toimii
-winpty cookiecutter gh:sourander/kamk-cookiecutters
-```
+Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun olet projektikansiossa, johon oppimispäiväkirjan haluat alustaa, aja seuraava komento:
 
 === "Windows"
 
@@ -111,7 +141,6 @@ winpty cookiecutter gh:sourander/kamk-cookiecutters
 === "macOS"
 
     ```bash
-    # Käytä templaattia
     cookiecutter gh:sourander/kamk-cookiecutters -f
     ```
 
