@@ -36,6 +36,13 @@ h2 {
     padding-right: 30px;
 }
 
+.guideText {
+    font-size: 10pt;
+    color: #666;
+    margin: 0 auto;
+    width: 90%;
+}
+
 
 .question, .questionRow {
     display: block;

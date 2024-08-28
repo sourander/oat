@@ -10,6 +10,7 @@ function printAnswers(questions) {
     // Containers for the totals
     let totalWeightedGrades = 0;
     let totalWeight = 0;
+    let zeroGradeCount = 0; // Counter for partial grades that are 0
 
     // Continue with the rest of the function logic
     for (const [i, name] of names.entries()) {
@@ -22,10 +23,20 @@ function printAnswers(questions) {
         // Add the weighted value and weight to the totals
         totalWeightedGrades += grade * weight;
         totalWeight += weight;
+
+        // Increment the counter if the grade is 0
+        if (grade === 0) {
+            zeroGradeCount++;
+        }
     }
 
     // Calculate the weighted average
-    const weightedAverage = totalWeightedGrades / totalWeight;
+    let weightedAverage = totalWeightedGrades / totalWeight;
+
+    // Set the weighted average to 0 if two or more partial grades are 0
+    if (zeroGradeCount >= 2) {
+        weightedAverage = 0;
+    }
 
     createAverageParagraph(weightedAverage, null, 'Weighted Average: ', '(0-5)');
     createAverageParagraph(weightedAverage, normalizeScore, 'Normalized Average: ', '(40-100)');
