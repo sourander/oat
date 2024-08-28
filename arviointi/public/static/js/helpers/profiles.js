@@ -2,11 +2,13 @@ import { printQuestions } from './query.js';
 import { printAnswers } from './result.js';
 
 import { oppimispaivakirjaConfig } from '../config/oppimispaivakirja.js';
+import { videoesitysConfig } from '../config/videoesitys.js';
 // import { uusiConfig } from '../config/something.js';
 
 // Module global variable
 let availableProfiles = [ 
     {name: "Oppimispäiväkirja", config: oppimispaivakirjaConfig},
+    {name: "Videoesitys", config: videoesitysConfig},
     // {name: "Something New", config: uusiConfig},
 ];
 
