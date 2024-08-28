@@ -8,6 +8,14 @@ Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä
 
     Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on suositeltavaa. Käytä niitä kuitenkin harkiten. Käytä esimerkiksi kuvia silloin, kun teksti tarvitsee visuaalista tukea. Kuvien tulee tuoda jotakin lisäarvoa. Valtaosan päiväkirjamerkinnästä tulisi koostua kokonaisista lauseista, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei siis voi olla pelkkä kuvagalleria tai luettelo asioita.
 
+!!! tip
+
+    Voit laskea sanojen määrän siten, että koodiblokit jäävät laskematta, käyttämällä alla olevaa komentoa. Komento olettaa, että koodilohkot alkavat ja loppuvat kolmella backtickillä ja ovat rivin alussa: eivät sisennettyjä.
+
+    ```bash title="Bash tai Git Bash"
+    sed '/^```/,/^```/d' path/to/file.md | wc -w
+    ```
+
 ## Usean tason otsikot
 
 Otsikko tehdään Markdown:ssa aloittamalla rivi yhdellä tai useammalla `#`-merkillä. Päätason otsikossa on yksi `#`-merkki, tason 2 otsikossa on `##`, ja niin edelleen. Tämä oat-ohje on kirjoitettu oletuksella, että työ on aloitetettu viikolla 1 - siksi tämä luku (Oppimispäiväkirjan rakenne) on nimenomaan luku 1. Aloita oma päiväkirjasi siitä viikosta, jolta kurssi alkaa. Myöhemmin esiteltävä ==Cookiecutter-työkalu tekee tämän automaattisesti== siten, että ensimmäinen tiedosto saa numeronsa automaattisesti siitä ajanhetkestä, milloin projektin aloitat.
