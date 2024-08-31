@@ -2,11 +2,14 @@
 
 ## Mikä on merkintä?
 
-Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä==, mitä luet nyt, on kuvitellusti viikon 1 merkintä eli kirjoitettu esimerkiksi 2. tammikuuta 2024. Jos kurssi alkaa elokuussa, viikko voi olla esimerkiksi 31. Noudata kalenteriviikkoja. Tiedostona viikkomerkintä löytyy lokaatiosta `docs/weeks/01_rakenne.md`. Kukin viikkotason merkintä on laajuudeltaan noin **1 liuskan eli 500 sanaa**. Voit ylittää tuon rajan, mutta älä kirjoita yli kahta liuskaa eli noin 1000 sanaa tekstiä. Mikäli tekstiä meinaa syntyä liikaa, tiivistä ja keskity olennaiseen. Kuka tahansa osaa kirjoittaa pitkästi; tiivisti kirjoittaminen vaatii harjoitusta.
+Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä==, mitä luet nyt, on kuvitellusti viikon 1 merkintä eli kirjoitettu esimerkiksi 2. tammikuuta 2024. Jos kurssi alkaa elokuussa, viikko voi olla esimerkiksi 31. Noudata kalenteriviikkoja. Tiedostona viikkomerkintä löytyy lokaatiosta `docs/weeks/01_rakenne.md`. 
 
-!!! tip
 
-    Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on suositeltavaa. Käytä niitä kuitenkin harkiten. Käytä esimerkiksi kuvia silloin, kun teksti tarvitsee visuaalista tukea. Kuvien tulee tuoda jotakin lisäarvoa. Valtaosan päiväkirjamerkinnästä tulisi koostua kokonaisista lauseista, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei siis voi olla pelkkä kuvagalleria tai luettelo asioita.
+### Merkinnän laajuus
+
+Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtävänannossa määritellä muuta. Kukin viikkotason merkintä on laajuudeltaan noin **1 liuskan eli 500 sanaa**. Voit ylittää tuon rajan, mutta älä kirjoita yli kahta liuskaa eli noin 1000 sanaa tekstiä. Mikäli tekstiä meinaa syntyä liikaa, tiivistä ja keskity olennaiseen. Kuka tahansa osaa kirjoittaa pitkästi; tiivisti kirjoittaminen vaatii harjoitusta.
+
+500 sanaa on melko suppea määrä sanoja prosessien kuvaamiseen. Jos koet kattavan oppimispäiväkirjan kirjoittamisen tärkeäksi, harkitse sitä, että kirjoitat koko oppimispäiväkirjan muualle, ja kirjoitat opettajalle palautettavaan oppimispäiväkirjaan tiiviimmän tekstin.
 
 !!! tip
 
@@ -16,17 +19,24 @@ Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä
     sed '/^```/,/^```/d' path/to/file.md | wc -w
     ```
 
-## Usean tason otsikot
+### Kuvien käyttö
 
-Otsikko tehdään Markdown:ssa aloittamalla rivi yhdellä tai useammalla `#`-merkillä. Päätason otsikossa on yksi `#`-merkki, tason 2 otsikossa on `##`, ja niin edelleen. Tämä oat-ohje on kirjoitettu oletuksella, että työ on aloitetettu viikolla 1 - siksi tämä luku (Oppimispäiväkirjan rakenne) on nimenomaan luku 1. Aloita oma päiväkirjasi siitä viikosta, jolta kurssi alkaa. Myöhemmin esiteltävä ==Cookiecutter-työkalu tekee tämän automaattisesti== siten, että ensimmäinen tiedosto saa numeronsa automaattisesti siitä ajanhetkestä, milloin projektin aloitat.
+Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on suositeltavaa. Käytä niitä kuitenkin harkiten. Käytä esimerkiksi kuvia silloin, kun teksti tarvitsee visuaalista tukea. Kuvien tulee tuoda jotakin lisäarvoa. Valtaosan päiväkirjamerkinnästä tulisi koostua kokonaisista lauseista, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei siis voi olla pelkkä kuvagalleria tai luettelo asioita.
+
+
+## Otsikot
+
+Otsikko tehdään Markdown:ssa aloittamalla rivi yhdellä tai useammalla `#`-merkillä. Päätason otsikossa on yksi `#`-merkki, tason 2 otsikossa on `##`, ja niin edelleen.
 
 !!! warning
 
-    Vakiona Material for MkDocs ottaa tiedoston nimen ja muovaa siitä otsikon. Tämän ==tämä== dokumentti, eli `01_rakenne.md`, ei sisältäisi käsin muokattua otsikkoa (`# 1: Oppimispäiväkirjan rakenne`), sen otsikko olisi rumasti `01 rakenne`.
+    Vakiona Material for MkDocs ottaa tiedoston nimen ja muovaa siitä otsikon. Jos ==tämä== dokumentti, eli `weeks/01_rakenne.md`, ei sisältäisi käsin muokattua otsikkoa (`# 1: Oppimispäiväkirjan rakenne`), sen otsikko olisi rumasti `01 rakenne`.
 
-    Kirjoita siis myös kattotason otsikko kullekin päiväkirjamerkinnälle! Sen tulee alkaa viikkonumerolla ja kaksoispisteellä.
+    Kirjoita siis myös kattotason otsikko kullekin päiväkirjamerkinnälle!
 
 Alla vielä selvyyden vuoksi raakaa Markdown-syntaksi sisältävä koodilohko, jossa on leikisti jouluviikolla kirjoitettu merkintä. Muita otsikoita ei ole pakko numeroida.
+
+### Markdown-esimerkki
 
 ```markdown title="52_something.md"
 # 52: Jouluviikko
@@ -55,23 +65,9 @@ Huomaa, että yksi rivivaihto ei riitä luomaan uutta kappaleenalkua.
 [Tähän sisältöä Matin lahjoista]
 ```
 
-Material for MkDocs -sivuston `Table of Contents` -osio, joka näkyy ruudun oikeassa laidassa, on hyvä apuväline otsikoiden hierarkisuuden tarkkailuun. Katso reilusti otsikoida sisältävästä [06_cookiecutter.md](06_cookiecutter.md) -tiedostosta esimerkkiä hierarkisesta otsikoinnista. Alla on esimerkki mermaid-graafista, joka kuvaa sisäkkäisiä otsikoita. Voit käyttää omassa oppimispäiväkirjassasi mermaidia, jos se on asetettu aktiiviseksi. Tämä selviää `mkdocs.yml` -tiedostosta. Mikäli tarvitset tähän ohjeita, luota Material for MkDocs:n dokumentaatioon [^115dd4].
+### Table of Contents
 
-```mermaid
-graph LR
-    A[52: Jouluviikko]
-    A --> B
-    A --> C
-
-
-    B[Jouluruoat]
-
-    C[Joululahjat]
-    C --> C1[Liisan lahjat]
-    C --> C2[Matin lahjat]
-```
-
-**Kuvio 1:** *Esimerkki sisäkkäisistä otsikoista. Ethän käydä tason n otsikkoa, jos se on ainut laatuaan. Kuvioille, kuville, kuvaajille tai muille visuaalisille elementeille on hyvä antaa kuvateksti. Rivi, jota luet juuri nyt, toimii esimerkkinä sellaisesta.*
+Material for MkDocs -sivuston `Table of Contents` -osio, joka näkyy ruudun oikeassa laidassa, on hyvä apuväline otsikoiden hierarkisuuden tarkkailuun. Katso reilusti otsikoida sisältävästä [06_cookiecutter.md](06_cookiecutter.md) -tiedostosta esimerkkiä hierarkisesta otsikoinnista.
 
 Viikosta riippumattomia päiväkirjamerkintöjä ei tarvitse numeroita. Näitä ovat esimerkiksi `Itsearviointi` ja `Johdanto`.
 

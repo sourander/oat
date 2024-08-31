@@ -11,11 +11,15 @@ hide:
 
     Tämän sivun takana olevat Markdown-tiedostot löydät [gf:sourander/oat repon docs-hakemistosta](https://github.com/sourander/oat/tree/master/docs).
 
-Oppimispäiväkirja alkaa tämän esimerkkisivuston tavoin Johdanto-sivulla. Kirjoita se index-tiedostoon (`docs/index.md`) Ethän luo tuota tiedostoa turhaan itse — käytä cookiecutter-templaattia, joka esitellään tässä materiaalissa! Voit kirjoittaa Johdantoon talteen asioita, jotka haluat oppia kurssin aikana eli odotukset kurssin suhteen. Johdannossa on hyvä myös sanallistaa aiemman kokemuksesi aihepiiristä. Tämä antaa lukijalle hieman kontekstia.
+Oppimispäiväkirja alkaa tämän esimerkkisivuston tavoin Johdanto-sivulla. Kirjoita se index-tiedostoon (`docs/index.md`) Ethän luo tuota tiedostoa turhaan itse — käytä cookiecutter-templaattia, joka esitellään tässä materiaalissa! 
 
-!!! tip "Arviointityökalu"
+Voit kirjoittaa Johdantoon talteen asioita, jotka haluat oppia kurssin aikana eli odotukset kurssin suhteen. Johdannossa on hyvä myös sanallistaa aiemman kokemuksesi aihepiiristä. Tämä antaa lukijalle hieman kontekstia
 
-    Oppimispäiväkirjaan liittyy myös arviointityökalu, joka on toteutettu HTML+JavaScript -sovelluksena. Se on samassa repositoriossa kuin tämä Github Pages, eli [gh:sourander/oat](https://github.com/sourander/oat/). Voit ajaa arviointityökalun dockerilla. Seuraa repositorion `README.md`-tiedoston ohjeita.
+Johdanto on oppimispäiväkirjasi lukuohje. Johdannossa voi kuvata myös muodollisia seikkoja oppimispäiväkirjastasi, kuten lukijaa auttava kuvaus sivuston rakenteesta: *"Olen tehnyt itselleni aihepiiristöstä sanaston, johon kirjaan kaikki kurssilla oppimani uudet termit ja niiden selitykset. Se löytyy vasemmalta navigoinnista Sanasto-otsikon alta."* Näin lukija, eli opettaja, osaa reagoida templaattiin kuulumattomiin alasivuihin. Sinun omat, kurssin viralliseen palautukseen kuulumattomat muistiinpanosi eivät vaikuta negatiivisesti arvosanaan, vaikka niiden laajuus olisi kymmeniä tuhansia sanoja - kunhan opettaja tunnistaa viikkomerkinnän ja sinun omaan käyttöön tarkoitettujen sivujen eron.
+
+## Arviointi
+
+Oppimispäiväkirjaan liittyy myös arviointityökalu, joka on toteutettu HTML+JavaScript -sovelluksena. Se on samassa repositoriossa kuin tämä Github Pages, eli [gh:sourander/oat](https://github.com/sourander/oat/). Voit ajaa arviointityökalun dockerilla. Seuraa repositorion `README.md`-tiedoston ohjeita.
 
 ## Choose your language (:flag_fi: :flag_gb: :flag_us:)
 

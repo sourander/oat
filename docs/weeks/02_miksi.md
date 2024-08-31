@@ -32,7 +32,7 @@ Arvioinnin pohjalla toimivat meta-arviointikriteerit näet klikkaamalla auki all
     * toimia ryhmän jäsenenä edistäen ja kehittäen ryhmän toimintaa
     * soveltaa kriittisesti ammattieettisiä periaatteita toiminnassaan.
 
-## Asiantuntijaksi kehittyminen
+## Oppimisen näkökulma
 
 National Research Council:n komitean mukaan opetussuunnitelmat korostavat tyypillisesti enemmän muistia kuin ongelmanratkaisua [^a029a4]. Oppikirjoissa on faktoja, jotka opiskelija opettelee ulkoa ja kirjoittaa tentissä oikeisiin kohtiin. Tämä on sekä opiskelijalle että opettajalle selkeä ja helppo tapa arvioida oppimista. Helppoudestaan huolimatta se ei ole ongelmaton. Kuten Bransford ja kumppanit toteavat, tenttiin pänttääminen aiheuttaa ns. kilometrin leveää ja senttimetrin syvää osaamista. Tämä tarkoittaa, että opiskelija osaa ulkoa faktoja, mutta ei osaa soveltaa niitä. Ongelma on erityisen vakava tietotekniikan alalla, jossa teknologia kehittyy nopeasti. Työntekijät odottavat työntekijöiltä ongelmanratkaisutaitoja, ei ulkoa opeteltuja faktoja [^e883b6].
 
@@ -44,7 +44,7 @@ Alla on hyvin tyypillinen lainaus LinkedIn:stä, joka kuvastaa sitä, kuinka sen
 
 ## Kirjoittamalla oppiminen
 
-Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemalla opittava aihe, tutkimalla aihetta, kirjaamalla **hypoteesin**, todistamalla hypoteesin oikeaksi tai vääräksi, ja toistamalla kunnes kokonaisuus kestää kasassa. Tämä muistuttaa hyvin lähelle perinteistä *tieteellistä menetelmää*. Myös "tutkiva oppiminen" on tähän läheisesti liittyvä termi [^40c08c]. Tähän liitty myös läheisesti fyysikko Richard Feynmanin mukaan nimetty tekniikka, "Feynman Techinique" [^68dfb8], joskin Feynmanin lisänä on ELI5 (*"Explain Like I'm 5"*) -selitysvaihe.
+Kirjoittamalla oppimista voi harjoittaa kuten Karnofsky [^7ef5f9] eli valitsemalla opittava aihe, tutkimalla aihetta, kirjaamalla **hypoteesin**, todistamalla hypoteesin oikeaksi tai vääräksi, ja toistamalla kunnes kokonaisuus kestää kasassa. Tämä muistuttaa hyvin lähelle perinteistä *tieteellistä menetelmää*. Myös *tutkiva oppiminen* on tähän läheisesti liittyvä termi [^40c08c]. Tähän liitty myös läheisesti fyysikko Richard Feynmanin mukaan nimetty tekniikka, "Feynman Techinique" [^68dfb8]. Feynmanin tekniikasta useimmilla tuttua lienee lyhenne tai käsite ELI5 (*"Explain Like I'm 5"*).
 
 !!! tip
 
@@ -105,9 +105,9 @@ Alla on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat 
 
 ### Oppiminen ei ole pikajuoksu
 
-Oppiminen ei tapahdu heti eikä kerrasta. Se ei ole 100 metrin pikajuoksu. Se on lähempänä maratonia kuin pikajuoksua, mutta ei ole aivan maraton myöskään [^cf45f2]. Oppiminen ei myöskään tapahdu siten, että joku muu (opettaja) kaataa sinun päähäsi tietoa. Päinvastoin, oppiminen on aktiivista toimintaa, jossa **sinä itse olet pääosassa**. Mikäli oppiminen tuntuu liian helpolta, et todennäköisesti opi mitään. Tätä voi verrata kuntosaliharjoitteluun: voit kehittyä vain, jos nostat painoja, jotka ovat riittävän lähellä omaa maksimia. Kun kehityt, maksimi nousee, ja myös haastetta pitää kasvattaa. Tämä ei ole hatusta vedettyä pohdintaa, vaan aihetta on tutkinut muiden muassa Robert A Bjork. Aihetta "desireable difficulties" kansantajuistaa esimerkiksi David Didau sekä blogissaan [^036faa] että kirjassa *What if everything you knew about education was wrong?* [^9a6809].
+Oppiminen ei tapahdu heti eikä kerrasta. Se ei ole 100 metrin pikajuoksu. Se on lähempänä maratonia kuin pikajuoksua, mutta ei ole aivan maraton myöskään [^cf45f2]. Oppiminen ei myöskään tapahdu siten, että joku muu (opettaja) kaataa sinun päähäsi tietoa. Päinvastoin, oppiminen on aktiivista toimintaa, jossa **sinä itse olet pääosassa**. Mikäli oppiminen tuntuu liian helpolta, et todennäköisesti opi mitään. Tätä voi verrata kuntosaliharjoitteluun: voit kehittyä vain, jos nostat painoja, jotka ovat riittävän lähellä omaa maksimia. Kun kehityt, maksimi nousee, ja myös haastetta pitää kasvattaa. Tämä ei ole hatusta vedettyä pohdintaa, vaan aihetta on tutkinut muiden muassa Robert A Bjork. Hänen käsitettä *desireable difficulties* kansantajuistaa esimerkiksi David Didau sekä blogissaan [^036faa] että kirjassaan *What if everything you knew about education was wrong?* [^9a6809].
 
-Aivan kuten pyöräilyä opetellessa apupyörät ovat apuväline, tai laskettelua opetellessa auraus on tärkeä vaihe, niin myös tietojenkäsittelyyn liittyviä taitoja opetellessa apukeinot ovat hyödyllisiä - mutta niistä kannattaa luopua heti kun pystyy. ChatGPT on yhdenlainen apupyörä, joka voi auttaa, mutta älä nojaudu siihen liikaa. Tee virheitä, lue dokumentaatiota, kysyä neuvoa, opi virheitä.
+Aivan kuten pyöräilyä opetellessa apupyörät ovat apuväline, tai laskettelua opetellessa auraus on tärkeä vaihe, niin myös tietojenkäsittelyyn liittyviä taitoja opetellessa apukeinot ovat hyödyllisiä - mutta niistä kannattaa luopua heti kun pystyy. ChatGPT on yhdenlainen apupyörä, joka voi auttaa, mutta älä nojaudu siihen liikaa. Tee virheitä, lue dokumentaatiota, kysyä neuvoa, opi virheistä.
 
 * Tarvitset toistoja
 * Tarvitset realistisia pieniä tavoitteita (vtr. "oma maksimi")
@@ -116,7 +116,7 @@ Aivan kuten pyöräilyä opetellessa apupyörät ovat apuväline, tai laskettelu
 
 !!! tip
 
-    Tämä sama oppimispäiväkirjan ohje on voimassa kaikkien opiskeluvuosien ajan, mutta arvosteluasteikkoa tulkitessa otetaan huomioon se, että opit asioita matkan varrella. Tämä tarkoittaa, että ensimmäisen opiskeluvuoden oppimispäiväkirjat eivät ole samalla tasolla  kuin viimeisen vuodet oppimispäiväkirjat. Tämä on hyväksyttävää. Tämä on jopa toivottavaa. Tämä tarkoittaa, että olet oppinut jotakin.
+    Tämä sama oppimispäiväkirjan ohje on voimassa kaikkien opiskeluvuosien ajan, mutta arvosteluasteikkoa tulkitessa otetaan huomioon se, että opit asioita matkan varrella. Tämä tarkoittaa, että ensimmäisen opiskeluvuoden oppimispäiväkirjat eivät ole samalla tasolla  kuin viimeisen vuodet oppimispäiväkirjat.
 
 ## Lähdeluettelo
 
