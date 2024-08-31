@@ -60,6 +60,10 @@ plugins:
   - awesome-pages
   - search
 
+# Fancies block quotations
+extra_css:
+  - stylesheets/extra.css
+
 # TODO: Replace the copyright with correct. Also add LICENCE file. Template included.
 copyright: |
   Copyright &copy; 2023 <a href="https://www.example.com">Kajaanin Ammattikorkeakoulu Oy</a>. 

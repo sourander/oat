@@ -40,13 +40,7 @@ Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. A
 
 Alla on hyvin tyypillinen lainaus LinkedIn:stä, joka kuvastaa sitä, kuinka senior-tason ohjelmistonkehittäjät aiheen näkevät. Kannattaa lukaista myös postauksen kommentit:
 
-> "Software engineering is more about what you can figure out than what you know.
->
-> You don't have to remember everything.
->
-> But you have to learn how to find the correct answers."
-> 
-> \- Franco Fernando @ LinkedIn [^71b747]
+> "Software engineering is more about what you can figure out than what you know. You don't have to remember everything. But you have to learn how to find the correct answers." ==Franco Fernando @ LinkedIn [^71b747]==
 
 ## Kirjoittamalla oppiminen
 
@@ -84,21 +78,28 @@ Ei riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja. Ei m
 
 Oppimispäiväkirja on askel sitä kohti, että otat omasta oppimisestasi vastuuta. Sinä olet se, joka opiskelee ja oppii. Opettaja on valmentaja ja apu. Oppimispäiväkirja on se artefakti, jolla teet oppimisprosessistasi näkyvän, jotta opettajalla on jokin mahdollisuus antaa sinulle tekemistäsi vastaava arvosana. Se on siis kaksisuuntainen väline, joka palvelee sekä sinua että opettajaa.
 
+### Lainauksia Redditistä
+
 Alla on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat jakavat toisilleen "alan salaisuuksia" [^057387]. Keskustelun kommenteissa on toistuvana teemana, että koodin kirjoittaminen on vain osa ohjelmistokehittäjän työtä. Tärkeämpää on osata ratkaista liiketoiminnan ongelmia, osata kommunikoida ja osata esitellä omaa työtä. Muun muassa näitä taitoja kehittää oppimispäiväkirjan kirjoittaminen.
 
-> A good dashboard/report is more likely to get you promoted than any code you write. <br> - merry_go_byebye
->
-> The code itself is barely one of the top three most important parts of your job. <br> - herbal_broccoli
->
-> Your prowess in live demos can greatly set you apart from your peers. <br> - nox010
->
-> The best software developers write less code, not more. Code is a liability, not an asset. <br> - Tony_OpDev
->
-> How to f\*\*\*\*\*n google. Most of what we're doing was already done by someone else. If you can find the answer, that's fine. Who cares. <br> - cherrypick84
->
-> Your job isn’t to write code, your job is to solve business problems. <br> - oceandocent
->
-> You do not write programs for computers. You write them for people. <br> - pemungkah
+> A good dashboard/report is more likely to get you promoted than any code you write. ==merry_go_byebye==
+
+> The code itself is barely one of the top three most important parts of your job. ==herbal_broccoli==
+
+
+> Your prowess in live demos can greatly set you apart from your peers. ==nox010==
+
+
+> The best software developers write less code, not more. Code is a liability, not an asset. ==Tony_OpDev==
+
+
+> How to f\*\*\*\*\*n google. Most of what we're doing was already done by someone else. If you can find the answer, that's fine. Who cares. ==cherrypick84==
+
+
+> Your job isn’t to write code, your job is to solve business problems. ==oceandocent==
+
+
+> You do not write programs for computers. You write them for people. ==pemungkah==
 
 
 
