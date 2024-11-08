@@ -20,6 +20,10 @@ Alla luettelossa verrattuna kaksi OAT-specin suosittelemaa vaihtoehtoa: aliaksen
 
 Huomaa, että lähdeviitteet voivat olla joko **viitteitä**, kuten edellä olevassa kappaleessa, tai **suoria lainauksia**, kuten tämä: *"Lähteet numeroidaan lähdeluetteloon juoksevasti eli siinä järjestyksessä, missä ne esiintyvät tekstissä."[^fcfce3]*  Suorat lainaukset kuuluu asettaa lainausmerkkien väliin.
 
+![Oatspec used in VSCode](../images/oatspec_in_use.png)
+
+**Kuvio 1:** *OAT-specin mukainen lähdeviite näyttää käytännössä VS Codessa tältä. Material for MkDocs renderöi näistä tunnisteista myöhemmin numeroita, kuten `1` ja `2`*
+
 Jos pohdit, että miksi me poikkeamme Vancouver-speksistä näin rankasti, niin syitä on useita. 
 
 1. Me emme tuota PDF-tiedostoa Theseukseen vaan staattisen Mkdocs-dokumentaatiosivuston. 
@@ -38,22 +42,6 @@ Tieteellisen tiedon suurin arvo ei johdu siitä, että tieto olisi totta [^40c08
 !!! warning
 
     Ethän siis käytä kielimalleja lähteinä! Se laskee arvosanaasi.
-
-### Esimerkki
-
-Alla koodilohkossa on esimerkki lähdeviitteestä. Käytä tätä ohjetta apuna, kun kirjoitat omia lähdeviitteitäsi.
-
-```md title="esimerkki.md"
-# Tämä osuus on jossain runkotekstissä
-
-Tämä kappale hyödyntää GitLab-maustettua Markdownia [^1739a4]. Markdown on sekä kehittäjäystävällinen merkintäkieli tai syntaksi että ohjelmisto, joka kääntää tätä kieltä HTML:ksi [^d1a7a7]. 
-
-# Lähdeluettelo
-
-[^1739a4]: GitLab Docs. GitLab Flavored Markdown (GLFM). https://docs.gitlab.com/ee/user/markdown.html
-
-[^d1a7a7]: Gruber, J. Daring Fireball: Markdown. https://daringfireball.net/projects/markdown/
-```
 
 ## Tulevaisuuden näkymät
 
