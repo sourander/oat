@@ -1,4 +1,4 @@
-# 5: Vinkkejä kirjoittamiseen
+# 6: Vinkkejä kirjoittamiseen
 
 ## Motivaatio
 

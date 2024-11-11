@@ -1,4 +1,4 @@
-# 2: Miksi oppimispäiväkirja?
+# 3: Miksi oppimispäiväkirja?
 
 ## Arvostelun näkökulma
 
@@ -86,18 +86,11 @@ Alla on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat 
 
 > The code itself is barely one of the top three most important parts of your job. ==herbal_broccoli==
 
-
 > Your prowess in live demos can greatly set you apart from your peers. ==nox010==
-
 
 > The best software developers write less code, not more. Code is a liability, not an asset. ==Tony_OpDev==
 
-
-> How to f\*\*\*\*\*n google. Most of what we're doing was already done by someone else. If you can find the answer, that's fine. Who cares. ==cherrypick84==
-
-
 > Your job isn’t to write code, your job is to solve business problems. ==oceandocent==
-
 
 > You do not write programs for computers. You write them for people. ==pemungkah==
 
