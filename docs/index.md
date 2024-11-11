@@ -32,12 +32,13 @@ Johdanto (eli index-sivu) on mainio paikka myös TODO-listalle. Voit toki käytt
 - [x] Navigoi Oppimispäiväkirja 101 -sivustolle
 - [x] Lue index-sivu
 - [ ] Lue viikkojen 1..n materiaalit:
-    - [ ] 01: Rakenne
-    - [ ] 02: Miksi
-    - [ ] 03: Tyyli
-    - [ ] 04: Lähdeviittaukset
-    - [ ] 05: Viimeistely
-    - [ ] 06: Cookiecutter
+    - [ ] 01: Oppimispäiväkirjan rakenne
+    - [ ] 02: Markdown
+    - [ ] 03: Miksi oppimispäiväkirja?
+    - [ ] 04: Akateeminen tyyli
+    - [ ] 05: Lähdeviittausjärjestelmän käyttö
+    - [ ] 06: Vinkkejä kirjoittamiseen
+    - [ ] 07: Cookiecutter-templaatin käyttö
 - [ ] Lue itsearviointi-sivu.
 - [ ] Luo oma oppimispäiväkirja -sivusto Cookiecutterilla
 - [ ] Kirjoita Cookiecutterin runkotekstiin ensimmäinen viikkokirjoitus
