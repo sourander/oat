@@ -4,6 +4,7 @@ import { printAnswers } from "./result.js";
 import { oppimispaivakirjaConfig as oldOatConf } from "../config/oppimispaivakirja_2024.js";
 import { oppimispaivakirjaConfig } from "../config/oppimispaivakirja_2025.js";
 import { videoesitysConfig } from "../config/videoesitys.js";
+import { itsearviointiConfig } from "../config/itsearviointi.js";
 // import { uusiConfig } from '../config/something.js';
 
 // Module global variable
@@ -11,6 +12,7 @@ let availableProfiles = [
   { name: "Oppimispäiväkirja 2024 (ARCHIVE)", config: oldOatConf },
   { name: "Oppimispäiväkirja 2025 (WIP)", config: oppimispaivakirjaConfig },
   { name: "Videoesitys", config: videoesitysConfig },
+  { name: "Itsearviointi", config: itsearviointiConfig },
   // {name: "Something New", config: uusiConfig},
 ];
 

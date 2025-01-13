@@ -1,0 +1,26 @@
+name: Dokku Arviointi app Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'arviointi-prd.Dockerfile'
+      - 'arviointi/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Cloning repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Push to dokku
+        uses: dokku/github-action@master
+        with:
+          # The SSH_DOKKU_URL should have a format like: dokku.me
+          git_remote_url: 'ssh://dokku@${{ secrets.SSH_DOKKU_URL }}:22/${{ secrets.DOKKU_APP_NAME }}'
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
