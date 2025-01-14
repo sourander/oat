@@ -1,148 +1,63 @@
 # 7: Cookiecutter-templaatin käyttö
 
-Oppimispäiväkirjaa ei tarvitse aluttaa aivan tyhjästä. Voit käyttää valmista Cookiecutter-templaattia, joka luo valmiin rakenteen oppimispäiväkirjalle.  Tarvitset siihen seuraavat ohjelmat:
+Oppimispäiväkirjaa ei tarvitse aluttaa aivan tyhjästä. Voit käyttää valmista Cookiecutter-templaattia, joka luo valmiin rakenteen oppimispäiväkirjalle. Riittää, että sinulla on asennettuna:
 
 * Git (for Windows)
-* Python
 * Docker (Desktop)
 
 ## Video-ohje
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=MXtB3dFRJiHQoBzj&amp;list=PL7AbISYtmmfhgUS3G77OcR1sdETJiQ6f4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-gewY4kEr_8?si=n6gz3XSDT2QlndAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Video 1**: *Soittolista [Cookiecutter ja oppimispäiväkirja](https://youtube.com/playlist?list=PL7AbISYtmmfhgUS3G77OcR1sdETJiQ6f4&si=u33F0Kglh0tqy04c) sisältää useita videoita, jotka käsittelevät templaatin käyttöönottoa.*
+**Video 1**: *Soittolista [Cookiecutter ja oppimispäiväkirja 2025](https://youtube.com/playlist?list=PL7AbISYtmmfiS1sozsGkZ266EE0NeQeJh&si=bsN8ztXR5lgGJ0IJ) sisältää yhden puolituntisen, chapter markereilla jaksotetun videon, jossa esitellään oppimispäiväkirjan templaatin käyttöönotto ja ensimmäisen merkinnän tekeminen.*
 
-Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. Huomaa, että opettajan kirjoittamat ohjeet vanhenevat, joten tarkista viimeisemmät ohjeet kunkin ohjelmiston omilta sivuilta. Jos esimerkiksi jokin `scoop`-komento antaa virheilmoituksen, niin se voi johtua siitä, että `scoop` on päivittynyt ja API on muuttunut. Ilmoitathan tästä opettajalle, jos huomaat jotain vanhentunutta, jotta opettaja osaa tiedottaa muutoksesta ja mahdollisesti päivittää ohjeet.
+Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta.
 
+!!! note "Arkistojen aarteita 🗃️"
+
+    Aiemmin vastaava ohje sisälsi ohjeistuksen Pythonin, Scoopin, Pipx ja Cookiecutter asennukseen. Ohje on päivittynyt 2025 vuonna käyttämään uv-työkalua. Mikäli haluat tutustua vanhaan ohjeistukseen, se löytyy yhä YouTubesta: [Cookiecutter ja oppimispäiväkirja 2024](https://youtube.com/playlist?list=PL7AbISYtmmfhgUS3G77OcR1sdETJiQ6f4&si=-KA3GPGVAJ76hBLI).
+
+    Scoop:lle ja Pipx:lle on kummallekin yhä oma paikkansa, joten työkaluja ei kannata tyystin sivuuttaa, mikäli olet Windows-käyttäjä. Scoop on pakeettienhallintatyökalu, muistuttaen Ubuntusta tuttua apt:tä. Tutustu ihmeessä: [scoop.sh](https://scoop.sh/)
 
 ## Teksti-ohje
 
-### Asennettavat komponentit
+### Cookiecutter-komento Dockerissa
 
-#### Paketinhallinta
+Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun olet projektikansiossa, johon oppimispäiväkirjan haluat alustaa, aja käyttöjärjestelmästä riippuen oikea komento. Komennot löytyvät alla olevasta snippetistä; valitse käyttöjärjestelmäsi klikkaamalla koodisnippetin päällä olevaa välilehtivalikkoa. Samat komennot ja ohjeet löytyvät myös [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) -reposta.
 
-=== "Windows"
-
-    Asennetaan Scoop-paketinhallinta. Seuraa [Scoop-sivuston ohjeita](https://scoop.sh/). Komento pitää ajaa PowerShellissä. Jos et osaa, katso video-ohje yltä.
-
-=== "macOS"
-
-    Asenna Homebrew-paketinhallinta jos sinulla ei jo ole. Seuraa [Homebrew-sivuston ohjeita](https://brew.sh/).
-
-=== "Ubuntu"
-
-    Debian-pohjaisissa jakeluissa on apt-paketinhallinta valmiina. Aja kuitenkin seuraavat komennot päivittääksesi paketinhallinnan:
+=== "Windows (Git Bash)"
 
     ```bash
-    sudo apt update && sudo apt upgrade -y
+    winpty docker run -it --rm \
+    -v "/$(pwd):/workspace" \
+    -w '//workspace' \
+    ghcr.io/astral-sh/uv:python3.11-bookworm \
+    uvx cookiecutter gh:sourander/kamk-cookiecutters -f
     ```
 
+=== "Windows (PowerShell)"
 
-#### Python
+    ```powershell
+    docker run -it --rm `
+    -v "${PWD}:/workspace" `
+    -w /workspace `
+    ghcr.io/astral-sh/uv:python3.11-bookworm `
+    uvx cookiecutter gh:sourander/kamk-cookiecutters -f
+    ```
 
-=== "Windows"
-
-    Asenna Python lataamalla sinun alustalle sopiva versio (esim. 3.11.x 64-bit) suoraan [Pythonin kotisivuilta](https://www.python.org/downloads/). Asennuksen aikana muista valita "Add Python to PATH" -valintaruutu. Tarkemmat ohjeet löydät [Python-Perusteet -kurssilta](https://sourander.github.io/python-perusteet/asennus/windows/).
-
-    !!! warning
-
-        Älä asenna Pythonia Windowsin omasta sovelluskaupasta.
-
-=== "macOS"
-
-    Suosittelen asentamaan **pyenv**:n, jolla asennat käyttämäsi Pythonin version. Asenna pyenv Homebrew-paketinhallinnan kautta. Tähän löytyy ohjeet [Python-Perusteet -kurssilta](https://sourander.github.io/python-perusteet/asennus/macOS/#asenna-pyenv)
-
-=== "Ubuntu"
-
-    Suosittelen asentamaan **pyenv**:n, jolla asennat käyttämäsi Pythonin version. Asenna pyenv apt-paketinhallinnan kautta. Tarkista päivitetyt ohjeet pyenv:n dokumentaatiosta. Alla komennot, jotka toimivat ainakin 2024:
+=== "macOS/Linux (Bash)"
 
     ```bash
-    # Install suggested build environment
-    sudo apt install build-essential libssl-dev \
-        zlib1g-dev libbz2-dev libreadline-dev \
-        libsqlite3-dev curl git libncursesw5-dev \
-        xz-utils tk-dev libxml2-dev libxmlsec1-dev \
-        libffi-dev liblzma-dev
-
-    # Run installation script
-    curl https://pyenv.run | bash
+    docker run -it --rm \
+    -v "$(pwd):/workspace" \
+    -w /workspace \
+    ghcr.io/astral-sh/uv:python3.11-bookworm \
+    uvx cookiecutter gh:sourander/kamk-cookiecutters -f
     ```
 
+### Templaatin kysymyksiin vastaaminen
 
-#### Pipx
-
-=== "Windows"
-
-    Asenna pipx komentoriviltä:
-
-    ```bash
-    # Asenna paketinhallinnalla
-    scoop install pipx
-
-    # Lisää pipx binäärit PATH:iin
-    pipx ensurepath
-    ```
-
-=== "macOS"
-
-    Asenna pipx komentoriviltä:
-
-    ```bash
-    # Asenna paketinhallinnalla
-    brew install pipx
-
-    # Lisää pipx binäärit PATH:iin
-    pipx ensurepath
-    ```
-
-=== "Ubuntu"
-
-    Asenna pipx apt:lla:
-
-    ```bash
-    # Install pipx
-    sudo apt install pipx
-
-    # Add to path
-    pipx ensurepath
-    ```
-
-!!! info
-
-    Kun olet lisännyt `pipx`:n binäärit PATH:iin, käynnistyä terminaali uudelleen. Turvallisinta on käynnistää koko kone, jos et ole varma, mikä PATH on ja missä välissä se ladataan.
-
-#### Cookiecutter
-
-Kun Python on asennettu, voit asentaa Cookiecutterin komentoriviltä. Tämä komento on sama kaikissa käyttöjärjestelmissä (koska `pipx` hoitaa alustariippuvuudet):
-
-```bash
-# Asenna Cookiecutter
-pipx install cookiecutter
-
-# Testaa asennus (missä tahansa hakemistossa)
-cookiecutter --version
-
-# Tarkista ihan sivistyksen vuoksi, että missä kyseinen executable sijaitsee
-which cookiecutter
-```
-
-### Cookiecutter-templaatin käyttö
-
-Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun olet projektikansiossa, johon oppimispäiväkirjan haluat alustaa, aja seuraava komento:
-
-=== "Windows"
-
-    ```bash
-    # Git Bash vaatii winpty-komennon eteen
-    # Muutoin ääkköset eivät toimi
-    winpty cookiecutter gh:sourander/kamk-cookiecutters -f
-    ```
-
-=== "macOS"
-
-    ```bash
-    cookiecutter gh:sourander/kamk-cookiecutters -f
-    ```
+Komento lataa [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) repositoriosta oppimispäiväkirjan templaatin ja alustaa sen. Komento ajetaan interaktiivisessa tilassa (`-it`), jotta voit vastata kysymyksiin.
 
 Tämä komento kysyy sinulta muutamia kysymyksiä, joista ensimmäisessä sinua pyydetään valitsemaan yksi templaatti monien joukosta. Kysymys ja oikea vastaus (tässä kontekstissa) näkyvät alla:
 
@@ -155,8 +70,8 @@ Select template:
 Choose from 1, 2 [1]:  <= Paina Enter
 ```
 
-Oppimispäiväkirjan templaatti kysyy projektin nimen, tekijän nimen ja mahdollisesti muutaman muun kysymyksen. ==ÄLÄ RÄMPYTÄ ENTERIÄ.== Vastaa kysymyksiin huolella. Cookiecutter luo projektille rungon (boilerplate) näiden vastauksien perusteella. Syntyvä kansiorakenne muistuttaa alla olevaa. Tarkista yllä linkitetystä gitistä tarkka sisältö. Huomaa, että `{{cookiecutter._container}}` ovat muuttujia, jotka korvataan vastauksillasi.
+Oppimispäiväkirjan templaatti kysyy projektin nimen, tekijän nimen ja mahdollisesti muutaman muun kysymyksen. ==ÄLÄ RÄMPYTÄ ENTERIÄ.== Vastaa kysymyksiin huolella. Cookiecutter luo projektille rungon (boilerplate) näiden vastauksien perusteella. Syntyvä kansiorakenne muistuttaa alla olevaa. Tarkista yllä linkitetystä [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) repositoriosta, jos haluat tarkempaa tietoa. 
 
-!!! tip
+!!! tip "Videolla huomio 📽️"
 
-    Lue tarkemmat ohjeet [kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) -GitHub-reposta. Tutustu samalla repositorion rakenteeseen ja `cookiecutter.json`-tiedostoon. Cookiecutter on tehokas työkalu, joka auttaa sinua luomaan samankaltaisia projektirunkoja nopeasti.
+    Repositoriosta löytyy jopa GIF-animaatio, jossa näkyy templaatin kysymyksiin vastaaminen.

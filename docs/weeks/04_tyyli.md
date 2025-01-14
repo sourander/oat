@@ -31,58 +31,13 @@ Oppimispäiväkirja ei voi kuitenkaan olla pelkkää reflektiivistä sisäistä 
     * Netflix: [Abuse and Fraud Detection in Streaming Services Using Heuristic-Aware Machine Learning](https://arxiv.org/pdf/2203.02124.pdf)
     * Polar Electro Oy: [Polar Fitness Test](https://www.polar.com/en/img/static/whitepapers/pdf/polar-fitness-test-white-paper.pdf)
 
-## Esimerkkejä
+## Opiskelijoiden esimerkkejä
 
-Tulevaisuudessa tulen lisäämään tähän opiskelijan tekemän mallisuorituksen; kunhan sopiva tulee vastaan ja saan siihen luvan. Tällä hetkellä paikanpitäjänä toimivat alla olevat Medium-artikkelit, joita yhdistää TIL (Today I Learned) -teema. Esittelen kustakin artikkelista hyviä ja huonoja puolia **tämän oppimispäiväkirjaohjeen** näkökulmasta.
+Tulevaisuudessa tulen lisäämään tähän dokumentaatioon lisää opiskelijoiden tekemiä mallisuorituksia; kunhan sopivia tulee vastaan ja saan niiden julkaisuun luvan. Tällä hetkellä esimerkkejä on kaksi, ja ne kummatkin löytyvät `Viikkomerkinnät -> Opiskelijoiden esimerkkejä` -polusta navigaatiosta. Suorat linkit niihin ovat:
 
-### Esimerkki 1: Microservice vs. Monolithic Architecture
+* [Naive Bayes](examples/naivebayes.md)
+* [Paketinhallinta](examples/paketinhallinta.md)
 
-Ensimmäinen artikkeli on [TIL-6: Which is better? Microservice vs. Monolithic Architecture in a Nutshell](https://recepinanc.medium.com/til-6-microservices-vs-monolithic-architecture-b58488b846dd).
-
-Artikkelin pituus on noin 500 sanaa ja lisäksi siinä käytetään kuvamuotoista taulukkoa hyödyksi. Artikkelin kieli on kuitenkin hyvää, selkeää ja käyttää ammatti- ja asiantuntijakieltä. Tekstin rakenne on selkeästi jaoteltu väliotsikoilla.
-
-??? info "Parannettavat asiat: koita päätellä ennen kuin katsot"
-
-    Parannettavaa:
-
-    *  Lähteet ovat listattuna lopussa, mutta niitä ei ole käytetty tekstissä.
-        *  Kenties esimerkiksi Fundamentals of Software Architecture -kirja voisi olla hyvä lähtökohta.
-    *  Taulu on kuvamuotoinen. Markdown-taulukko olisi parempi.
-    *  Sisältö on liian luettelovetoinen (bullet point)
-    *  Runko toistaa ylälaidan taulukossa näkyvän tiedon.
-        *  Runkoteksti voisi syventää taulukon tietoja lähdekirjallisuuden avulla.
-
-### Esimerkki 2:Cookie authentication
-
-Toinen artikkeli on [TIL — Understanding cookie based authentication](https://medium.com/@AbbasPlusPlus/til-understanding-cookie-based-authentication-57701a4577a1).
-
-Artikkelin pituus on noin 400 sanaa. Lisäksi siinä on käytetty selkeää ja tiivistä koodilohkoa avuksi sekä sekvenssidiagrammia. Kieli on selkeää ja asiantuntevaa. Tekstin rakenne on selkeästi jaoteltu väliotsikoilla.
-
-??? info "Parannettavat asiat: koita päätellä ennen kuin katsot"
-
-    Parannettavaa:
-
-    * Lähteet puuttuvat kokonaan.
-        * Kenties Mozilla Developer Networkin artikkeli olisi hyvä lähtökohta.
-    * Sekvenssidiagrammi kannattaisi tehdä Mermaidilla. Näin se on helpompi versionhallita kuin PNG-kuva.
-    * 100 sanaa lisää olisi voinut syventää artikkelia.
-        * Kenties tokenin sisältö olisi voinut olla hyvä lisäys.
-
-### Esimerkki 3: SOLID
-
-Kolmas artikkeli on [[TIL-3] SOLID Principles, Explanation and Example](https://davidasync.medium.com/til-3-solid-principles-explanation-and-example-4875567aa2b3).
-
-Artikkelin pituus on noin 1500 sanaa. Artikkelissa on käytetty lisäksi apuna humoristisia kuvia sekä selkeitä koodilohkoja, joissa on vain olennainen mukana. Kieli on selkeää ja asiantuntevaa. Tekstin rakenne on selkeästi jaoteltu väliotsikoilla. Teksti on sidottu hyvin henkilön omaan elämään: *"During my performance review at my...". Aiheen oppimiselle on löydetty myös suoria hyötyjä työelämässä: *"post job vacancies [...] demand solid understanding about SOLID"*. Tekstissä viitataan ensi käden tietoon eli Robert C. Martinin julkaisuun vuodelta 2000.
-
-??? info "Parannettavat asiat: koita päätellä ennen kuin katsot"
-
-    Parannettavaa:
-
-    *  Osa lähteistä on listattu vain lähdeluettelossa, mutta ei tekstissä.
-    *  Osa lähteistä on vain tekstin sisällä, mutta ei listattuna lähdeluettelossa.
-    *  Teksti ylittää 500 sanan rajan reilusti.
-        *  Onhan opettaja pyytänyt käsittelemään kaikki viisi periaatetta samassa postauksessa?
-        *  Jos on, pitäisikö jokin periaate käsitellä kattavasti ja muut pintapuoleisesti?
 
 ## Lähdeluettelo
 
