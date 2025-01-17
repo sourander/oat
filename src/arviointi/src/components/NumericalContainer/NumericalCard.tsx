@@ -26,7 +26,7 @@ export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
                   id={`${criterion.id}-${gradeOption.grade}`}
                   name={criterion.id}
                   value={gradeOption.grade}
-                  onChange={(e) =>
+                  onChange={() =>
                     handleGradeChange({
                       [criterion.id]: {
                         grade: gradeOption.grade,
