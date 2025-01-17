@@ -1,10 +1,10 @@
 import { OatGradeType } from "../../types/oat-grade-types";
-import { ExchangeGradeInformation } from "../../types/gradestates";
+import { GradeStateContainer } from "../../types/gradestates";
 import "./NumericalCard.css";
 
 interface IGradeCard {
   oatGrade: OatGradeType;
-  handleGradeChange: (gradeinfo: ExchangeGradeInformation) => void;
+  handleGradeChange: (gradeinfo: GradeStateContainer) => void;
 }
 
 export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
@@ -28,10 +28,11 @@ export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
                   value={gradeOption.grade}
                   onChange={(e) =>
                     handleGradeChange({
-                      key: criterion.id,
-                      grade: parseInt(e.target.value),
-                      weight: criterion.weight,
-                      description: gradeOption.desc,
+                      [criterion.id]: {
+                        grade: gradeOption.grade,
+                        weight: criterion.weight,
+                        description: gradeOption.desc,
+                      },
                     })
                   }
                   className="custom-radio"

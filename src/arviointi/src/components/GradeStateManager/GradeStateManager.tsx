@@ -1,32 +1,24 @@
 import { useState } from "react";
 
-import {
-    OAT_GRADE_TYPES,
-} from "../../data/oat-data";
-import {
-  GradeStateContainer,
-  ExchangeGradeInformation,
-} from "../../types/gradestates";
+import { OAT_GRADE_TYPES } from "../../data/oat-data";
+import { GradeStateContainer } from "../../types/gradestates";
 import NumericalCard from "../NumericalContainer/NumericalCard";
 import "./GradeStateManager.css";
 
+interface IGradeStateManagerProps {
+  selectedGrade: number | null;
+}
+
 export default function GradeStateManager({
   selectedGrade,
-}: {
-  selectedGrade: number | null;
-}) {
+}: IGradeStateManagerProps) {
   const [selectedGrades, setSelectedGrades] = useState<GradeStateContainer>({});
 
-  const handleGradeChange = (gradeinfo: ExchangeGradeInformation) => {
-    console.log("JSON.stringify(gradeinfo)", JSON.stringify(gradeinfo));
+  const handleGradeChange = (updatedGrades: GradeStateContainer) => {
     setSelectedGrades((prevSelectedGrades) => {
       return {
         ...prevSelectedGrades,
-        [gradeinfo.key]: {
-          grade: gradeinfo.grade,
-          weight: gradeinfo.weight,
-          description: gradeinfo.description,
-        },
+        ...updatedGrades, // Merge
       };
     });
   };
