@@ -20,14 +20,6 @@ function validateNumericalWeightSumto100(data: OatGradeType[]): string[] {
     return errors;
 }
 
-// function anotherValidator(data: OatGradeType[]): string[] {
-//     const errors: string[] = [];
-
-//     console.log("data", data);
-
-//     return errors;
-// }
-
 function validateUniqueIDs(data: OatGradeType[]): string[] {
     const errors: string[] = [];
 
