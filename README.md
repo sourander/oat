@@ -19,10 +19,17 @@ Arviointityökalua ajetaan Dokku-palvelimella osoitteessa [arviointi.munpaas.com
 
 ### Development
 
-Development-tilassa sovellus käynnistyy osoitteeseen `http://localhost:3000` ja päivittyy automaattisesti muutosten yhteydessä.
+Development-tilassa sovellus käynnistyy osoitteeseen `http://localhost:3333` ja päivittyy automaattisesti muutosten yhteydessä.
 
 ```bash
 docker compose up -d
+```
+
+Jos haluat, että VS Codessa toimii linter, niin aja myös:
+
+```bash
+cd src/arviointi
+npm install
 ```
 
 ### Production

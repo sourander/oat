@@ -1,0 +1,64 @@
+.criterion-box {
+  border: 1px solid #87d0d6;
+  border-radius: 10px;
+  background-color: #e2f2f1;
+  width: 610px
+}
+
+.criterion-radio {
+  /* Fix button headers (the grade number buttons) to be in same row */
+  display: inline-block;
+}
+
+.custom-radio {
+  display: none; /* Hide the default radio button */
+}
+
+.custom-radio-label {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 1em;
+  }
+  
+  .custom-radio:checked + .custom-radio-label {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+  }
+
+  /* Tooltip for hovering over the grade numbers */
+  .custom-radio-label:hover::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 125%;                /* Place the tooltip above the button for readability */
+    transform: translateX(-50%); /* Center the tooltip horizonally*/
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s;
+    /* Make the text wrap with constant 300px line length */
+    width: 300px;
+    line-height: 1.5em;
+    white-space: normal;
+  }
+  
+  .custom-radio-label:hover::after {
+    opacity: 1; /* Show the tooltip on hover */
+  }
+  

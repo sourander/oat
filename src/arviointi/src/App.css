@@ -1,0 +1,13 @@
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    padding: 0;
+}

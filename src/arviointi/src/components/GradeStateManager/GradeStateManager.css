@@ -1,0 +1,21 @@
+/* The div of class criterion-box should be drawn so that they
+appear as 'cards' next to each other within the container */
+
+#grade-state-manager-form div {
+  margin: 0;
+  padding: 0;
+}
+
+#grade-state-manager-result div {
+  background-color: cyan;
+  margin: 0;
+  padding: 0;
+}
+
+#grade-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+  gap: 2em;
+}
