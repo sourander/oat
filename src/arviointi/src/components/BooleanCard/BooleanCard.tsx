@@ -11,10 +11,14 @@ export default function GradeCard({
   oatGrade,
   handleBooleanChange,
 }: IBooleanCard) {
-  return (
+
+  if (!oatGrade.boolean_criteria) {
+    return <></>;
+  }
+
+  const gradeCardRow = (
     <div className="grade-card-row">
-      {oatGrade.boolean_criteria &&
-        oatGrade.boolean_criteria.map((criterion) => (
+      {oatGrade.boolean_criteria.map((criterion) => (
           <div id="bool-criterion-box" className="criterion-box" key={criterion.id}>
             <h4>{criterion.title}</h4>
 
@@ -28,6 +32,7 @@ export default function GradeCard({
                 onChange={(e) =>
                   handleBooleanChange({
                     [criterion.id]: {
+                      title: criterion.title,
                       grade: e.target.checked,
                       description: criterion.description,
                     },
@@ -37,7 +42,7 @@ export default function GradeCard({
               />
               <label
                 htmlFor={criterion.id}
-                className="custom-custom-toggle-label"
+                className="bool-custom-toggle-label"
                 title={criterion.description}
               >
               </label>
@@ -46,4 +51,6 @@ export default function GradeCard({
         ))}
     </div>
   );
+
+  return (<>{gradeCardRow}</>)
 }

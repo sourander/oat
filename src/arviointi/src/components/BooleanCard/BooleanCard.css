@@ -12,7 +12,7 @@
 }
 
 /* Custom toggle label styling */
-.custom-custom-toggle-label {
+.bool-custom-toggle-label {
   width: 80px;
   height: 40px;
   background-color: #ccc;
@@ -24,7 +24,7 @@
 }
 
 /* Circle inside the toggle */
-.custom-custom-toggle-label::after {
+.bool-custom-toggle-label::after {
   content: "";
   width: 32px;
   height: 32px;
@@ -38,20 +38,20 @@
 }
 
 /* Checked state styling */
-.bool-custom-checkbox:checked + .custom-custom-toggle-label {
+.bool-custom-checkbox:checked + .bool-custom-toggle-label {
   background-color: #4caf50;
 }
 
-.bool-custom-checkbox:checked + .custom-custom-toggle-label::after {
+.bool-custom-checkbox:checked + .bool-custom-toggle-label::after {
   transform: translateX(40px); /* Move the circle to the right */
 }
 
 /* Optional hover effect */
-.custom-custom-toggle-label:hover {
+.bool-custom-toggle-label:hover {
   background-color: #b0b0b0;
 }
 
-.custom-custom-toggle-label:hover::after {
+.bool-custom-toggle-label:hover::after {
   background-color: #e0e0e0;
 }
 

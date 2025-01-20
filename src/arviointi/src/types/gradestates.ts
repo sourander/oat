@@ -1,4 +1,5 @@
 type GradeState = {
+  title: string;
   grade: number;
   weight: number;
   description: string;
@@ -9,6 +10,7 @@ type GradeStateContainer = {
 };
 
 type BooleanGradeState = {
+    title: string;
     grade: boolean;
     description: string;
 };

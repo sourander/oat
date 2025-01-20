@@ -11,7 +11,6 @@ function App() {
     const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
         const selectedIndex = parseInt(event.target.value);
         setSelectedGrade(selectedIndex);
-        console.log(`${selectedIndex} is selected`);
     };
 
   return (
@@ -20,6 +19,7 @@ function App() {
       <main>
         <GradeTypeSelector handleSelectChange={handleSelectChange} />
         <GradeStateManager selectedGrade={selectedGrade} />
+
       </main>
     </>
   );

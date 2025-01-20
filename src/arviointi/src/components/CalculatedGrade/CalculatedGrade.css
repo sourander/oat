@@ -1,0 +1,50 @@
+.calculated-grade-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hint-to-select-grades {
+  font-size: 1.2rem;
+}
+
+.calculated-grade {
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.grade-value {
+  color: rgb(238, 118, 35); /* Highlighted grade color */
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 0.2rem;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.grade-max-value {
+  font-size: 1.5rem;
+  color: inherit; /* Default text color */
+}
+
+.copy-to-clipboard-button {
+  background-color: rgb(238, 118, 35); /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-to-clipboard-button:hover {
+  background-color: rgb(255, 140, 45); /* Slightly lighter on hover */
+}
+
+.copy-to-clipboard-button:active {
+  background-color: rgb(200, 100, 25); /* Darker shade on click */
+}

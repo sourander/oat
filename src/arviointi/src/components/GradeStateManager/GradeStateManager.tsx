@@ -7,24 +7,49 @@ import {
 } from "../../types/gradestates";
 import NumericalCard from "../NumericalContainer/NumericalCard";
 import BooleanCard from "../BooleanCard/BooleanCard";
+import CalculatedGrade from "../CalculatedGrade/CalculatedGrade";
 import "./GradeStateManager.css";
+import { BooleanCriteria } from "../../types/oat-grade-types";
 
 interface IGradeStateManagerProps {
   selectedGrade: number | null;
 }
 
+function generateInitialBooleanStates(
+  booleanCriteria: BooleanCriteria[] = []
+): BooleanGradeStateContainer {
+  const initialBooleanStates: BooleanGradeStateContainer = {};
+
+  booleanCriteria.forEach((criterion) => {
+    initialBooleanStates[criterion.id] = {
+      title: criterion.title,
+      grade: false,
+      description: criterion.description,
+    };
+  });
+  return initialBooleanStates;
+}
+
 export default function GradeStateManager({
   selectedGrade,
 }: IGradeStateManagerProps) {
+  let initialBooleanStates = {};
+
+  if (selectedGrade !== null) {
+    initialBooleanStates = generateInitialBooleanStates(
+      OAT_GRADE_TYPES[selectedGrade].boolean_criteria
+    );
+  }
+
   // States
   const [selectedGrades, setSelectedGrades] = useState<GradeStateContainer>({});
   const [selectedBooleanGrades, setSelectedBooleanGrades] =
-    useState<BooleanGradeStateContainer>({});
+    useState<BooleanGradeStateContainer>(initialBooleanStates);
 
   // Reset states when selectedGrade changes
   useEffect(() => {
     setSelectedGrades({});
-    setSelectedBooleanGrades({});
+    setSelectedBooleanGrades(initialBooleanStates);
   }, [selectedGrade]);
 
   // Handler for numerical grades
@@ -47,7 +72,17 @@ export default function GradeStateManager({
     });
   };
 
-  let gradeCardsDisplay = <p>☝️ Please select a topic. 👆</p>;
+  let gradeCardsDisplay = (
+    <div className="grade-calculation-info">
+      <p>☝️ Valitse drop-down -valikosta tyyppi. 👆</p>
+      <h3>Arvosanan laskentakaava</h3>
+      <p>
+        Here should be an informative message about the grade calculation. It
+        should explain how the grade will be calculated once all the grades have
+        been set. It should also explain the special rules that apply to.
+      </p>
+    </div>
+  );
 
   if (selectedGrade !== null) {
     const oatGrade = OAT_GRADE_TYPES[selectedGrade];
@@ -66,24 +101,15 @@ export default function GradeStateManager({
           oatGrade={oatGrade}
           handleBooleanChange={handleBooleanChange}
         />
+
+        <CalculatedGrade
+          oatGrade={oatGrade}
+          selectedGrades={selectedGrades}
+          selectedBooleanGrades={selectedBooleanGrades}
+        />
       </div>
     );
   }
 
-  return (
-    <>
-      {gradeCardsDisplay}
-
-      <div id="grade-state-manager-result">
-        <pre>
-          {/* Echo each selected grade */}
-          {JSON.stringify(selectedGrades, null, 2)}
-        </pre>
-        <pre>
-          {/* Echo each selected boolean grade */}
-          {JSON.stringify(selectedBooleanGrades, null, 2)}
-        </pre>
-      </div>
-    </>
-  );
+  return <>{gradeCardsDisplay}</>;
 }

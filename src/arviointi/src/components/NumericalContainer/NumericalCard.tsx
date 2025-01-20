@@ -8,14 +8,14 @@ interface IGradeCard {
 }
 
 export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
-  return (
+  const gradeCardRow = (
     <div className="grade-card-row">
       {oatGrade.numerical_criteria &&
         oatGrade.numerical_criteria.map((criterion) => (
           <div className="criterion-box" key={criterion.id}>
-            <h4>
-              {criterion.title} weight: {criterion.weight}
-            </h4>
+            <h3>
+              {criterion.title} <span className="criterion-weight">weight: {criterion.weight} %</span>
+            </h3>
 
             <p>{criterion.description}</p>
 
@@ -29,6 +29,7 @@ export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
                   onChange={() =>
                     handleGradeChange({
                       [criterion.id]: {
+                        title: criterion.title,
                         grade: gradeOption.grade,
                         weight: criterion.weight,
                         description: gradeOption.desc,
@@ -50,4 +51,8 @@ export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
         ))}
     </div>
   );
+
+  return (
+    <>{gradeCardRow}</>
+  )
 }

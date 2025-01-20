@@ -1,3 +1,10 @@
+.criterion-weight {
+  /* Force on new line */
+  display: block;
+  font-size: 0.6em;
+  opacity: 0.75;
+}
+
 .num-criterion-radio {
   display: inline-block;
 }

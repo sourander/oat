@@ -21,7 +21,7 @@ export default function GradeTypeSelector({
         defaultValue=""
       >
         <option value="" disabled>
-          Select a grade type
+          Valitse arviointityyppi
         </option>
         {OAT_GRADE_TYPES.map((oatGradeType, index) => (
           <option key={index} value={index}>
