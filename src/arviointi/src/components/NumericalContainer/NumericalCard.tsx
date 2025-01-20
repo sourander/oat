@@ -2,19 +2,27 @@ import { OatGradeType } from "../../types/oat-grade-types";
 import { GradeStateContainer } from "../../types/gradestates";
 import "./NumericalCard.css";
 
-interface IGradeCard {
+interface INumericalCard {
   oatGrade: OatGradeType;
   handleGradeChange: (gradeinfo: GradeStateContainer) => void;
+  selectedGrades: GradeStateContainer;
 }
 
-export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
+export default function NumericalCard({
+  oatGrade,
+  handleGradeChange,
+  selectedGrades,
+}: INumericalCard) {
   const gradeCardRow = (
     <div className="grade-card-row">
       {oatGrade.numerical_criteria &&
         oatGrade.numerical_criteria.map((criterion) => (
           <div className="criterion-box" key={criterion.id}>
             <h3>
-              {criterion.title} <span className="criterion-weight">weight: {criterion.weight} %</span>
+              {criterion.title}{" "}
+              <span className="criterion-weight">
+                weight: {criterion.weight} %
+              </span>
             </h3>
 
             <p>{criterion.description}</p>
@@ -26,6 +34,7 @@ export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
                   id={`${criterion.id}-${gradeOption.grade}`}
                   name={criterion.id}
                   value={gradeOption.grade}
+                  checked={selectedGrades[criterion.id]?.grade === gradeOption.grade}
                   onChange={() =>
                     handleGradeChange({
                       [criterion.id]: {
@@ -52,7 +61,5 @@ export default function GradeCard({ oatGrade, handleGradeChange }: IGradeCard) {
     </div>
   );
 
-  return (
-    <>{gradeCardRow}</>
-  )
+  return <>{gradeCardRow}</>;
 }

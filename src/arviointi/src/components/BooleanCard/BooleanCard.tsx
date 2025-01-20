@@ -5,14 +5,21 @@ import "./BooleanCard.css";
 interface IBooleanCard {
   oatGrade: OatGradeType;
   handleBooleanChange: (gradeinfo: BooleanGradeStateContainer) => void;
+  selectedBooleanGrades: BooleanGradeStateContainer;
 }
 
 export default function GradeCard({
   oatGrade,
   handleBooleanChange,
+  selectedBooleanGrades,
 }: IBooleanCard) {
   // Helper function to handle checkbox change
-  const handleCheckboxChange = (id: string, title: string, description: string, isChecked: boolean) => {
+  const handleCheckboxChange = (
+    id: string,
+    title: string,
+    description: string,
+    isChecked: boolean
+  ) => {
     handleBooleanChange({
       [id]: {
         title,
@@ -23,7 +30,11 @@ export default function GradeCard({
   };
 
   // Render a single criterion
-  const renderCriterion = (criterion: { id: string; title: string; description: string }) => (
+  const renderCriterion = (criterion: {
+    id: string;
+    title: string;
+    description: string;
+  }) => (
     <div id="bool-criterion-box" className="criterion-box" key={criterion.id}>
       <h4>{criterion.title}</h4>
       <p>{criterion.description}</p>
@@ -32,8 +43,14 @@ export default function GradeCard({
           type="checkbox"
           id={criterion.id}
           name={criterion.id}
+          checked={selectedBooleanGrades[criterion.id]?.grade || false}
           onChange={(e) =>
-            handleCheckboxChange(criterion.id, criterion.title, criterion.description, e.target.checked)
+            handleCheckboxChange(
+              criterion.id,
+              criterion.title,
+              criterion.description,
+              e.target.checked
+            )
           }
           className="bool-custom-checkbox"
         />

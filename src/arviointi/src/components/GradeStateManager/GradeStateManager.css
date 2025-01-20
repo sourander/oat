@@ -13,7 +13,6 @@ appear as 'cards' next to each other within the container */
   justify-content: space-evenly;
   align-content: stretch;
   gap: 2em;
-  padding-bottom: 4em;
 }
 
 /* This applies to all grade boxes: numerical, boolean et cetera. */

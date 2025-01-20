@@ -95,11 +95,13 @@ export default function GradeStateManager({
         <NumericalCard
           oatGrade={oatGrade}
           handleGradeChange={handleGradeChange}
+          selectedGrades={selectedGrades}
         />
 
         <BooleanCard
           oatGrade={oatGrade}
           handleBooleanChange={handleBooleanChange}
+          selectedBooleanGrades={selectedBooleanGrades}
         />
 
         <CalculatedGrade

@@ -14,7 +14,6 @@ export default function GradeTypeSelector({
 
   return (
     <div>
-      <h2>Valitse</h2>
       <select
         className="custom-select"
         onChange={handleSelectChange}
