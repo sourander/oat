@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { OAT_GRADE_TYPES } from "../../data/oat-data";
-import { GradeStateContainer } from "../../types/gradestates";
+import {
+  GradeStateContainer,
+  BooleanGradeStateContainer,
+} from "../../types/gradestates";
 import NumericalCard from "../NumericalContainer/NumericalCard";
+import BooleanCard from "../BooleanCard/BooleanCard";
 import "./GradeStateManager.css";
 
 interface IGradeStateManagerProps {
@@ -12,10 +16,30 @@ interface IGradeStateManagerProps {
 export default function GradeStateManager({
   selectedGrade,
 }: IGradeStateManagerProps) {
+  // States
   const [selectedGrades, setSelectedGrades] = useState<GradeStateContainer>({});
+  const [selectedBooleanGrades, setSelectedBooleanGrades] =
+    useState<BooleanGradeStateContainer>({});
 
+  // Reset states when selectedGrade changes
+  useEffect(() => {
+    setSelectedGrades({});
+    setSelectedBooleanGrades({});
+  }, [selectedGrade]);
+
+  // Handler for numerical grades
   const handleGradeChange = (updatedGrades: GradeStateContainer) => {
     setSelectedGrades((prevSelectedGrades) => {
+      return {
+        ...prevSelectedGrades,
+        ...updatedGrades, // Merge
+      };
+    });
+  };
+
+  // Handler for boolean grades
+  const handleBooleanChange = (updatedGrades: BooleanGradeStateContainer) => {
+    setSelectedBooleanGrades((prevSelectedGrades) => {
       return {
         ...prevSelectedGrades,
         ...updatedGrades, // Merge
@@ -32,13 +56,15 @@ export default function GradeStateManager({
       <div id="gradecards-display">
         <h2>{oatGrade.title}</h2>
         <p>{oatGrade.description}</p>
-        <pre>
-          <code>{oatGrade.id}</code>
-        </pre>
 
         <NumericalCard
           oatGrade={oatGrade}
           handleGradeChange={handleGradeChange}
+        />
+
+        <BooleanCard
+          oatGrade={oatGrade}
+          handleBooleanChange={handleBooleanChange}
         />
       </div>
     );
@@ -46,12 +72,16 @@ export default function GradeStateManager({
 
   return (
     <>
-      <div id="grade-state-manager-form">{gradeCardsDisplay}</div>
+      {gradeCardsDisplay}
 
       <div id="grade-state-manager-result">
         <pre>
           {/* Echo each selected grade */}
           {JSON.stringify(selectedGrades, null, 2)}
+        </pre>
+        <pre>
+          {/* Echo each selected boolean grade */}
+          {JSON.stringify(selectedBooleanGrades, null, 2)}
         </pre>
       </div>
     </>

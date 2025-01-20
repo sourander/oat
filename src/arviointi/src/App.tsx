@@ -14,7 +14,6 @@ function App() {
         console.log(`${selectedIndex} is selected`);
     };
 
-
   return (
     <>
       <Header />

@@ -38,9 +38,19 @@ const videoCourse: OatGradeType = {
     boolean_criteria: [
         {
             id: "criterion3",
-            title: "Repository is also accessible",
+            title: "Accessible",
             description: "The student has provided the teacher access to the Gitlab repository.",
         },
+      //   {
+      //     id: "criterion4",
+      //     title: "Pizza",
+      //     description: "The student has proven to like pizza.",
+      // },
+    //   {
+    //     id: "criterion5",
+    //     title: "Thingy",
+    //     description: "Thingies has been defined well in the thingamagoop realm.",
+    // },
     ],
 };
 
@@ -50,7 +60,7 @@ const foobarCourse: OatGradeType = {
     description: "Lorem ipsum dolor sit foo bar.",
     numerical_criteria: [
         {
-            id: "criterion1",
+            id: "foocrit1",
             title: "Foo",
             description: "How well the foo is bar.",
             weight: 75,
@@ -64,7 +74,7 @@ const foobarCourse: OatGradeType = {
             ],
         },
         {
-            id: "criterion2",
+            id: "foocrit2",
             title: "Bar",
             description: "How well the bar represents pizza.",
             weight: 25,

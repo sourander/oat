@@ -8,4 +8,13 @@ type GradeStateContainer = {
   [key: string]: GradeState;
 };
 
-export type { GradeState, GradeStateContainer };
+type BooleanGradeState = {
+    grade: boolean;
+    description: string;
+};
+
+type BooleanGradeStateContainer = {
+    [key: string]: BooleanGradeState;
+};
+
+export type { GradeState, GradeStateContainer, BooleanGradeState, BooleanGradeStateContainer };

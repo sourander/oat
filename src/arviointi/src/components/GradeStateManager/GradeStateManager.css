@@ -1,21 +1,25 @@
 /* The div of class criterion-box should be drawn so that they
 appear as 'cards' next to each other within the container */
 
-#grade-state-manager-form div {
-  margin: 0;
-  padding: 0;
-}
-
 #grade-state-manager-result div {
   background-color: cyan;
   margin: 0;
   padding: 0;
 }
 
-#grade-card {
+.grade-card-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: stretch;
   gap: 2em;
+  padding-bottom: 4em;
 }
+
+/* This applies to all grade boxes: numerical, boolean et cetera. */
+.criterion-box {
+    border: 1px solid rgb(4, 125, 159);
+    border-radius: 10px;
+    background-color: rgba(0, 154, 166, 0.1);
+    width: 610px
+  }
