@@ -74,6 +74,9 @@ export default function CalculatedGrade({
       // const grade = selectedGrades[criterion.id].grade;  (old code: good example of a hard to track bug)
       const weight = criterion.weight;
       numericalGrade += grade * (weight / 100);
+      
+      // Round by two decimals
+      numericalGrade = Math.round(numericalGrade * 100) / 100;
     });
   }
 
