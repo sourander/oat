@@ -5,15 +5,5 @@ header {
 header h1 {
   margin: 0;
   font-size: 5rem;
-  background: linear-gradient(20deg, #15e480, #04f1d1);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.10));
-}
-
-header p {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #8964b0;
+  color: rgb(0, 154, 166);
 }

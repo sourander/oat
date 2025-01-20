@@ -1,9 +1,10 @@
 import { OatGradeType } from "../types/oat-grade-types";
 
 const videoCourse: OatGradeType = {
-    id: "video_course",
-    title: "Video course",
-    description: "Video submitted by student, demonstrating the knowledge of the subject.",
+    id: "video_submission",
+    title: "Videoesitys",
+    description: `Video submitted by student, 
+                  demonstrating the knowledge of the subject.`,
     numerical_criteria: [
         {
             id: "criterion1",

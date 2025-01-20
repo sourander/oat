@@ -23,7 +23,7 @@ export default function GradeStateManager({
     });
   };
 
-  let gradeCardsDisplay = <p>Please select a topic.</p>;
+  let gradeCardsDisplay = <p>☝️ Please select a topic. 👆</p>;
 
   if (selectedGrade !== null) {
     const oatGrade = OAT_GRADE_TYPES[selectedGrade];

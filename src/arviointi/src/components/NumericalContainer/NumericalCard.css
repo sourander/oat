@@ -1,7 +1,7 @@
 .criterion-box {
-  border: 1px solid #87d0d6;
+  border: 1px solid rgb(4, 125, 159);
   border-radius: 10px;
-  background-color: #e2f2f1;
+  background-color: rgba(0, 154, 166, 0.1);
   width: 610px
 }
 
@@ -32,9 +32,9 @@
   }
   
   .custom-radio:checked + .custom-radio-label {
-    background-color: #007bff;
+    background-color: rgb(0, 178, 227);
     color: white;
-    border-color: #007bff;
+    border-color: rgb(4, 125, 159);
   }
 
   /* Tooltip for hovering over the grade numbers */
