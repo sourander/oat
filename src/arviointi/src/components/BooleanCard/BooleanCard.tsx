@@ -68,12 +68,5 @@ export default function GradeCard({
     return null;
   }
 
-  // Render the entire grade card row
-  const gradeCardRow = (
-    <div className="grade-card-row">
-      {oatGrade.boolean_criteria.map(renderCriterion)}
-    </div>
-  );
-
-  return <>{gradeCardRow}</>;
+  return <>{oatGrade.boolean_criteria.map(renderCriterion)}</>;
 }

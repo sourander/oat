@@ -74,13 +74,32 @@ export default function GradeStateManager({
 
   let gradeCardsDisplay = (
     <div className="grade-calculation-info">
-      <p>☝️ Valitse drop-down -valikosta tyyppi. 👆</p>
-      <h3>Arvosanan laskentakaava</h3>
       <p>
-        Here should be an informative message about the grade calculation. It
-        should explain how the grade will be calculated once all the grades have
-        been set. It should also explain the special rules that apply to.
+        <span className="please-choose-grade-type">
+          ☝️ Valitse drop-down -valikosta tyyppi. 👆
+        </span>
       </p>
+      <div className="grade-calculation-body">
+        <h3>Arvosanan laskentakaava</h3>
+        <p>
+          Arvosana lasketaan kahdenlaisista kriteereistä: numeraalisista (0-5)
+          ja totuusehdoista (Tosi/Epätosi). Numeraalinen arvosana lasketaan
+          kaavalla, jossa muuttuja
+          <span className="inline-code">xN</span> on yksittäisen kriteerin
+          arvosana. Asteikko on nollasta viiteen. Muuttuja 
+          <span className="inline-code">pN</span> on kriteerin painoarvo (esim.
+          0.5 eli 50 %). Kriteereitä on <span className="inline-code">N</span>
+          kappaletta. Painoarvojen summa on 1. Kaava alla:
+        </p>
+        <pre>Arvosana = (x1 * p1) + ... + (xN * pN)</pre>
+        <p>
+          Lopullinen arvosana pudotetaan kuitenkin nollaan, jos yksikin seuraavista väitteistä on totta:
+        </p>
+        <ul>
+          <li>Useampi kuin yksi kriteeri on arvosanaltaan 0.</li>
+          <li>Jokin totuusehdoista on Epätosi.</li>
+        </ul>
+      </div>
     </div>
   );
 
@@ -92,17 +111,19 @@ export default function GradeStateManager({
         <h2>{oatGrade.title}</h2>
         <p>{oatGrade.description}</p>
 
-        <NumericalCard
-          oatGrade={oatGrade}
-          handleGradeChange={handleGradeChange}
-          selectedGrades={selectedGrades}
-        />
+        <div className="grade-card-row">
+          <NumericalCard
+            oatGrade={oatGrade}
+            handleGradeChange={handleGradeChange}
+            selectedGrades={selectedGrades}
+          />
 
-        <BooleanCard
-          oatGrade={oatGrade}
-          handleBooleanChange={handleBooleanChange}
-          selectedBooleanGrades={selectedBooleanGrades}
-        />
+          <BooleanCard
+            oatGrade={oatGrade}
+            handleBooleanChange={handleBooleanChange}
+            selectedBooleanGrades={selectedBooleanGrades}
+          />
+        </div>
 
         <CalculatedGrade
           oatGrade={oatGrade}

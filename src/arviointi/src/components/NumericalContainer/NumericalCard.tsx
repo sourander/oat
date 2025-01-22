@@ -60,7 +60,7 @@ const numericalCriterion = ({
     <div className="criterion-box" key={criterion.id}>
       <h3>
         {criterion.title}{" "}
-        <span className="criterion-weight">weight: {criterion.weight} %</span>
+        <span className="criterion-weight">{criterion.weight} %</span>
       </h3>
       <p>{criterion.description}</p>
 
@@ -81,7 +81,7 @@ export default function NumericalCard({
   selectedGrades,
 }: INumericalCard) {
   return (
-    <div className="grade-card-row">
+    <>
       {oatGrade.numerical_criteria &&
         oatGrade.numerical_criteria.map((criterion) => (
           numericalCriterion({
@@ -90,6 +90,6 @@ export default function NumericalCard({
             handleGradeChange,
           })
         ))}
-    </div>
+    </>
   );
 }
