@@ -4,7 +4,7 @@ Lähdeviittaukset tehdään Vancouver-tyyliä **mukaillen**. Huomaa sana **mukai
 
 ## OAT-spec
 
-Kuten opinnäytetyön tekijän oppaassa neuvotaan [^fcfce3], lähdeviite koostuu kahdesta osasta: **tekstiviitteestä** ja **lähdeluettelon vastineesta**. Tekstiviittauksen sisällä on viittauksen tunniste, joka on tyypillisessä Vancoucer-lähdeviittauksessa numero, mutta meillä on käytössämme opinnäytetyön ==arviointityökalun oma spesifikaatio== (lyhyesti OAT-spec). OAT-spec sallii tyypillisen numeron käytön, mutta numeroinnin ylläpito käsin on haastavaa. Meidän OAT-specin suositus on siis käyttää jotakin aliasta tai MD5-tiivisteeseen (eli "häshiin") perustuvaa lyhyttä merkkijonoa. Vancouverin ja OAT-specin eroa on havainnollistettu alla olevassa taulukossa.
+Kuten opinnäytetyön tekijän oppaassa neuvotaan [^fcfce3], lähdeviite koostuu kahdesta osasta: **tekstiviitteestä** ja **lähdeluettelon vastineesta**. Tekstiviittauksen sisällä on viittauksen tunniste, joka on tyypillisessä Vancoucer-lähdeviittauksessa numero, mutta meillä on käytössämme opinnäytetyön ==arviointityökalun oma spesifikaatio== (lyhyesti OAT-spec). OAT-spec sallii tyypillisen numeron käytön, mutta numeroinnin ylläpito käsin on haastavaa. Meidän OAT-specin suositus on siis käyttää jotakin aliasta.
 
 |                  | Vancouver                     | OAT-spec                               |
 | ---------------- | ----------------------------- | -------------------------------------- |
@@ -12,11 +12,6 @@ Kuten opinnäytetyön tekijän oppaassa neuvotaan [^fcfce3], lähdeviite koostuu
 | Lähdeluettelossa | `1: Tekijä. Teos. Ynnä. Muut` | `[^fff999]: Tekijä. Teos. Ynnä. Muut.` |
 
 Alla luettelossa verrattuna kaksi OAT-specin suosittelemaa vaihtoehtoa: aliaksen käyttö ja MD5-tiivisteen käyttö.
-
-|                  | Alias                         | MD5-tiiviste (6 merkkiä)  |
-| ---------------- | ----------------------------- | ------------------------- |
-| Tekstin sisällä  | `[^linuxbible]`               | `[^fcfce3]`               |
-| Lähdeluettelossa | `[^linuxbible]: Lorem ipsum.` | `[^fcfce3]: Lorem ipsum.` |
 
 Huomaa, että lähdeviitteet voivat olla joko **viitteitä**, kuten edellä olevassa kappaleessa, tai **suoria lainauksia**, kuten tämä: *"Lähteet numeroidaan lähdeluetteloon juoksevasti eli siinä järjestyksessä, missä ne esiintyvät tekstissä."[^fcfce3]*  Suorat lainaukset kuuluu asettaa lainausmerkkien väliin.
 
@@ -27,7 +22,7 @@ Huomaa, että lähdeviitteet voivat olla joko **viitteitä**, kuten edellä olev
 Jos pohdit, että miksi me poikkeamme Vancouver-speksistä näin rankasti, niin syitä on useita. 
 
 1. Me emme tuota PDF-tiedostoa Theseukseen vaan staattisen Mkdocs-dokumentaatiosivuston. 
-2. Material for MkDocs korvaa häshit numeroille meidän puolestamme ja tekee niistä tiedostonsisäiset linkit. Kokeile klikata jotakin tämän dokumentin tekstinsisäistä viitettä. Kokeile myös klikata lähdeluettelossa näkyviä viitteitä tai niiden perässä olevia nuolia.
+2. Material for MkDocs korvaa merkkijonot numeroilla meidän puolestamme.
 
 ## Lähdeviitteiden käyttö
 
@@ -37,11 +32,11 @@ Tieteellisen tiedon suurin arvo ei johdu siitä, että tieto olisi totta [^40c08
 
 ![image-20240107135006931](../images/chatgpt.png)
 
-**Kuvio 2:** *ChatGPT vastaa väärin esimerkiksi tähän yksinkertaiseen matemaattiseen tehtävään. Se suoritti matemaattiset operaatiot sääntöjen mukaisessa järjestyksessä, mutta tyri lopulta yhteenlaskun. Oikea vastaus on 14691.*
+**Kuvio 2:** *ChatGPT vastasi vielä 2024 väärin esimerkiksi tähän yksinkertaiseen matemaattiseen tehtävään. Se suoritti matemaattiset operaatiot sääntöjen mukaisessa järjestyksessä, mutta tyri lopulta yhteenlaskun. Oikea vastaus on 14691.*
 
 !!! warning
 
-    Ethän siis käytä kielimalleja lähteinä! Se laskee arvosanaasi.
+    Ethän siis käytä kielimalleja lähteinä! Se laskee arvosanaasi. Tekoälyn käyttö muutoin oppimisen tukena tai tuutorina on kuitenkin äärimmäisen suositeltua!
 
 ## Tulevaisuuden näkymät
 

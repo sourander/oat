@@ -1,10 +1,10 @@
 # 3: Miksi oppimispäiväkirja?
 
-## Arvostelun näkökulma
+## Arvioinnin näkökulma
 
 Yksi vastaus otsikon kysymykseen on, että *"jotta opettajalla olisi jokin artefakti, jonka perusteella arvioida osaamistasi."* Huomaa, että oppimispäiväkirja ei ole siis pelkästään itsereflektiivistä kirjoittamista, vaan se on myös todistus sinun osaamisestasi. Ota tämä huomioon kirjoittaessasi oppimispäiväkirjaa.
 
-Arvioinnin pohjalla toimivat meta-arviointikriteerit näet klikkaamalla auki alla olevan laatikon. Itse arvointikriteerit esitellään kunkin kurssin alussa, mutta tyypillisesti ne löytyvät [Oppimispäiväkirja, Arviointityökalu ja Tilpehööri (OAT)](https://github.com/sourander/oat/) repositoriosta. Ohjeet `README.md`-tiedostossa.
+Arvioinnin pohjalla toimivat meta-arviointikriteerit näet klikkaamalla auki alla olevan laatikon. Itse arvointikriteerit esitellään kunkin kurssin alussa. Useilla kursseilla käytössä oleva arviointityökalu löytyy osoitteesta [arviointi.munpaas.com](https://arviointi.munpaas.com/).
 
 ??? tip "Meta-arviointikriteerit"
 

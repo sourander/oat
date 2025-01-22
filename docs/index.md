@@ -19,11 +19,9 @@ Johdanto on oppimispäiväkirjasi lukuohje. Johdannossa voi kuvata myös muodoll
 
 ## Arviointi
 
-Oppimispäiväkirjaan liittyy myös arviointityökalu, joka on toteutettu HTML+JavaScript -sovelluksena. Se on samassa repositoriossa kuin tämä Github Pages, eli [gh:sourander/oat](https://github.com/sourander/oat/). Voit ajaa arviointityökalun dockerilla. Seuraa repositorion `README.md`-tiedoston ohjeita.
+Oppimispäiväkirjaan liittyy myös arviointityökalu, joka on toteutettu React TypeScript -sovelluksena. Sen koodi on samassa repositoriossa kuin tämä Github Pages, eli [gh:sourander/oat](https://github.com/sourander/oat/). Voit tutustua koodiin oman mielenkiintosi mukaan.
 
-## Choose your language (:flag_fi: :flag_gb: :flag_us:)
-
-Note that you can write either in Finnish or English unless otherwise stated in the course. Feel free to rename e.g. `itsearviointi.md` to `self-evalution.md` if you prefer English.
+🌐 Arviointityökalu löytyy online osoitteesta: [arviointi.munpaas.com](https://arviointi.munpaas.com/) (optimoitu selaimelle)
 
 ## TODO-lista
 
