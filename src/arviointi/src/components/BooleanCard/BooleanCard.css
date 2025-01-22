@@ -1,0 +1,57 @@
+/* Override the .criterion-box class from the GradeStateManager.css file */
+/* #bool-criterion-box {
+  width: 305px;
+} */
+
+.bool-criterion-toggle {
+  display: inline-block;
+}
+
+.bool-custom-checkbox {
+  display: none; /* Hide the default checkbox */
+}
+
+/* Custom toggle label styling */
+.bool-custom-toggle-label {
+  width: 80px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+/* Circle inside the toggle */
+.bool-custom-toggle-label::after {
+  content: "";
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px; /* Center the circle vertically inside the toggle */
+  left: 4px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Checked state styling */
+.bool-custom-checkbox:checked + .bool-custom-toggle-label {
+  background-color: #4caf50;
+}
+
+.bool-custom-checkbox:checked + .bool-custom-toggle-label::after {
+  transform: translateX(40px); /* Move the circle to the right */
+}
+
+/* Optional hover effect */
+.bool-custom-toggle-label:hover {
+  background-color: #b0b0b0;
+}
+
+.bool-custom-toggle-label:hover::after {
+  background-color: #e0e0e0;
+}
+

@@ -1,0 +1,9 @@
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 5rem;
+  color: rgb(0, 154, 166);
+}

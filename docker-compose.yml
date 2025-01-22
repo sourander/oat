@@ -1,13 +1,10 @@
-name: oat
-
 services:
-  site:
-    container_name: oppimispaivakirja-container
-    image: kamk/oppimispaivakirja:latest
-    build:
-      context: .
-      dockerfile: arviointi-dev.Dockerfile
+  arviointi-dev:
+    image: node:22
     ports:
-      - "3000:3000"
+      - "3333:5173"
     volumes:
-      - ./arviointi/public:/app/public
+      - ./src/arviointi:/app
+      - /app/node_modules
+    working_dir: /app
+    command: /bin/sh -c "npm install && npm run dev -- --host 0.0.0.0"

@@ -64,7 +64,6 @@ plugins:
 extra_css:
   - stylesheets/extra.css
 
-# TODO: Replace the copyright with correct. Also add LICENCE file. Template included.
 copyright: |
-  Copyright &copy; 2023 <a href="https://www.example.com">Kajaanin Ammattikorkeakoulu Oy</a>. 
+  Copyright &copy; 2025 <a href="https://www.kamk.fi">Kajaanin Ammattikorkeakoulu Oy</a>. 
   Licenced under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">BY-NC-ND 4.0</a>
