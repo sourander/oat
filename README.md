@@ -5,6 +5,7 @@ Tämä repositorio sisältää:
 * oppimispäiväkirjan arviontityökalun ("The A in OAT")
     * HTML+React+TypeScript -sovellus
     * Aja dockerilla (`docker compose up -d`)
+    * ... tai käy [arviointi.munpaas.com](https://arviointi.munpaas.com)
 * oppimispäiväkirjan kirjoitusohjeen ("The Big-O")
     * Material for Mkdocs
     * Aja lokaalisti (`uv run mkdocs serve`)
