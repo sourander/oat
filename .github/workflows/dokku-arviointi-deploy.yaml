@@ -1,4 +1,4 @@
-name: Dokku Arviointi app Deploy
+name: Dokku Arviointi App Deploy
 
 on:
   workflow_dispatch:
@@ -7,11 +7,26 @@ on:
       - main
     paths:
       - 'arviointi-prd.Dockerfile'
-      - 'arviointi/**'
+      - 'src/arviointi/**'
 
 jobs:
+
+  test:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Cloning repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Install dependencies
+        run: |
+          cd src/arviointi
+          npm install
+          npm test
+
   deploy:
     runs-on: ubuntu-24.04
+    needs: test
     steps:
       - name: Cloning repo
         uses: actions/checkout@v3
