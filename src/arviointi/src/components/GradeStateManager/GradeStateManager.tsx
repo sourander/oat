@@ -5,7 +5,7 @@ import {
   GradeStateContainer,
   BooleanGradeStateContainer,
 } from "../../types/gradestates";
-import NumericalCard from "../NumericalContainer/NumericalCard";
+import NumericalCard from "../NumericalCard/NumericalCard";
 import BooleanCard from "../BooleanCard/BooleanCard";
 import CalculatedGrade from "../CalculatedGrade/CalculatedGrade";
 import "./GradeStateManager.css";

@@ -60,3 +60,11 @@
 .num-custom-radio-label:hover::after {
   opacity: 1; /* Show the tooltip on hover */
 }
+
+@media screen and (max-width: 768px) {
+  .num-custom-radio-label {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+  }
+}

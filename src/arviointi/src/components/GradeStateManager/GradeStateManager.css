@@ -71,3 +71,13 @@ pre {
   padding: 0.2em 0.5em;
   display: inline;
 }
+
+@media (max-width: 768px) {
+  .criterion-box {
+    width: 90%;
+  }
+
+  .grade-calculation-info {
+    width: 90%;
+  }
+}
