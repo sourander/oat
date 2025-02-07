@@ -11,7 +11,6 @@ interface ICalculatedGradeProps {
   selectedBooleanGrades: BooleanGradeStateContainer;
 }
 
-
 function formatCriteriaForCopy(
   selectedGrades: GradeStateContainer,
   selectedBooleanGrades: BooleanGradeStateContainer,
@@ -20,11 +19,21 @@ function formatCriteriaForCopy(
   let formattedString = "";
 
   for (const [_, value] of Object.entries(selectedGrades)) {
-    formattedString += `${value.title}: ${value.grade} - ${value.description} (${value.weight}%)\n`;
+    const t = value.title;
+    const g = value.grade;
+    const d = value.description
+      // Replace newlines with spaces
+      .replace(/\n/g, " ")
+      // Replace multiple spaces with one space
+      .replace(/ +/g, " ");
+    const w = value.weight;
+    formattedString += `${t}: ${g} - ${d} (${w}%)\n\n`;
   }
 
   for (const [_, value] of Object.entries(selectedBooleanGrades)) {
-    formattedString += `${value.title}: ${value.grade ? "True" : "False"} - ${value.description}\n`;
+    formattedString += `${value.title}: ${value.grade ? "True" : "False"} - ${
+      value.description
+    }\n\n`;
   }
 
   formattedString += `\nFinal grade: ${finalGrade}`;
@@ -34,15 +43,11 @@ function formatCriteriaForCopy(
   return formattedString;
 }
 
-
-
-
 export default function CalculatedGrade({
   oatGrade,
   selectedGrades,
   selectedBooleanGrades,
 }: ICalculatedGradeProps) {
-
   // Criteria count. We can continue only if all grades have been set.
   const nExpectedNumerical = oatGrade.numerical_criteria?.length;
   const nGivenNumerical = Object.keys(selectedGrades).length;
@@ -50,9 +55,9 @@ export default function CalculatedGrade({
 
   if (!canCalculateGrade) {
     return (
-        <div className="hint-to-select-grades">
-          ☝️ Valitse kustakin kategoriasta arvosana. 👆
-        </div>
+      <div className="hint-to-select-grades">
+        ☝️ Valitse kustakin kategoriasta arvosana. 👆
+      </div>
     );
   }
 
@@ -74,7 +79,7 @@ export default function CalculatedGrade({
       // const grade = selectedGrades[criterion.id].grade;  (old code: good example of a hard to track bug)
       const weight = criterion.weight;
       numericalGrade += grade * (weight / 100);
-      
+
       // Round by two decimals
       numericalGrade = Math.round(numericalGrade * 100) / 100;
     });
@@ -85,14 +90,18 @@ export default function CalculatedGrade({
       className="copy-to-clipboard-button"
       onClick={() => {
         navigator.clipboard.writeText(
-          formatCriteriaForCopy(selectedGrades, selectedBooleanGrades, numericalGrade)
+          formatCriteriaForCopy(
+            selectedGrades,
+            selectedBooleanGrades,
+            numericalGrade
+          )
         );
       }}
     >
       Copy to clipboard
     </button>
   );
-  
+
   return (
     <>
       <div className="calculated-grade-container">
