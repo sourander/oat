@@ -11,6 +11,12 @@ interface ICalculatedGradeProps {
   selectedBooleanGrades: BooleanGradeStateContainer;
 }
 
+// A function that will take in a value.desc and return a string with
+// newlines replaced with spaces and multiple spaces replaced with one space
+function formatDescription(desc: string) {
+  return desc.replace(/\n/g, " ").replace(/ +/g, " ");
+}
+
 function formatCriteriaForCopy(
   selectedGrades: GradeStateContainer,
   selectedBooleanGrades: BooleanGradeStateContainer,
@@ -21,19 +27,16 @@ function formatCriteriaForCopy(
   for (const [_, value] of Object.entries(selectedGrades)) {
     const t = value.title;
     const g = value.grade;
-    const d = value.description
-      // Replace newlines with spaces
-      .replace(/\n/g, " ")
-      // Replace multiple spaces with one space
-      .replace(/ +/g, " ");
+    const d = formatDescription(value.description);
     const w = value.weight;
     formattedString += `${t}: ${g} - ${d} (${w}%)\n\n`;
   }
 
   for (const [_, value] of Object.entries(selectedBooleanGrades)) {
-    formattedString += `${value.title}: ${value.grade ? "True" : "False"} - ${
-      value.description
-    }\n\n`;
+    const t = value.title;
+    const g = value.grade;
+    const d = formatDescription(value.description);
+    formattedString += `${t}: ${g ? "True" : "False"} - ${d}\n\n`;
   }
 
   formattedString += `\nFinal grade: ${finalGrade}`;
