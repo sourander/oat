@@ -55,6 +55,14 @@ Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun ole
     uvx cookiecutter gh:sourander/kamk-cookiecutters -f
     ```
 
+??? warning "Ajoitko sudona?"
+
+    Huomaa, että jos olet syystä tai toisesta joutunut ajaa `docker run` -komennon `sudo`-käyttäjänä, aiheutuu tilanne, jossa sinä et omista templaatin perusteella luotuja tiedostoja. Ne omistaa `root:root`. Tämän voi korjata seuraavalla komennolla, joka siirtä omistukset komennon ajavalle käyttäjälle ja hänen primary-ryhmälleen:
+
+    ```bash
+    sudo chown -R $(id -u):$(id -g) .
+    ```
+
 ### Templaatin kysymyksiin vastaaminen
 
 Komento lataa [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) repositoriosta oppimispäiväkirjan templaatin ja alustaa sen. Komento ajetaan interaktiivisessa tilassa (`-it`), jotta voit vastata kysymyksiin.
