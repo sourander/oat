@@ -1,0 +1,20 @@
+.copy-course-grading button {
+  background-color: rgba(0, 154, 166, 0.1);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.copy-course-grading button:hover {
+  background-color: rgb(4, 125, 159);
+}
+
+.copy-course-grading button:active {
+  background-color: rgb(100, 178, 199);
+}

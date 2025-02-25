@@ -8,6 +8,7 @@ import {
 import NumericalCard from "../NumericalCard/NumericalCard";
 import BooleanCard from "../BooleanCard/BooleanCard";
 import CalculatedGrade from "../CalculatedGrade/CalculatedGrade";
+import CopyCourseGrading from "../CopyCourseGrading/CopyCourseGrading";
 import "./GradeStateManager.css";
 import { BooleanCriteria } from "../../types/oat-grade-types";
 
@@ -86,14 +87,15 @@ export default function GradeStateManager({
           ja totuusehdoista (Tosi/Epätosi). Numeraalinen arvosana lasketaan
           kaavalla, jossa muuttuja
           <span className="inline-code">xN</span> on yksittäisen kriteerin
-          arvosana. Asteikko on nollasta viiteen. Muuttuja 
+          arvosana. Asteikko on nollasta viiteen. Muuttuja
           <span className="inline-code">pN</span> on kriteerin painoarvo (esim.
           0.5 eli 50 %). Kriteereitä on <span className="inline-code">N</span>
           kappaletta. Painoarvojen summa on 1. Kaava alla:
         </p>
         <pre>Arvosana = (x1 * p1) + ... + (xN * pN)</pre>
         <p>
-          Lopullinen arvosana pudotetaan kuitenkin nollaan, jos yksikin seuraavista väitteistä on totta:
+          Lopullinen arvosana pudotetaan kuitenkin nollaan, jos yksikin
+          seuraavista väitteistä on totta:
         </p>
         <ul>
           <li>Useampi kuin yksi kriteeri on arvosanaltaan 0.</li>
@@ -130,6 +132,8 @@ export default function GradeStateManager({
           selectedGrades={selectedGrades}
           selectedBooleanGrades={selectedBooleanGrades}
         />
+
+        <CopyCourseGrading oatGrade={oatGrade} />
       </div>
     );
   }
