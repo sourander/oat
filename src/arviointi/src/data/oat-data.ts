@@ -17,6 +17,7 @@ import {
   unique_ai_proj_koodi,
   unique_ai_proj_tulokset,
   unique_ai_proj_itsearviointi,
+  unique_ai_proj_hours,
 } from "./oat-unique/ai_project_all";
 
 const itsearviointi: OatGradeType = {
@@ -119,6 +120,7 @@ const aiProject: OatGradeType = {
     { ...unique_ai_proj_tulokset, weight: 20 },
     { ...unique_ai_proj_itsearviointi, weight: 20 },
   ],
+  boolean_criteria: [unique_ai_proj_hours],
 };
 
 export const OAT_GRADE_TYPES: OatGradeType[] = [

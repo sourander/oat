@@ -1,4 +1,7 @@
-import { NumericalCriteria } from "../../types/oat-grade-types";
+import {
+  NumericalCriteria,
+  BooleanCriteria,
+} from "../../types/oat-grade-types";
 
 const unique_ai_proj_aihe: NumericalCriteria = {
   id: "ai_proj_aihe",
@@ -151,6 +154,12 @@ const unique_ai_proj_itsearviointi: NumericalCriteria = {
   ],
 };
 
+const unique_ai_proj_hours: BooleanCriteria = {
+  id: "ai_proj_hours",
+  title: "Työtunnit",
+  description: `Opiskelija on todistettavasti työskennellyt sovitun määrän (default: 100h/5op).`,
+};
+
 // Export both
 export {
   unique_ai_proj_aihe,
@@ -158,4 +167,5 @@ export {
   unique_ai_proj_koodi,
   unique_ai_proj_tulokset,
   unique_ai_proj_itsearviointi,
+  unique_ai_proj_hours,
 };
