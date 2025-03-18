@@ -7,11 +7,11 @@ Oppimispäiväkirjaa ei tarvitse aluttaa aivan tyhjästä. Voit käyttää valmi
 
 ## Video-ohje
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-gewY4kEr_8?si=n6gz3XSDT2QlndAK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=EVdBeMUuqLscP-ZN&amp;list=PL7AbISYtmmfiS1sozsGkZ266EE0NeQeJh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Video 1**: *Soittolista [Cookiecutter ja oppimispäiväkirja 2025](https://youtube.com/playlist?list=PL7AbISYtmmfiS1sozsGkZ266EE0NeQeJh&si=bsN8ztXR5lgGJ0IJ) sisältää yhden puolituntisen, chapter markereilla jaksotetun videon, jossa esitellään oppimispäiväkirjan templaatin käyttöönotto ja ensimmäisen merkinnän tekeminen.*
+**Video 1**: *Soittolista [Cookiecutter ja oppimispäiväkirja 2025](https://youtube.com/playlist?list=PL7AbISYtmmfiS1sozsGkZ266EE0NeQeJh&si=oa5TdiXjHwauc9Cl) sisältää kolme videota. Ensimmäinen Luento 0 on valinnainen, mutta suositeltu, ja se taustoittaa WSL2:ssä ajetun Ubuntun. Kaksi seuraavaa, Luennot 1 ja 2, neuvovat Cookiecutter-templaatin alustamisen tyhjään repositorioon ja Material for MkDocs templaatin käytön.*
 
-Voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta.
+Jos olet sinut Git ja käyttämäsi käyttöjärjestelmän kanssa, voit noudattaa myös alla olevaa tekstimuotoista, hieman tiiviimpää ohjetta. En suosittele tätä, jos olet tippaakaan epävarma.
 
 !!! note "Arkistojen aarteita 🗃️"
 
@@ -35,6 +35,15 @@ Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun ole
     uvx cookiecutter gh:sourander/kamk-cookiecutters -f
     ```
 
+    !!! warning "Windows-käyttäjä, huomioi 🚨"
+
+        Antaako ensimmäinen `git add .`-komento herjan: `warning: in the working copy of '.gitlab-ci.yml', LF will be replaced by CRLF ...`. Jos on näin, niin käytä videolla esiteltyä apua ajaa seuraavat komennot heti `git push`-komennnon jälkeen:
+
+        ```bash
+        git rm --cached -r .
+        git reset --hard
+        ```
+
 === "Windows (PowerShell)"
 
     ```powershell
@@ -44,6 +53,15 @@ Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun ole
     ghcr.io/astral-sh/uv:python3.11-bookworm `
     uvx cookiecutter gh:sourander/kamk-cookiecutters -f
     ```
+
+    !!! warning "Windows-käyttäjä, huomioi 🚨"
+
+        Antaako ensimmäinen `git add .`-komento herjan: `warning: in the working copy of '.gitlab-ci.yml', LF will be replaced by CRLF ...`. Jos on näin, niin käytä videolla esiteltyä apua ajaa seuraavat komennot heti `git push`-komennnon jälkeen:
+
+        ```bash
+        git rm --cached -r .
+        git reset --hard
+        ```
 
 === "macOS/Linux (Bash)"
 
@@ -55,31 +73,28 @@ Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun ole
     uvx cookiecutter gh:sourander/kamk-cookiecutters -f
     ```
 
-??? warning "Ajoitko sudona?"
+    !!! warning "Ajoitko sudona? 🚨"
 
-    Huomaa, että jos olet syystä tai toisesta joutunut ajaa `docker run` -komennon `sudo`-käyttäjänä, aiheutuu tilanne, jossa sinä et omista templaatin perusteella luotuja tiedostoja. Ne omistaa `root:root`. Tämän voi korjata seuraavalla komennolla, joka siirtä omistukset komennon ajavalle käyttäjälle ja hänen primary-ryhmälleen:
+        Huomaa, että jos olet syystä tai toisesta joutunut ajaa `docker run` -komennon `sudo`-käyttäjänä, aiheutuu tilanne, jossa sinä et omista templaatin perusteella luotuja tiedostoja. Ne omistaa `root:root`. Tämän voi korjata seuraavalla komennolla, joka siirtä omistukset komennon ajavalle käyttäjälle ja hänen primary-ryhmälleen:
 
-    ```bash
-    sudo chown -R $(id -u):$(id -g) .
-    ```
+        ```bash
+        sudo chown -R $(id -u):$(id -g) .
+        ```
 
 ### Templaatin kysymyksiin vastaaminen
 
-Komento lataa [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) repositoriosta oppimispäiväkirjan templaatin ja alustaa sen. Komento ajetaan interaktiivisessa tilassa (`-it`), jotta voit vastata kysymyksiin.
+Komento lataa [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) repositoriosta oppimispäiväkirjan templaatin ja alustaa sen. Komento ajetaan interaktiivisessa tilassa (`-it`), jotta voit vastata kysymyksiin. Templaatilla tarkoitetaan sitä, että Cookiecutter luo projektin rungon siten, että se täyttää valmiisiin kenttiin, kuten `{{ sinun_nimesi }}`, vastauksesi.
 
-Tämä komento kysyy sinulta muutamia kysymyksiä, joista ensimmäisessä sinua pyydetään valitsemaan yksi templaatti monien joukosta. Kysymys ja oikea vastaus (tässä kontekstissa) näkyvät alla:
+Ensimmäisessä kysymyksessä sinua pyydetään valitsemaan yksi templaatti monien joukosta. Oikea vastaus riippuu käymästäsi kurssista. Olethan tutustunut kurssin Reppu-sivuston **Aloista tästä**-osioon? Jos kurssilla on käytössä perinteinen oppimispäiväkirja, niin vastaus on vakiona 1, kuten alla esitellään:
 
 ```plaintext
 Select template:
 1 - Oppimispäiväkirja (MkDocs learning diary)   <= Valitse tämä
 2 - ... (...)
 3 - ... (...)
-4 - ... (...)
-Choose from 1, 2 [1]:  <= Paina Enter
+Choose from 1, 2, 3 [1]:  <= Paina Enter
 ```
+Huomaa, että antamasi vastaukset täyttävät templaatin kentät, joten muutokset ovat sinänsä pysyviä. ==ÄLÄ RÄMPYTÄ ENTERIÄ.== Vastaa kysymyksiin huolella. Jos teet virheen, voit painaa ++ctrl+c++ ja aloittaa alusta ajamalla komennon uusiksi.
 
-Oppimispäiväkirjan templaatti kysyy projektin nimen, tekijän nimen ja mahdollisesti muutaman muun kysymyksen. ==ÄLÄ RÄMPYTÄ ENTERIÄ.== Vastaa kysymyksiin huolella. Cookiecutter luo projektille rungon (boilerplate) näiden vastauksien perusteella. Syntyvä kansiorakenne muistuttaa alla olevaa. Tarkista yllä linkitetystä [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) repositoriosta, jos haluat tarkempaa tietoa. 
+Jos olet yhtään epävarma, toistan vielä: katso video-ohje. Se on tehty sinua varten.
 
-!!! tip "Videolla huomio 📽️"
-
-    Repositoriosta löytyy jopa GIF-animaatio, jossa näkyy templaatin kysymyksiin vastaaminen.
