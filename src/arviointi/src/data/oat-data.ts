@@ -11,6 +11,13 @@ import unique_self_assessment_tiimityo from "./oat-unique/self_assessment_tiimit
 import unique_oppimispaivakirja_gitlog from "./oat-unique/oppimispaivakirja_gitlog";
 import unique_video_structure_quality from "./oat-unique/video_structure_quality";
 import unique_presentation_structure_quality from "./oat-unique/presentation_structure_quality";
+import {
+  unique_ai_proj_aihe,
+  unique_ai_proj_dokumentointi,
+  unique_ai_proj_koodi,
+  unique_ai_proj_tulokset,
+  unique_ai_proj_itsearviointi,
+} from "./oat-unique/ai_project_all";
 
 const itsearviointi: OatGradeType = {
   id: "self_assessment",
@@ -23,7 +30,7 @@ const itsearviointi: OatGradeType = {
     { ...common_criterion_tietotaidot, weight: 50 },
     { ...common_criterion_asiatyyli, weight: 20 },
     { ...common_criterion_lahteet, weight: 20 },
-    { ...unique_self_assessment_tiimityo, weight: 10},
+    { ...unique_self_assessment_tiimityo, weight: 10 },
   ],
 };
 
@@ -57,8 +64,7 @@ const lahioppimispaivakirja: OatGradeType = {
     {
       id: "local_learning_journal_attendance",
       title: "Välitarkastukset",
-      description:
-        `Opiskelija on esitellyt välivaiheet opettajalle vähintään KAHTENA eri opetuskertana. 
+      description: `Opiskelija on esitellyt välivaiheet opettajalle vähintään KAHTENA eri opetuskertana. 
         Ideaali on, että opiskelija pyytää palautetta ja apua joka viikko.`,
     },
   ],
@@ -76,14 +82,13 @@ const videoesitys: OatGradeType = {
     { ...common_criterion_termisto, weight: 30 },
     { ...common_criterion_toiminnallisuus, weight: 30 },
     { ...common_criterion_code_quality, weight: 30 },
-    { ...unique_video_structure_quality, weight: 10},
+    { ...unique_video_structure_quality, weight: 10 },
   ],
   boolean_criteria: [
     {
       id: "video_submission_code",
       title: "Pääsy koodiin",
-      description:
-        `Opettajalla on realistinen pääsy siihen repositorioon, josta löytyy koodin ja dokumentaation palautusversio.`,
+      description: `Opettajalla on realistinen pääsy siihen repositorioon, josta löytyy koodin ja dokumentaation palautusversio.`,
     },
   ],
 };
@@ -98,7 +103,21 @@ const liveesitys: OatGradeType = {
     { ...common_criterion_termisto, weight: 30 },
     { ...common_criterion_toiminnallisuus, weight: 30 },
     { ...common_criterion_code_quality, weight: 30 },
-    { ...unique_presentation_structure_quality, weight: 10},
+    { ...unique_presentation_structure_quality, weight: 10 },
+  ],
+};
+
+const aiProject: OatGradeType = {
+  id: "ai_project",
+  title: "🤖 AI-projekti",
+  description:
+    "Datasta tekoälyyn ryhmän projekti esimerkiksi AI Asiakasprojekti X -kurssille.",
+  numerical_criteria: [
+    { ...unique_ai_proj_aihe, weight: 20 },
+    { ...unique_ai_proj_dokumentointi, weight: 20 },
+    { ...unique_ai_proj_koodi, weight: 20 },
+    { ...unique_ai_proj_tulokset, weight: 20 },
+    { ...unique_ai_proj_itsearviointi, weight: 20 },
   ],
 };
 
@@ -108,5 +127,6 @@ export const OAT_GRADE_TYPES: OatGradeType[] = [
   lahioppimispaivakirja,
   videoesitys,
   liveesitys,
+  aiProject,
   // Additional grade types...
 ];
