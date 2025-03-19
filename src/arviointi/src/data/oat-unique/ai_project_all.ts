@@ -23,7 +23,7 @@ const unique_ai_proj_aihe: NumericalCriteria = {
     },
     {
       grade: 3,
-      desc: `Tekoälymalli tai dataputki toteuttaa referenssiesimerkin. Esimerkiksi kuvien 
+      desc: `Tekoälymalli tai dataputki toteuttaa referenssiesimerkin. Esimerkiksi kuvien
       luokittelu ennaltamäärättyjen luokkien mukaisesti.`,
     },
     {
@@ -41,7 +41,7 @@ const unique_ai_proj_aihe: NumericalCriteria = {
 const unique_ai_proj_dokumentointi: NumericalCriteria = {
   id: "ai_proj_dokumentointi",
   title: "Dokumentointi",
-  description: `Dokumentaation tulee olla selkeää, perusteltua ja hyödyntää lähteitä, kuvia 
+  description: `Dokumentaation tulee olla selkeää, perusteltua ja hyödyntää lähteitä, kuvia
   ja taulukoita tarpeen mukaan.`,
   weight: 20,
   options: [
@@ -64,7 +64,7 @@ const unique_ai_proj_dokumentointi: NumericalCriteria = {
     },
     {
       grade: 5,
-      desc: `Dokumentaatiossa on tutkittu vaihtoehtoisia menetelmiä, pohdittu saavutettuja tuloksia 
+      desc: `Dokumentaatiossa on tutkittu vaihtoehtoisia menetelmiä, pohdittu saavutettuja tuloksia
       ja käytetty projektisuunnitelmaa.`,
     },
   ],
@@ -73,7 +73,8 @@ const unique_ai_proj_dokumentointi: NumericalCriteria = {
 const unique_ai_proj_koodi: NumericalCriteria = {
   id: "ai_proj_koodi",
   title: "Koodi",
-  description: `Koodin tulee olla selkeää ja jäsenneltyä. Koodi on kommunikaatiota ja kirjoitettu luettavaksi.`,
+  description: `Koodin tulee olla selkeää ja jäsenneltyä. Koodi on kommunikaatiota ja kirjoitettu luettavaksi. Jos projekti ei sisällä koodia, tämä kriteeri saa saman
+  arvosanan kuin dokumentointi, tehden dokumentoinnin painoarvosta efektiivisesti näiden kahden summan.`,
   weight: 20,
   options: [
     { grade: 0, desc: "Ei koodia tai koodi täysin lukukelvotonta." },
@@ -100,7 +101,7 @@ const unique_ai_proj_koodi: NumericalCriteria = {
 const unique_ai_proj_tulokset: NumericalCriteria = {
   id: "ai_proj_tulokset",
   title: "Tulokset",
-  description: `Tulokset tulee esittää selkeästi ja selventää, kuinka ne 
+  description: `Tulokset tulee esittää selkeästi ja selventää, kuinka ne
   täyttävät toimeksiannon vaatimukset.`,
   weight: 20,
   options: [
@@ -157,7 +158,7 @@ const unique_ai_proj_itsearviointi: NumericalCriteria = {
 const unique_ai_proj_hours: BooleanCriteria = {
   id: "ai_proj_hours",
   title: "Työtunnit",
-  description: `Opiskelija on todistettavasti työskennellyt sovitun määrän (default: 100h/5op).`,
+  description: `Opiskelija on todistettavasti työskennellyt sovitun määrän (vakio: 100h/5op).`,
 };
 
 // Export both

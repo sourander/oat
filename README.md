@@ -74,7 +74,7 @@ app_name=arviointi
 domain=munpaas.com
 
 # -------- Dokku-palvelimella on pitänyt --------
-# 1. Luoda sovellukselle domain
+# 1. Asettaa kaikkien sovellusten yhteinen domain
 dokku domains:set-global $domain
 # 2. Luoda sovellus
 dokku apps:create $app_name
@@ -89,3 +89,5 @@ dokku builder-dockerfile:set $app_name dockerfile-path ./arviointi-prd.Dockerfil
 git remote add dokku dokku@$domain:$app_name
 git push dokku main
 ```
+
+Sivusto julkaistana osoitteeseen `{app_name}.{domain}`, esimerkiksi `arviointi.munpaas.com`.

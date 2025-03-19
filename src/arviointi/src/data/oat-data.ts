@@ -23,9 +23,9 @@ import {
 const itsearviointi: OatGradeType = {
   id: "self_assessment",
   title: "📒 Tiimiläisen itsearviointi",
-  description: `Itsearviointi on Oppimispäiväkirja 101:n ohjetta noudattaen 
+  description: `Itsearviointi on Oppimispäiväkirja 101:n ohjetta noudattaen
   kirjoitettu tapa osoittaa omaa osaamistaan. Toisin kuin oppimispäiväkirja, itsearvointi ei
-  sisällä kriteeriä viikoittain kirjoittamisesta. Työ tehdään tiimissä, mutta jokainen kirjoittaa itse 
+  sisällä kriteeriä viikoittain kirjoittamisesta. Työ tehdään tiimissä, mutta jokainen kirjoittaa itse
   oman arvionsa.`,
   numerical_criteria: [
     { ...common_criterion_tietotaidot, weight: 50 },
@@ -38,8 +38,8 @@ const itsearviointi: OatGradeType = {
 const oppimispaivakirja: OatGradeType = {
   id: "remote_learning_journal",
   title: "📓🛜 Oppimispäiväkirja (monimuoto)",
-  description: `Monimuoto-opiskelijoille tarkoitettu oppimispäiväkirja on opiskelijan itsenäinen kirjoitus, jota kirjoitetaan 
-  viikko viikolta kurssin edetessä Oppimispäiväkirja 101 -ohjeistuksen mukaan. Kukin muutos tallennetaan versionhallintaan. 
+  description: `Monimuoto-opiskelijoille tarkoitettu oppimispäiväkirja on opiskelijan itsenäinen kirjoitus, jota kirjoitetaan
+  viikko viikolta kurssin edetessä Oppimispäiväkirja 101 -ohjeistuksen mukaan. Kukin muutos tallennetaan versionhallintaan.
   Yksittäinen merkintä edustaa kyseisen viikon aihetta ja opittuja asioita. Siinä näkyvät sekä tehdyt tehtävät että saavutettu ymmärrys.`,
   numerical_criteria: [
     { ...common_criterion_tietotaidot, weight: 40 },
@@ -53,8 +53,8 @@ const lahioppimispaivakirja: OatGradeType = {
   id: "local_learning_journal",
   title: "📓🏫 Oppimispäiväkirja (lähiopetus)",
   description: `Päiväopintoihin tarkoitettu oppimispäiväkirja on opiskelijan itsenäinen kirjoitus, jota kirjoitetaan viikko viikolta
-  kurssin edetessä Oppimispäiväkirja 101 -ohjeistuksen mukaan. Työtä kirjoitetaan sekä opastetusti luokassa että omatoimisesti kotona harjoituksia tehdessä. Päiväkirja tallennetaan 
-  versionhallintaan. Yksittäinen merkintä edustaa kyseisen viikon aihetta ja opittuja asioita. Siinä näkyvät sekä tehdyt tehtävät että 
+  kurssin edetessä Oppimispäiväkirja 101 -ohjeistuksen mukaan. Työtä kirjoitetaan sekä opastetusti luokassa että omatoimisesti kotona harjoituksia tehdessä. Päiväkirja tallennetaan
+  versionhallintaan. Yksittäinen merkintä edustaa kyseisen viikon aihetta ja opittuja asioita. Siinä näkyvät sekä tehdyt tehtävät että
   saavutettu ymmärrys.`,
   numerical_criteria: [
     { ...common_criterion_tietotaidot, weight: 50 },
@@ -65,7 +65,7 @@ const lahioppimispaivakirja: OatGradeType = {
     {
       id: "local_learning_journal_attendance",
       title: "Välitarkastukset",
-      description: `Opiskelija on esitellyt välivaiheet opettajalle vähintään KAHTENA eri opetuskertana. 
+      description: `Opiskelija on esitellyt välivaiheet opettajalle vähintään KAHTENA eri opetuskertana.
         Ideaali on, että opiskelija pyytää palautetta ja apua joka viikko.`,
     },
   ],
@@ -74,10 +74,10 @@ const lahioppimispaivakirja: OatGradeType = {
 const videoesitys: OatGradeType = {
   id: "video_submission",
   title: "📹 Videoitu demo",
-  description: `Demo on opiskelijan itsenäinen tuotos, jossa opiskelija esittelee jollakin kurssilla tehdyn 
-  tuotoksen. Siitä tulee selvitä tuotteen vaatimukset, toiminnallisuus ja käyttö. Videoesityksen kesto määritellään 
-  tehtävänannon yhteydessä. Ideaalitilanteessa opettajan ei tarvitse lukea repositoriosi koodia läpi, vaan tärkeät 
-  seikat esitellään videolla. Opettajalla tulee kuitenkin olla pääsy repositorioon tarkempaa ja täydentävää 
+  description: `Demo on opiskelijan itsenäinen tuotos, jossa opiskelija esittelee jollakin kurssilla tehdyn
+  tuotoksen. Siitä tulee selvitä tuotteen vaatimukset, toiminnallisuus ja käyttö. Videoesityksen kesto määritellään
+  tehtävänannon yhteydessä. Ideaalitilanteessa opettajan ei tarvitse lukea repositoriosi koodia läpi, vaan tärkeät
+  seikat esitellään videolla. Opettajalla tulee kuitenkin olla pääsy repositorioon tarkempaa ja täydentävää
   tarkastelua varten.`,
   numerical_criteria: [
     { ...common_criterion_termisto, weight: 30 },
@@ -97,7 +97,7 @@ const videoesitys: OatGradeType = {
 const liveesitys: OatGradeType = {
   id: "live_submission",
   title: "🎤 Live-demo",
-  description: `Live-esitys on käytössä lähiopetuksessa kursseilla, joilla tehdään projektimaisesti jokin tuote. Kurssi 
+  description: `Live-esitys on käytössä lähiopetuksessa kursseilla, joilla tehdään projektimaisesti jokin tuote. Kurssi
   voi koostua useista esiteltävistä tuotteista, jolloin kukin arvioidaan erikseen. Työ esitellään joko
   opettajalle tai koko ryhmälle live-tilanteessa. Esityksen kesto määritellään tehtävänannon yhteydessä.`,
   numerical_criteria: [
@@ -111,8 +111,9 @@ const liveesitys: OatGradeType = {
 const aiProject: OatGradeType = {
   id: "ai_project",
   title: "🤖 AI-projekti",
-  description:
-    "Datasta tekoälyyn ryhmän projekti esimerkiksi AI Asiakasprojekti X -kurssille.",
+  description: `Datasta tekoälyyn ryhmän projekti esimerkiksi AI Asiakasprojekti X -kurssille. Jos data tai lähdekoodi on
+  salassapidettävää, tulee opiskelijan esitellä ratkaistut ongelmat muilla keinoin. Raportoinnissa on tällöin
+  suositeltavaa käyttää dummy-dataa, joka muistuttaa rakenteeltaan alkuperäistä paljastamatta yksityiskohtia.`,
   numerical_criteria: [
     { ...unique_ai_proj_aihe, weight: 20 },
     { ...unique_ai_proj_dokumentointi, weight: 20 },
