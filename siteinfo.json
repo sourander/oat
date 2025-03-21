@@ -1,5 +1,6 @@
 {
     "site_name": "Oppimispäiväkirja 101",
+    "site_name_slug": "oat",
     "category": "Learning tools",
     "related_repo": "[KAMK Cookiecutters: Oppimispäiväkirja template](https://github.com/sourander/kamk-cookiecutters)"
 }
