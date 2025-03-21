@@ -2,6 +2,8 @@ site_name: Oppimispäiväkirja 101
 
 theme:
   name: material
+  language: fi
+  
   features:
     - content.code.copy     # add copy button to code blocks
     - content.code.annotate # add annotation support to code blocks
@@ -57,8 +59,11 @@ markdown_extensions:
 
 plugins:
   # Navigation page ordering
-  - awesome-pages
+  - awesome-nav
   - search
+
+
+
 
 copyright: |
   Copyright &copy; 2025 <a href="https://www.kamk.fi">Kajaanin Ammattikorkeakoulu Oy</a>. 
