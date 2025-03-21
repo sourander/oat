@@ -40,7 +40,11 @@ Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. A
 
 Alla on hyvin tyypillinen lainaus LinkedIn:stä, joka kuvastaa sitä, kuinka senior-tason ohjelmistonkehittäjät aiheen näkevät. Kannattaa lukaista myös postauksen kommentit:
 
-> "Software engineering is more about what you can figure out than what you know. You don't have to remember everything. But you have to learn how to find the correct answers." ==Franco Fernando @ LinkedIn [^71b747]==
+!!! quote
+
+    "Software engineering is more about what you can figure out than what you know. You don't have to remember everything. But you have to learn how to find the correct answers."
+    
+    Franco Fernando @ LinkedIn [^71b747]
 
 ## Kirjoittamalla oppiminen
 
@@ -82,19 +86,19 @@ Oppimispäiväkirja on askel sitä kohti, että otat omasta oppimisestasi vastuu
 
 Alla on muutama lainaus, jotka on poimittu Reddit-keskustelusta, jossa devaajat jakavat toisilleen "alan salaisuuksia" [^057387]. Keskustelun kommenteissa on toistuvana teemana, että koodin kirjoittaminen on vain osa ohjelmistokehittäjän työtä. Tärkeämpää on osata ratkaista liiketoiminnan ongelmia, osata kommunikoida ja osata esitellä omaa työtä. Muun muassa näitä taitoja kehittää oppimispäiväkirjan kirjoittaminen.
 
-> A good dashboard/report is more likely to get you promoted than any code you write. ==merry_go_byebye==
+!!! quote
 
-> The code itself is barely one of the top three most important parts of your job. ==herbal_broccoli==
+    "A good dashboard/report is more likely to get you promoted than any code you write." – merry_go_byebye [^057387]    
 
-> Your prowess in live demos can greatly set you apart from your peers. ==nox010==
+    "The code itself is barely one of the top three most important parts of your job." – herbal_broccoli [^057387]
 
-> The best software developers write less code, not more. Code is a liability, not an asset. ==Tony_OpDev==
+    "Your prowess in live demos can greatly set you apart from your peers." – nox010 [^057387]
 
-> Your job isn’t to write code, your job is to solve business problems. ==oceandocent==
+    "The best software developers write less code, not more. Code is a liability, not an asset." – Tony_OpDev [^057387]
 
-> You do not write programs for computers. You write them for people. ==pemungkah==
+    "Your job isn’t to write code, your job is to solve business problems." – oceandocent [^057387]
 
-
+    "You do not write programs for computers. You write them for people." – pemungkah [^057387]
 
 ### Oppiminen ei ole pikajuoksu
 
