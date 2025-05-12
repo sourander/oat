@@ -1,0 +1,884 @@
+
+<!doctype html>
+<html lang="fi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../07_cookiecutter/">
+      
+      
+        <link rel="next" href="../paketinhallinta/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.13">
+    
+    
+      
+        <title>Naive Bayes - Oppimispäiväkirja 101</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#naive-bayes" class="md-skip">
+          Hyppää sisältöön
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Ylätunniste">
+    <a href="../../.." title="Oppimispäiväkirja 101" class="md-header__button md-logo" aria-label="Oppimispäiväkirja 101" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Oppimispäiväkirja 101
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Naive Bayes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Hae" placeholder="Hae" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Haku">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Tyhjää" aria-label="Tyhjää" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Aloitetaan hakua
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigaatio" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Oppimispäiväkirja 101" class="md-nav__button md-logo" aria-label="Oppimispäiväkirja 101" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Oppimispäiväkirja 101
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Johdanto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Viikkomerkinnät
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Viikkomerkinnät
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../01_rakenne/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    1: Oppimispäiväkirjan rakenne
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../02_markdown/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    2: Markdown
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../03_miksi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    3: Miksi oppimispäiväkirja?
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../04_tyyli/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    4: Akateeminen tyyli
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../05_lahdeviittaukset/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    5: Lähdeviittausjärjestelmän käyttö
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../06_tekniikka/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    6: Vinkkejä kirjoittamiseen
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../07_cookiecutter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    7: Cookiecutter-templaatin käyttö
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Opiskelijoiden esimerkkejä
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_8">
+            <span class="md-nav__icon md-icon"></span>
+            Opiskelijoiden esimerkkejä
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Naive Bayes
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Naive Bayes
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Sisällysluettelo">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sisällysluettelo
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lahteet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lähteet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../paketinhallinta/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Paketinhallinta
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../itsearviointi/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Itsearviointi
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Sisällysluettelo">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Sisällysluettelo
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lahteet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lähteet
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div class="admonition warning">
+<p class="admonition-title">Lukuohje!</p>
+<p>Tämä on opiskelijan Emma Sepänaho kurssin Johdatus Koneoppimiseen yksittäinen viikkomerkintä. Aiheena kyseisellä viikolla on koneoppimisalgoritmi Naive Bayes.</p>
+<p>Huomaa, että tämä on vain yksi useista oppimispäiväkirjan merkinnöistä. Tämä on nostettu esille <mark>hyvänä esimerkkinä teorian käsittelystä</mark>. Palautetun repositorion tiedostot <code>koodit/src/playground/naive_bayes.ipynb</code> ja <code>vihapuhe.ipynb</code> sisälsivät lisätodisteita käytännön taitojen soveltamisesta. Ideaalitilanteessa Jupyter Notebookeista olisi kuvakaappaukset tai koodisnippetit tässä merkinnässä.</p>
+</div>
+<h1 id="naive-bayes">Naive Bayes</h1>
+<p>Naive Bayes on koneoppimisalgoritmi, jonka teoriaan liittyy matematiikan kurssilta tuttu Bayesin teoreema: <code>P(X|Y)=P(Y|X)P(X)/P(Y)</code>. <sup id="fnref:koi"><a class="footnote-ref" href="#fn:koi">1</a></sup> Teoreemalla pystytään selvittämään todennäköisyys tapahtumalle X olettaen, että Y tapahtuu, kun tiedetään todennäköisyydet yhtäsuuruusmerkin oikealla puolella. </p>
+<p>"Naive" algoritmin nimen alussa merkitsee olettamusta siitä, että tapahtuman muuttujat eli attribuutit ovat keskenään riippumattomia. Algoritmi siis olettaa, että ne eivät vaikuta toistensa esiintyvyyteen - on tämä tosimaailmassa totta tai ei. <sup id="fnref2:koi"><a class="footnote-ref" href="#fn:koi">1</a></sup> <sup id="fnref:bcd"><a class="footnote-ref" href="#fn:bcd">2</a></sup> Esimerkiksi siis roskapostisuodatin ei välitä siitä, esiintyyvätkö kaikki vai vain yksi sanoista <em>deluxe, hot</em> ja <em>girl</em>, eikä siitä, missä järjestyksessä nämä sanat olisivat <sup id="fnref:fff"><a class="footnote-ref" href="#fn:fff">3</a></sup>.</p>
+<p>Naive Bayes -mallia koulutettaessa koulutusdatan voi ajatella matriisina, johon on enkoodattu N-määrä attribuutteja, joista yksi on kunkin havainnon luokitus. Kukin havainto koostuu attribuuttien esiintymistä. Algoritmi laskee kaikkien havaintojen ja niiden luokitteluiden perusteella uskottavuustodennäköisyydet kunkin attribuutin esiintymisestä missäkin luokassa<sup id="fnref:puu"><a class="footnote-ref" href="#fn:puu">4</a></sup>. Kun vielä määritetään luokkien toteutumien suhde, saadaan luokille prioritodennäköisyydet, joita tarvitaan Bayesin kaavan käyttöön. Alla olevassa matriisissa priorit olisivat P(A) = 6/11 ja P(B) = 5/11. <sup id="fnref2:puu"><a class="footnote-ref" href="#fn:puu">4</a></sup></p>
+<table>
+<thead>
+<tr>
+<th>Ominaisuus1</th>
+<th>Ominaisuus2</th>
+<th>Ominaisuus3</th>
+<th>Luokka</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>A</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>A</td>
+</tr>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>1</td>
+<td>A</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>B</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<p><em>Esimerkkimatriisi koulutusdatasta.</em></p>
+<p>Jotta vältettäisiin nollatulokset koulutusdatassa esiintymättömyyden takia, on yleinen konventio lisätä alpha-luku kaikkiin mahdollisiin esiintymiin. Alpha voi olla periaatteessa mikä vain luonnollinen luku, mutta usein se on 1. Tällöin uskottavuustodennäköisyydeksi ei koskaan tule nolla, vaan jokin todella pieni desimaali kuten 0,000001. <sup id="fnref3:puu"><a class="footnote-ref" href="#fn:puu">4</a></sup> <sup id="fnref2:fff"><a class="footnote-ref" href="#fn:fff">3</a></sup> </p>
+<p>Yllä olevan matriisidatan uskottavuustodennäköisyydet olisivat siis:  </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>P(ominaisuus1 | A) = (6+α)/(6+α)  
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>P(ominaisuus2 | A) = (3+α)/(6+α)  
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>P(ominaisuus3 | A) = (4+α)/(6+α)  
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>P(ominaisuus1 | B) = (0+α)/(5+α)  
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>P(ominaisuus2 | B) = (3+α)/(5+α)  
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>P(ominaisuus3 | B) = (2+α)/(5+α)  
+</span></code></pre></div>
+<p><img alt="Venn-diagrammi" src="../images/emma_venn.png" /></p>
+<p><strong>Kuva 1:</strong> <em>Venn-diagrammi havainnollistukseksi koulutusdatan jakaumasta.</em></p>
+<p>Palataan, vielä takaisin alkuperäiseen teoreemaan, jolla voidaan siis laskea posterioritodennäköisyys todisteiden, uskottavuuden ja prioritodennäköisyyden perusteella. </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>P(X|Y) = posterioritodennäköisyys  
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>P(Y|X) = uskottavuus  
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>P(X) = oletus, prioritodennäköisyys  
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>P(Y) = todisteet 
+</span></code></pre></div>
+<p>Naive Bayes -koneoppimismallilla on tarkoitus luokitella havainto todennäköisimpään luokkaan. Tarkastellaan siis esim. suhdetta <code>P(A|ominaisuus2):P(B|ominaisuus2)</code>. Tällöin jakaja eli "todisteet" voidaan unohtaa, koska jakaja on kaikissa posterioritodennäköisyyslaskuissa sama. <sup id="fnref3:fff"><a class="footnote-ref" href="#fn:fff">3</a></sup> <sup id="fnref3:koi"><a class="footnote-ref" href="#fn:koi">1</a></sup> Matemaattinen todistus alla:</p>
+<p><img alt="Bayesin teoreemaan perustuva suhteellinen todennäköisyys" src="../images/emma_kaava.png" /></p>
+<p>Laskusta saadaan tulokseksi positiivinen rationaaliluku. Jos se on suurempi kuin 1, jaettava luokka (todistuksessa siis luokka A) on todennäköisempi kuin jakajan luokka. Jos luku on pienempi kuin 1, jakajan luokka (B) on todennäköisempi. <sup id="fnref4:fff"><a class="footnote-ref" href="#fn:fff">3</a></sup> Mikäli algoritmia ei ole koodattu laskemaan suhdelukua, vaan kaksi eri arvoa kummallekin mahdolliselle luokalle, loppupäätelmä saadaan vertailemalla, kumpi posterioreista on suurempi. Tämä tapa on varmasti helpompi ymmärtää, jos luokkia on enemmän kuin kaksi. </p>
+<p>Toisaalta taas jos attribuuteista haluaa tarkastella useampaa kuin yhtä, tulee näille kullekin attribuutille laskea oma uskottavuustodennäisyys ja kertoa nämä keskenään, jotta saa selville "yhteisuskottavuustodennäköisyyden". Esimerkki attribuuttikohtaisista uskottavuustodennäköisyyksistä on yllä. Niiden avulla voitaisiin laskea vaikkapa todennäköisyys havainnolle kuulua A- tai B-luokkaan, jos havainnolla on ominaisuudet 2 ja 3:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>P(A | ominaisuus2, ominaisuus3) 
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>= P(ominaisuus2 | A) * P(ominaisuus3 | A) * P(A)
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>= (3+α)/(6+α)  * (4+α)/(6+α) * 6/11
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>= 0,18
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>P(B | ominaisuus2, ominaisuus3) 
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>= P(ominaisuus2 | B) * P(ominaisuus3 | B) * P(B)
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>= (3+α)/(5+α) * (2+α)/(5+α) * 5/11
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>= 0,11
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>P(A | ominaisuus2, ominaisuus3) &gt; P(B | ominaisuus2, ominaisuus3) 
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>==&gt; Havainto kuuluu todennäköisemmin luokkaan A.
+</span></code></pre></div>
+<p>Naive Bayes -koneoppimisalgoritmeja on monia. Tyypillinen Naive Bayesin sovellutus on roskapostisuodatin. <sup id="fnref2:bcd"><a class="footnote-ref" href="#fn:bcd">2</a></sup> Lähdin ratkomaan suodattimen tapaista vihepuhetehtävää ScikitLearnin MultinominalNB:llä. Säilytin datasta vain luokat ja twiitit. Kun koulutetaan tekstintunnistajaa, datasta on hyvä siivota välimerkit, ja se on käsiteltävä sellaisessa muodossa, että tekstihavainnon sisältämiä sanoja arvioidaan erikseen; tämän opin kantapään kautta ensin Allure-tehtävässä yrittäessäni luokitella kokonaista tekstihavaintoa kerrallaan. Datan voi esikäsitellä esimerkiksi vektorisoimalla. <sup id="fnref:goo"><a class="footnote-ref" href="#fn:goo">5</a></sup> Sain mallin koulutettua, mutta koko datasetillä pelattaessa, se ei tunnista vihepuheviestejä lainkaan. Toisen opiskelijan esimerkkiä mukaillen otin datasta kaikki vihapuheeksi enkoodatut havainnot ja saman verran ei-vihapuhetwiittejä.<sup id="fnref2:goo"><a class="footnote-ref" href="#fn:goo">5</a></sup> Tämän jälkeen ennustaminenkin alkoi toimia (accuracy 88%). Koulutusdatan tasapainoisuus saattaa siis vaikuttaa mallin toimintaan. </p>
+<p>Naive Bayesin kaltaisen algoritmin käyttö vaatii suurta ihmisen panosta: esimerkiksi vihapuheen luokittelu on ensin tehtävä ihmisvoimin, jotta olisi dataa, jolla malli kouluttaa. Toiseksi on pohdittava sitä, mitä ja millaista data on: opettaja nosti esiin, että esimerkiksi vihapuhetta luokiteltaessa käyttäjien nimimerkit olisi hyvä poistaa, joitteivät nimet vaikuttaisi luokitteluun ja jottei tiettyjen ihmisten viestejä aina luokiteltaisi vihapuheeksi. Lisäksi funktiosanat voi jättää huomiotta, koska ne eivät kanna sisällöllistä painoarvoa, esiintyvät ne vihapuhe- tai tavallisessa viestissä.<sup id="fnref3:goo"><a class="footnote-ref" href="#fn:goo">5</a></sup> <sup id="fnref:isk"><a class="footnote-ref" href="#fn:isk">6</a></sup></p>
+<h2 id="lahteet">Lähteet</h2>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:koi">
+<p>Sourander, J. (2024): Koneoppimisen perusteet -verkkomateriaali. Kajaanin Ammattikorkeakoulu Oy. https://sourander.github.io/ml-perusteet/.&#160;<a class="footnote-backref" href="#fnref:koi" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:koi" title="Jump back to footnote 1 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:koi" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:bcd">
+<p>Rouse, M. (2019): Naive Bayes.Techopedia. https://www.techopedia.com/definition/32335/naive-bayes&#160;<a class="footnote-backref" href="#fnref:bcd" title="Jump back to footnote 2 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:bcd" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:fff">
+<p>MinnaLearn &amp; Helsingin yliopisto (2024): Elements of AI -kurssimateriaali. https://course.elementsofai.com&#160;<a class="footnote-backref" href="#fnref:fff" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:fff" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:fff" title="Jump back to footnote 3 in the text">&#8617;</a><a class="footnote-backref" href="#fnref4:fff" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:puu">
+<p>StatQuest with Josh Stramer (2020): Naive Bayes, Clearly Explained!!!. Youtube. https://www.youtube.com/watch?v=O2L2Uv9pdDA.&#160;<a class="footnote-backref" href="#fnref:puu" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:puu" title="Jump back to footnote 4 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:puu" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:goo">
+<p>Sourander, J. (2024): 2. luento. Johdatus koneoppimiseen -kurssi. Kajaanin Ammattikorkeakoulu Oy.&#160;<a class="footnote-backref" href="#fnref:goo" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref2:goo" title="Jump back to footnote 5 in the text">&#8617;</a><a class="footnote-backref" href="#fnref3:goo" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:isk">
+<p>Iso suomen kielioppi (2008): § 438 Sanaluokkajaon perusteet. Verkkoversio. https://kaino.kotus.fi/visk/sisallys.php?p=438.&#160;<a class="footnote-backref" href="#fnref:isk" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 <a href="https://www.kamk.fi">Kajaanin Ammattikorkeakoulu Oy</a>. 
+Licenced under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">BY-NC-ND 4.0</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.copy", "content.code.annotate", "content.tabs.link"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Kopioitu leikep\u00f6yd\u00e4lle", "clipboard.copy": "Kopioi leikep\u00f6yd\u00e4lle", "search.result.more.one": "1 lis\u00e4\u00e4 t\u00e4ll\u00e4 sivulla", "search.result.more.other": "# lis\u00e4\u00e4 t\u00e4ll\u00e4 sivulla", "search.result.none": "Ei t\u00e4sm\u00e4\u00e4vi\u00e4 dokumentteja", "search.result.one": "1 t\u00e4sm\u00e4\u00e4v\u00e4 dokumentti", "search.result.other": "# t\u00e4sm\u00e4\u00e4v\u00e4\u00e4 dokumenttia", "search.result.placeholder": "Kirjoita aloittaaksesi haun", "search.result.term.missing": "Puuttuu", "select.version": "Valitse versio"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  </body>
+</html>
