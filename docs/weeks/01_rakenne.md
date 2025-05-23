@@ -20,16 +20,16 @@ Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä
 
 ### Kuvien käyttö
 
-Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on suositeltavaa ja ==käytännön aineissa pakollista==. Esimerkki kummastakin alla: 
+Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on suositeltavaa ja ==käytännön kursseilla pakollista==. Esimerkki kummastakin alla: 
 
-* 🧤 Käytännön aine: Linux Perusteet -kurssi.
-* 📖 Teoreettinen aine: Big Data -analytiikka ja liiketoiminta -kurssi.
+* 🧤 Käytännöllistä: Linux Perusteet -kurssi.
+* 📖 Teoreettista: Big Data -analytiikka ja liiketoiminta -kurssi.
 
-Käytä kuvia ja kuvaajia kuitenkin harkiten. Valtaosan päiväkirjamerkinnästä tulisi koostua kokonaisista lauseista, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei siis voi olla pelkkä kuvagalleria tai luettelo asioita.
+Käytä kuvia ja kuvaajia kuitenkin harkiten ja viittaa näihin tekstissä. Valtaosan päiväkirjamerkinnästä tulisi koostua kokonaisista lauseista, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei siis voi olla pelkkä kuvagalleria tai luettelo asioita.
 
 ### Merkinnän laajuus
 
-Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtävänannossa määritellä muuta. Kukin viikkotason merkintä on laajuudeltaan noin **1 liuskan eli 500 sanaa**. Voit ylittää tuon rajan, mutta älä kirjoita yli kahta liuskaa eli noin 1000 sanaa tekstiä. Mikäli tekstiä meinaa syntyä liikaa, tiivistä ja keskity olennaiseen. Kuka tahansa osaa kirjoittaa pitkästi; tiivisti kirjoittaminen vaatii harjoitusta.
+Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtävänannossa määritellä muuta. Kukin viikkotason merkintä on laajuudeltaan noin **1 liuskan eli 500 sanaa**. Voit ylittää tuon rajan, mutta älä kirjoita yli kahta liuskaa eli noin 1000 sanaa tekstiä. Mikäli tekstiä meinaa syntyä liikaa, tiivistä ja keskity olennaiseen. Kuka tahansa osaa kirjoittaa pitkästi; tiivisti kirjoittaminen vaatii harjoitusta. Huomaa, että kuvien, kuvaajien ja koodilohkojen käyttö on oiva tapa sisällyttää paljon tietoa lyhyeen tekstiin.
 
 500 sanaa on melko suppea määrä sanoja prosessien kuvaamiseen. Jos koet kattavan oppimispäiväkirjan kirjoittamisen tärkeäksi, harkitse sitä, että kirjoitat koko oppimispäiväkirjan muualle, ja kirjoitat opettajalle palautettavaan oppimispäiväkirjaan tiiviimmän tekstin.
 

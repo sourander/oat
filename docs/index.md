@@ -21,7 +21,7 @@ Johdanto on oppimispäiväkirjasi lukuohje. Johdannossa voi kuvata myös muodoll
 
 Oppimispäiväkirjaan liittyy myös arviointityökalu, joka on toteutettu React TypeScript -sovelluksena. Sen koodi on samassa repositoriossa kuin tämä Github Pages, eli [gh:sourander/oat](https://github.com/sourander/oat/). Voit tutustua koodiin oman mielenkiintosi mukaan.
 
-🌐 Arviointityökalu löytyy online osoitteesta: [arviointi.munpaas.com](https://arviointi.munpaas.com/) (optimoitu selaimelle)
+🌐 Arviointityökalu löytyy online osoitteesta: [arviointi.munpaas.com](https://arviointi.munpaas.com/)
 
 ## TODO-lista
 

@@ -38,6 +38,8 @@ National Research Council:n komitean mukaan opetussuunnitelmat korostavat tyypil
 
 Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. Asiantuntijat ovat tehokkaita ongelmanratkaisijoita, tiedonhakijoita ja tiedon soveltajia. Hakkarainen ja kumppanit [^40c08c] tiivistävät, että: *"kirjoittaminen on kaikkein tärkein ajattelemaan oppimisen väline."* Oppimispäiväkirjan tavoitteena on siis auttaa sinua kehittymään asiantuntijaksi. 2000-luvun työntekijä ei voi olettaa saavansa esihenkilöltä yksiselitteisiä työtehtäviä. Olet ammattikorkeakoulussa valmistamassa itseäsi työelämään, joten työelämän tavat toimia on hyvä ottaa käyttöön jo nyt. Oppimispäiväkirja on yksi tapa harjoitella kirjoittamista ja ajattelua sekä saattaa ajattelu näkyväksi.
 
+Kielimallit eli tekoälypohjaiset chat-botit tuovat tähän oman lisänsä. Voisi kuvitella, että teknologisista vempaimista olisi pelkkää haittaa, mutta tuoreehkot meta-analyysit osoittavat, että esimerkiksi ChatGPT:n käyttö voi parantaa opiskelijoiden oppimistuloksia [^3dbfe5].
+
 Alla on hyvin tyypillinen lainaus LinkedIn:stä, joka kuvastaa sitä, kuinka senior-tason ohjelmistonkehittäjät aiheen näkevät. Kannattaa lukaista myös postauksen kommentit:
 
 !!! quote
@@ -80,6 +82,8 @@ Ei riitä, että osaat seurata vaihe vaiheelta eteneviä videotutoriaaleja. Ei m
     * Miksi tuossa lukee 22.04 LTS?
     * Miksi työpöydän taustakuvassa on meduusa?
 
+    Huomaa, että voit sekä generoida näitä kysymyksiä, että pallotella mahdollisia vastauksia ChatGPT:n tai muun kielimallin kanssa. Tämä ei kuitenkaan tarkoita, että sinun pitäisi vain kopioida ja liittää ChatGPT:n tuottamaa tekstiä oppimispäiväkirjaasi. Oppimispäiväkirja on sinun oma työsi, ja sen tulee olla sinun kirjoittamaasi tekstiä.
+
 Oppimispäiväkirja on askel sitä kohti, että otat omasta oppimisestasi vastuuta. Sinä olet se, joka opiskelee ja oppii. Opettaja on valmentaja ja apu. Oppimispäiväkirja on se artefakti, jolla teet oppimisprosessistasi näkyvän, jotta opettajalla on jokin mahdollisuus antaa sinulle tekemistäsi vastaava arvosana. Se on siis kaksisuuntainen väline, joka palvelee sekä sinua että opettajaa.
 
 ### Lainauksia Redditistä
@@ -121,6 +125,7 @@ Aivan kuten pyöräilyä opetellessa apupyörät ovat apuväline, tai laskettelu
 [^a029a4]: Bransford, J. D., Brown, A. & Cocking, R. *Miten opimme: Aivot, mieli, kokemus ja koulu* (A. Penttilä, suom.). Helsinki: WSOY. 2004.
 [^e883b6]: Myllymäki, M., Laine, S. & Hakala, I. *ICT-alan rekrytointiselvitys Keski-Pohjanmaalla*. 2023. https://cinetcampus.fi/site/assets/files/2246/ict-rekry_raportti.pdf
 [^40c08c]: Hakkarainen, K., Lonka, K. & Lipponen, L. *Tutkiva oppiminen: Järki, tunteet ja kulttuuri oppimisen sytyttäjinä*. Helsinki: WSOY. 2004.
+[^3dbfe5]: Wang, J & Fan, W. The effect of ChatGPT on students’ learning performance, learning perception, and higher-order thinking: insights from a meta-analysis. Humanit Soc Sci Commun 12, 621. 2025. https://doi.org/10.1057/s41599-025-04787-y
 [^71b747]: Franco, F. *Untitled LinkedIn post*. https://www.linkedin.com/feed/update/urn\:li:activity:7164168809942085632
 [^7ef5f9]: Karnorfsky, H. *Learning by Writing*. https://www.cold-takes.com/learning-by-writing/
 [^68dfb8]: Osmani, A. Write about what you learn. *It pushes you to understand topics better*. 2023. https://addyosmani.com/blog/write-learn/
