@@ -21,7 +21,17 @@ Jos olet sinut Git ja käyttämäsi käyttöjärjestelmän kanssa, voit noudatta
 
 ## Teksti-ohje
 
+### Cookiecutter-komento uv:ssa
+
+On äärimmäisen suositeltavaa käyttää [astral-sh/uv](https://docs.astral.sh/uv/)-työkalua Cookiecutter-templaatin alustamiseen. Tällöin sinun tarvitsee ajaa vain yksi komento:
+
+```bash
+uvx cookiecutter gh:sourander/kamk-cookiecutters -f
+```
+
 ### Cookiecutter-komento Dockerissa
+
+Jos et jostain syystä voi tai halua asentaa `uv`-työkalua, voit ajaa Cookiecutter-komennon Dockerissa. Huomaa, että ei välttämättä vähennä vaikeustasoa millään tavalla. Saatat joutua korjaamaan esimerkiksi tiedostojen omistuksia tai newline-merkintöjä. Nämä vaiheet neuvotaan alla, mutta `uv`:n avulla voit välttyä niiltä kokonaan.
 
 Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun olet projektikansiossa, johon oppimispäiväkirjan haluat alustaa, aja käyttöjärjestelmästä riippuen oikea komento. Komennot löytyvät alla olevasta snippetistä; valitse käyttöjärjestelmäsi klikkaamalla koodisnippetin päällä olevaa välilehtivalikkoa. Samat komennot ja ohjeet löytyvät myös [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) -reposta.
 

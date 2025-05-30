@@ -37,7 +37,11 @@ Oman työn hallinta ja johtaminen on työelämässä tärkeä taito. Työterveys
 
 Voit halutessasi käyttää kirjoittamisen apuna eri ohjelmia ja työkaluja. Voit esimerkiksi kirjoittaa runkotekstin **Microsoft Word**:ssa, jolloin käytössäsi on oikoluku ja muut kielentarkistusominaisuudet. Tämän jälkeen voit kopioida tekstin Markdown-muotoon. Voit jopa kokeilla sanella tekstiä valitsemasi speech-to-text -ohjelman avulla; muista kuitenkin tarkistaa robotin litteroima teksti ennen sen julkaisemista.
 
-Markdown-tiedostoja voi muokata ja esikatsella **Visual Studio Code**:lla, mutta siinä eivät toimi esimerkiksi alaviite tai Mermaid ainakaan ilman lisäosia. Jos kirjoitat Visual Studio Code:lla, kannattaa pitää MkDocs-palvelin ajossa ja tarkkailla sivua `localhost:8000`:ssa. 
+Markdown-tiedostoja voi muokata ja esikatsella **Visual Studio Code**:lla, mutta siinä eivät toimi esimerkiksi alaviite tai Mermaid ainakaan ilman lisäosia. Jos kirjoitat Visual Studio Code:lla, kannattaa pitää MkDocs-palvelin ajossa ja tarkkailla sivua `localhost:8000`:ssa.
+
+![](../images/vscode-chrome-splitscreen.png)
+
+**Kuvio 1:** *Kuvassa näkyy splitscreen-tilassa kaksi ohjelmaa auki: Visual Studio Code ja Chrome. Vasenta käytetään koodin kirjoittamiseen, oikeanpuoleista tarkistamaan, miltä se näyttää loppukäyttäjän simin lokaalin development serverin avulla. Lokaalin palvelimen ajo neuvotaan tämän ohjeistuksen seuraavissa luvuissa.*
 
 !!! tip
 

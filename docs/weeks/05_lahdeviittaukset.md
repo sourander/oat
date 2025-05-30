@@ -4,6 +4,8 @@ Lähdeviittaukset tehdään Vancouver-tyyliä **mukaillen**. Huomaa sana **mukai
 
 ## OAT-spec
 
+### Mikä?
+
 Kuten opinnäytetyön tekijän oppaassa neuvotaan [^fcfce3], lähdeviite koostuu kahdesta osasta: **tekstiviitteestä** ja **lähdeluettelon vastineesta**. Tekstiviittauksen sisällä on viittauksen tunniste, joka on tyypillisessä Vancoucer-lähdeviittauksessa numero, mutta meillä on käytössämme opinnäytetyön ==arviointityökalun oma spesifikaatio== (lyhyesti OAT-spec). OAT-spec sallii tyypillisen numeron käytön, mutta numeroinnin ylläpito käsin on haastavaa. Meidän OAT-specin suositus on siis käyttää jotakin aliasta.
 
 |                  | Vancouver                     | OAT-spec                               |
@@ -24,6 +26,50 @@ Jos pohdit, että miksi me poikkeamme Vancouver-speksistä näin rankasti, niin 
 1. Me emme tuota PDF-tiedostoa Theseukseen vaan staattisen Mkdocs-dokumentaatiosivuston. 
 2. Material for MkDocs korvaa merkkijonot numeroilla meidän puolestamme.
 
+### Oat Tools
+
+Oppimispäiväkirja 101:n avuksi on PyPi:stä löytyvä moduuli nimeltään [oat-tools](https://pypi.org/project/oat-tools/). Sen suhteen on oletus, että sinulla on `uv` asennettuna. Jos näin on, voit asentaa `oat-tools`-moduulin komennolla:
+
+```bash
+# Asenna
+uv tool install oat-tools
+
+# Päivitä jatkossa
+uv tool update oat-tools
+```
+
+Tämän jälkeen voit käyttää `oat`-komentoa, jonka `uv` on asentanut koneellesi (hakemistoon `~/.local/bin/oat`). Työkalu neuvoo itse käyttöään, ja lisäksi yllä olevasta PyPi-linkistä löytyy dokumentaatio. Oat-työkalun avulla voit muun muassa:
+
+```bash
+# Laskea sanat (pois lukien koodilohkot)
+oat wordcount path/to/file.md
+
+# Tarkistaa, ettei orpoja tai puuttuvia lähdeviitteitä ole
+oat references check path/to/file.md
+
+# ⚠️ Korjaa lähdeviitteet ja järjestää lähdeluettelon (order of appearance)
+oat references fix path/to/file.md
+```
+
+!!! warning "Vaarallinen komento ⚠️"
+
+    Huomaa, että viimeisin komento, `references fix`, muokkaa tiedostoja. Aja tämä vain silloin, kun tiedosto on tallennettu, kommitattu ja puskettu Git remoteen eli GitLabiin. Muuten saatat menettää tiedostojen muutokset, jos minun skriptissä on bugi.
+
+!!! tip
+
+    Työkalu tukee useita argumentteja, joten voit käsitellä sillä usean tiedoston kerralla. Jos haluat käsitellä **kaikki** `docs`-hakemistossa ja sen alihakemistoissa olevat Markdown-tiedostot, aja komento:
+
+    ```bash
+    # Laske
+    oat wordcount docs/**/*.md
+    
+    # Tarkista
+    oat references check docs/**/*.md
+
+    # Korjaa
+    oat references fix docs/**/*.md
+    ```
+
 ## Lähdeviitteiden käyttö
 
 ### Tieteellinen tieto
@@ -38,7 +84,7 @@ Tieteellisen tiedon suurin arvo ei johdu siitä, että tieto olisi totta [^40c08
 
     Ethän siis käytä kielimalleja lähteinä! Se laskee arvosanaasi. Tekoälyn käyttö muutoin oppimisen tukena tai tuutorina on kuitenkin äärimmäisen suositeltua!
 
-## Tulevaisuuden näkymät
+### Tulevaisuuden näkymät
 
 Tulet tarvitsemaan lähdeviitteitä myöhemmin opiskelussasi, viimeistään kirjoittaessasi opinnäytetyötäsi. On siis hyvä, että harjoittelet lähdeviitteiden käyttöä jo nyt. Lähdeviitteiden hallintaa voi helpottaa käyttämällä jotakin viitteidenhallintajärjestelmää, kuten [Zoteroa](https://www.zotero.org/) tai [Mendeley Cite](https://www.mendeley.com/reference-management/mendeley-cite). Näihin kannattaa tutustua jo hyvissä ajoin ennen opinnäytetyön kirjoittamista. Voit kokeilla niitä jo nyt, jos haluat, mutta valitettavasti niitä ei ole integroitu tähän oppimispäiväkirjaan - eli ne eivät osaa OAT-speciä.
 

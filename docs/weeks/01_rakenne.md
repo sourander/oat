@@ -33,7 +33,33 @@ Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtäv
 
 500 sanaa on melko suppea määrä sanoja prosessien kuvaamiseen. Jos koet kattavan oppimispäiväkirjan kirjoittamisen tärkeäksi, harkitse sitä, että kirjoitat koko oppimispäiväkirjan muualle, ja kirjoitat opettajalle palautettavaan oppimispäiväkirjaan tiiviimmän tekstin.
 
-!!! tip
+!!! tip "Sanamäärän laskeminen"
+
+    Voit laskea Markdown-tiedoston sanojen määrän käyttämällä `oat-tools`-työkalua. Olettaen että sinulla on [astral-sh/uv](https://docs.astral.sh/uv) asennettuna, voit asentaa `oat-tools`:n näin:
+
+    ```bash
+    uv tools install oat-tools
+    ```
+
+    Tämän jälkeen voit laskea sanojen määrän komennolla `oat wordcount path/to/file.md`. Työkalu jättää laskematta esimerkiksi koodilohkoissa olevat sanat, joten se on hyvä tapa laskea vain runkotekstin sanat. Alla olevan komennon avulla voit laskea **kaikkien** oppimispäiväkirjan Markdown-tiedostojen sanojen määrän kerralla:
+
+    ```console
+    $ oat wordcount docs/**/*.md
+    File                           Word Count
+    ---------------------------  ------------
+    docs/docs/index.md                    252
+    docs/docs/itsearviointi.md            340
+    docs/docs/weeks/35_entry.md           580
+    docs/docs/weeks/36_entry.md           635
+    docs/docs/weeks/37_entry.md           554
+    docs/docs/weeks/38_entry.md           622
+    docs/docs/weeks/39_entry.md           534
+    docs/docs/weeks/40_entry.md           602
+    ```
+
+    Tämä komento laskee kaikki sanat, mukaan lukien koodilohkoissa olevat sanat. Jos haluat laskea vain runkotekstin sanat, katso alla olevaa vinkkiä. Tarkemmat käyttöohjeet löydät [oat-tools](https://pypi.org/project/oat-tools/) -projektin sivulta.
+
+!!! tip "Sanamäärän laskeminen ilman oat-toolsia"
 
     Voit laskea sanojen määrän siten, että koodiblokit jäävät laskematta, käyttämällä alla olevaa komentoa. Komento olettaa, että koodilohkot alkavat ja loppuvat kolmella backtickillä ja ovat rivin alussa: eivät sisennettyjä.
 
