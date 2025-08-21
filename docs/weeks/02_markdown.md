@@ -16,6 +16,13 @@ Käy lukemassa [Markdown Guide: Basic Syntax](https://www.markdownguide.org/basi
 * Etsi koodista Basic Syntax -linkin mukaisia elementtejä (otsikot, kappaleet, listat, lihavointi)
 * Aloita oppimispäiväkirjasi ja käytä näitä perusmuotoiluita.
 
+
+Jos haluat harjoitella interaktiivisesti, voit käyttää [DC-labra HedgeDog](https://gitlab.dclabra.fi/wiki/)-alustaa. Voit kirjautua palveluun DC GitLab -tunnuksilla. HedgeDogissa on mahdollista näkeä vierekkäin kirjoittamasi Markdown-syntaksi ja sen renderöity lopputulos.
+
+![alt text](../images/hedgedog.png)
+
+**Kuva 1:** *HedgeDog-ympäristö. Tämä, mitä luet nyt, on kuvateksti. Kuvatekstin voi lisätä tavallisena kappaleena, jonka alku on lihavoituna kirjoitettuna `Kuva n:`*
+
 ### :two: Extended Syntax
 
 Käy lukemassa [Markdown Guide: Extended Syntax](https://www.markdownguide.org/extended-syntax/).
@@ -28,10 +35,14 @@ Käy lukemassa [Markdown Guide: Extended Syntax](https://www.markdownguide.org/e
 Tämä sivusto käyttää Material for MkDocs -teemaa (MkDocs:n päällä). Tutustu [Material for MkDocs: References](https://squidfunk.github.io/mkdocs-material/)-dokumentaatioon. Selvitä, mitä ainakin seuraavat ovat, ja kuinka niitä käytetään:
 
 * admonitions
-* code blocks
+* data tables
 * footnotes
 
 Etsi Oppimispäiväkirja 101:sta esimerkkejä näistä elementeistä. Käytä niitä myös oppimispäiväkirjassasi.
+
+!!! warning
+
+    Huomaa, että nämä **eivät välttämättä toimi** HedgeDocissa tai esimerkiksi GitLabissa. Ne eivät kuulu tavalliseen Markdown-syntaksiin vaan ovat lisämausteita.
 
 ### :repeat: Testaa selaimella
 
@@ -55,7 +66,7 @@ Käytä luetelmaa kun listaat asioita [^d1a7a7].
 * On
 * Luettelo
 
-Ethän kirjoita kirjoita koko merkintää listamuodossa; korkeakouluopiskelijan tulee osata kirjoittaa kokonaisin lausein. Esimerkiksi pizzanteon vaiheet pääpiirteittäin ovat selkeä luettelo, mutta yksityiskohtaisten pizzanvalmistuksen vaiheiden listaaminen on jo liikaa.
+Ethän kirjoita kirjoita koko merkintää listamuodossa; korkeakouluopiskelijan tulee osata kirjoittaa kokonaisin lausein. Esimerkiksi pizzanteon vaiheet pääpiirteittäin ovat selkeä luettelo, mutta yksityiskohtaisten pizzanvalmistuksen vaiheiden avaaminen kuuluu leipätekstiin *(engl. body text)*.
 
 ### :octicons-code-square-16: Koodilohkot
 
@@ -76,7 +87,57 @@ Koodilohko luodaan asettamalla koodi kolmen backtickin (tai joskus harvoin kolme
 
 Voit käyttää valokuvia tai kuvakaappauksia oppimispäiväkirjassasi. On suositeltavaa pienentää kuvia ennen niiden lataamista GitLabiin, mikäli kuvat ovat useita tuhansia pikseleitä kooltaan. Kuvan lisääminen hoituu yllä olevan koodisnippetin mukaisesti. Huomaa, että polku on relatiivinen.
 
+#### Vinkki: Kuvan koon vaihtaminen
 
+Kuvan kokoa voit vaihtaa helposti kuvankäsittelyohjelmalla, mutta mikäli olet Linuxissa, sinulla ei välttämättä ole graafista kuvankäsittelyohjelmaa asennettuna. Näin yksinkertaiseen tehtävään se olisi liioiteltu ohjelmisto muutenkin! Tämän tempun voi hoitaa komentoriviltä esimerkiksi `convert`-työkalulla, joka on osa ImageMagick-kirjastoa.
+
+Kuvitellaan tilanne, että sinulla on älypuhelimella ottamasi kuva Raspberry Pi -laitteesta. Kuva on `4:3` kuvasuhteella ja kokoa `8064 × 6048` pikseliä eli hurjat 48 megapikseliä. Näin suurella kuvalla ei tee oppimispäiväkirjassa mitään, joten haluat pienentää kuvan siten, että ==pidempi sivu on vain 1024 pikseliä (kuvasuhteen muuttumatta)==. Lisähaasteena kuva on HEIC-formaatissa, jota useimmat selaimet eivät tue. Olet kopioinut kuvan Linux-koneellesi OneDrive tai Google Drive palvelusta hakemistoon `~/Code/kurssin-nimi-2099` ja tiedoston nimi on `IMG_1234.heic`.
+
+```bash
+# Asenna (jos ei ole jo)
+sudo apt install imagemagick
+
+# Mene hakemistoon, jossa kuva(t) ovat
+cd ~/Code/kurssin-nimi-2099
+
+# Kutsu imagemagickin convert-työkalua
+convert IMG_1234.heic -resize 1024x1024 raspberry-pi-kammenella.jpg
+```
+
+Jatkossa kuva on enää maksimissaan 1 megapikselin kokoinen, joten oletettavasti tiedostokoko on pudonnut noin 1/48 osaan alkuperäisestä.
+
+!!! tip
+
+    Mikäli haluat muuttaa useamman kuvan kokoa kerralla, voit käyttää `mogrify`-komentoa:
+
+    ```bash
+    mogrify -resize 1024x1024 *.jpg
+    ```
+
+#### Vinkki: Kuvakaappauksen liittäminen
+
+Mikäli olet liittämässä kuvakaappausta, kokeile Visual Studio Coden näppärää toimintoa, joka säästää sinulta aikaa. Sinun ei tarvitse käsin tallentaa kuvaa oikeaan hakemistoon ja kirjoittaa upotuskoodia itse; Visual Studio Code automatisoi tämän! Alla ohje sekä GIF-videona että tekstimuodossa.s
+
+![Kuvakaappauksen liittäminen GIF](../images/vscode-paste-image-tip.gif)
+
+**Video 1:** *Kuvan liittäminen leikepöydältä suoraan Markdown-dokumenttiin VS Codessa. Kuvatiedosto myös nimetään uusiksi. Lue samat vaiheet alta tekstimuodossa.*
+s
+* Ota kuvakaappaus
+    * Win/Mac: ++print-screen++
+    * macOS: ++cmd+shift+4++
+* Liitä kuva Markdown-dokumenttiin (CTRL + v)
+* VS Code:
+    * Lisää kursorin kohdalle `![](image.png)`-kuvaupotuksen.
+    * Luo tiedoston `image.png` samaan hakemistoon.
+* Nimeä kuva vielä uusiksi:
+    * Klikkaa kuvan polkua hiiren oikealla korvalla
+        * Valitse: *Rename Symbol (F2)*
+    * Kirjoita uusi nimi kuvalle.
+    * VS Code nimeää kuvan uusiksi *(ja jopa siirtää toiseen hakemistoon, jos polku muuttuu)*.
+
+!!! warning
+
+    Yllä oleva kuvan liittäminen toimii myös muihin kuviin, jotka ovat leikepöydälläsi, kuten mihin tahansa internetistä kopioimaasi kuvaan. Huolehdithan, että ==sinulla on oikeudet käyttää kuvaa==. Älä koskaan väitä muiden ottamia kuvia tai tekemiä kuvaajia sinun sisällöksesi.
 
 ### :chart_with_upwards_trend: Kuvaajat
 
