@@ -23,9 +23,13 @@ Jos olet sinut Git ja käyttämäsi käyttöjärjestelmän kanssa, voit noudatta
 
 ### Cookiecutter-komento uv:ssa
 
-On äärimmäisen suositeltavaa käyttää [astral-sh/uv](https://docs.astral.sh/uv/)-työkalua Cookiecutter-templaatin alustamiseen. Asenna `uv` ja sen kylkiäisenä tuleva `uvx` [Installing uv](https://docs.astral.sh/uv/getting-started/installation/)-ohjeita seuraten. Asennus hoituu yhdellä Bash/PowerShell komennolla eikä tarvitse admin-oikeuksia. Kun `uv` on asennettu, aja seuraava komento:
+On äärimmäisen suositeltavaa käyttää [astral-sh/uv](https://docs.astral.sh/uv/)-työkalua Cookiecutter-templaatin alustamiseen. Asenna `uv` ja sen kylkiäisenä tuleva `uvx` [Installing uv](https://docs.astral.sh/uv/getting-started/installation/)-ohjeita seuraten. Asennus hoituu yhdellä Bash/PowerShell komennolla eikä tarvitse admin-oikeuksia. Kun `uv` on asennettu, aja seuraavat komennot:
 
 ```bash
+# Asenna uv:lle oma Python
+uv python install 3.12
+
+# Käytä cookiecutteria
 uvx cookiecutter gh:sourander/kamk-cookiecutters -f
 ```
 
