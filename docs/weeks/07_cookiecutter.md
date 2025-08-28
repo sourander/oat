@@ -23,13 +23,19 @@ Jos olet sinut Git ja käyttämäsi käyttöjärjestelmän kanssa, voit noudatta
 
 ### Cookiecutter-komento uv:ssa
 
-On äärimmäisen suositeltavaa käyttää [astral-sh/uv](https://docs.astral.sh/uv/)-työkalua Cookiecutter-templaatin alustamiseen. Tällöin sinun tarvitsee ajaa vain yksi komento:
+On äärimmäisen suositeltavaa käyttää [astral-sh/uv](https://docs.astral.sh/uv/)-työkalua Cookiecutter-templaatin alustamiseen. Asenna `uv` ja sen kylkiäisenä tuleva `uvx` [Installing uv](https://docs.astral.sh/uv/getting-started/installation/)-ohjeita seuraten. Asennus hoituu yhdellä Bash/PowerShell komennolla eikä tarvitse admin-oikeuksia. Kun `uv` on asennettu, aja seuraava komento:
 
 ```bash
 uvx cookiecutter gh:sourander/kamk-cookiecutters -f
 ```
 
-### Cookiecutter-komento Dockerissa
+Jos kaikki sujui hyvin, voit siirtyä tässä artikkelissa kappaleeseen "Templaatin kysymyksiin vastaaminen"
+
+!!! tip
+
+    Jos tietokone herjaa, että komentoa `uv` ei löydy, sulje ja avaa terminaali. Ympäristömuuttuja PATH saattaa kaivata päivitystä – ja helpoin tapa päivittää se on tämä.
+
+### Vaihtoehto: uv Dockerissa
 
 Jos et jostain syystä voi tai halua asentaa `uv`-työkalua, voit ajaa Cookiecutter-komennon Dockerissa. Huomaa, että ei välttämättä vähennä vaikeustasoa millään tavalla. Saatat joutua korjaamaan esimerkiksi tiedostojen omistuksia tai newline-merkintöjä. Nämä vaiheet neuvotaan alla, mutta `uv`:n avulla voit välttyä niiltä kokonaan.
 
