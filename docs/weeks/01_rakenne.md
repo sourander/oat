@@ -38,7 +38,7 @@ Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtäv
     Voit laskea Markdown-tiedoston sanojen määrän käyttämällä `oat-tools`-työkalua. Olettaen että sinulla on [astral-sh/uv](https://docs.astral.sh/uv) asennettuna, voit asentaa `oat-tools`:n näin:
 
     ```bash
-    uv tools install oat-tools
+    uv tool install oat-tools
     ```
 
     Tämän jälkeen voit laskea sanojen määrän komennolla `oat wordcount path/to/file.md`. Työkalu jättää laskematta esimerkiksi koodilohkoissa olevat sanat, joten se on hyvä tapa laskea vain runkotekstin sanat. Alla olevan komennon avulla voit laskea **kaikkien** oppimispäiväkirjan Markdown-tiedostojen sanojen määrän kerralla:
