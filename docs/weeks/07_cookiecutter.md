@@ -21,7 +21,7 @@ Jos olet sinut Git ja käyttämäsi käyttöjärjestelmän kanssa, voit noudatta
 
 ## Teksti-ohje
 
-### Cookiecutter-komento uv:ssa
+### Cookiecutter-templaatin käyttö
 
 On äärimmäisen suositeltavaa käyttää [astral-sh/uv](https://docs.astral.sh/uv/)-työkalua Cookiecutter-templaatin alustamiseen. Asenna `uv` ja sen kylkiäisenä tuleva `uvx` [Installing uv](https://docs.astral.sh/uv/getting-started/installation/)-ohjeita seuraten. Asennus hoituu yhdellä Bash/PowerShell komennolla eikä tarvitse admin-oikeuksia. Kun `uv` on asennettu, aja seuraavat komennot:
 
@@ -39,67 +39,9 @@ Jos kaikki sujui hyvin, voit siirtyä tässä artikkelissa kappaleeseen "Templaa
 
     Jos tietokone herjaa, että komentoa `uv` ei löydy, sulje ja avaa terminaali. Ympäristömuuttuja PATH saattaa kaivata päivitystä – ja helpoin tapa päivittää se on tämä.
 
-### Vaihtoehto: uv Dockerissa
+!!! note "Docker-vaihtoehto"
 
-Jos et jostain syystä voi tai halua asentaa `uv`-työkalua, voit ajaa Cookiecutter-komennon Dockerissa. Huomaa, että ei välttämättä vähennä vaikeustasoa millään tavalla. Saatat joutua korjaamaan esimerkiksi tiedostojen omistuksia tai newline-merkintöjä. Nämä vaiheet neuvotaan alla, mutta `uv`:n avulla voit välttyä niiltä kokonaan.
-
-Mene projektikansioon (esim. `cd ~/Code/kurssin-nimi/etunimi-sukunimi`). Kun olet projektikansiossa, johon oppimispäiväkirjan haluat alustaa, aja käyttöjärjestelmästä riippuen oikea komento. Komennot löytyvät alla olevasta snippetistä; valitse käyttöjärjestelmäsi klikkaamalla koodisnippetin päällä olevaa välilehtivalikkoa. Samat komennot ja ohjeet löytyvät myös [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters) -reposta.
-
-=== "Windows (Git Bash)"
-
-    ```bash
-    winpty docker run -it --rm \
-    -v "/$(pwd):/workspace" \
-    -w '//workspace' \
-    ghcr.io/astral-sh/uv:python3.11-bookworm \
-    uvx cookiecutter gh:sourander/kamk-cookiecutters -f
-    ```
-
-    !!! warning "Windows-käyttäjä, huomioi 🚨"
-
-        Antaako ensimmäinen `git add .`-komento herjan: `warning: in the working copy of '.gitlab-ci.yml', LF will be replaced by CRLF ...`. Jos on näin, niin käytä videolla esiteltyä apua ajaa seuraavat komennot heti `git push`-komennnon jälkeen:
-
-        ```bash
-        git rm --cached -r .
-        git reset --hard
-        ```
-
-=== "Windows (PowerShell)"
-
-    ```powershell
-    docker run -it --rm `
-    -v "${PWD}:/workspace" `
-    -w /workspace `
-    ghcr.io/astral-sh/uv:python3.11-bookworm `
-    uvx cookiecutter gh:sourander/kamk-cookiecutters -f
-    ```
-
-    !!! warning "Windows-käyttäjä, huomioi 🚨"
-
-        Antaako ensimmäinen `git add .`-komento herjan: `warning: in the working copy of '.gitlab-ci.yml', LF will be replaced by CRLF ...`. Jos on näin, niin käytä videolla esiteltyä apua ajaa seuraavat komennot heti `git push`-komennnon jälkeen:
-
-        ```bash
-        git rm --cached -r .
-        git reset --hard
-        ```
-
-=== "macOS/Linux (Bash)"
-
-    ```bash
-    docker run -it --rm \
-    -v "$(pwd):/workspace" \
-    -w /workspace \
-    ghcr.io/astral-sh/uv:python3.11-bookworm \
-    uvx cookiecutter gh:sourander/kamk-cookiecutters -f
-    ```
-
-    !!! warning "Ajoitko sudona? 🚨"
-
-        Huomaa, että jos olet syystä tai toisesta joutunut ajaa `docker run` -komennon `sudo`-käyttäjänä, aiheutuu tilanne, jossa sinä et omista templaatin perusteella luotuja tiedostoja. Ne omistaa `root:root`. Tämän voi korjata seuraavalla komennolla, joka siirtä omistukset komennon ajavalle käyttäjälle ja hänen primary-ryhmälleen:
-
-        ```bash
-        sudo chown -R $(id -u):$(id -g) .
-        ```
+    Jos et jostain syystä voi tai halua asentaa `uv`-työkalua, voit ajaa Cookiecutter-komennon Dockerissa. Katso tähän ohjeet [gh:sourander/kamk-cookiecutters](https://github.com/sourander/kamk-cookiecutters)-repositotion README.md-tiedostosta.
 
 ### Templaatin kysymyksiin vastaaminen
 
@@ -118,3 +60,22 @@ Huomaa, että antamasi vastaukset täyttävät templaatin kentät, joten muutoks
 
 Jos olet yhtään epävarma, toistan vielä: katso video-ohje. Se on tehty sinua varten.
 
+### Development server
+
+Jos haluat tarkistaa, miltä oppimispäiväkirjasi näyttää selaimessa, voit ajaa MkDocs development serverin. Aja terminaalissa seuraavat komennot:
+
+```bash
+# Siirry hakemistoon, jossa on `mkdocs.yml` tiedosto
+cd docs
+
+# Aja development server
+uvx --with mkdocs-material --with mkdocs-awesome-nav mkdocs serve
+```
+
+Huomaa, että nämä samat komennot on esitetty myös `HOW-TO-DOCS.md` tiedostossa, joka saapui Cookiecutter-templaatin mukana. Se löytyy projektin juuresta.
+
+### Mitä nyt?
+
+Nyt voit aloittaa kirjoittamisen tällä sivustolla esitellyllä tavalla. Mikäli haluat saada ohjeistusta videomuodossa, katso myös yllä linkitetyn YouTube-soittolistan videoita: soittolistan loppupään video(t) sisältää kirjoitukseen liittyviä ohjeita.
+
+Muista pitää Git ajan tasalla. Kun olet saanut jonkin kokonaisuuden valmiiksi, kuten viikon merkinnän, tallenna työsi ja työnnä se etärepositorioon GitLabiin.
