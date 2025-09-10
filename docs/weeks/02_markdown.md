@@ -116,12 +116,12 @@ Jatkossa kuva on enää maksimissaan 1 megapikselin kokoinen, joten oletettavast
 
 #### Vinkki: Kuvakaappauksen liittäminen
 
-Mikäli olet liittämässä kuvakaappausta, kokeile Visual Studio Coden näppärää toimintoa, joka säästää sinulta aikaa. Sinun ei tarvitse käsin tallentaa kuvaa oikeaan hakemistoon ja kirjoittaa upotuskoodia itse; Visual Studio Code automatisoi tämän! Alla ohje sekä GIF-videona että tekstimuodossa.s
+Mikäli olet liittämässä kuvakaappausta, kokeile Visual Studio Coden näppärää toimintoa, joka säästää sinulta aikaa. Sinun ei tarvitse käsin tallentaa kuvaa oikeaan hakemistoon ja kirjoittaa upotuskoodia itse; Visual Studio Code automatisoi tämän! Alla ohje sekä GIF-videona että tekstimuodossa.
 
 ![Kuvakaappauksen liittäminen GIF](../images/vscode-paste-image-tip.gif)
 
 **Video 1:** *Kuvan liittäminen leikepöydältä suoraan Markdown-dokumenttiin VS Codessa. Kuvatiedosto myös nimetään uusiksi. Lue samat vaiheet alta tekstimuodossa.*
-s
+
 * Ota kuvakaappaus
     * Win/Mac: ++print-screen++
     * macOS: ++cmd+shift+4++
