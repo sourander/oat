@@ -22,16 +22,22 @@ Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä
 
 Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on suositeltavaa ja ==käytännön kursseilla pakollista==. Esimerkki kummastakin alla: 
 
-* 🧤 Käytännöllistä: Linux Perusteet -kurssi.
-* 📖 Teoreettista: Big Data -analytiikka ja liiketoiminta -kurssi.
+* 🧤 Käytännön kurssi: Linux Perusteet
+* 📖 Teoreettinen kurssi: Big Data -analytiikka ja liiketoiminta
 
 Käytä kuvia ja kuvaajia kuitenkin harkiten ja viittaa näihin tekstissä. Valtaosan päiväkirjamerkinnästä tulisi koostua kokonaisista lauseista, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei siis voi olla pelkkä kuvagalleria tai luettelo asioita.
 
 ### Merkinnän laajuus
 
-Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtävänannossa määritellä muuta. Kukin viikkotason merkintä on laajuudeltaan noin **1 liuskan eli 500 sanaa**. Voit ylittää tuon rajan, mutta älä kirjoita yli kahta liuskaa eli noin 1000 sanaa tekstiä. Mikäli tekstiä meinaa syntyä liikaa, tiivistä ja keskity olennaiseen. Kuka tahansa osaa kirjoittaa pitkästi; tiivisti kirjoittaminen vaatii harjoitusta. Huomaa, että kuvien, kuvaajien ja koodilohkojen käyttö on oiva tapa sisällyttää paljon tietoa lyhyeen tekstiin.
+Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtävänannossa määritellä muuta. Kukin viikkotason merkintä on laajuudeltaan noin **1 liuskan eli 500 sanaa**. Voit ylittää tuon rajan, mutta älä kirjoita yli kahta liuskaa eli noin 1000 sanaa tekstiä. Mikäli tekstiä meinaa syntyä liikaa, tiivistä ja keskity olennaiseen. Kuka tahansa osaa kirjoittaa pitkästi; tiivisti kirjoittaminen vaatii harjoitusta. Tähän liittyen on edellä lainaus:
 
-500 sanaa on melko suppea määrä sanoja prosessien kuvaamiseen. Jos koet kattavan oppimispäiväkirjan kirjoittamisen tärkeäksi, harkitse sitä, että kirjoitat koko oppimispäiväkirjan muualle, ja kirjoitat opettajalle palautettavaan oppimispäiväkirjaan tiiviimmän tekstin.
+!!! quote
+
+    "I would have written a shorter letter, but I did not have the time."
+
+    — Blaise Pascal [^npr]
+
+500 sanaa on melko suppea määrä sanoja prosessien kuvaamiseen. Kuvien, kuvaajien ja koodilohkojen käyttö on oiva tapa sisällyttää paljon tietoa lyhyeen tekstiin. Jos koet kattavan oppimispäiväkirjan kirjoittamisen tärkeäksi, harkitse sitä, että kirjoitat koko oppimispäiväkirjan muualle, ja kirjoitat opettajalle palautettavaan oppimispäiväkirjaan tiiviimmän tekstin. Tai vaihtoehtoisesti voit aluksi kirjoittaa pidemmän oppimispäiväkirjan, ja viimeisellä viikolla tiivistää sitä sopivaan mittaan. Tällöin teet tärkeitä valintoja siitä, mikä on olennaista, mikä ei.
 
 !!! tip "Sanamäärän laskeminen"
 
@@ -66,3 +72,6 @@ Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtäv
     ```bash title="Bash tai Git Bash"
     sed '/^```/,/^```/d' path/to/file.md | wc -w
     ```
+
+
+[^npr]: Lombrozo, T. *This Could Have Been Shorter*. NPR. https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter
