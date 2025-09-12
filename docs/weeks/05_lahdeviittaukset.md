@@ -74,7 +74,7 @@ oat references fix path/to/file.md
 
 ### Pisteen paikka
 
-Lähdeviitteeillä on kaksi osaa, kuten yllä on jo todettu: leipätekstin (engl. in-text citation) sisällä oleva viite ja lähdeluettelo (engl. reference list) dokumentin lopussa. Tämä näkyy selkeästi yllä Kuviossa 1. On tärkeää ymmärtää, että leipätekstin viitettä ei voi sijoittaa summa mutikassa minne tahansa. On tärkeää, että **lukija ymmärtää, mikä osa on lähteteokseen perustuvaa, mikä on muuta pohdintaa**. Tässä on yksi apukeino pistesääntö. Katso Kuvio 2, jossa tätä havainnollistetaan.
+Lähdeviitteeillä on kaksi osaa, kuten yllä on jo todettu: leipätekstin sisällä oleva viite (*engl. in-text citation*) ja lähdeluettelo (*engl. reference list*). Tämä näkyy selkeästi yllä Kuviossa 1. On tärkeää ymmärtää, että leipätekstin viitettä ei voi sijoittaa summa mutikassa minne tahansa. On tärkeää, että **lukija ymmärtää, mikä osa on lähteteokseen perustuvaa, mikä on muuta pohdintaa**. Tässä on yksi apukeino pistesääntö. Katso Kuvio 2, jossa tätä havainnollistetaan.
 
 ![](../images/lahdeviite-pistesaanto.png)
 
