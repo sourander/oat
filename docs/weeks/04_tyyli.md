@@ -24,7 +24,11 @@ Oppimispäiväkirja ei voi kuitenkaan olla pelkkää reflektiivistä sisäistä 
 
 !!! tip
 
-    Kannattaa tutustua muiden opiskelijoiden kirjoittamiin opinnäytetöihin. Millainen niiden rakenne on? Millaista on kieli? Tunnistatko mielestäsi hyvän opinnäytetyön huonosta. Miten?
+    Kannattaa tutustua muiden opiskelijoiden kirjoittamiin opinnäytetöihin. Millainen niiden rakenne on? Millaista on kieli? Tunnistatko mielestäsi hyvän opinnäytetyön huonosta. Miten? Kuinka koodisnippettejä käytetään ja kuinka pitkiä niissä näkyvä koodi tyypillisesti on? Kuinka koodisnippettejä käsitellään leipätekstissä?
+
+    Esimerkkejä löydät Theseus-palvelusta, esimerkiksi valitsemalla **Kajaanin ammattikorkeakoulu** ja hakemalla avainsanalla `data science` tai `data-analytiikka`. sitten rajaamalla hakutuloksia koulutusalan mukaan **Tieto- ja viestintätekniikka**, lopulta vielä avainsanalla **ohjelmistonkehitys**. Tässä suora linkki juuri tähän hakuun: [Theseus: Kajaanin ammattikorkeakoulu, data science, tieto- ja viestintätekniikka, ohjelmistonkehitys](https://www.theseus.fi/handle/10024/1967/discover?filtertype_0=koulutusala&filter_relational_operator_0=equals&filter_0=fi%3DTieto-+ja+viestint%C3%A4tekniikka%7Csv%3DInformations-+och+kommunikationsteknik%7Cen%3DInformation+and+Communications+Technology%7C&filtertype=subjects&filter_relational_operator=equals&filter=ohjelmistokehitys).
+
+    Yksi löytyvistä opinnäyteöistä on esimerkiksi Jari Väisäsen [Modbus TCP/IP -palvelimen toteutus](https://www.theseus.fi/handle/10024/274143) vuodelta 2020.
 
 !!! tip
 
