@@ -84,7 +84,7 @@ Jos tämä ihmetyttää, tutustu aiheeseen toisen esimerkin kautta: [Opinnäytet
 
 ### Suora lainaus
 
-Oppimispäiväkirjamerkintä ei saa olla lainauskokoelma. Valtaosa tekstistä tulee olla sinun epäsuoria lainauksia ja sinun omaa pohdintaa. Suoria lainauksia tulee siis käyttää harkiten ja perustellusti. Suorat lainaukset tulee merkitä selkeästi lainausmerkein, ja lainauksen jälkeen tulee olla lähdeviite. 
+Oppimispäiväkirjamerkintä ei saa olla lainauskokoelma. Valtaosa tekstistä tulee olla epäsuoria lainauksia tai sinun omaa pohdintaa. Suoria lainauksia tulee siis käyttää harkiten ja perustellusti. Suorat lainaukset tulee merkitä selkeästi lainausmerkein, ja lainauksen jälkeen tulee olla lähdeviite. 
 
 !!! note "Suora lainaus tekstissä"
 
