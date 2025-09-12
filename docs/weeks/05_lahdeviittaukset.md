@@ -74,11 +74,11 @@ oat references fix path/to/file.md
 
 ### Pisteen paikka
 
-Lähdeviitteeillä on kaksi osaa, kuten yllä on jo todettu: leipätekstin (engl. in-text citation) sisällä oleva viite ja lähdeluettelo (engl. reference list) dokumentin lopussa. Tämä näkyy selkeästi yllä Kuviossa 1. On tärkeää ymmärtää, että leipätekstin viitettä ei voi sijoittaa summa mutikassa minne tahansa. On tärkeää, että **lukija ymmärtää, mikä osa on lähteteokseen perustuvaa, mikä on muuta pohdintaa**. Tässä on yksi apukeino pistesääntö. Katso Kuvio 3, jossa tätä havainnollistetaan.
+Lähdeviitteeillä on kaksi osaa, kuten yllä on jo todettu: leipätekstin (engl. in-text citation) sisällä oleva viite ja lähdeluettelo (engl. reference list) dokumentin lopussa. Tämä näkyy selkeästi yllä Kuviossa 1. On tärkeää ymmärtää, että leipätekstin viitettä ei voi sijoittaa summa mutikassa minne tahansa. On tärkeää, että **lukija ymmärtää, mikä osa on lähteteokseen perustuvaa, mikä on muuta pohdintaa**. Tässä on yksi apukeino pistesääntö. Katso Kuvio 2, jossa tätä havainnollistetaan.
 
 ![](../images/lahdeviite-pistesaanto.png)
 
-**Kuvio 3:** *Se, onko lähdeviite ennen vai jälkeen virkkeen päättävän pisteen, on tärkeää. Kuviossa keltainen taustaväri tarkoittaa, että lause perustuu lähteeseen numero 3. Sinertävä väri tarkoittaa, että lause perustuu lähteeseen numero 2.*
+**Kuvio 2:** *Se, onko lähdeviite ennen vai jälkeen virkkeen päättävän pisteen, on tärkeää. Kuviossa keltainen taustaväri tarkoittaa, että lause perustuu lähteeseen numero 3. Sinertävä väri tarkoittaa, että lause perustuu lähteeseen numero 2. Taustaväritön teksti olisi sinun omaan päättelyysi perustuvaa.*
 
 Jos tämä ihmetyttää, tutustu aiheeseen toisen esimerkin kautta: [Opinnäytetyön tekijän opas: Lähdeviitteet ja lähdeluettelo (Vancouver)](https://libguides.kamk.fi/c.php?g=657740&p=5157950) -sivulta.
 
@@ -108,7 +108,7 @@ Tieteellisen tiedon suurin arvo ei johdu siitä, että tieto olisi totta [^40c08
 
 ![image-20240107135006931](../images/chatgpt.png)
 
-**Kuvio 2:** *ChatGPT vastasi vielä 2024 väärin esimerkiksi tähän yksinkertaiseen matemaattiseen tehtävään. Se suoritti matemaattiset operaatiot sääntöjen mukaisessa järjestyksessä, mutta tyri lopulta yhteenlaskun. Oikea vastaus on 14691.*
+**Kuvio 3:** *ChatGPT vastasi vielä 2024 väärin esimerkiksi tähän yksinkertaiseen matemaattiseen tehtävään. Se suoritti matemaattiset operaatiot sääntöjen mukaisessa järjestyksessä, mutta tyri lopulta yhteenlaskun. Oikea vastaus on 14691.*
 
 !!! warning
 
