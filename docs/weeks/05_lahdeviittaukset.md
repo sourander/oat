@@ -72,6 +72,36 @@ oat references fix path/to/file.md
 
 ## Lähdeviitteiden käyttö
 
+### Pisteen paikka
+
+Lähdeviitteeillä on kaksi osaa, kuten yllä on jo todettu: leipätekstin (engl. in-text citation) sisällä oleva viite ja lähdeluettelo (engl. reference list) dokumentin lopussa. Tämä näkyy selkeästi yllä Kuviossa 1. On tärkeää ymmärtää, että leipätekstin viitetti ei voi sijoittaa summa mutikassa minne tahansa. On tärkeää, että **lukija ymmärtää, mikä osa on lähteteokseen perustuvaa, mikä on muuta pohdintaa**.
+
+![](../images/lahdeviite-pistesaanto.png)
+
+**Kuvio 3:** *Se, onko lähdeviite ennen vai jälkeen virkkeen päättävän pisteen, on tärkeää. Kuviossa keltainen taustaväri tarkoittaa, että lause perustuu lähteeseen numero 3. Sinertävä väri tarkoittaa, että lause perustuu lähteeseen numero 2.*
+
+Jos tämä ihmetyttää, tutustu aiheeseen toisen esimerkin kautta: [Opinnäytetyön tekijän opas: Lähdeviitteet ja lähdeluettelo (Vancouver)](https://libguides.kamk.fi/c.php?g=657740&p=5157950) -sivulta.
+
+### Suora lainaus
+
+Oppimispäiväkirjamerkintä ei saa olla lainauskokoelma. Valtaosa tekstistä tulee olla sinun epäsuoria lainauksia ja sinun omaa pohdintaa. Suoria lainauksia tulee siis käyttää harkiten ja perustellusti. Suorat lainaukset tulee merkitä selkeästi lainausmerkein, ja lainauksen jälkeen tulee olla lähdeviite. 
+
+!!! note "Suora lainaus tekstissä"
+
+    Tämä olisi todennäköisesti kappaleen verran sinun tekstiäsi, josta päätyisit siihen, että haluat lainata suoraan lähdeteosta näin: *"Some of the shells that Bash has borrowed concepts from are the Bourne Shell (sh), the Korn Shell (ksh), and the C-shell (csh and its successor, tcsh)"[^bash].* 
+
+    Tämäkin olisi sinun tekstiäsi, ja tälläkin kertaa haluaisit jostain syystä lainata suoraan lähdetekstiä näin: *"Linux is normally used in combination with the GNU operating system: the whole system is basically GNU with Linux added, or GNU/Linux. All the so-called “Linux” distributions are really distributions of GNU/Linux"* [^gnulinux].
+
+### Epäsuora lainaus
+
+Jos selostat tekstiä omin sanoin (enlg. paraphrasing), et tarvitse lainausmerkkejä. Lukijalle tulee kuitenkin olla selvää, mikä osa tekstistä perustuu mihinkin lähteeseen. Apuna tässä toimii yllä mainittu pisteen paikka, mutta tämän lisäksi myös lauseen sisällöllä voi ohjata lukijaa. Alla pari esimerkkiä, joissa lausemuotoinen tapa ohjata lukijaa on korostettuna keltaisella.
+
+!!! note "Epäsuora lainaus tekstisssä"
+
+    Bash lainaa, ==kuten sen käyttöopas vahvistaa==, useita ominaisuuksia eri shell-ohjelmista eli kuorista. Näitä ovat muiden muassa Korn Shell (ksh) ja C-shell ja sen alkuperäinen esikuva Bourne Shell (sh) [^bash].
+
+    ==Stallmanin mukaan== termi *Linux-käyttöjärjestelmä* on väärä, koska Linux-ydin on vain osa käyttöjärjestelmää. Hän ehdottaa, että käyttöjärjestelmästä käytettäisiin nimeä GNU/Linux. [^gnulinux]
+
 ### Tieteellinen tieto
 
 Tieteellisen tiedon suurin arvo ei johdu siitä, että tieto olisi totta [^40c08c]. Tieteellisen tiedon arvo on sen toistettavuudessa, läpinäkyvyydessä ja uusiutuvuudessa. Tämän vuoksi on tärkeää, että lähdeviitteet ja hypoteesin synty ovat yksiselitteisiä ja johdonmukaisia. Wikipedia on huono lähde: sillä on useita eri kirjoittajia, ja on vaikea sanoa, mitä siellä on milloinkin lukenut kenenkin sanomana. Wikipedia on hyvä lähde tiedon pläräilyyn *ensimmäisellä kerralla*, mutta tieto pitäisi varmistaa lähteistä - ja näihin Wikipedian artikkelit itsekin viittaavat. Suuret kielimallit kuten ChatGPT tai Gemini ovat vielä huonompia lähteitä kuin Wikipedia. Kielimallin kanssa keskustelusta voi saada hyviä ideoita, näkökulmia ja jopa sattumanvaraisesti oikeita vastauksia kysymyksiisi, mutta tämä ei ole millään tavoin tieteellisesti pätevä tapa hankkia tietoa. Kielimalli luo lauseita, jotka vaikuttavat oikeilta. Kielimalli ei tarkista faktoja tai punnitse tutkimustapojaan: se vain liimailee sopivia asioita yhteen.
@@ -90,5 +120,7 @@ Tulet tarvitsemaan lähdeviitteitä myöhemmin opiskelussasi, viimeistään kirj
 
 ## Lähdeluettelo
 
-[^fcfce3]: KAMK. *Opinnäytetyön tekijän opas: Lähdeviitteet ja lähdeluettelo 2023 (Vancouver)*. https://libguides.kamk.fi/c.php?g=657740&p=5157950
+[^fcfce3]: KAMK. *Opinnäytetyön tekijän opas: Lähdeviitteet ja lähdeluettelo (Vancouver)*. https://libguides.kamk.fi/c.php?g=657740&p=5157950
+[^bash]: GNU. *Bash Reference Manual*. https://www.gnu.org/software/bash/manual/bash.html
+[^gnulinux]: Stallman, R. *Linux and the GNU System*. https://www.gnu.org/gnu/linux-and-gnu.html
 [^40c08c]: Hakkarainen, K., Lonka, K. & Lipponen, L. *Tutkiva oppiminen: Järki, tunteet ja kulttuuri oppimisen sytyttäjinä*. Helsinki: WSOY. 2004.
