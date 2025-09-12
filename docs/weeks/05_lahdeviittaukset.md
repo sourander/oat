@@ -88,7 +88,7 @@ Oppimispäiväkirjamerkintä ei saa olla lainauskokoelma. Valtaosa tekstistä tu
 
 !!! note "Suora lainaus tekstissä"
 
-    Tämä olisi todennäköisesti kappaleen verran sinun tekstiäsi, josta päätyisit siihen, että haluat lainata suoraan lähdeteosta näin: *"Some of the shells that Bash has borrowed concepts from are the Bourne Shell (sh), the Korn Shell (ksh), and the C-shell (csh and its successor, tcsh)"[^bash].* 
+    Tämä olisi todennäköisesti kappaleen verran sinun tekstiäsi, josta päätyisit siihen, että haluat lainata suoraan lähdeteosta näin: *"Some of the shells that Bash has borrowed concepts from are the Bourne Shell (sh), the Korn Shell (ksh), and the C-shell (csh and its successor, tcsh)"* [^bash]. 
 
     Tämäkin olisi sinun tekstiäsi, ja tälläkin kertaa haluaisit jostain syystä lainata suoraan lähdetekstiä näin: *"Linux is normally used in combination with the GNU operating system: the whole system is basically GNU with Linux added, or GNU/Linux. All the so-called “Linux” distributions are really distributions of GNU/Linux"* [^gnulinux].
 
