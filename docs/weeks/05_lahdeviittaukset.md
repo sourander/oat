@@ -100,7 +100,7 @@ Jos selostat tekstiä omin sanoin (enlg. paraphrasing), et tarvitse lainausmerkk
 
     Bash lainaa, ==kuten sen käyttöopas vahvistaa==, useita ominaisuuksia eri shell-ohjelmista eli kuorista. Näitä ovat muiden muassa Korn Shell (ksh) ja C-shell ja sen alkuperäinen esikuva Bourne Shell (sh) [^bash].
 
-    ==Stallmanin mukaan== termi *Linux-käyttöjärjestelmä* on väärä, koska Linux-ydin on vain osa käyttöjärjestelmää. Hän ehdottaa, että käyttöjärjestelmästä käytettäisiin nimeä GNU/Linux. [^gnulinux]
+    ==Stallmanin mukaan== termi *Linux-käyttöjärjestelmä* on väärä, koska Linux-ydin on vain osa käyttöjärjestelmää. ==Hän ehdottaa==, että käyttöjärjestelmästä käytettäisiin nimeä GNU/Linux. [^gnulinux]
 
 ### Tieteellinen tieto
 
