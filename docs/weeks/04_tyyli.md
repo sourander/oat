@@ -6,11 +6,11 @@
 
 **Kuvio 2:** *Akateemista lukemista ja kirjoittamista kannattaa opetella opiskeluiden aikana. Yksi tapa on tutustua KAMK:n e-kirjaston kirjoihin. Näistä näkyy kuvassa kaksi: Akateemisen lukemisen ja kirjoittamisen opas (Vilkka H. 2020) sekä Hyvä, parempi, valmis: Opinnäytetyöopas ammattikorkeakouluille (Takala, J. 2023)*
 
-Tämä luku perustuu kokonaisuudessaan *Akateemisen lukemisen ja kirjoittamisen oppaaseen*. Kyseisen teoksen lukeminen on äärimmäisen suositeltavaa. Akateeminen kirjoittaminen on tiedonluomisen ja luovan ongelmanratkaisun metodi. Siihen liittyviä taitoja ovat tiedonhakutaidot, tiedonarviointitaidot sekä tiedon soveltamisen taito. Ammattikorkeakoulun koulutuksen yksi pyrkimys on, että kykenet työelämässä luomaan selvityksiä tai raportteja, joiden sisältö on johdonmukaista ja perusteltua. Koulutuksen aikana näitä tekstilajeja ovat opinnäytetyö ja oppimispäiväkirja, mutta työelämässä saatat joutua vertailemaan, mikä tarjolla olevista palveluista sopii parhaiten yrityksen käyttötarkoitukseen [^1d1c01]. Sinun tulisi osata ajatella analyyttisesti ja luoda sellainen tutkimuksellinen asetelma, joka mahdollistaa palveluiden vertailemisen systemaattisesti. Vertailun tulokset tulee osata esittää siten, että esihenkilö tai muu tilaaja ymmärtää sinun löydöksesi, ja kyetä osoittamaan, mistä olet hankkinut tietosi ja millä perusteella arvioit sen olevan uskottavaa tietoa.
+Akateeminen kirjoittaminen on tiedonluomisen ja luovan ongelmanratkaisun metodi. Siihen liittyviä taitoja ovat tiedonhakutaidot, tiedonarviointitaidot sekä tiedon soveltamisen taito. Ammattikorkeakoulun koulutuksen yksi pyrkimys on, että kykenet työelämässä luomaan selvityksiä tai raportteja, joiden sisältö on johdonmukaista ja perusteltua. Koulutuksen aikana näitä tekstilajeja ovat opinnäytetyö ja oppimispäiväkirja, mutta työelämässä saatat joutua vertailemaan, mikä tarjolla olevista palveluista sopii parhaiten yrityksen käyttötarkoitukseen [^1d1c01]. Sinun tulisi osata ajatella analyyttisesti ja luoda sellainen tutkimuksellinen asetelma, joka mahdollistaa palveluiden vertailemisen systemaattisesti. Vertailun tulokset tulee osata esittää siten, että esihenkilö tai muu tilaaja ymmärtää sinun löydöksesi, ja kyetä osoittamaan, mistä olet hankkinut tietosi ja millä perusteella arvioit sen olevan uskottavaa tietoa.
 
 ## Oppimispäiväkirjan tyyli
 
-Teoksessa on myös oma, hyvin lyhyt alalukunsa oppimispäiväkirjasta tyylilajina. Siitä on lainaus alla:
+Yllä mainitussa Akateemisen lukemisen ja kirjoittamisen oppassa on oma, hyvin lyhyt alalukunsa oppimispäiväkirjasta tyylilajina. Siitä on lainaus alla:
 
 !!! quote
 
@@ -20,15 +20,17 @@ Teoksessa on myös oma, hyvin lyhyt alalukunsa oppimispäiväkirjasta tyylilajin
 
 Huomaathan, että oppimispäiväkirjan tekstissä saa kuulua sinun oma äänesi. Tyylin tulee olla asiallista, mutta sen ei tarvitse olla kuivaa. Oppimispäiväkirjan saa kirjoittaa minä-muodossa.
 
-Oppimispäiväkirja ei voi kuitenkaan olla pelkkää reflektiivistä sisäistä pohdintaa ja omien tulteiden tulkintaa. Arvosteluasteikon keskiössä on se, kuinka hyvin olet ymmärtänyt opintojakson sisällön ja miten hyvin osaat soveltaa sitä. Varmista, että merkinnöistä käy ilmi sinun osaamisesi taso.
+Oppimispäiväkirja ei voi kuitenkaan olla pelkkää reflektiivistä sisäistä pohdintaa ja omien tunteiden tulkintaa. Arvosteluasteikon keskiössä on se, kuinka hyvin olet ymmärtänyt opintojakson sisällön ja miten hyvin osaat soveltaa sitä. Varmista, että merkinnöistä käy ilmi sinun osaamisesi taso.
 
-!!! tip
+## Vinkkejä hyvään tyyliin
 
-    Kannattaa tutustua muiden opiskelijoiden kirjoittamiin opinnäytetöihin. Millainen niiden rakenne on? Millaista on kieli? Tunnistatko mielestäsi hyvän opinnäytetyön huonosta. Miten? Kuinka koodisnippettejä käytetään ja kuinka pitkiä niissä näkyvä koodi tyypillisesti on? Kuinka koodisnippettejä käsitellään leipätekstissä?
+### Lue opinnäytetöitä
 
-    Esimerkkejä löydät Theseus-palvelusta, esimerkiksi valitsemalla **Kajaanin ammattikorkeakoulu** ja hakemalla avainsanalla `data science` tai `data-analytiikka`. sitten rajaamalla hakutuloksia koulutusalan mukaan **Tieto- ja viestintätekniikka**, lopulta vielä avainsanalla **ohjelmistonkehitys**. Tässä suora linkki juuri tähän hakuun: [Theseus: Kajaanin ammattikorkeakoulu, data science, tieto- ja viestintätekniikka, ohjelmistonkehitys](https://www.theseus.fi/handle/10024/1967/discover?filtertype_0=koulutusala&filter_relational_operator_0=equals&filter_0=fi%3DTieto-+ja+viestint%C3%A4tekniikka%7Csv%3DInformations-+och+kommunikationsteknik%7Cen%3DInformation+and+Communications+Technology%7C&filtertype=subjects&filter_relational_operator=equals&filter=ohjelmistokehitys).
+Kannattaa tutustua muiden opiskelijoiden kirjoittamiin opinnäytetöihin. Millainen niiden rakenne on? Millaista on kieli? Tunnistatko mielestäsi hyvän opinnäytetyön huonosta. Miten? Kuinka koodisnippettejä käytetään ja kuinka pitkiä niissä näkyvä koodi tyypillisesti on? Kuinka koodisnippettejä käsitellään leipätekstissä?
 
-    Yksi löytyvistä opinnäyteöistä on esimerkiksi Jari Väisäsen [Modbus TCP/IP -palvelimen toteutus](https://www.theseus.fi/handle/10024/274143) vuodelta 2020.
+Esimerkkejä löydät Theseus-palvelusta, esimerkiksi valitsemalla **Kajaanin ammattikorkeakoulu** ja hakemalla avainsanalla `data science` tai `data-analytiikka`, sitten rajaamalla hakutuloksia koulutusalan mukaan **Tieto- ja viestintätekniikka**, lopulta vielä avainsanalla **ohjelmistonkehitys**. Tässä suora linkki juuri tähän hakuun: [Theseus: Kajaanin ammattikorkeakoulu, data science, tieto- ja viestintätekniikka, ohjelmistonkehitys](https://www.theseus.fi/handle/10024/1967/discover?filtertype_0=koulutusala&filter_relational_operator_0=equals&filter_0=fi%3DTieto-+ja+viestint%C3%A4tekniikka%7Csv%3DInformations-+och+kommunikationsteknik%7Cen%3DInformation+and+Communications+Technology%7C&filtertype=subjects&filter_relational_operator=equals&filter=ohjelmistokehitys).
+
+Yksi löytyvistä opinnäytetöistä on esimerkiksi Jari Väisäsen [Modbus TCP/IP -palvelimen toteutus](https://www.theseus.fi/handle/10024/274143) vuodelta 2020.
 
 !!! tip
 
@@ -39,7 +41,7 @@ Oppimispäiväkirja ei voi kuitenkaan olla pelkkää reflektiivistä sisäistä 
     * Netflix: [Abuse and Fraud Detection in Streaming Services Using Heuristic-Aware Machine Learning](https://arxiv.org/pdf/2203.02124.pdf)
     * Polar Electro Oy: [Polar Fitness Test](https://www.polar.com/en/img/static/whitepapers/pdf/polar-fitness-test-white-paper.pdf)
 
-## Opiskelijoiden esimerkkejä
+### Opiskelijoiden esimerkkejä
 
 Tulevaisuudessa tulen lisäämään tähän dokumentaatioon lisää opiskelijoiden tekemiä mallisuorituksia; kunhan sopivia tulee vastaan ja saan niiden julkaisuun luvan. Tällä hetkellä esimerkkejä on kaksi, ja ne kummatkin löytyvät `Viikkomerkinnät -> Opiskelijoiden esimerkkejä` -polusta navigaatiosta. Suorat linkit niihin ovat:
 
