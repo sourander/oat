@@ -100,10 +100,13 @@ Video on pitkä, joten jos haluat vain tiivistelmän, tässä on muutama vinkki:
 * Jaa virheilmoitukset: jos saat virheilmoituksia, jaa ne.
 * Määrittele rajoitukset: kerro rajoitukset, kuten käytettävät työkalut tai teknologiat.
 
-Yllä olevat vinkit ovat muotoiltu Andy Osmanin "Context Engineering"-seminaaripuheesta O'Reillyn Codecon-virtuaalitapahtumasta. [^andy] Hyvän kysymyksen muotoilussa menee aikaa. Joskus käy niin, että kun muotoilet kysymyksen hyvin, huomaat itsekin ratkaisun ongelmaasi ennen kuin ehdit lähettää kysymystä.
+Yllä olevat vinkit ovat muotoiltu Andy Osmanin "Context Engineering"-seminaaripuheesta O'Reillyn Codecon-virtuaalitapahtumasta. [^andy] Hyvän kysymyksen muotoilussa menee aikaa. Joskus käy niin, että kun muotoilet kysymyksen hyvin, huomaat itsekin ratkaisun ongelmaasi ennen kuin ehdit lähettää kysymyksen.
+
+Olennaista on tekoälylle annetun itsenäisyyden määrä. Jos tekoäly kirjoittaa sinun esseesi, opit tuskin mitään. Jos sinä opiskelijana määräät tekoälyn toimimaan matalammalla itsenäisyyden tasolla, kuten antamaan palautetta tai vihjeitä, oppimiselle jää mahdollisuus. [^kasvatus2025himanka]
 
 ## Lähdeluettelo
 
 [^3582cf]: Ahonen, S. *Opinnäytetyö jumissa. Mitä tehdä kun homma ei etene.* Tampere: Vastapaino. 2023.
 [^f65588]: Sarkkinen, M. *Ole itsellesi paras mahdollinen pomo! Seitsemän keinoa parantaa itsensä johtamisen taitoja*. Työpiste-verkkolehti. 2020. https://www.ttl.fi/tyopiste/ole-itsellesi-paras-mahdollinen-pomo-seitseman-keinoa-parantaa-itsensa-johtamisen-taitoja
 [^andy]: Osman, A. *Context Engineering*. Puheenvuoro tapahtumassa AI Codecon: Coding for the Agentic World. O'Reilly. 2025. https://learning.oreilly.com/live-events/ai-codecon-coding-for-the-agentic-world/0642572207748/0642572207731/
+[^kasvatus2025himanka]: Himanka, J. Tekoäly korkeakouluopetuksessa. Kasvatus 1/2025. https://journal.fi/kasvatus/issue/view/11970
