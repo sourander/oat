@@ -38,7 +38,7 @@
 
 /* Tooltip for hovering over the grade numbers */
 .num-custom-radio-label:hover::after {
-  content: attr(title);
+  content: attr(data-tooltip);
   position: absolute;
   bottom: 125%; /* Place the tooltip above the button for readability */
   transform: translateX(-50%); /* Center the tooltip horizonally*/
