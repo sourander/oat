@@ -14,6 +14,7 @@ const common_criterion_asiatyyli: NumericalCriteria = {
       grade: 1,
       desc: `
       Teksti on tyylillisesti jäsentymätöntä.
+      Teksti ei tunnu liittyvän kurssimateriaaliin tai kurssin virallisiin lähteisiin.
       Esiintyy suuria määriä tyyli- ja/tai kielivirheitä, jotka vaikeuttavat tekstin lukemista.
       Vaihtoehtoisesti on teknisiä virheitä, jotka estävät dokumentaation lukemisen ilman opettajan korjausta.`,
     },
@@ -21,13 +22,15 @@ const common_criterion_asiatyyli: NumericalCriteria = {
       grade: 2,
       desc: `
       Teksti on tyylillisesti toteavaa, epätasaista tai lokikirjoitus.
-      Ei edusta ohjeituksen Oppimispäiväkirja 101:n mukaista tyyliä ja laatua.`,
+      Lähes koko teksti on muodoltaan luettelo tai lista asioista.
+      Sivusto on katsottavissa GitLab Pagesissa ilman teknisiä ongelmia.`,
     },
     {
       grade: 3,
       desc: `
       Teksti on huoliteltua ja tehtävänannon mukaista asiatekstiä.
-      Teksti referoi kurssimateriaalia ja lähteitä, mutta argumentaatio ja oma ääni puuttuvat.
+      Teksti referoi kurssimateriaalia ja lähteitä ylätasolla.
+      Argumentaatio ja oma eivät kuitenkaan ole läsnä.
       Noudattaa Oppimispäiväkirja 101 -ohjeistusta kauttaaltaan.
       Viikko ja päivämäärämerkinnät ovat oikein.`,
     },
@@ -35,7 +38,7 @@ const common_criterion_asiatyyli: NumericalCriteria = {
       grade: 4,
       desc: `
       Teksti on sujuvaa ja lähes virheetöntä asiatyyliä, jossa ammattisanasto on käytössä. 
-      Argumentointi ja oivallus ovat ylätasolla, mutta oma ääni on läsnä vain osittain.
+      Oma ääni on läsnä vain osittain. Aihetta käsitellään hieman ylätasolla ja toteavasti.
       Tekstiä on rikastettu kuvilla, koodiesimerkeillä, luetteloilla, väliotsikoilla ja muilla elementeillä.`,
     },
     {

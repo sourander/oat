@@ -27,13 +27,15 @@ const common_criterion_tietotaidot: NumericalCriteria = {
       grade: 3,
       desc: `
       Opiskelija käyttää kurssilla vaadittuja taitoja ja yhdistää ne teoriaan.
+      Kaikki kurssin tehtävät on suoritettu vähintäänkin tyydyttävästi.
       Aihepiirin ymmärrys ei jää epäselväksi.
       Opiskelija tunnistaa oman osaamisensa tason numeraalisesti.`,
     },
     {
       grade: 4,
       desc: `
-      Opiskelija käyttää kurssilla vaadittuja taitoja ja yhdistää ne teoriaan. 
+      Opiskelija käyttää kurssilla vaadittuja taitoja ja yhdistää ne teoriaan.
+      Kurssin tehtävät on suoritettu hyvin.
       Opiskelija on omatoimisesti laajentanut tietotaitoaan viitoitettuun suuntaan.
       Tietotaito on selkeästi todistettuna ja omaäänisesti esitetty.
       Opiskelija tunnistaa oman osaamisensa tason numeraalisesti ja sanallisesti.`,
@@ -42,6 +44,7 @@ const common_criterion_tietotaidot: NumericalCriteria = {
       grade: 5,
       desc: `
       Opiskelija soveltaa taitoja, vertailee toimintatapoja ja luo uusia johtopäätöksiä.
+      Kurssin tehtävät on suoritettu erinomaisesti.
       Opiskelija on laajentanut tietotaitoaan omatoimisesti ja syvällisesti.
       On täysin selvää, että opiskelija osaa kurssilla vaaditut asiat. 
       Opiskelija tunnistaa osaamisensa numeraalisesti ja sanallisesti.
