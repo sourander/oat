@@ -37,7 +37,8 @@ const common_criterion_asiatyyli: NumericalCriteria = {
     {
       grade: 4,
       desc: `
-      Teksti on sujuvaa ja lähes virheetöntä asiatyyliä, jossa ammattisanasto on käytössä. 
+      Teksti on sujuvaa ja lähes virheetöntä asiatyyliä, jossa ammattisanasto on käytössä.
+      Teksti on osattu pitää tiiviinä ja ytimekkäänä: laatu on määrää tärkeämpää.
       Oma ääni on läsnä vain osittain. Aihetta käsitellään hieman ylätasolla ja toteavasti.
       Tekstiä on rikastettu kuvilla, koodiesimerkeillä, luetteloilla, väliotsikoilla ja muilla elementeillä.`,
     },
@@ -45,6 +46,7 @@ const common_criterion_asiatyyli: NumericalCriteria = {
       grade: 5,
       desc: `
       Teksti on argumentoivaa, oivaltavaa ja lähes virheetöntä asiatyyliä.
+      Teksti on osattu pitää tiiviinä ja ytimekkäänä: laatu on määrää tärkeämpää.
       Oma ääni on vahvasti läsnä tekstissä.
       Merkinnät olisivat valmiita julkaistaviksi sopivaan ammatilliseen kontekstiin.
       Tekstin, kuvien, koodin, luetteloiden, väliotsikoiden ja muiden elementtien käyttö on harkittua ja tasapainoista.`,
