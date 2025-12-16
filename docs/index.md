@@ -9,13 +9,13 @@ hide:
 
     Tämä on kirjoitus- ja tyyliohje oppimispäiväkirjaasi varten, ja se palvelee hyvin samaa tarkoitusta kuin opinnäytetyön mallipohja. Oppimispäiväkirjoja kirjoitetaan tyypillisesti yksi per kurssi. Tutustu materiaaliin ja aloita tämän jälkeen oman oppimispäiväkirjasi kirjoittaminen. Jos et ole varma, kysy opettajaltasi.
 
-    Tämän sivun takana olevat Markdown-tiedostot löydät [gf:sourander/oat repon docs-hakemistosta](https://github.com/sourander/oat/tree/master/docs).
+    Tämän sivun takana olevat Markdown-tiedostot löydät [gf:sourander/oat repon docs-hakemistosta](https://github.com/sourander/oat/tree/master/docs). Voit käyttää niitä referenssinä Markdown-syntaksin oppimiseen.
 
-Oppimispäiväkirja alkaa tämän esimerkkisivuston tavoin Johdanto-sivulla. Kirjoita se index-tiedostoon (`docs/index.md`) Ethän luo tuota tiedostoa turhaan itse — käytä cookiecutter-templaattia, joka esitellään tässä materiaalissa! 
+Oppimispäiväkirja alkaa tämän esimerkkisivuston tavoin Johdanto-sivulla. Kirjoita se index-tiedostoon (`docs/index.md`) Ethän luo tuota tiedostoa turhaan itse — käytä cookiecutter-templaattia, joka esitellään tässä materiaalissa!
 
-Voit kirjoittaa Johdantoon talteen asioita, jotka haluat oppia kurssin aikana eli odotukset kurssin suhteen. Johdannossa on hyvä myös sanallistaa aiemman kokemuksesi aihepiiristä. Tämä antaa lukijalle hieman kontekstia
+Voit kirjoittaa Johdantoon talteen asioita, jotka haluat oppia kurssin aikana eli odotukset kurssin suhteen. Johdannossa on hyvä myös sanallistaa aiemman kokemuksesi aihepiiristä. Tämä antaa lukijalle hieman kontekstia.
 
-Johdanto on oppimispäiväkirjasi lukuohje. Johdannossa voi kuvata myös muodollisia seikkoja oppimispäiväkirjastasi, kuten lukijaa auttava kuvaus sivuston rakenteesta: *"Olen tehnyt itselleni aihepiiristöstä sanaston, johon kirjaan kaikki kurssilla oppimani uudet termit ja niiden selitykset. Se löytyy vasemmalta navigoinnista Sanasto-otsikon alta."* Näin lukija, eli opettaja, osaa reagoida templaattiin kuulumattomiin alasivuihin. Sinun omat, kurssin viralliseen palautukseen kuulumattomat muistiinpanosi eivät vaikuta negatiivisesti arvosanaan, vaikka niiden laajuus olisi kymmeniä tuhansia sanoja - kunhan opettaja tunnistaa viikkomerkinnän ja sinun omaan käyttöön tarkoitettujen sivujen eron.
+Johdanto on oppimispäiväkirjasi lukuohje. Johdannossa voi kuvata myös muodollisia seikkoja oppimispäiväkirjastasi, kuten lukijaa auttava kuvaus sivuston rakenteesta: *"Olen tehnyt itselleni aihepiiristöstä sanaston, johon kirjaan kaikki kurssilla oppimani uudet termit ja niiden selitykset. Se löytyy vasemmalta navigoinnista Sanasto-otsikon alta."* Näin lukija, eli opettaja, osaa reagoida templaattiin kuulumattomiin alasivuihin. Sinun omat, kurssin viralliseen palautukseen kuulumattomat muistiinpanosi eivät vaikuta negatiivisesti arvosanaan, vaikka niiden laajuus olisi kymmeniä tuhansia sanoja ja ne olisivat runomitassa tai latinaksi – kunhan opettaja tunnistaa viikkomerkinnän ja sinun omaan käyttöön tarkoitettujen sivujen eron.
 
 ## Arviointi
 
@@ -25,7 +25,7 @@ Oppimispäiväkirjaan liittyy myös arviointityökalu, joka on toteutettu React 
 
 ## TODO-lista
 
-Johdanto (eli index-sivu) on mainio paikka myös TODO-listalle. Voit toki käyttää myös jotakin muuta työtä taskien seuraamiseen (ja ryhmätöissä pitääkin käyttää GitLabin Issues-työkalua!), mutta kevyempien kurssien kohdalla tämä ratkaisu voi osoittautua riittäväksi.
+Johdanto (eli index-sivu) on mainio paikka myös TODO-listalle. Voit toki käyttää myös jotakin muuta työtä taskien seuraamiseen (ja ryhmätöissä pitääkin käyttää GitLabin Issues-työkalua!), mutta kevyempien kurssien kohdalla tämä ratkaisu voi osoittautua riittäväksi. Alla on karu esimerkki siitä, miltä TODO-lista voisi näyttää:
 
 - [x] Navigoi Oppimispäiväkirja 101 -sivustolle
 - [x] Lue index-sivu

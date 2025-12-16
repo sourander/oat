@@ -2,7 +2,7 @@
 
 ## Mikä on merkintä?
 
-Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä==, mitä luet nyt, on kuvitellusti viikon 1 merkintä eli kirjoitettu esimerkiksi 2. tammikuuta 2024. Jos kurssi alkaa elokuussa, viikko voi olla esimerkiksi 31. Noudata kalenteriviikkoja. Tiedostona viikkomerkintä löytyy lokaatiosta `docs/weeks/01_rakenne.md`.
+Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä==, mitä luet nyt, on kuvitellusti viikon 1 merkintä eli kirjoitettu esimerkiksi perjantaina 2. tammikuuta 2026. Jos kurssi alkaa elokuussa, viikko voi olla esimerkiksi 31. Noudata kalenteriviikkoja. Tässä ohjeessa myöhemmin neuvottu `cookiecutter`-templaatti alustaa päiväkirjan siten, että ensimmäinen merkintä saa oikean viikkonumeron. Tiedostona viikkomerkintä löytyy lokaatiosta `docs/weeks/01_rakenne.md`.
 
 !!! warning "Tärkeää"
 
@@ -14,22 +14,19 @@ Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä
 
 !!! tip "Nopeampi tai hitaampi suoritus"
 
-    **Nopeampi suoritus 🏎️:** Jos olet jo etukäteen kurssin aihepiirien kanssa sinut, saatat kyetä suorittaa oppimispäiväkirjaa nopeammin kuin alunperin on tarkoitus. Noudata silti viikkonumerointia ja tee jokaisesta viikosta oma merkintänsä. Kirjoita siis tulevaisuuteen!
+    **Nopeampi suoritus 🏎️:** Jos olet jo etukäteen kurssin aihepiirien kanssa sinut, saatat kyetä suorittaa oppimispäiväkirjaa nopeammin kuin alunperin on tarkoitus. Noudata silti aitoa viikkonumerointia! Tämä luonnolliseesti rikkoo sivujen numeroihintiin perustuvan aakkosjärjestyksen. Kysy opettajalta neuvoa!
 
-    **Hitaampi suoritus 🐌:** Joissain tapauksissa, kuten sairastumisen johdosta, sinulle saatetaan myöntää lisäaikaa eli työskentelet hitaammin kuin kurssin alkuperäinen aikataulu. Noudata tällöin aitoja viikkonumeroita.
+    **Hitaampi suoritus 🐌:** Joissain tapauksissa, kuten sairastumisen johdosta, sinulle saatetaan myöntää lisäaikaa eli työskentelet hitaammin kuin kurssin alkuperäinen aikataulu. Noudata tällöinkin aitoja viikkonumeroita. Kun aloitat uuden merkinnän, katso kalenterista, mikä viikko nyt on.
 
 ### Kuvien käyttö
 
-Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on suositeltavaa ja ==käytännön kursseilla pakollista==. Esimerkki kummastakin alla: 
+Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on  ==pakollista==. Ethän yritä palauta esseetekstiä, jossa tekoäly kertoo yleisluonteisesti, kuinka jokin asia toimii. Käytä kuvia ja muita elementtejä osoittaaksesi, että olet työskennellyt kurssin aihepiirin parissa. 
 
-* 🧤 Käytännön kurssi: Linux Perusteet
-* 📖 Teoreettinen kurssi: Big Data -analytiikka ja liiketoiminta
-
-Käytä kuvia ja kuvaajia kuitenkin harkiten ja viittaa näihin tekstissä. Valtaosan päiväkirjamerkinnästä tulisi koostua kokonaisista lauseista, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei siis voi olla pelkkä kuvagalleria tai luettelo asioita.
+Käytä kuvia ja kuvaajia kuitenkin harkiten. Leipätekstin tulee rytmittää päiväkirjamerkintää ja pitää lukija perillä siitä, mihin kuvat liittyvät. Päiväkirjan pohjana on siis kokonaisia virkkeitä, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei voi olla pelkkä kuvagalleria tai luettelo asioita.
 
 ### Merkinnän laajuus
 
-Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtävänannossa määritellä muuta. Kukin viikkotason merkintä on laajuudeltaan noin **1 liuskan eli 500 sanaa**. Voit ylittää tuon rajan, mutta älä kirjoita yli kahta liuskaa eli noin 1000 sanaa tekstiä. Mikäli tekstiä meinaa syntyä liikaa, tiivistä ja keskity olennaiseen. Kuka tahansa osaa kirjoittaa pitkästi; tiivisti kirjoittaminen vaatii harjoitusta. Tähän liittyen on edellä lainaus:
+Tämä ohjeistus on muuttunut 2026. Päiväkirjamerkinnöillä ei ole maksimipituutta, mutta älä odota, että määrä korvaa laadun. Mikäli teksti meinaa rönsyillä, tiivistä ja keskity olennaiseen. Kuka tahansa osaa kirjoittaa pitkästi; tiivisti kirjoittaminen vaatii harjoitusta. Tähän liittyen on edellä lainaus:
 
 !!! quote
 
@@ -37,9 +34,13 @@ Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtäv
 
     — Blaise Pascal [^npr]
 
-500 sanaa on melko suppea määrä sanoja prosessien kuvaamiseen. Kuvien, kuvaajien ja koodilohkojen käyttö on oiva tapa sisällyttää paljon tietoa lyhyeen tekstiin. Jos koet kattavan oppimispäiväkirjan kirjoittamisen tärkeäksi, harkitse sitä, että kirjoitat koko oppimispäiväkirjan muualle, ja kirjoitat opettajalle palautettavaan oppimispäiväkirjaan tiiviimmän tekstin. Tai vaihtoehtoisesti voit aluksi kirjoittaa pidemmän oppimispäiväkirjan, ja viimeisellä viikolla tiivistää sitä sopivaan mittaan. Tällöin teet tärkeitä valintoja siitä, mikä on olennaista, mikä ei.
+Vaihtoehtoisesti voit aluksi kirjoittaa aluksi vapaamuotoisemman, pidemmän oppimispäiväkirjan, ja editoida sen palautusviikolla sopivaan mittaan. Tällöin teet tärkeitä valintoja siitä, mikä on olennaista, mikä ei. Tämä on tärkeä taito opinnäytetyötä ja työelämääkin ajatellen.
 
-!!! tip "Sanamäärän laskeminen"
+Varmista kuitenkin, että kukin viikkotason merkintä on laajuudeltaan aivan vähimmillään noin **1 liuskan eli 500 sanaa**. 
+
+Huomaa, että jos osaat kirjoittaa tiivisti, on täysin realistista, että voit saavuttaa täyden arvosanan (5/5) noin 500 sanalla. Jos pohdit, että 500 sanaa on suppea määrä sanoja prosessien kuvaamiseen, niin ota huomioon, että tähän ei lasketa kuvia ja koodilohkoja; niiden tehokas käyttö on oiva tapa sisällyttää paljon tietoa lyhyeen tekstiin.
+
+!!! tip "Sanamäärän laskeminen (oat-tools)"
 
     Voit laskea Markdown-tiedoston sanojen määrän käyttämällä `oat-tools`-työkalua. Olettaen että sinulla on [astral-sh/uv](https://docs.astral.sh/uv) asennettuna, voit asentaa `oat-tools`:n näin:
 
@@ -63,7 +64,7 @@ Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtäv
     docs/docs/weeks/40_entry.md           602
     ```
 
-    Tämä komento laskee kaikki sanat, mukaan lukien koodilohkoissa olevat sanat. Jos haluat laskea vain runkotekstin sanat, katso alla olevaa vinkkiä. Tarkemmat käyttöohjeet löydät [oat-tools](https://pypi.org/project/oat-tools/) -projektin sivulta.
+    Tämä komento pyrkii laskemaan vain leipätekstin sanat: koodilohkot jätetään laskematta. Menetelmä ei ole kuitenkaan aivan vedenpitävä. Esimerkiksi taulukot voivat vaikuttaa sanamäärään. Tarkemmat käyttöohjeet löydät [oat-tools](https://pypi.org/project/oat-tools/) -projektin sivulta.
 
 !!! tip "Sanamäärän laskeminen ilman oat-toolsia"
 
@@ -72,6 +73,5 @@ Seuraavat ohjeistukset ovat voimassa, ellei kurssin aloitusluennolla tai tehtäv
     ```bash title="Bash tai Git Bash"
     sed '/^```/,/^```/d' path/to/file.md | wc -w
     ```
-
 
 [^npr]: Lombrozo, T. *This Could Have Been Shorter*. NPR. https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter

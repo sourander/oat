@@ -83,9 +83,32 @@ Koodilohko luodaan asettamalla koodi kolmen backtickin (tai joskus harvoin kolme
 
 ```markdown
 ![Kuvaus kuvasta](../images/kuvan_nimi.png)
+
+**Kuva N:** *Kuvateksti kuvalle.*
 ```
 
 Voit käyttää valokuvia tai kuvakaappauksia oppimispäiväkirjassasi. On suositeltavaa pienentää kuvia ennen niiden lataamista GitLabiin, mikäli kuvat ovat useita tuhansia pikseleitä kooltaan. Kuvan lisääminen hoituu yllä olevan koodisnippetin mukaisesti. Huomaa, että polku on relatiivinen.
+
+#### Vinkki: Kuvatekstien numerointi
+
+Kuvatekstien numerointi on ärsyttävää manuaalisesti. Voit käyttää apunasi opettajan luomaa `oat-tools`-työkalua:
+
+```bash
+uv tool install oat-tools
+
+# Check safely
+oat captions check docs/weeks/02_markdown.md
+
+# Destructive fix
+oat captions fix docs/weeks/02_markdown.md
+```
+
+!!! warning
+
+    Älä koskaan aja yllä olevaa komentoa ilman, että olet tallentanut tiedostot ja mieluiten puskenut ne GitLabiin. Tee kuvatekstien numerointi mieluiten erilliseen committiin, jotta voit tarvittaessa perua muutokset helposti. 
+    
+    Komento muokkaa tiedostoa suoraan ja voi bugin tai odottamattoman syntaksin vuoksi sotkea tiedoston. Sinua on varoitettu. :skull:
+
 
 #### Vinkki: Kuvan koon vaihtaminen
 
@@ -147,7 +170,7 @@ pie
     "Pizza left" : 25
 ```
 
-**Kuvio 1:** *Kuvitteellinen jäljellä olevan ja syödyn pizzan suhdetta kuvastava piirakkakuvaaja. Kuville ja kuvaajille on hyvä lisätä kuvateksti. Tämä tässä toimii esimerkkinä.*
+**Kuva 2:** *Kuvitteellinen jäljellä olevan ja syödyn pizzan suhdetta kuvastava piirakkakuvaaja. Kuville ja kuvaajille on hyvä lisätä kuvateksti. Tämä tässä toimii esimerkkinä.*
 
 Todella yksinkertaisiin kuvaajiin voit käyttää mermaidia. Mermaid on helppo ja nopea tapa luoda yksinkertaisia kuvaajia [^mermaid]. Kyseisellä kielellä on tehty yllä näkyvä piirakkakuvaaja.
 

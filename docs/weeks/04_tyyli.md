@@ -32,22 +32,17 @@ Esimerkkejä löydät Theseus-palvelusta, esimerkiksi valitsemalla **Kajaanin am
 
 Yksi löytyvistä opinnäytetöistä on esimerkiksi Jari Väisäsen [Modbus TCP/IP -palvelimen toteutus](https://www.theseus.fi/handle/10024/274143) vuodelta 2020.
 
-!!! tip
+### Lue alan julkaisuja
 
-    Silmäile myös alan julkaisuja, joita löytyy usein termillä `whitepaper`. Millaista kieltä ja tyyliasua niissä käytetään? Mihin lähteisiin niissä viitataan ja miten? Alla pari suositusta:
+Silmäile myös alan julkaisuja, joita löytyy usein termillä `whitepaper` tai `scholarly article`. Millaista kieltä ja tyyliasua niissä käytetään? Mihin lähteisiin niissä viitataan ja miten? Alla pari suositusta:
 
-    * Databricks: [Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
-    * Google: [The Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
-    * Netflix: [Abuse and Fraud Detection in Streaming Services Using Heuristic-Aware Machine Learning](https://arxiv.org/pdf/2203.02124.pdf)
-    * Polar Electro Oy: [Polar Fitness Test](https://www.polar.com/en/img/static/whitepapers/pdf/polar-fitness-test-white-paper.pdf)
+* Databricks: [Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
+* Google: [The Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
+* Netflix: [Abuse and Fraud Detection in Streaming Services Using Heuristic-Aware Machine Learning](https://arxiv.org/abs/2203.02124)
+* Google: [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
+* Garmin: [Effects of Missing Data on Heart Rate Variability Measured From A Smartwatch: Exploratory Observational Study](https://formative.jmir.org/2025/1/e53645)
 
-### Opiskelijoiden esimerkkejä
-
-Tulevaisuudessa tulen lisäämään tähän dokumentaatioon lisää opiskelijoiden tekemiä mallisuorituksia; kunhan sopivia tulee vastaan ja saan niiden julkaisuun luvan. Tällä hetkellä esimerkkejä on kaksi, ja ne kummatkin löytyvät `Viikkomerkinnät -> Opiskelijoiden esimerkkejä` -polusta navigaatiosta. Suorat linkit niihin ovat:
-
-* [Naive Bayes](examples/naivebayes.md)
-* [Paketinhallinta](examples/paketinhallinta.md)
-
+Bonuksena mainittakoon DJangon luojan sivusto: [Simon Willison: TIL](https://til.simonwillison.net/). Sivusto sisältää lyhyitä kirjoituksia erilaisista teknisistä aiheista. Tyyliltään ne ovat rentoja, mutta asiallisia.
 
 ## Lähdeluettelo
 

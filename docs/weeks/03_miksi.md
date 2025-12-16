@@ -4,7 +4,7 @@
 
 Yksi vastaus otsikon kysymykseen on, että *"jotta opettajalla olisi jokin artefakti, jonka perusteella arvioida osaamistasi."* Huomaa, että oppimispäiväkirja ei ole siis pelkästään itsereflektiivistä kirjoittamista, vaan se on myös todistus sinun osaamisestasi. Ota tämä huomioon kirjoittaessasi oppimispäiväkirjaa.
 
-Arvioinnin pohjalla toimivat meta-arviointikriteerit näet klikkaamalla auki alla olevan laatikon. Itse arvointikriteerit esitellään kunkin kurssin alussa. Useilla kursseilla käytössä oleva arviointityökalu löytyy osoitteesta [arviointi.munpaas.com](https://arviointi.munpaas.com/).
+Arvioinnin pohjalla toimivat meta-arviointikriteerit näet klikkaamalla auki alla olevan *admonition*-laatikon. Arvointikriteerit esitellään kunkin kurssin alussa. Useilla kursseilla käytössä oleva arviointityökalu löytyy osoitteesta [arviointi.munpaas.com](https://arviointi.munpaas.com/).
 
 ??? tip "Meta-arviointikriteerit"
 
