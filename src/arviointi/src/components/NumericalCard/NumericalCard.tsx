@@ -1,4 +1,8 @@
-import { NumericalCriteria, OatGradeType, GradeOption } from "../../types/oat-grade-types";
+import {
+  NumericalCriteria,
+  OatGradeType,
+  GradeOption,
+} from "../../types/oat-grade-types";
 import { GradeStateContainer } from "../../types/gradestates";
 import "./NumericalCard.css";
 
@@ -40,13 +44,12 @@ const numericalRadioButtons = ({
     <label
       htmlFor={`${criterion.id}-${gradeOption.grade}`}
       className="num-custom-radio-label"
-      title={gradeOption.desc}
+      data-tooltip={gradeOption.desc}
     >
       {gradeOption.grade}
     </label>
   </div>
 );
-
 
 const numericalCriterion = ({
   criterion,
@@ -57,22 +60,22 @@ const numericalCriterion = ({
   selectedGrades: GradeStateContainer;
   handleGradeChange: (gradeinfo: GradeStateContainer) => void;
 }) => (
-    <div className="criterion-box" key={criterion.id}>
-      <h3>
-        {criterion.title}{" "}
-        <span className="criterion-weight">{criterion.weight} %</span>
-      </h3>
-      <p>{criterion.description}</p>
+  <div className="criterion-box" key={criterion.id}>
+    <h3>
+      {criterion.title}{" "}
+      <span className="criterion-weight">{criterion.weight} %</span>
+    </h3>
+    <p>{criterion.description}</p>
 
-      {criterion.options.map((gradeOption) => (
-        numericalRadioButtons({
-          criterion,
-          gradeOption,
-          selectedGrades,
-          handleGradeChange,
-        })
-      ))}
-    </div>
+    {criterion.options.map((gradeOption) =>
+      numericalRadioButtons({
+        criterion,
+        gradeOption,
+        selectedGrades,
+        handleGradeChange,
+      })
+    )}
+  </div>
 );
 
 export default function NumericalCard({
@@ -83,13 +86,13 @@ export default function NumericalCard({
   return (
     <>
       {oatGrade.numerical_criteria &&
-        oatGrade.numerical_criteria.map((criterion) => (
+        oatGrade.numerical_criteria.map((criterion) =>
           numericalCriterion({
             criterion,
             selectedGrades,
             handleGradeChange,
           })
-        ))}
+        )}
     </>
   );
 }
