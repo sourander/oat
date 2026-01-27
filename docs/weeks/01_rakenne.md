@@ -20,7 +20,7 @@ Oppimispäiväkirja koostuu useista eri **viikkotason** merkinnöistä. ==Tämä
 
 ### Kuvien käyttö
 
-Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on  ==pakollista==. Ethän yritä palauta esseetekstiä, jossa tekoäly kertoo yleisluonteisesti, kuinka jokin asia toimii. Käytä kuvia ja muita elementtejä osoittaaksesi, että olet työskennellyt kurssin aihepiirin parissa. 
+Kuvien, graafien, listojen, koodilohkojen ja muiden runkotekstiä monimutkaisten elementtien käyttö on  ==pakollista==. Ethän palauta esseetekstiä, jossa tekoälyn generoima teksti kuvailee aihetta yleisluonteisesti. Käytä kuvia ja muita elementtejä osoittaaksesi, että olet työskennellyt kurssin aihepiirin parissa.
 
 Käytä kuvia ja kuvaajia kuitenkin harkiten. Leipätekstin tulee rytmittää päiväkirjamerkintää ja pitää lukija perillä siitä, mihin kuvat liittyvät. Päiväkirjan pohjana on siis kokonaisia virkkeitä, jotka muodostavat kokonaisia kappaleita. Päiväkirja ei voi olla pelkkä kuvagalleria tai luettelo asioita.
 
@@ -65,13 +65,5 @@ Huomaa, että jos osaat kirjoittaa tiivisti, on täysin realistista, että voit 
     ```
 
     Tämä komento pyrkii laskemaan vain leipätekstin sanat: koodilohkot jätetään laskematta. Menetelmä ei ole kuitenkaan aivan vedenpitävä. Esimerkiksi taulukot voivat vaikuttaa sanamäärään. Tarkemmat käyttöohjeet löydät [oat-tools](https://pypi.org/project/oat-tools/) -projektin sivulta.
-
-!!! tip "Sanamäärän laskeminen ilman oat-toolsia"
-
-    Voit laskea sanojen määrän siten, että koodiblokit jäävät laskematta, käyttämällä alla olevaa komentoa. Komento olettaa, että koodilohkot alkavat ja loppuvat kolmella backtickillä ja ovat rivin alussa: eivät sisennettyjä.
-
-    ```bash title="Bash tai Git Bash"
-    sed '/^```/,/^```/d' path/to/file.md | wc -w
-    ```
 
 [^npr]: Lombrozo, T. *This Could Have Been Shorter*. NPR. https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter
