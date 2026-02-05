@@ -36,10 +36,6 @@ Arvioinnin pohjalla toimivat meta-arviointikriteerit näet klikkaamalla auki all
 
 National Research Council:n komitean mukaan opetussuunnitelmat korostavat tyypillisesti enemmän muistia kuin ongelmanratkaisua [^a029a4]. Oppikirjoissa on faktoja, jotka opiskelija opettelee ulkoa ja kirjoittaa tentissä oikeisiin kohtiin. Tämä on sekä opiskelijalle että opettajalle selkeä ja helppo tapa arvioida oppimista. Helppoudestaan huolimatta se ei ole ongelmaton. Kuten Bransford ja kumppanit toteavat, tenttiin pänttääminen aiheuttaa ns. kilometrin leveää ja senttimetrin syvää osaamista. Tämä tarkoittaa, että opiskelija osaa ulkoa faktoja, mutta ei osaa soveltaa niitä. Ongelma on erityisen vakava tietotekniikan alalla, jossa teknologia kehittyy nopeasti. Työntekijät odottavat työntekijöiltä ongelmanratkaisutaitoja, ei ulkoa opeteltuja faktoja [^e883b6].
 
-Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. Asiantuntijat ovat tehokkaita ongelmanratkaisijoita, tiedonhakijoita ja tiedon soveltajia. Hakkarainen ja kumppanit [^40c08c] tiivistävät, että: *"kirjoittaminen on kaikkein tärkein ajattelemaan oppimisen väline."* Oppimispäiväkirjan tavoitteena on siis auttaa sinua kehittymään asiantuntijaksi. 2000-luvun työntekijä ei voi olettaa saavansa esihenkilöltä yksiselitteisiä työtehtäviä. Olet ammattikorkeakoulussa valmistamassa itseäsi työelämään, joten työelämän tavat toimia on hyvä ottaa käyttöön jo nyt. Oppimispäiväkirja on yksi tapa harjoitella kirjoittamista ja ajattelua sekä saattaa ajattelu näkyväksi.
-
-Kielimallit eli tekoälypohjaiset chat-botit tuovat tähän oman lisänsä. Voisi kuvitella, että teknologisista vempaimista olisi pelkkää haittaa, mutta tuoreehkot meta-analyysit osoittavat, että esimerkiksi ChatGPT:n käyttö voi parantaa opiskelijoiden oppimistuloksia [^3dbfe5]. Tälle löytyy kuitenkin vastaväitteitä, kuten MIT:n tutkijoiden artikkeli *Your Brain on ChatGPT* [^brainongpt] tai Antropicin *How AI Impacts Skill Formation*, jossa todetaan selkeästi, että: *"In our work, users who relied on AI without thinking performed the worst on the evaluation"* [^aiskillformation]. Minun tulkintani on, että tekoälyä voi käyttää joko oppimisen edistämiseen – ikään kuin tukiopettajana – tai väärin käytettynä oppimisen tyrehdyttämiseen. Mikäli tekoälyn antaa tehdä ajatustyön itsensä puolesta, kognitiivinen kuorma vähenee, mikä on toki miellyttävä tunne, mutta oppimiselle haitallista. Tämä vaatii itsehillintää opiskelijalta.
-
 Alla on hyvin tyypillinen lainaus LinkedIn:stä, joka kuvastaa sitä, kuinka senior-tason ohjelmistonkehittäjät aiheen näkevät. Kannattaa lukaista myös postauksen kommentit:
 
 !!! quote
@@ -47,6 +43,12 @@ Alla on hyvin tyypillinen lainaus LinkedIn:stä, joka kuvastaa sitä, kuinka sen
     "Software engineering is more about what you can figure out than what you know. You don't have to remember everything. But you have to learn how to find the correct answers."
     
     Franco Fernando @ LinkedIn [^71b747]
+
+Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. Asiantuntijat ovat tehokkaita ongelmanratkaisijoita, tiedonhakijoita ja tiedon soveltajia. Hakkarainen ja kumppanit [^40c08c] tiivistävät, että: *"kirjoittaminen on kaikkein tärkein ajattelemaan oppimisen väline."* Oppimispäiväkirjan tavoitteena on siis auttaa sinua kehittymään asiantuntijaksi. 2000-luvun työntekijä ei voi olettaa saavansa esihenkilöltä yksiselitteisiä työtehtäviä. Olet ammattikorkeakoulussa valmistamassa itseäsi työelämään, joten työelämän tavat toimia on hyvä ottaa käyttöön jo nyt. Oppimispäiväkirja on yksi tapa harjoitella kirjoittamista ja ajattelua sekä saattaa ajattelu näkyväksi.
+
+Kielimallit eli tekoälypohjaiset chat-botit tuovat tähän oman lisänsä. Voisi kuvitella, että teknologisista vempaimista olisi pelkkää haittaa, mutta tuoreehkot meta-analyysit osoittavat, että esimerkiksi ChatGPT:n käyttö voi parantaa opiskelijoiden oppimistuloksia [^3dbfe5]. Tälle löytyy kuitenkin vastaväitteitä, kuten MIT:n tutkijoiden artikkeli *Your Brain on ChatGPT* [^brainongpt] tai Antropicin *How AI Impacts Skill Formation*, jossa todetaan selkeästi, että: *"In our work, users who relied on AI without thinking performed the worst on the evaluation"* [^aiskillformation]. Minun tulkintani on, että tekoälyä voi käyttää joko oppimisen edistämiseen – ikään kuin tukiopettajana – tai väärin käytettynä oppimisen tyrehdyttämiseen. Mikäli tekoälyn antaa tehdä ajatustyön itsensä puolesta, kognitiivinen kuorma vähenee, mikä on toki miellyttävä tunne, mutta oppimiselle haitallista. Tämä vaatii itsehillintää opiskelijalta.
+
+
 
 ## Kirjoittamalla oppiminen
 
@@ -124,11 +126,11 @@ Aivan kuten pyöräilyä opetellessa apupyörät ovat apuväline, tai laskettelu
 [^c3add6]: Oikarinen, A. *Arviointikriteerit osaamisen arvioinnissa*. 2022. Julkaistu teoksessa *Pedagoginen toimintamalli 2022 - cKAMK 2.0* (toim. Dahl, P., Rajander, T. & Saari, M). https://www.theseus.fi/handle/10024/508415
 [^a029a4]: Bransford, J. D., Brown, A. & Cocking, R. *Miten opimme: Aivot, mieli, kokemus ja koulu* (A. Penttilä, suom.). Helsinki: WSOY. 2004.
 [^e883b6]: Myllymäki, M., Laine, S. & Hakala, I. *ICT-alan rekrytointiselvitys Keski-Pohjanmaalla*. 2023. https://cinetcampus.fi/site/assets/files/2246/ict-rekry_raportti.pdf
+[^71b747]: Franco, F. *Untitled LinkedIn post*. https://www.linkedin.com/feed/update/urn\:li:activity:7164168809942085632
 [^40c08c]: Hakkarainen, K., Lonka, K. & Lipponen, L. *Tutkiva oppiminen: Järki, tunteet ja kulttuuri oppimisen sytyttäjinä*. Helsinki: WSOY. 2004.
 [^3dbfe5]: Wang, J & Fan, W. The effect of ChatGPT on students’ learning performance, learning perception, and higher-order thinking: insights from a meta-analysis. Humanit Soc Sci Commun 12, 621. 2025. https://doi.org/10.1057/s41599-025-04787-y
 [^brainongpt]: Kosmyna, N, et. al. *Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task*. https://arxiv.org/abs/2506.08872
 [^aiskillformation]: Shen, J. & Tamkin, A. *How AI Impacts Skill Formation*. 2026.https://arxiv.org/abs/2601.20245
-[^71b747]: Franco, F. *Untitled LinkedIn post*. https://www.linkedin.com/feed/update/urn\:li:activity:7164168809942085632
 [^7ef5f9]: Karnorfsky, H. *Learning by Writing*. https://www.cold-takes.com/learning-by-writing/
 [^68dfb8]: Osmani, A. Write about what you learn. *It pushes you to understand topics better*. 2023. https://addyosmani.com/blog/write-learn/
 [^057387]: r/ExperiencedDevs. *What industry secret do you know that most software developers never figure out?* https://www.reddit.com/r/ExperiencedDevs/comments/1anuk2a/what_industry_secret_do_you_know_that_most/
