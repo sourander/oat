@@ -36,11 +36,15 @@ Yksi löytyvistä opinnäytetöistä on esimerkiksi Jari Väisäsen [Modbus TCP/
 
 Silmäile myös alan julkaisuja, joita löytyy usein termillä `whitepaper` tai `scholarly article`. Millaista kieltä ja tyyliasua niissä käytetään? Mihin lähteisiin niissä viitataan ja miten? Alla pari suositusta:
 
+* Cornell Uni (Michael, P. et. al.):  [Noise-Coded Illumination](https://peterfmichael.com/nci/)
+* Uni of Westminster (Al-batat, R. et. al)[An End-to-End Automated License Plate Recognition System Using YOLO Based Vehicle and License Plate Detection with Vehicle Classification](https://www.mdpi.com/1424-8220/22/23/9477)
 * Databricks: [Lakehouse: A New Generation of Open Platforms that Unify Data Warehousing and Advanced Analytics](https://www.cidrdb.org/cidr2021/papers/cidr2021_paper17.pdf)
 * Google: [The Google File System](https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf)
 * Netflix: [Abuse and Fraud Detection in Streaming Services Using Heuristic-Aware Machine Learning](https://arxiv.org/abs/2203.02124)
 * Google: [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 * Garmin: [Effects of Missing Data on Heart Rate Variability Measured From A Smartwatch: Exploratory Observational Study](https://formative.jmir.org/2025/1/e53645)
+
+Huomaa kuitenkin, että yllä listatut ovat akateemisen, tutkivan kentän tuotoksia. Me teemme ammattikorkeakoulussa useimmiten toiminnallisia raportteja (ja opinnäytetöitä). Tämä aiheuttaa eroavaisuuksia, kuten sen, että toiminnallisessa työssä on usein mukana projektisuunnitelma, vaatimusmääritelmä, aikataulu ja mahdollinen budjetti, jotka eivät ole tyypillisiä akateemisissa tutkimuksissa. Näihin dokumentteihin sinut tutustutaan ensimmäisten opiskeluvuosien aikana – pidä tämä suunnitelmallisuus kaikissa projekteissa mukana, vaikka sitä ei erikseen mainittaisikaan. Yhtä valmista sapluunaa ei ole mahdollista antaa, koska projektin aihe ja luonne vaikuttavat raportoinnin sisältöön, muotoon ja eri osioiden tarpeellisuuteen.
 
 Bonuksena mainittakoon DJangon luojan sivusto: [Simon Willison: TIL](https://til.simonwillison.net/). Sivusto sisältää lyhyitä kirjoituksia erilaisista teknisistä aiheista. Tyyliltään ne ovat rentoja, mutta asiallisia.
 
