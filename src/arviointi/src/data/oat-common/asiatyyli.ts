@@ -30,7 +30,7 @@ const common_criterion_asiatyyli: NumericalCriteria = {
       desc: `
       Teksti on huoliteltua ja tehtävänannon mukaista asiatekstiä.
       Teksti referoi kurssimateriaalia ja lähteitä ylätasolla.
-      Argumentaatio ja oma eivät kuitenkaan ole läsnä.
+      Argumentaatio ja oma ääni eivät kuitenkaan ole läsnä.
       Noudattaa Oppimispäiväkirja 101 -ohjeistusta kauttaaltaan.
       Viikko ja päivämäärämerkinnät ovat oikein.`,
     },

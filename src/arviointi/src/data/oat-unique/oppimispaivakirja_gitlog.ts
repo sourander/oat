@@ -43,7 +43,7 @@ const unique_oppimispaivakirja_gitlog: NumericalCriteria = {
     {
       grade: 5,
       desc: `
-      Opiskelija on ollut erittäin aktiivinen ja git-lokit ovat selkeät ja täydelliset.
+      Opiskelija on ollut erittäin aktiivinen ja git-lokit ovat selkeät ja kattavat.
       Kunkin viikon merkinnän suurin työ on commitoitu kyseisellä viikolla. 
       Aikataulusta poikkeamat on sovittu opettajan kanssa ja dokumentoitu selkeästi.
       Työ on palautettu määräaikaan mennessä ellei muuta ole sovittu opettajan kanssa.`,
