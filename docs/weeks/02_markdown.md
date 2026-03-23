@@ -2,20 +2,17 @@
 
 !!! tip
 
-    Jos Markdown-kielen syntaksi ja Material for MkDocs -teema ovat sinulle entuudestaan tuttua kauraa, voit siirtyä seuraavaan lukuun.
+    Jos Markdown-kielen syntaksi ja Material for MkDocs -teema ovat sinulle entuudestaan tuttua kauraa, hyppää suoraan kohtaan [Muotoiluvinkkejä](#muotoiluvinkkejä).
 
-## Opiskele perusteet
+## Markdown alkeet
 
-Markdown-koodiin tutustumiseen on monta tapaa. Suosittelen tapaa, jossa käytät tätä ==juuri nyt lukemaasi== sivustoa apuna. Tämän koodi löytyy [gh:sourander/oat](http://www.github.com/sourander/oat) -repositoriosta. Toimi alla olevien vaiheiden mukaisesti:
+Markdown-koodiin tutustumiseen on monta tapaa. Suosittelen tapaa, jossa käytät tätä ==juuri nyt lukemaasi== sivustoa apuna. Opettajan luomat kurssimateriaalit käyttävät samaa staattisten webbisivugeneraattoria kuin sinun oppimispäiväkirjasi. Voit siis oppia opettajan käyttämistä muotoiluista. Näitkö luentomateriaalissa jotain, minkä haluat oppia tekemään? Kurkkaa kyseisen kurssin dokumentaation Markdown-koodista, millaisella rimpsulla se on saatu aikaiseksi. Jos et saa koodia toimimaan, kysy opettajalta ohjeita. 
 
-### :one: Basic Syntax
+Tämän Oppimispäiväkirja 101 -sivuston raaka Markdown koodi löytyy [gh:sourander/oat](http://www.github.com/sourander/oat) -repositoriosta polusta `docs/weeks/**/*.md`. Toimi alla olevien vaiheiden mukaisesti:
 
-Käy lukemassa [Markdown Guide: Basic Syntax](https://www.markdownguide.org/basic-syntax/).
+### Markdown
 
-* Silmäile [juuri tämän dokumentin](https://raw.githubusercontent.com/sourander/oat/refs/heads/main/docs/weeks/02_markdown.md) lähdekoodia.
-* Etsi koodista Basic Syntax -linkin mukaisia elementtejä (otsikot, kappaleet, listat, lihavointi)
-* Aloita oppimispäiväkirjasi ja käytä näitä perusmuotoiluita.
-
+On äärimmäisen todennäköistä, että osaat jo tämän aihepiirin, jos olet esimerkiksi toisen vuoden opiskelija. Jos olet kuitenkin epävarma, käy lukemassa [Markdown Guide: Basic Syntax](https://www.markdownguide.org/basic-syntax/). Sinun tulisi ihan vähimmillään osata käyttää eri tason otsikoita, leipätekstiä, luetteloita, koodiblokkeja, hyperlinkejä ja kuvia. Ilman näitä peruskomponentteja oppimispäiväkirjan kirjoittaminen on lähes mahdottomuus.
 
 Jos haluat harjoitella interaktiivisesti, voit käyttää [DC-labra HedgeDog](https://gitlab.dclabra.fi/wiki/)-alustaa. Voit kirjautua palveluun DC GitLab -tunnuksilla. HedgeDogissa on mahdollista näkeä vierekkäin kirjoittamasi Markdown-syntaksi ja sen renderöity lopputulos.
 
@@ -23,30 +20,15 @@ Jos haluat harjoitella interaktiivisesti, voit käyttää [DC-labra HedgeDog](ht
 
 **Kuva 1:** *HedgeDog-ympäristö. Tämä, mitä luet nyt, on kuvateksti. Kuvatekstin voi lisätä tavallisena kappaleena, jonka alku on lihavoituna kirjoitettuna `Kuva n:`*
 
-### :two: Extended Syntax
+!!! tip
 
-Käy lukemassa [Markdown Guide: Extended Syntax](https://www.markdownguide.org/extended-syntax/).
+    Huomaa, että Markdownista on useita eri *flavoreita*. Useimmat sivustot, jotka mahdollistavat Markdownin kirjoituksen  – kuten GitHub, Discord tai Confluence Wiki – tukevat jotakin laajennettua **Markdown Extended**-syntaksia, joka sisältää perus Markdownin lisäksi monia muita elementtejä. Esimerkiksi GitHub tukee GitHub Flavoured Markdownia (GFM) ja GitLab tukee GitLab Flavoured Markdownia (GLFM). Voit tutustua tähän konseptiin sivustolla [Markdown Guide: Extended Syntax](https://www.markdownguide.org/extended-syntax/).
 
-* Etsi Oppimispäiväkirja 101:sta esimerkkejä Extended Syntax -elementeistä.
-* Käytä niitä myös oppimispäiväkirjassasi.
+### Staattisen sivugeneraattorin omat ohjeet
 
-### :three: Material for MkDocs
+Oppimispäiväkirja 101 -ohjeistus, ja täten myös sinun oppimispäiväkirjasi, käyttävät staattisen nettisivun generointiin Material for MkDocs -teemaa. Tutustu [Material for MkDocs: References](https://squidfunk.github.io/mkdocs-material/)-dokumentaatioon. Material for MkDocs -teema tukee monia Markdownin laajennuksia, jotka mahdollistavat tekstin rikastuttamisen esimerkiksi Mermaid-kuvaajille tai MathJax-matematiikkanotaatiolla. Kun kirjoitat oppimispäiväkirjaa, aja Material for MkDocs -sivustoa lokaalisti. Tarkista, että sivusto renderöityy siten, kuten sen haluat renderöityvän. Jos ei, selvitä, mikä syntaksissa on pielessä: yleensä vika löytyy joko sisennyksestä tai puuttuvasta rivinvaihdosta. Palaa tarpeen mukaan aiemmin mainittujen ohjeiden pariin. Tämä onnistuu seuraavalla komennolla
 
-Tämä sivusto käyttää Material for MkDocs -teemaa (MkDocs:n päällä). Tutustu [Material for MkDocs: References](https://squidfunk.github.io/mkdocs-material/)-dokumentaatioon. Selvitä, mitä ainakin seuraavat ovat, ja kuinka niitä käytetään:
-
-* admonitions
-* data tables
-* footnotes
-
-Etsi Oppimispäiväkirja 101:sta esimerkkejä näistä elementeistä. Käytä niitä myös oppimispäiväkirjassasi.
-
-!!! warning
-
-    Huomaa, että nämä **eivät välttämättä toimi** HedgeDocissa tai esimerkiksi GitLabissa. Ne eivät kuulu tavalliseen Markdown-syntaksiin vaan ovat lisämausteita.
-
-### :repeat: Testaa selaimella
-
-Kun kirjoitat oppimispäiväkirjaa, aja Material for MkDocs -sivustoa lokaalisti. Tarkista, että sivusto renderöityy siten, kuten sen haluat renderöityvän. Jos ei, selvitä, mikä syntaksissa on pielessä: yleensä vika löytyy joko sisennyksestä tai puuttuvasta rivinvaihdosta. Palaa tarpeen mukaan aiemmin mainittujen ohjeiden pariin.
+Tämä kaikki neuvotaan [Cookiecutter-templaatin käyttö](07_cookiecutter.md) -materiaalissa.
 
 ---
 

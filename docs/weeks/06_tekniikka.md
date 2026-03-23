@@ -100,9 +100,9 @@ Video on pitkä, joten jos haluat vain tiivistelmän, tässä on muutama vinkki:
 * Jaa virheilmoitukset: jos saat virheilmoituksia, jaa ne.
 * Määrittele rajoitukset: kerro rajoitukset, kuten käytettävät työkalut tai teknologiat.
 
-Yllä olevat vinkit ovat muotoiltu Andy Osmanin "Context Engineering"-seminaaripuheesta O'Reillyn Codecon-virtuaalitapahtumasta. [^andy] Hyvän kysymyksen muotoilussa menee aikaa. Joskus käy niin, että kun muotoilet kysymyksen hyvin, huomaat itsekin ratkaisun ongelmaasi ennen kuin ehdit lähettää kysymyksen.
+Yllä olevat vinkit ovat muotoiltu Andy Osmanin *Context Engineering*-seminaaripuheesta O'Reillyn Codecon-virtuaalitapahtumasta. [^andy] Hyvän kysymyksen muotoilussa menee aikaa. Joskus käy niin, että kun muotoilet kysymyksen hyvin, huomaat itsekin ratkaisun ongelmaasi ennen kuin ehdit lähettää kysymyksen.
 
-Olennaista on tekoälylle annetun itsenäisyyden määrä. Jos tekoäly kirjoittaa sinun esseesi, opit tuskin mitään. Jos sinä opiskelijana määräät tekoälyn toimimaan matalammalla itsenäisyyden tasolla, kuten antamaan palautetta tai vihjeitä, oppimiselle jää mahdollisuus. [^kasvatus2025himanka]
+Olennaista on tekoälylle annetun itsenäisyyden määrä. Jos tekoäly kirjoittaa sinun teemamerkintäsi, opit tuskin mitään. Jos sinä opiskelijana määräät tekoälyn toimimaan matalammalla itsenäisyyden tasolla, kuten antamaan palautetta tai vihjeitä, oppimiselle jää mahdollisuus. [^kasvatus2025himanka]
 
 ## Lähdeluettelo
 

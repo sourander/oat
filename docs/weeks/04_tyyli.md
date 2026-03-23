@@ -6,17 +6,17 @@
 
 **Kuvio 2:** *Akateemista lukemista ja kirjoittamista kannattaa opetella opiskeluiden aikana. Yksi tapa on tutustua KAMK:n e-kirjaston kirjoihin. Näistä näkyy kuvassa kaksi: Akateemisen lukemisen ja kirjoittamisen opas (Vilkka H. 2020) sekä Hyvä, parempi, valmis: Opinnäytetyöopas ammattikorkeakouluille (Takala, J. 2023)*
 
-Akateeminen kirjoittaminen on tiedonluomisen ja luovan ongelmanratkaisun metodi. Siihen liittyviä taitoja ovat tiedonhakutaidot, tiedonarviointitaidot sekä tiedon soveltamisen taito. Ammattikorkeakoulun koulutuksen yksi pyrkimys on, että kykenet työelämässä luomaan selvityksiä tai raportteja, joiden sisältö on johdonmukaista ja perusteltua. Koulutuksen aikana näitä tekstilajeja ovat opinnäytetyö ja oppimispäiväkirja, mutta työelämässä saatat joutua vertailemaan, mikä tarjolla olevista palveluista sopii parhaiten yrityksen käyttötarkoitukseen [^1d1c01]. Sinun tulisi osata ajatella analyyttisesti ja luoda sellainen tutkimuksellinen asetelma, joka mahdollistaa palveluiden vertailemisen systemaattisesti. Vertailun tulokset tulee osata esittää siten, että esihenkilö tai muu tilaaja ymmärtää sinun löydöksesi, ja kyetä osoittamaan, mistä olet hankkinut tietosi ja millä perusteella arvioit sen olevan uskottavaa tietoa.
+Akateeminen kirjoittaminen on tiedonluomisen ja luovan ongelmanratkaisun metodi. Siihen liittyviä taitoja ovat tiedonhakutaidot, tiedonarviointitaidot sekä tiedon soveltamisen taito. Ammattikorkeakoulun koulutuksen yksi pyrkimys on, että kykenet työelämässä luomaan selvityksiä tai raportteja, joiden sisältö on johdonmukaista ja perusteltua. Koulutuksen aikana näitä tekstilajeja ovat opinnäytetyö ja oppimispäiväkirja, mutta työelämässä saatat joutua vertailemaan, mikä tarjolla olevista palveluista sopii parhaiten yrityksen käyttötarkoitukseen [^akateemisen]. Sinun tulisi osata ajatella analyyttisesti ja luoda sellainen tutkimuksellinen asetelma, joka mahdollistaa palveluiden vertailemisen systemaattisesti. Vertailun tulokset tulee osata esittää siten, että esihenkilö tai muu tilaaja ymmärtää sinun löydöksesi, ja kyetä osoittamaan, mistä olet hankkinut tietosi ja millä perusteella arvioit sen olevan uskottavaa tietoa.
 
 ## Oppimispäiväkirjan tyyli
 
-Yllä mainitussa Akateemisen lukemisen ja kirjoittamisen oppassa on oma, hyvin lyhyt alalukunsa oppimispäiväkirjasta tyylilajina. Siitä on lainaus alla:
+oppimispäiväkirjan tekstissä saa kuulua sinun oma äänesi. Tyylin tulee olla asiallista, mutta sen ei tarvitse olla kuivaa. Oppimispäiväkirjan saa kirjoittaa minä-muodossa.
 
 !!! quote
 
     "Oppimispäiväkirja on oman oppimisen reflektointia taaksepäin ja eteenpäin. Oppimispäiväkirja pyrkii olemaan kokonaisuus, jossa opintojaksolla opitun avulla pystyt laventamaan aiempaa osaamistasi tai muuttamaan oma ajattelutapaasi. Merkittävintä tekstissä ovat opintojaksolla esitetyt, sinulle tärkeät käsitteet tai teoriat, joiden olet huomannut muuttaneen ajatteluasi tai asenteitasi."
 
-    Hanna Vilkka [^1d1c01]
+    Hanna Vilkka [^akateemisen]
 
 Huomaathan, että oppimispäiväkirjan tekstissä saa kuulua sinun oma äänesi. Tyylin tulee olla asiallista, mutta sen ei tarvitse olla kuivaa. Oppimispäiväkirjan saa kirjoittaa minä-muodossa.
 
@@ -44,10 +44,10 @@ Silmäile myös alan julkaisuja, joita löytyy usein termillä `whitepaper` tai 
 * Google: [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 * Garmin: [Effects of Missing Data on Heart Rate Variability Measured From A Smartwatch: Exploratory Observational Study](https://formative.jmir.org/2025/1/e53645)
 
-Huomaa kuitenkin, että yllä listatut ovat akateemisen, tutkivan kentän tuotoksia. Me teemme ammattikorkeakoulussa useimmiten toiminnallisia raportteja (ja opinnäytetöitä). Tämä aiheuttaa eroavaisuuksia, kuten sen, että toiminnallisessa työssä on usein mukana projektisuunnitelma, vaatimusmääritelmä, aikataulu ja mahdollinen budjetti, jotka eivät ole tyypillisiä akateemisissa tutkimuksissa. Näihin dokumentteihin sinut tutustutaan ensimmäisten opiskeluvuosien aikana – pidä tämä suunnitelmallisuus kaikissa projekteissa mukana, vaikka sitä ei erikseen mainittaisikaan. Yhtä valmista sapluunaa ei ole mahdollista antaa, koska projektin aihe ja luonne vaikuttavat raportoinnin sisältöön, muotoon ja eri osioiden tarpeellisuuteen.
+Huomaa kuitenkin, että yllä listatut ovat pääasiassa akateemisen kentän tuotoksia. Me teemme ammattikorkeakoulussa useimmiten toiminnallisia projekteja ja opinnäytetöitä. Tämä aiheuttaa eroavaisuuksia, joihin tulet tutustumaan kursseilla, joissa sinua valmennetaan opinnäytetyön kirjoittajana. Jos olet elämäsi varrella lukenut vain vähän asiatekstiä, on kannattavaa lukea opintojen aikana alan kirjallisuutta. Esimerkiksi [No Starch Press](https://nostarch.com/) julkaisee kirjoja, jotka ovat teknisiä, mutta kirjoitettu rennolla tyylillä. [Manning](https://www.manning.com/) ja [O'Reilly](https://www.oreilly.com/) julkaisevat karvan verran vähemmän rentoa kirjallisuutta, mutta silti asiallista ja helposti lähestyttävää.
 
 Bonuksena mainittakoon DJangon luojan sivusto: [Simon Willison: TIL](https://til.simonwillison.net/). Sivusto sisältää lyhyitä kirjoituksia erilaisista teknisistä aiheista. Tyyliltään ne ovat rentoja, mutta asiallisia.
 
 ## Lähdeluettelo
 
-[^1d1c01]: Vilkka, H. *Akateemisen lukemisen ja kirjoittamisen opas.* Jyväskylä: PS-Kustannus. 2020.
+[^akateemisen]: Vilkka, H. *Akateemisen lukemisen ja kirjoittamisen opas.* Jyväskylä: PS-Kustannus. 2020.
