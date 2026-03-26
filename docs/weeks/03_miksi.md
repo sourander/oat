@@ -50,7 +50,13 @@ Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. A
 
 Kielimallit eli tekoälypohjaiset chat-botit tuovat tähän oman lisänsä. Voisi kuvitella, että teknologisista vempaimista olisi pelkkää haittaa, mutta tuoreehkot meta-analyysit osoittavat, että esimerkiksi ChatGPT:n käyttö voi parantaa opiskelijoiden oppimistuloksia [^3dbfe5]. Tälle löytyy kuitenkin vastaväitteitä, kuten MIT:n tutkijoiden artikkeli *Your Brain on ChatGPT* [^brainongpt] tai Antropicin *How AI Impacts Skill Formation*, jossa todetaan selkeästi, että: *"In our work, users who relied on AI without thinking performed the worst on the evaluation"* [^aiskillformation]. Minun tulkintani on, että tekoälyä voi käyttää joko oppimisen edistämiseen – ikään kuin tukiopettajana – tai väärin käytettynä oppimisen tyrehdyttämiseen. Mikäli tekoälyn antaa tehdä ajatustyön itsensä puolesta, kognitiivinen kuorma vähenee, mikä on toki miellyttävä tunne, mutta oppimiselle haitallista. Tämä vaatii itsehillintää opiskelijalta. Minun ajatustani puoltaa artikkeli *AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking* [^aicriticalthinking].
 
+Mike Amundsen lausui O'Reilly AI Codecon 2026 -konferenssissa, esityksessään "From Automation to Augmentation" [^amundsen], että valtaosa kielimallien käyttäjistä käyttää kielimalleja suorien vastauksien generointiin (engl. *as a generator*) tai ohjeiden saamiseen (engl. *as a surrogate*). Vain pieni osa hyödyntää tehokasta tapaa: käyttää sitä tukemaan ja haastamaan omaa ajattelua (engl. *as an instrument*). Hänen antamansa osuudet ovat alla luettelossa.
 
+* Generator: 60–70 %
+* Surrogate: 20–30 %
+* Instrument: 5–10 %
+
+Jos haluat kuulua Amundsenin määrittelemään 5–10 %:n vähemmistöön (lue: paremmistoon), käytä tekoälyä *"getting better at better"* -periaatteella. Älä pyydä valmiita vastauksia. Sen sijaan ajattele ja vastaa itse, ja kysy myöhemmin kielimallilta esimerkiksi, mitä näkökulmia tai aiheita olet kenties jättänyt huomioitta. [^amundsen] Tee työ pienissä paloissa, jättäen tilaa ja aikaa reflektiolle. Jupyter tai Marimo Noteobokit ovat tähän oiva alusta: älä koskaan pyydä yhtä solua enempää koodia kerrallaan. Ennen kuin siirryt seuraavaan soluun, anna itsellesi aikaa reflektiolle ja pohtimiselle. Käske tekoälyä pysähtymään (engl. *make stopping explicit*).
 
 ## Kirjoittamalla oppiminen
 
@@ -134,6 +140,7 @@ Aivan kuten pyöräilyä opetellessa apupyörät ovat apuväline, tai laskettelu
 [^brainongpt]: Kosmyna, N, et. al. *Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task*. https://arxiv.org/abs/2506.08872
 [^aiskillformation]: Shen, J. & Tamkin, A. *How AI Impacts Skill Formation*. 2026.https://arxiv.org/abs/2601.20245
 [^aicriticalthinking]: Gerlich, M. *AI Tools in Society: Impacts on Cognitive Offloading and the Future of Critical Thinking*. Societies. 2025. https://doi.org/10.3390/soc15010006
+[^amundsen]: Amundsen, M. *From Automation to Augmentation*. O'Reilly AI Codecon 2026. 2026-03-26.
 [^7ef5f9]: Karnorfsky, H. *Learning by Writing*. https://www.cold-takes.com/learning-by-writing/
 [^68dfb8]: Osmani, A. Write about what you learn. *It pushes you to understand topics better*. 2023. https://addyosmani.com/blog/write-learn/
 [^057387]: r/ExperiencedDevs. *What industry secret do you know that most software developers never figure out?* https://www.reddit.com/r/ExperiencedDevs/comments/1anuk2a/what_industry_secret_do_you_know_that_most/
