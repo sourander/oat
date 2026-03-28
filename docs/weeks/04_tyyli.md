@@ -10,7 +10,7 @@ Akateeminen kirjoittaminen on tiedonluomisen ja luovan ongelmanratkaisun metodi.
 
 ## Oppimispäiväkirjan tyyli
 
-oppimispäiväkirjan tekstissä saa kuulua sinun oma äänesi. Tyylin tulee olla asiallista, mutta sen ei tarvitse olla kuivaa. Oppimispäiväkirjan saa kirjoittaa minä-muodossa.
+Oppimispäiväkirjan tekstissä saa kuulua sinun oma äänesi. Tyylin tulee olla asiallista, mutta sen ei tarvitse olla kuivaa. Oppimispäiväkirjan saa kirjoittaa minä-muodossa.
 
 !!! quote
 

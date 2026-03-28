@@ -21,7 +21,7 @@ Oppimispäiväkirjan yksittäinen ==teemamerkintä== on **kokemukseen ja teoriaa
 * ⛔ **Luentopäiväkirja**: Tämä on lähellä. Luentopäiväkirjan voi kirjoittaa monella tapaa, ja eräs *"tapa on, että käsittelet jokaista luentoa erikseen."* [^akateemisen]
 * ✅ **Teemamerkintä:** Keksitty sana, joka tarkoittaa yllä mainittua *erästä tapaa* kirjoittaa oppimis/luentopäiväkirja.
 
-Kirjoittamamme ==kokonaisuus on siis oppimispäiväkirja== tai *luentopäiväkirja*, mutta yksittäinen merkintä on nimeltään teemamerkintä. Jos kurssilla on 9 teemaa, sinun oppimispäiväkirjassasi on 9 teemamerkintää. Kukin teemamerkintä käsittelee yhtä luentoa. Et voi siis palauttaa yhtä pitkää `README.md`-tiedostoa, joka käsittelee kaikkia luentoja. Et voi myöskään palauttaa kymmeniä tai satoja lyhyitä Markdown-tiedostoja, jotka ovat hajautettu sinne tänne. Teemojen määrä vaihtelee kursseittain. Esimerkiksi kurssin [Syväoppiminen I](https://sourander.github.io/syvaoppiminen/) sisällysluettelossa on 8 teemaa, ja ne ovat:
+Kirjoittamamme ==kokonaisuus on siis oppimispäiväkirja== tai *luentopäiväkirja*, mutta yksittäinen merkintä on nimeltään teemamerkintä. Jos kurssilla on 9 teemaa, sinun oppimispäiväkirjassasi on 9 teemamerkintää. Kukin teemamerkintä käsittelee yhtä kurssin teemaa. Nämä teemat listataan kurssin ohjeistuksessa – yleensä Reppu-palvelin Aloita tästä -osiossa. Teemojen määrä vaihtelee kursseittain. Esimerkiksi kurssin [Syväoppiminen I](https://sourander.github.io/syvaoppiminen/) sisällysluettelossa on 8 teemaa, ja ne ovat:
 
 ```plaintext
 Syväoppiminen I
@@ -35,6 +35,10 @@ Syväoppiminen I
 ```
 
 Mikäli osallistuisit kurssille Syväoppiminen I, kirjoittaisit 8 merkintää. Mikäli aloittaisit kurssin viikolla 12, ensimmäisen merkintäsi otsikko olisi `12: Neuroverkot` tai `12: Yleistä neuroverkoista` tai `12: Ensikosketus syväoppimiseen`. Tarkka otsikko on sinun valintasi, mutta teema on päätetty puolestasi!
+
+!!! warning
+
+    Et voi siis palauttaa yhtä pitkää `README.md`-tiedostoa, joka käsittelee kaikkia luentoja. Et voi myöskään palauttaa kymmeniä tai satoja lyhyitä Markdown-tiedostoja, jotka ovat hajautettu sinne tänne. Jos sinulla on esimerkiksi terveydellinen syy vaihtoehtoiseen suoritustapaan, älä sooloile ja tee oletuksia, vaan ota yhteyttä opettajaan ja sovi asiasta etukäteen.
 
 ### Merkintöjen ajoitus kalenterissa
 

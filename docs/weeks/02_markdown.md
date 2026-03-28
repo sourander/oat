@@ -128,13 +128,15 @@ Mikäli olet liittämässä kuvakaappausta, kokeile Visual Studio Coden näppär
 **Video 1:** *Kuvan liittäminen leikepöydältä suoraan Markdown-dokumenttiin VS Codessa. Kuvatiedosto myös nimetään uusiksi. Lue samat vaiheet alta tekstimuodossa.*
 
 * Ota kuvakaappaus
-    * Win/Mac: ++print-screen++
-    * macOS: ++cmd+shift+4++
-* Liitä kuva Markdown-dokumenttiin (CTRL + v)
+    * Win: ++print-screen++
+    * macOS: ++cmd+shift+5++ (tai ++4++ ja sitten valitse alue)
+* Liitä kuva Markdown-dokumenttiin
+    * Win: ++ctrl+v++
+    * macOS: ++cmd+v++
 
 Tällöin Visual Studio Code lisää kursorin kohdalle kuvaupotuskoodin eli `![alt text](image.png)`. Tiedosto tallentuu samaan hakemistoon kuin Markdown-tiedosto. On suositeltavaa nimetä kuva uudelleen, jotta kuvalla on kuvaavampi nimi. Voit nimetä kuvan uudelleen suoraan VS Codessa näin:
 
-* Klikkaa kuvan polkua hiiren oikealla korvalla 
+* Klikkaa kuvan polkua **hiiren oikealla korvalla** 
     * Valitse: *Rename Symbol (F2)*
     * Kirjoita uusi nimi kuvalle.
     * VS Code nimeää kuvan uusiksi *(ja jopa siirtää toiseen hakemistoon, jos polku muuttuu)*.

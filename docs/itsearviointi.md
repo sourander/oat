@@ -4,7 +4,11 @@
 
 Kirjoita tähän **realistinen** itsearviointi. Huomaa, että arvioithan **itsesi** etkä **kurssia**. Perustele siis, miksi ansaitset mielestäsi arvosanan `x/5`, ja mitä olisit kenties voinut tehdä toisin, jotta arvosana olisi korkeampi. Kuinka muutat toimintaasi tulevilla kurssilla? Ohjemitta itsearvioinnille on noin 200–400 sanaa.
 
-Sanallisen arvion ==lisäksi== anna itsellesi myös numeraalinen arvosana. Käytä arvioinnin perustana virallista [Arviointityökalua](https://arviointi.munpaas.com/), joka löytyy osoitteesta. Liitä arviointikriteerit joko **teksti- tai kuvamuotoisena** arviointityökalusta tähän. Alla esimerkki kummastakin. Itsearvioinnin kirjoittaminen on osa kurssisuoritusta. Jos se puuttuu kokonaan, sillä on laskeva vaikutus arvosanaan. Älä siis jätä itsearviointia kirjoittamatta!
+Sanallisen arvion ==lisäksi== anna itsellesi myös numeraalinen arvosana. Käytä [Arviointityökalua](https://arviointi.munpaas.com/). Liitä arviointisi työkalusta oppimispäiväkirjaasi joko **teksti- tai kuvamuotoisena**. Alla esimerkki kummastakin.
+
+!!! warning
+
+    Itsearvioinnin kirjoittaminen on osa kurssisuoritusta. Jos se puuttuu kokonaan, sillä on laskeva vaikutus arvosanaan. Älä siis jätä itsearviointia kirjoittamatta!
 
 ### 🗒️ Tekstimuotoinen arviointikriteerien liittäminen
 
