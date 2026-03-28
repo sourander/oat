@@ -242,5 +242,5 @@ Varmista kuitenkin, että kukin teemamerkintä on laajuudeltaan aivan vähimmill
 
     Tämä komento pyrkii laskemaan vain leipätekstin sanat: koodilohkot jätetään laskematta. Menetelmä ei ole kuitenkaan aivan vedenpitävä. Esimerkiksi taulukot voivat vaikuttaa sanamäärään. Tarkemmat käyttöohjeet löydät [oat-tools](https://pypi.org/project/oat-tools/) -projektin sivulta.
 
-[^npr]: Lombrozo, T. *This Could Have Been Shorter*. NPR. https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter
 [^akateemisen]: Vilkka, H. *Akateemisen lukemisen ja kirjoittamisen opas.* Jyväskylä: PS-Kustannus. 2020.
+[^npr]: Lombrozo, T. *This Could Have Been Shorter*. NPR. https://www.npr.org/sections/13.7/2014/02/03/270680304/this-could-have-been-shorter

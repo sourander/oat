@@ -47,7 +47,7 @@ Olennaista on tekoälylle annetun itsenäisyyden määrä. Jos tekoäly kirjoitt
 
 ## Lähdeluettelo
 
-[^wikiohje]: Wikipedia. *Ohje:Tekoälyn käyttö*. https://fi.wikipedia.org/wiki/Ohje:Teko%C3%A4lyn_k%C3%A4ytt%C3%B6
 [^linuxohje]: The kernel development community. *Linux Kernel Guidelines for Tool-Generated Content*. https://docs.kernel.org/_sources/process/generated-content.rst.txt
+[^wikiohje]: Wikipedia. *Ohje:Tekoälyn käyttö*. https://fi.wikipedia.org/wiki/Ohje:Teko%C3%A4lyn_k%C3%A4ytt%C3%B6
 [^andy]: Osman, A. *Context Engineering*. Puheenvuoro tapahtumassa AI Codecon: Coding for the Agentic World. O'Reilly. 2025. https://learning.oreilly.com/live-events/ai-codecon-coding-for-the-agentic-world/0642572207748/0642572207731/
 [^kasvatus2025himanka]: Himanka, J. Tekoäly korkeakouluopetuksessa. Kasvatus 1/2025. https://journal.fi/kasvatus/issue/view/11970
