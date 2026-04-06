@@ -6,9 +6,11 @@
 
 ## Markdown alkeet
 
-Markdown-koodiin tutustumiseen on monta tapaa. Suosittelen tapaa, jossa käytät tätä ==juuri nyt lukemaasi== sivustoa apuna. Opettajan luomat kurssimateriaalit käyttävät samaa staattisten webbisivugeneraattoria kuin sinun oppimispäiväkirjasi. Voit siis oppia opettajan käyttämistä muotoiluista. Näitkö luentomateriaalissa jotain, minkä haluat oppia tekemään? Kurkkaa kyseisen kurssin dokumentaation Markdown-koodista, millaisella rimpsulla se on saatu aikaiseksi. Jos et saa koodia toimimaan, kysy opettajalta ohjeita. 
+Markdown-koodiin tutustumiseen on monta tapaa. Suosittelen tapaa, jossa käytät tätä ==juuri nyt lukemaasi== sivustoa apuna. Tämän Oppimispäiväkirja 101 -sivuston raaka Markdown koodi löytyy [gh:sourander/oat](http://www.github.com/sourander/oat) -repositoriosta polusta `docs/weeks/**/*.md`.
 
-Tämän Oppimispäiväkirja 101 -sivuston raaka Markdown koodi löytyy [gh:sourander/oat](http://www.github.com/sourander/oat) -repositoriosta polusta `docs/weeks/**/*.md`. Toimi alla olevien vaiheiden mukaisesti:
+!!! tip
+
+    Opettajan luomat kurssimateriaalit käyttävät samaa staattisten webbisivugeneraattoria kuin sinun oppimispäiväkirjasi. Voit siis oppia opettajan käyttämistä muotoiluista. Näitkö luentomateriaalissa jotain, minkä haluat oppia tekemään? Kurkkaa kyseisen kurssin dokumentaation Markdown-koodista, millaisella rimpsulla se on saatu aikaiseksi. Jos et saa koodia toimimaan, kysy opettajalta ohjeita. 
 
 ### Markdown
 
