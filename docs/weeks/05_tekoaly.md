@@ -1,10 +1,10 @@
-# 6: Tekoälyn käyttö
+# 5: Tekoälyn käyttö
 
 Voit käyttää kirjoittamisen apuna erilaisia kielimalleihin perustuvia chatbotteja. Näitä ovat esimerkiksi ChatGPT, Claude ja Gemini. Muista, että oppimispäiväkirjan tulee olla **sinun** työsi. Älä siis anna tekoälyn kirjoittaa tekstiä puolestasi.
 
 ## Ohjeistus kielimallien käytöstä
 
-Tämä ohjeistus perustuu suomenkielisen Wikipedian [Ohje:Tekoälyn käyttö](https://fi.wikipedia.org/wiki/Ohje:Teko%C3%A4lyn_k%C3%A4ytt%C3%B6) sekä Linux-kernelin ohjeistukseen [Kernel Guidelines for Tool-Generated Content](https://docs.kernel.org/_sources/process/generated-content.rst.txt). Ohjeet on muokattu soveltumaan oppimispäiväkirjan kirjoittamiseen, mutta periaatteet ovat samat. Tekoälyn vaikutuksesta oppimiseen oletkin jo lukenut Miksi oppimispäiväkirja? -luvun otsikon [Tekoälyn rooli](03_miksi.md#tekoalyn-rooli) alla.
+Tämä ohjeistus perustuu suomenkielisen Wikipedian [Ohje:Tekoälyn käyttö](https://fi.wikipedia.org/wiki/Ohje:Teko%C3%A4lyn_k%C3%A4ytt%C3%B6) sekä Linux-kernelin ohjeistukseen [Kernel Guidelines for Tool-Generated Content](https://docs.kernel.org/_sources/process/generated-content.rst.txt). Ohjeet on muokattu soveltumaan oppimispäiväkirjan kirjoittamiseen, mutta periaatteet ovat samat. Tekoälyn vaikutuksesta oppimiseen oletkin jo lukenut Miksi oppimispäiväkirja? -luvun otsikon [Tekoäly sparraajana](03_miksi.md#tekoaly-sparraajana) alla.
 
 Tekoälyn käytön suhteen läpinäkyvyys on tärkeää. Arvioijalle tulee olla selvää, jos esimerkiksi jokin koodi tai tekstikappale on tekoälyn generoima. Alla Linuxin ohjeistuksesta lainattu oiva sääntö, joka kannattaa pitää mielessä:
 

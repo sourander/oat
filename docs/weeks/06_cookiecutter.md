@@ -1,4 +1,4 @@
-# 7: Cookiecutter-templaatin käyttö
+# 6: Cookiecutter-templaatin käyttö
 
 Oppimispäiväkirjaa ei tarvitse aloittaa aivan tyhjästä. Voit käyttää valmista Cookiecutter-templaattia, joka luo valmiin rakenteen oppimispäiväkirjalle. Riittää, että sinulla on asennettuna:
 

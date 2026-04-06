@@ -8,7 +8,7 @@ Jos suoritat kurssia, jonka oppimispäiväkirjan sisältö on määritelty Oppim
 >
 > — Hanna Vilkka [^akateemisen]
 
-Hanna Vilkkan määritelmiin nojaten kyseessä Oppimispäiväkirja 101:n määrittelemä formaatti on välimalli termeistä oppimispäiväkirja ja luentopäiväkirja [^akateemisen]. Jos pohdit, miksi sinä ylipäätänsä joudut kirjoittamaan aiheesta etkä vain tekemään esimerkiksi toimivaa ohjelmaa, niin lue tästä aiheesta lisää sivulta [Miksi oppimispäiväkirja](03_miksi.md). Tämän otsikon alla käsitellään tekstiä lähinnä määrällisestä ja muodollisesta näkökulmasta. Laadullinen ja tyylillinen näkökulma käsitellään [Akateeminen tyyli](04_tyyli.md)-sivulla. On äärimmäisen suositeltavaa, että luet koko Oppimispäiväkirja 101 ohjeen aivan alusta loppuun ajatuksella. Tee tarpeen mukaan myös itsellesi muistiinpanoja.
+Hanna Vilkkan määritelmiin nojaten kyseessä Oppimispäiväkirja 101:n määrittelemä formaatti on välimalli termeistä oppimispäiväkirja ja luentopäiväkirja [^akateemisen]. Jos pohdit, miksi sinä ylipäätänsä joudut kirjoittamaan aiheesta etkä vain tekemään esimerkiksi toimivaa ohjelmaa, niin lue tästä aiheesta lisää sivulta [Miksi oppimispäiväkirja](03_miksi.md). Tämän otsikon alla käsitellään tekstiä lähinnä määrällisestä ja muodollisesta näkökulmasta. On äärimmäisen suositeltavaa, että luet koko Oppimispäiväkirja 101 ohjeen aivan alusta loppuun ajatuksella. Tee tarpeen mukaan myös itsellesi muistiinpanoja.
 
 ## Teemamerkintä
 

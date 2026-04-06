@@ -2,7 +2,7 @@
 
 !!! tip
 
-    Jos Markdown-kielen syntaksi ja Material for MkDocs -teema ovat sinulle entuudestaan tuttua kauraa, hyppää suoraan kohtaan [Muotoiluvinkkejä](#muotoiluvinkkejä).
+    Jos Markdown-kielen syntaksi ja Material for MkDocs -teema ovat sinulle entuudestaan tuttua kauraa, hyppää suoraan kohtaan [Muotoiluvinkkejä](#muotoiluvinkkeja).
 
 ## Markdown alkeet
 
@@ -28,7 +28,7 @@ Jos haluat harjoitella interaktiivisesti, voit käyttää [DC-labra HedgeDog](ht
 
 Oppimispäiväkirja 101 -ohjeistus, ja täten myös sinun oppimispäiväkirjasi, käyttävät staattisen nettisivun generointiin Material for MkDocs -teemaa. Tutustu [Material for MkDocs: References](https://squidfunk.github.io/mkdocs-material/)-dokumentaatioon. Material for MkDocs -teema tukee monia Markdownin laajennuksia, jotka mahdollistavat tekstin rikastuttamisen esimerkiksi Mermaid-kuvaajille tai MathJax-matematiikkanotaatiolla. Kun kirjoitat oppimispäiväkirjaa, aja Material for MkDocs -sivustoa lokaalisti. Tarkista, että sivusto renderöityy siten, kuten sen haluat renderöityvän. Jos ei, selvitä, mikä syntaksissa on pielessä: yleensä vika löytyy joko sisennyksestä tai puuttuvasta rivinvaihdosta. Palaa tarpeen mukaan aiemmin mainittujen ohjeiden pariin. Tämä onnistuu seuraavalla komennolla
 
-Tämä kaikki neuvotaan [Cookiecutter-templaatin käyttö](07_cookiecutter.md) -materiaalissa.
+Tämä kaikki neuvotaan [Cookiecutter-templaatin käyttö](06_cookiecutter.md) -materiaalissa.
 
 ---
 
