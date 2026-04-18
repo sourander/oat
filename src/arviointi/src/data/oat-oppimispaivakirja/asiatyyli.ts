@@ -1,7 +1,7 @@
 import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const common_criterion_asiatyyli: NumericalCriteria = {
-  id: "common_criterion_asiatyyli",
+const criterion_asiatyyli: NumericalCriteria = {
+  id: "criterion_asiatyyli",
   title: "Asiatyyli",
   description: `Asiatyyliin kirjoitettu dokumentti muistuttaa opinnäytetyötä, ammattilaisille 
   kirjoitettua artikkelia (esim. Medium.com) tai raporttia. Palautusformaattina on Material for MkDocs -sivusto ellei kurssin
@@ -54,4 +54,4 @@ const common_criterion_asiatyyli: NumericalCriteria = {
   ],
 };
 
-export default common_criterion_asiatyyli;
+export default criterion_asiatyyli;

@@ -1,7 +1,7 @@
 import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const unique_oppimispaivakirja_gitlog: NumericalCriteria = {
-  id: "oppimispaivakirja_gitlog",
+const criterion_gitlog: NumericalCriteria = {
+  id: "criterion_gitlog",
   title: "Opiskeluaktiivisuus",
   description: `Aktiivinen opiskelu edistää oppimista ja samalla harjaannuttaa git-versionhallinnan 
   käytössä. Sinulta toivotaan viikoittaista työskentelyä, jonka tulee näkyä git-lokeissa. Käytä selkeitä commit-viestejä. 
@@ -51,4 +51,4 @@ const unique_oppimispaivakirja_gitlog: NumericalCriteria = {
   ],
 };
 
-export default unique_oppimispaivakirja_gitlog;
+export default criterion_gitlog;

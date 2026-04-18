@@ -3,8 +3,8 @@ import {
   BooleanCriteria,
 } from "../../types/oat-grade-types";
 
-const unique_ai_proj_aihe: NumericalCriteria = {
-  id: "ai_proj_aihe",
+const criterion_aihe: NumericalCriteria = {
+  id: "criterion_aihe",
   title: "Projektin aihe",
   description: `Projektin aiheen tulee olla merkittävällä tavalla tekoälyyn tai dataputkiin liittyvä ja riittävän haastava.`,
   weight: 20,
@@ -38,8 +38,8 @@ const unique_ai_proj_aihe: NumericalCriteria = {
   ],
 };
 
-const unique_ai_proj_dokumentointi: NumericalCriteria = {
-  id: "ai_proj_dokumentointi",
+const criterion_dokumentointi: NumericalCriteria = {
+  id: "criterion_dokumentointi",
   title: "Dokumentointi",
   description: `Dokumentaation tulee olla selkeää, perusteltua ja hyödyntää lähteitä, kuvia
   ja taulukoita tarpeen mukaan.`,
@@ -70,8 +70,8 @@ const unique_ai_proj_dokumentointi: NumericalCriteria = {
   ],
 };
 
-const unique_ai_proj_koodi: NumericalCriteria = {
-  id: "ai_proj_koodi",
+const criterion_koodi: NumericalCriteria = {
+  id: "criterion_koodi",
   title: "Koodi",
   description: `Koodin tulee olla selkeää ja jäsenneltyä. Koodi on kommunikaatiota ja kirjoitettu luettavaksi. Jos projekti ei sisällä koodia, tämä kriteeri saa saman
   arvosanan kuin dokumentointi, tehden dokumentoinnin painoarvosta efektiivisesti näiden kahden summan.`,
@@ -98,8 +98,8 @@ const unique_ai_proj_koodi: NumericalCriteria = {
   ],
 };
 
-const unique_ai_proj_tulokset: NumericalCriteria = {
-  id: "ai_proj_tulokset",
+const criterion_tulokset: NumericalCriteria = {
+  id: "criterion_tulokset",
   title: "Tulokset",
   description: `Tulokset tulee esittää selkeästi ja selventää, kuinka ne
   täyttävät toimeksiannon vaatimukset.`,
@@ -127,8 +127,8 @@ const unique_ai_proj_tulokset: NumericalCriteria = {
   ],
 };
 
-const unique_ai_proj_itsearviointi: NumericalCriteria = {
-  id: "ai_proj_itsearviointi",
+const criterion_itsearviointi: NumericalCriteria = {
+  id: "criterion_itsearviointi",
   title: "Itsearviointi",
   description: `Opiskelijan tulee arvioida omaa ja tiimin toimintaa realistisesti.`,
   weight: 20,
@@ -155,18 +155,17 @@ const unique_ai_proj_itsearviointi: NumericalCriteria = {
   ],
 };
 
-const unique_ai_proj_hours: BooleanCriteria = {
-  id: "ai_proj_hours",
+const criterion_hours: BooleanCriteria = {
+  id: "criterion_hours",
   title: "Työtunnit",
   description: `Opiskelija on todistettavasti työskennellyt sovitun määrän (vakio: 100h/5op).`,
 };
 
-// Export both
 export {
-  unique_ai_proj_aihe,
-  unique_ai_proj_dokumentointi,
-  unique_ai_proj_koodi,
-  unique_ai_proj_tulokset,
-  unique_ai_proj_itsearviointi,
-  unique_ai_proj_hours,
+  criterion_aihe,
+  criterion_dokumentointi,
+  criterion_koodi,
+  criterion_tulokset,
+  criterion_itsearviointi,
+  criterion_hours,
 };

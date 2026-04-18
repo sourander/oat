@@ -1,7 +1,7 @@
 import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const unique_video_structure_quality: NumericalCriteria = {
-  id: "video_structure_quality",
+const criterion_structure_quality: NumericalCriteria = {
+  id: "criterion_structure_quality",
   title: "Video",
   description: `Videon vastaanotettavuus katsojan näkökulmasta - sekä tekniseltä 
   että sisällölliseltä kannalta.`,
@@ -34,4 +34,4 @@ const unique_video_structure_quality: NumericalCriteria = {
   ],
 };
 
-export default unique_video_structure_quality;
+export default criterion_structure_quality;

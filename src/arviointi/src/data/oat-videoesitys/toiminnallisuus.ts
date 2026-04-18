@@ -1,7 +1,7 @@
 import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const common_criterion_toiminnallisuus: NumericalCriteria = {
-  id: "common_criterio_toiminnallisuus",
+const criterion_toiminnallisuus: NumericalCriteria = {
+  id: "criterion_toiminnallisuus",
   title: "Toiminnallisuus",
   description: `Toimiva ratkaisu täyttää kurssitehtävänannon tai liiketoiminnan vaatimukset ja toimii 
   odotetusti. Toiminnallisuus on testattu kattavasti ja dokumentoitu selkeästi, jotta sen oikeellisuus 
@@ -38,4 +38,4 @@ const common_criterion_toiminnallisuus: NumericalCriteria = {
   ],
 };
 
-export default common_criterion_toiminnallisuus;
+export default criterion_toiminnallisuus;

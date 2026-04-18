@@ -1,7 +1,7 @@
 import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const common_criterion_termisto: NumericalCriteria = {
-  id: "common_criterio_termisto",
+const criterion_termisto: NumericalCriteria = {
+  id: "criterion_termisto",
   title: "Terminologia",
   description: `Tarkka ja kurssin aiheenmukainen terminologian käyttö osoittaa opiskelijan perehtyneisyyden 
   aiheeseen. Terminologiaa käytetään johdonmukaisesti ja oikein, ja se selitetään tarvittaessa lukijalle. 
@@ -40,4 +40,4 @@ const common_criterion_termisto: NumericalCriteria = {
   ],
 };
 
-export default common_criterion_termisto;
+export default criterion_termisto;

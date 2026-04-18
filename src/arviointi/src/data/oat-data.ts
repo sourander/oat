@@ -1,26 +1,27 @@
 import { OatGradeType } from "../types/oat-grade-types";
 
-import common_criterion_lahteet from "./oat-common/lahteet";
-import common_criterion_asiatyyli from "./oat-common/asiatyyli";
-import common_criterion_tietotaidot from "./oat-common/tietotaidot";
-import common_criterion_toiminnallisuus from "./oat-common/toiminnallisuus";
-import common_criterion_termisto from "./oat-common/termisto";
-import common_criterion_code_quality from "./oat-common/code_quality";
+import criterion_lahteet from "./oat-oppimispaivakirja/lahteet";
+import criterion_asiatyyli from "./oat-oppimispaivakirja/asiatyyli";
+import criterion_tietotaidot from "./oat-oppimispaivakirja/tietotaidot";
+import criterion_gitlog from "./oat-oppimispaivakirja/oppimispaivakirja_gitlog";
 
-import unique_oppimispaivakirja_gitlog from "./oat-unique/oppimispaivakirja_gitlog";
-import unique_video_structure_quality from "./oat-unique/video_structure_quality";
+import criterion_termisto from "./oat-videoesitys/termisto";
+import criterion_toiminnallisuus from "./oat-videoesitys/toiminnallisuus";
+import criterion_code_quality from "./oat-videoesitys/code_quality";
+import criterion_structure_quality from "./oat-videoesitys/video_structure_quality";
+
 import {
-  unique_ai_proj_aihe,
-  unique_ai_proj_dokumentointi,
-  unique_ai_proj_koodi,
-  unique_ai_proj_tulokset,
-  unique_ai_proj_itsearviointi,
-  unique_ai_proj_hours,
-} from "./oat-unique/ai_project_all";
+  criterion_aihe,
+  criterion_dokumentointi,
+  criterion_koodi,
+  criterion_tulokset,
+  criterion_itsearviointi,
+  criterion_hours,
+} from "./oat-aiproject/ai_project_all";
 
 const oppimispaivakirja: OatGradeType = {
-  id: "remote_learning_journal",
-  title: "📓🛜 Oppimispäiväkirja (monimuoto)",
+  id: "learning_journal",
+  title: "📓🛜 Oppimispäiväkirja",
   description: `
   Oppimispäiväkirja on opiskelijan itsenäinen kirjoitus, jota kirjoitetaan viikko viikolta kurssin edetessä 
   Oppimispäiväkirja 101 -ohjeistuksen mukaan. Kukin muutos tallennetaan versionhallintaan.
@@ -30,10 +31,10 @@ const oppimispaivakirja: OatGradeType = {
   perustella arvosanansa niiden pohjalta. Muista katsoa aloitusluento, jossa tätä käsitellään! Tutustu Oppimispäiväkirja 101
   -ohjeistukseen ennen aloittamista.`,
   numerical_criteria: [
-    { ...common_criterion_tietotaidot, weight: 40 },
-    { ...common_criterion_asiatyyli, weight: 20 },
-    { ...unique_oppimispaivakirja_gitlog, weight: 20 },
-    { ...common_criterion_lahteet, weight: 20 },
+    { ...criterion_tietotaidot, weight: 40 },
+    { ...criterion_asiatyyli, weight: 20 },
+    { ...criterion_gitlog, weight: 20 },
+    { ...criterion_lahteet, weight: 20 },
   ],
 };
 
@@ -46,10 +47,10 @@ const videoesitys: OatGradeType = {
   seikat esitellään videolla. Opettajalla tulee kuitenkin olla pääsy repositorioon tarkempaa ja täydentävää
   tarkastelua varten.`,
   numerical_criteria: [
-    { ...common_criterion_termisto, weight: 30 },
-    { ...common_criterion_toiminnallisuus, weight: 30 },
-    { ...common_criterion_code_quality, weight: 30 },
-    { ...unique_video_structure_quality, weight: 10 },
+    { ...criterion_termisto, weight: 30 },
+    { ...criterion_toiminnallisuus, weight: 30 },
+    { ...criterion_code_quality, weight: 30 },
+    { ...criterion_structure_quality, weight: 10 },
   ],
   boolean_criteria: [
     {
@@ -67,13 +68,13 @@ const aiProject: OatGradeType = {
   salassapidettävää, tulee opiskelijan esitellä ratkaistut ongelmat muilla keinoin. Raportoinnissa on tällöin
   suositeltavaa käyttää dummy-dataa, joka muistuttaa rakenteeltaan alkuperäistä paljastamatta yksityiskohtia.`,
   numerical_criteria: [
-    { ...unique_ai_proj_aihe, weight: 20 },
-    { ...unique_ai_proj_dokumentointi, weight: 20 },
-    { ...unique_ai_proj_koodi, weight: 20 },
-    { ...unique_ai_proj_tulokset, weight: 20 },
-    { ...unique_ai_proj_itsearviointi, weight: 20 },
+    { ...criterion_aihe, weight: 20 },
+    { ...criterion_dokumentointi, weight: 20 },
+    { ...criterion_koodi, weight: 20 },
+    { ...criterion_tulokset, weight: 20 },
+    { ...criterion_itsearviointi, weight: 20 },
   ],
-  boolean_criteria: [unique_ai_proj_hours],
+  boolean_criteria: [criterion_hours],
 };
 
 export const OAT_GRADE_TYPES: OatGradeType[] = [

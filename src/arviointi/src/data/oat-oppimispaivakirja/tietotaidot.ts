@@ -1,7 +1,7 @@
 import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const common_criterion_tietotaidot: NumericalCriteria = {
-  id: "self_assessment_criterion1",
+const criterion_tietotaidot: NumericalCriteria = {
+  id: "criterion_tietotaidot",
   title: "Tietotaidot",
   description: `Korkean tietotaidon itsenäisesti osoittava opiskelija hallitsee kurssilla käsitellyn käytännön ja teorian todistettavasti.
   Opiskelija tunnistaa oman osaamisensa tason. Muista antaa numeraalinen arvosana itsellesi! 
@@ -53,4 +53,4 @@ const common_criterion_tietotaidot: NumericalCriteria = {
   ],
 };
 
-export default common_criterion_tietotaidot;
+export default criterion_tietotaidot;

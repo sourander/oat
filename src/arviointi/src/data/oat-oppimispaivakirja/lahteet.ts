@@ -1,7 +1,7 @@
 import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const common_criterion_lahteet: NumericalCriteria = {
-  id: "common_criterion_lahteet",
+const criterion_lahteet: NumericalCriteria = {
+  id: "criterion_lahteet",
   title: "Lähdeviitteet",
   description: `Hyvin käytetyt lähdeviitteet tukevat kirjoituksen argumentteja. Työ ikään kuin 
   keskustelee lähdeteosten kanssa. Valittujen lähteiden tulee olla luotettavia ja ajantasaisia.
@@ -45,4 +45,4 @@ const common_criterion_lahteet: NumericalCriteria = {
   ],
 };
 
-export default common_criterion_lahteet;
+export default criterion_lahteet;

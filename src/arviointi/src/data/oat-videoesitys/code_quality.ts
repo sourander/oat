@@ -1,7 +1,7 @@
 import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const common_criterion_code_quality: NumericalCriteria = {
-  id: "common_criterio_code_quality",
+const criterion_code_quality: NumericalCriteria = {
+  id: "criterion_code_quality",
   title: "Koodi",
   description: `Laadukas koodi ei pelkästään toimi vaan noudattaa konventioita ja on dokumentoitua. 
   Koodi on kommunikaatiota kirjoittajan ja lukijoiden välillä.`,
@@ -33,4 +33,4 @@ const common_criterion_code_quality: NumericalCriteria = {
   ],
 };
 
-export default common_criterion_code_quality;
+export default criterion_code_quality;
