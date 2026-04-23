@@ -26,9 +26,8 @@ const criterion_code_quality: NumericalCriteria = {
     },
     {
       grade: 5,
-      desc: `Koodi on konvention mukaista ja hyvin dokumentoitua. Kokonaisuus toimii hyvänä työnäyttönä. Koodin
-      skooppi on tehtävänantoon suhteutettuna järkevä: ei liian helppo eikä toisaalta ole jäänyt puolitiehen
-      liian suuren haasteen kanssa. Mahdolliset haasteet ja tulevaisuuden kehityskohteet on dokumentoitu.`,
+      desc: `Koodi on konvention mukaista ja hyvin dokumentoitua. Kokonaisuus toimii hyvänä työnäyttönä. 
+      Mahdolliset haasteet ja tulevaisuuden kehityskohteet on dokumentoitu.`,
     },
   ],
 };

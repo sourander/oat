@@ -21,7 +21,7 @@ import {
 
 const oppimispaivakirja: OatGradeType = {
   id: "learning_journal",
-  title: "📓🛜 Oppimispäiväkirja",
+  title: "📓 Oppimispäiväkirja",
   description: `
   Oppimispäiväkirja on opiskelijan itsenäinen kirjoitus, jota kirjoitetaan viikko viikolta kurssin edetessä 
   Oppimispäiväkirja 101 -ohjeistuksen mukaan. Kukin muutos tallennetaan versionhallintaan.
@@ -45,11 +45,11 @@ const videoesitys: OatGradeType = {
   tuotoksen. Siitä tulee selvitä tuotteen vaatimukset, toiminnallisuus ja käyttö. Videoesityksen kesto määritellään
   tehtävänannon yhteydessä. Ideaalitilanteessa opettajan ei tarvitse lukea repositoriosi koodia läpi, vaan tärkeät
   seikat esitellään videolla. Opettajalla tulee kuitenkin olla pääsy repositorioon tarkempaa ja täydentävää
-  tarkastelua varten.`,
+  tarkastelua varten. Muista kirjata harjoitukseen käyttämäsi aika! Sen puute laskee arvosanaasi.`,
   numerical_criteria: [
-    { ...criterion_termisto, weight: 30 },
-    { ...criterion_toiminnallisuus, weight: 30 },
-    { ...criterion_code_quality, weight: 30 },
+    { ...criterion_termisto, weight: 40 },
+    { ...criterion_toiminnallisuus, weight: 40 },
+    { ...criterion_code_quality, weight: 10 },
     { ...criterion_structure_quality, weight: 10 },
   ],
   boolean_criteria: [
