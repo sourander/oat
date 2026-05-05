@@ -1,6 +1,6 @@
 # 3: Miksi oppimispäiväkirja?
 
-Oppimispäiväkirja on paljon enemmän kuin vain kurssisuoritus tai lokikirja tehdyistä tehtävistä. Se on työkalu ajattelusi kehittämiseen, asiantuntija-identiteettisi rakentamiseen ja osaamisesi näkyväksi tekemiseen. Sinä olet se, joka opiskelee ja oppii. Opettaja on valmentaja ja apu. Oppimispäiväkirja on se artefakti, jolla teet oppimisprosessistasi näkyvän, jotta opettajalla on jokin mahdollisuus antaa sinulle tekemistäsi vastaava arvosana. Se on siis kaksisuuntainen väline, joka palvelee sekä sinua että opettajaa. 
+Oppimispäiväkirja on paljon enemmän kuin vain kurssisuoritus tai lokikirja tehdyistä tehtävistä. Se on työkalu ajattelusi kehittämiseen, asiantuntija-identiteettisi rakentamiseen ja osaamisesi näkyväksi tekemiseen. Sinä olet se, joka opiskelee ja oppii. Opettaja on valmentaja ja apu. Oppimispäiväkirja on se artefakti, jolla teet oppimisprosessistasi näkyvän, jotta opettajalla on jokin mahdollisuus antaa sinulle tekemistäsi vastaava arvosana. Se on siis kaksisuuntainen väline, joka palvelee sekä sinua että opettajaa.
 
 Tässä luvussa käymme läpi, miksi oppimispäiväkirjaa ylipäätään kirjoitetaan, millaisia menetelmiä voit hyödyntää ajattelusi syventämisessä ja millaista kieltä asiantuntijalta odotetaan.
 
@@ -49,12 +49,20 @@ Pelkkä arviointi ei kuitenkaan riitä syyksi. National Research Council:n komit
     
     Franco Fernando @ LinkedIn [^franco]
 
-Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. Asiantuntijat ovat tehokkaita ongelmanratkaisijoita, tiedonhakijoita ja tiedon soveltajia. Hakkarainen ja kumppanit [^hakkarainen] tiivistävät, että: *"kirjoittaminen on kaikkein tärkein ajattelemaan oppimisen väline."* Oppimispäiväkirjan tavoitteena on siis auttaa sinua kehittymään asiantuntijaksi. 2000-luvun työntekijä ei voi olettaa saavansa esihenkilöltä yksiselitteisiä työtehtäviä. Olet ammattikorkeakoulussa valmistamassa itseäsi työelämään, joten työelämän tavat toimia on hyvä ottaa käyttöön jo nyt.
+Asiantuntijasta ei tee asiantuntijaa se, että hän osaa ulkoa paljon faktoja. Asiantuntijat ovat tehokkaita ongelmanratkaisijoita, tiedonhakijoita ja tiedon soveltajia. Hakkarainen ja kumppanit [^hakkarainen] tiivistävät, että: *"kirjoittaminen on kaikkein tärkein ajattelemaan oppimisen väline."* Oppimispäiväkirjan tavoitteena on siis auttaa sinua kehittymään asiantuntijaksi. 2000-luvun työntekijä ei voi olettaa saavansa esihenkilöltä yksiselitteisiä työtehtäviä. Olet ammattikorkeakoulussa valmistamassa itseäsi työelämään, joten työelämän tavat toimia on hyvä ottaa käyttöön jo nyt. Helppoa se ei suinkaan ole, kuten alla oleva (anonyymiksi muokattu) lainaus osoittaa:
+
+!!! quote "Opiskelijan sanomaa"
+
+    "Oppimispäiväkirjan aloittaminen tuntui melko vaikealta. Epävarmuutta herätti se, kirjoitinko olennaisia asioita vai toistiko vain lähdemateriaalia. Koin kuitenkin hyödylliseksi kirjata itselle ylös samat asiat omin sanoineni."
+
+    — Anonyymi opiskelija
+
+Kirjailija, tubettaja tai opettaja on jo kenties selittänyt termin siten, että sinulla olisi vain houkutus tarjota linkki. Aiheen selittäminen sinun omin sanoinesi on kuitenkin hyödyllistä. Se on hyödyllistä, koska se pakottaa sinut jäsentämään ja prosessoimaan tietoa. Et voi kirjoittaa opinnäytetyötäkään siten, että kirjan alussa toteat: *"Lue ensin nämä 3 kirjaa ja palaa sitten takaisin tähän tekstiin, kun ymmärrät jostain jotain."* Sinun tulee esitellä lukijalle ne termit, käsitteet ja teoriat, jotka ovat olennainen osa aihetta juuri siinä laajuudessa, missä aihetta käsittelet. Tämä vaatii, että teet valintoja: välttelet lillukanvarsia, keskityt olennaiseen.
 
 
 ### Pienet tavoitteet ja toisto
 
-Oppiminen ei tapahdu heti eikä kerrasta. Se ei ole 100 metrin pikajuoksu. Se on lähempänä maratonia kuin pikajuoksua, mutta ei ole aivan maraton myöskään [^cf45f2]. Oppimispäiväkirja pohjaa tähän progressiivisen kehittymisen ideaan. Tavoitteena ei ole päntätä tenttiä varten vaan aiheuttaa pysyviä muutoksia ajattelussasi.
+Oppiminen ei tapahdu heti eikä kerrasta. Se ei ole 100 metrin pikajuoksu. Se on lähempänä maratonia kuin pikajuoksua, mutta ei ole aivan maraton myöskään [^cf45f2]. Oppimispäiväkirja pohjaa tähän progressiivisen kehittymisen ideaan. Tavoitteena ei ole päntätä tenttiä varten vaan aiheuttaa ==pysyviä muutoksia== ajattelussasi.
 
 Oppiminen ei tapahdu siten, että joku muu (opettaja) kaataa sinun päähäsi tietoa. Päinvastoin, oppiminen on aktiivista toimintaa, jossa **sinä itse olet pääosassa**. Mikäli oppiminen tuntuu liian helpolta, et todennäköisesti opi mitään. Tätä voi verrata kuntosaliharjoitteluun: voit kehittyä vain, jos nostat painoja, jotka ovat riittävän lähellä omaa maksimia. Kun kehityt, maksimi nousee, ja myös haastetta pitää kasvattaa. Tämä ei ole hatusta vedettyä pohdintaa, vaan aihetta on tutkinut muiden muassa Robert A Bjork. Hänen käsitettä *desireable difficulties* kansantajuistaa esimerkiksi David Didau sekä blogissaan [^didau] että kirjassaan *What if everything you knew about education was wrong?* [^9a6809].
 
@@ -64,6 +72,12 @@ Oppiminen ei tapahdu siten, että joku muu (opettaja) kaataa sinun päähäsi ti
 * Teet virheitä. Se on osa prosessia.
 
 Mistä tunnistaa pieni tavoite? Tässä voit käyttää apuna SMART-periaatteita. Lue alta lisää SMART:sta.
+
+!!! tip
+
+    Kurssi on epäonnistunut, jos et osaa jatkossa soveltaa oppimaasi esimerkiksi projektityössä, harjoittelussa, työelämässä tai opinnäytetyössä. 
+    
+    Vertaus: Saat hygieniapassin kokeesta täydet pisteet. Viikon päästä leikkaat työvuorossa tyytyväisin mielin raakaa kanaa ja salaattia samalla veitsellä, ilman että mieleen juolahtaa pestä välineitä tai käsiä. Oppiminen on mennyt hukkaan.
 
 ## Menetelmiä
 
