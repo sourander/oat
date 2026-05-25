@@ -31,15 +31,15 @@ const criterion_lahteet: NumericalCriteria = {
     {
       grade: 4,
       desc: `Lähdeaineisto on tarkoituksenmukaista ja monipuolista. 
-      Opiskelija on etsinyt itsenäisesti tietoa, joka auttaa häntä ymmärtämään kurssin aiheita.
+      Opiskelija on etsinyt ja löytänyt itsenäisesti tietoa, joka auttaa häntä ymmärtämään kurssin aiheita.
       Teksti käy keskustelua lähteiden kanssa.
       Materiaalissa esiin tulevien uusien käsitteiden tai ideoiden tausta ja lähde on perusteltu.`,
     },
     {
       grade: 5,
       desc: `Lähdeaineisto on kriittisesti arvioitu ja punnittu.
-      Lähteet ovat luotettavia ja huolella valittu.
-      Materiaalissa esiin tulevien uusien käsitteiden tai ideoiden tausta ja lähde on perusteltu.
+      Lähteet ovat luotettavia ja tekoälyn tuottama teksti erottuu ihmislähteistä.
+      Materiaalissa esiin tulevien uusien käsitteiden tai ideoiden tausta ja lähde on perusteltu ja nivoutuu osaksi tekstiä.
       Opiskelija esittelee uusia näkökulmia ja argumentoi niitä lähteiden avulla tai lähteiden innoittamana.`,
     },
   ],
