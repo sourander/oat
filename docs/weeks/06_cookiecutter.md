@@ -50,17 +50,7 @@ Huomaa, että antamasi vastaukset täyttävät templaatin kentät, joten muutoks
 
 ### Ajaminen paikallisesti
 
-Jos haluat tarkistaa, miltä oppimispäiväkirjasi näyttää selaimessa, voit ajaa MkDocs development serverin. Tämä on erityisen hyödyllistä päiväkirjaa kirjoittaessa. Aja terminaalissa seuraavat komennot:
-
-```bash
-# Siirry hakemistoon, jossa on `mkdocs.yml` tiedosto
-cd docs
-
-# Aja development server
-uvx --with mkdocs-material --with mkdocs-awesome-nav mkdocs serve
-```
-
-Huomaa, että nämä samat komennot on esitetty myös `HOW-TO-DOCS.md` tiedostossa, joka saapui Cookiecutter-templaatin mukana. Se löytyy projektin juuresta.
+Lue templaatin mukana saapunut `HOW-TO-DOCS.md`-tiedosto.
 
 ### Julkaiseminen etärepositorioon
 
