@@ -128,7 +128,7 @@ Tulet tarvitsemaan lähdeviitteitä myöhemmin opiskelussasi, viimeistään kirj
 
 ## Lähdeluettelo
 
-[^fcfce3]: KAMK. *Opinnäytetyön tekijän opas: Lähdeviitteet ja lähdeluettelo (Vancouver)*. https://libguides.kamk.fi/c.php?g=657740&p=5157950
+[^fcfce3]: KAMK. *Vancouver: Lähdeviitteet ja lähdeluettelo (Vancouver)*. https://libguides.kamk.fi/vancouver
 [^bash]: GNU. *Bash Reference Manual*. https://www.gnu.org/software/bash/manual/bash.html
 [^gnulinux]: Stallman, R. *Linux and the GNU System*. https://www.gnu.org/gnu/linux-and-gnu.html
 [^40c08c]: Hakkarainen, K., Lonka, K. & Lipponen, L. *Tutkiva oppiminen: Järki, tunteet ja kulttuuri oppimisen sytyttäjinä*. Helsinki: WSOY. 2004.
