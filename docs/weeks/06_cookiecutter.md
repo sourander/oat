@@ -3,13 +3,14 @@
 Oppimispäiväkirjaa ei tarvitse aloittaa aivan tyhjästä. Voit käyttää valmista Cookiecutter-templaattia, joka luo valmiin rakenteen oppimispäiväkirjalle. Riittää, että sinulla on asennettuna:
 
 * Git (for Windows)
-* Docker (Desktop)
+* uv
 
 ## Video-ohje
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=EVdBeMUuqLscP-ZN&amp;list=PL7AbISYtmmfiS1sozsGkZ266EE0NeQeJh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ipndI-5pswSzKyr7&amp;list=PLXUWN0EaG9BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-**Video 1**: *(DEPRECATED) Soittolista [Cookiecutter ja oppimispäiväkirja 2025](https://youtube.com/playlist?list=PL7AbISYtmmfiS1sozsGkZ266EE0NeQeJh&si=oa5TdiXjHwauc9Cl) sisältää kolme videota. Ensimmäinen Luento 0 on valinnainen, mutta suositeltu, ja se taustoittaa WSL2:ssä ajetun Ubuntun. Kaksi seuraavaa, Luennot 1 ja 2, neuvovat Cookiecutter-templaatin alustamisen tyhjään repositorioon ja Material for MkDocs templaatin käytön.*
+**Video 1**: *Soittolista [Oppimispäiväkirja 2025](https://youtube.com/playlist?list=PLXUWN0EaG9BI) sisältää kolme videota. Ensimmäinen [1: Tekninen ohjeistus](https://youtu.be/gjv7WCU_dU4) ohjeistaa sinut alustamaan kurssin git-repositorion ja luomaan oppimispäiväkirjan Cookiecutter-templaatin avulla. Toinen, [2: Oppimispäiväkirja 101](https://youtu.be/Kuj8vS-YJqo), käy läpi tämän sivuston kirjoittamisohjeet. Kolmas, [3: Kirjoittaminen](https://youtu.be/g_Q4eUVRwaE?si=WAaLc30JFbCJxQQf), näyttää kuinka merkintöjä tehdään käytännön tasolla VS Coden ja gitin avulla.*
+
 
 ## Teksti-ohje
 
@@ -54,7 +55,7 @@ Lue templaatin mukana saapunut `HOW-TO-DOCS.md`-tiedosto.
 
 ### Julkaiseminen etärepositorioon
 
-Templaatin mukana on tullut GitLab:n CI/CI-tiedosto nimeltään `.gitlab-ci.yml`. Sinun ei tarvitse muokata sitä, vaan se toimii sellaisenaan. Kun olet tehnyt muutoksia oppimispäiväkirjaasi, tee tavalliset Git-komennot:
+Templaatin mukana on tullut GitLab:n CI/CI-tiedosto nimeltään `.gitlab-ci.yml`. Sinun ei tarvitse muokata sitä, vaan se toimii sellaisenaan. Kun olet tehnyt muutoksia oppimispäiväkirjaasi, on suositeltavaa kokeilla, että sivusto toimii paikallisesti ennen julkaisua (`--strict` option päällä). Tarkastamisen jälkeen tee tavalliset Git-komennot:
 
 ```bash
 git add .
