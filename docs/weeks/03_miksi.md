@@ -212,5 +212,6 @@ IT-ammattikirjallisuutta on fyysisissä kirjastoissa hyvin rajatusti tarjolla, m
 [^ai-learning-penalty]: Stromberg, D., Lei, V. & Wu, Y. *The Generative AI Learning Penalty: Evidence from Chinese Secondary Education*. SSRN. 2026. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6868618
 [^amundsen]: Amundsen, M. *From Automation to Augmentation*. O'Reilly AI Codecon 2026. 2026-03-26.
 [^cf45f2]: Collegial. *Learning is not a sprint.* https://www.collegial.com/insights/learning-is-not-sprinting
-[^9a6809]: Didau, D. 2015. *What if everything you knew about education was wrong?*. [Apple Books e-kirja]. Crown House Publishing.
+[^9a6809]: Didau, D. 2015. *What if everything you knew about education was wrong?*. \[Apple Books e-kirja\]. Crown House Publishing.
 [^akateemisen]: Vilkka, H. *Akateemisen lukemisen ja kirjoittamisen opas.* Jyväskylä: PS-Kustannus. 2020.
+
