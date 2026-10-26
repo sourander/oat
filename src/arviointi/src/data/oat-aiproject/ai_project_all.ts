@@ -1,99 +1,90 @@
-import {
-  NumericalCriteria,
-  BooleanCriteria,
-} from "../../types/oat-grade-types";
+import { NumericalCriteria } from "../../types/oat-grade-types";
 
-const criterion_aihe: NumericalCriteria = {
-  id: "criterion_aihe",
-  title: "Projektin aihe",
-  description: `Projektin aiheen tulee olla merkittävällä tavalla tekoälyyn tai dataputkiin liittyvä ja riittävän haastava.`,
+const intermediateGradeDescription = (
+  lowerGrade: number,
+  upperGrade: number,
+): string =>
+  `Opiskelijan suoritus sijoittuu arviointikriteerien ${lowerGrade} ja ${upperGrade} väliin.`;
+
+const criterion_loppuraportti: NumericalCriteria = {
+  id: "criterion_loppuraportti",
+  title: "Loppuraportti",
+  description: `Loppuraportin tulee noudattaa raportointiohjeistusta. Raportissa käytetyn
+  kielen, rakenteen, ulkoasun ja lähdeviittaustekniikan tulee muodostaa selkeä,
+  johdonmukainen ja huoliteltu kokonaisuus.`,
   weight: 20,
   options: [
     {
       grade: 0,
-      desc: "Ei sisällä laisinkaan tekoälyä tai datan käsittelyä tai ei ole opintojen tasoa vastaava vaikeustasoltaan.",
+      desc: "Arvosanan 1 kriteerit eivät täyty tai työtunnit alittavat minimivaatimuksen.",
     },
     {
       grade: 1,
-      desc: `Ohjelmistokehitystä, jossa ei ole juurikaan datan käsittelyn tai tekoälyn vaatimuksia.`,
+      desc: `Raportti sisältää epäjohdonmukaisuuksia, mutta noudattaa pääpiirteissään
+      raportointiohjeistusta. Teksti on jäsentymätöntä ja siinä on toistuvia kieli-
+      ja tyylivirheitä, mutta se on ymmärrettävää. Lähdeviitteiden merkintä on
+      puutteellista.`,
     },
     {
       grade: 2,
-      desc: `Ohjelmistonkehitystä, jossa datan käsittelyllä tai tekoälyllä on pieni, sivuava rooli.`,
+      desc: intermediateGradeDescription(1, 3),
     },
     {
       grade: 3,
-      desc: `Tekoälymalli tai dataputki toteuttaa referenssiesimerkin. Esimerkiksi kuvien
-      luokittelu ennaltamäärättyjen luokkien mukaisesti.`,
+      desc: `Raportti on jäsentynyt ja johdonmukainen ja noudattaa raportointiohjeistusta.
+      Teksti on kieli- ja ulkoasultaan huoliteltua, täsmällistä ja selkeää asiatekstiä.
+      Lähdeviittaustekniikka on ohjeiden mukainen.`,
     },
     {
       grade: 4,
-      desc: `Tekoälymalli tai dataputki toteuttaa referenssiesimerkin, mutta merkittävällä määrällä
-      tiimin omaa ratkaisua.`,
+      desc: intermediateGradeDescription(3, 5),
     },
     {
       grade: 5,
-      desc: `Uusien tekoälytekniikoiden testaamista tai automaattisen datapipelinen rakentaminen.`,
+      desc: `Raportti noudattaa raportointiohjeistusta ja osoittaa erinomaista kielen
+      hallintaa välittäen opiskelijan ajattelun jäsentyneesti, kirkkaasti ja
+      havainnollisesti. Opiskelija kirjoittaa argumentoivaa, oivaltavaa ja virheetöntä
+      asiatyyliä. Lähdeviittaustekniikka on ohjeiden mukainen.`,
     },
   ],
 };
 
-const criterion_dokumentointi: NumericalCriteria = {
-  id: "criterion_dokumentointi",
-  title: "Dokumentointi",
-  description: `Dokumentaation tulee olla selkeää, perusteltua ja hyödyntää lähteitä, kuvia
-  ja taulukoita tarpeen mukaan.`,
+const criterion_demot: NumericalCriteria = {
+  id: "criterion_demot",
+  title: "Demot",
+  description: `Demoesityksissä esitellään kehitettävä tai valmis tuote toiminnassa.
+  Esitysten tulee olla havainnollisia, kohderyhmälle suunnattuja ja opiskelijan
+  asiantuntijuutta tukevia.`,
   weight: 20,
   options: [
     {
       grade: 0,
-      desc: "Dokumentaatio on riittämätön.",
+      desc: "Arvosanan 1 kriteerit eivät täyty tai työtunnit alittavat minimivaatimuksen.",
     },
-    { grade: 1, desc: "Dokumentointi suppeaa ja kirjoitettu minä-muodossa." },
+    {
+      grade: 1,
+      desc: "Opiskelija on pitänyt demoesitykset.",
+    },
     {
       grade: 2,
-      desc: "Dokumentaatio sisältää perustiedot, mutta on osin sekava tai vailla lähteitä.",
+      desc: intermediateGradeDescription(1, 3),
     },
     {
       grade: 3,
-      desc: "Dokumentointi on selkeää ja siinä on käytetty lähteitä, kuvia ja taulukoita.",
+      desc: `Demoesitykset ovat havainnollisia, vuorovaikutteisia ja kohderyhmälle
+      suunnattuja. Demoissa on esitetty kehitettävä tai valmis tuote toiminnassa.`,
     },
     {
       grade: 4,
-      desc: "Dokumentaatiossa on analysoitu eri menetelmiä ja pohdittu kehitysideoita.",
+      desc: intermediateGradeDescription(3, 5),
     },
     {
       grade: 5,
-      desc: `Dokumentaatiossa on tutkittu vaihtoehtoisia menetelmiä, pohdittu saavutettuja tuloksia
-      ja käytetty projektisuunnitelmaa.`,
-    },
-  ],
-};
-
-const criterion_koodi: NumericalCriteria = {
-  id: "criterion_koodi",
-  title: "Koodi",
-  description: `Koodin tulee olla selkeää ja jäsenneltyä. Koodi on kommunikaatiota ja kirjoitettu luettavaksi. Jos projekti ei sisällä koodia, tämä kriteeri saa saman
-  arvosanan kuin dokumentointi, tehden dokumentoinnin painoarvosta efektiivisesti näiden kahden summan.`,
-  weight: 20,
-  options: [
-    { grade: 0, desc: "Ei koodia tai koodi täysin lukukelvotonta." },
-    {
-      grade: 1,
-      desc: "Koodin rakenne sekavaa, eikä juuri sisällä kommentteja.",
-    },
-    {
-      grade: 2,
-      desc: "Koodi on osin ymmärrettävää, mutta siinä on rakenteellisia puutteita ja niukasti kommentteja.",
-    },
-    { grade: 3, desc: "Koodi selkeää ja kommentoitua." },
-    {
-      grade: 4,
-      desc: "Koodin rakenne hyvin mietitty, ja se tukee jatkokehitystä, mutta pieniä puutteita voi olla.",
-    },
-    {
-      grade: 5,
-      desc: "Koodin rakenne mietitty ottaen huomioon myös mahdollinen jatkokehitys ja ylläpito.",
+      desc: `Demoesitykset ovat vakuuttavia ja tuovat opiskelijan asiantuntijuuden hyvin
+      esiin. Opiskelija osoittaa esityksessään kriittistä ajattelua ja kykyä liittää
+      oman työnsä alan kehittämiseen. Demoihin sisällytetty kehitettävän tai valmiin
+      tuotteen toiminnan esittely on ammattimaista ja tukee vahvasti esityksen
+      kokonaisuutta.`,
     },
   ],
 };
@@ -101,71 +92,90 @@ const criterion_koodi: NumericalCriteria = {
 const criterion_tulokset: NumericalCriteria = {
   id: "criterion_tulokset",
   title: "Tulokset",
-  description: `Tulokset tulee esittää selkeästi ja selventää, kuinka ne
-  täyttävät toimeksiannon vaatimukset.`,
+  description: `Projektissa käytetyt menetelmät ja työtavat sekä saavutetut tulokset
+  tulee kuvata, perustella ja arvioida suhteessa kehittämistehtävän vaatimuksiin,
+  tavoitteisiin ja tulosten hyödynnettävyyteen.`,
   weight: 20,
   options: [
-    { grade: 0, desc: "Saavutettu tulos jää epäselväksi." },
-    { grade: 1, desc: "Saatuja tuloksia ei ole juuri esitelty." },
+    {
+      grade: 0,
+      desc: "Arvosanan 1 kriteerit eivät täyty tai työtunnit alittavat minimivaatimuksen.",
+    },
+    {
+      grade: 1,
+      desc: `Menetelmien ja työtapojen käyttö on suppeaa ja puutteellista, eikä niiden
+      valintaa ole perusteltu asianmukaisesti. Vaihtoehtoisia menetelmiä tai työtapoja
+      ei ole tutkittu. Toteutuksen kuvaaminen sisältää puutteita. Tulosten esittäminen
+      ja tulkinta on luettelomaista. Tulosten hyödynnettävyys ja tavoitteen
+      saavuttaminen jää heikoksi.`,
+    },
     {
       grade: 2,
-      desc: "Saadut tulokset listattu ja tunnistettu mutta vailla perusteluja.",
+      desc: intermediateGradeDescription(1, 3),
     },
     {
       grade: 3,
-      desc: `Saadut tulokset esitelty selkeästi, esimerkiksi testaamalla toteutus 
-      erillisellä testidatalla ja raportoimalla sen tulokset.`,
+      desc: `Käytettyjen menetelmien ja työtapojen käyttö ja kuvaus on tarkoituksenmukaista.
+      Vaihtoehtoisia menetelmiä tai työtapoja on tutkittu. Tulokset vastaavat
+      kehittämistehtävän vaatimuksiin tai tavoitteisiin ja ovat hyödynnettävissä.
+      Toteutuksen ja tuloksen arvioinnissa näkyy perustellusti ainakin jonkin verran
+      työn vahvuuksien ja mahdollisten puutteiden tunnistaminen.`,
     },
     {
       grade: 4,
-      desc: "Tulokset analysoitu ja vertailtu eri toteutusvaihtoehtoihin.",
+      desc: intermediateGradeDescription(3, 5),
     },
     {
       grade: 5,
-      desc: "Projektissa saatu tuloksia, joista on hyötyä projektin toimeksiantajalle ja tulokset on pohdittu suhteessa toimeksiannon vaatimuksiin.",
+      desc: `Menetelmien ja työtapojen hallinta ja käyttö on innovatiivista ja itsenäistä.
+      Vaihtoehtoisia menetelmiä tai työtapoja on tutkittu monipuolisesti ja kriittisesti.
+      Työssä näkyy innovatiivisuus, analyyttisyys ja vahva työelämää kehittävä ote.
+      Työn tavoitteet on saavutettu luotettavasti, ja tulosten hyötyarvo on merkittävä.
+      Luotettavuutta ja työn tuloksia on arvioitu kriittisesti ja vastuullisesti.
+      Toteutuksessa on otettu huomioon koodin jatkokehitys ja ylläpito.`,
     },
   ],
 };
 
-const criterion_itsearviointi: NumericalCriteria = {
-  id: "criterion_itsearviointi",
-  title: "Itsearviointi",
-  description: `Opiskelijan tulee arvioida omaa ja tiimin toimintaa realistisesti.`,
+const criterion_itse_ja_vertaisarviointi: NumericalCriteria = {
+  id: "criterion_itse_ja_vertaisarviointi",
+  title: "Itse- ja vertaisarviointi",
+  description: `Opiskelijan tulee arvioida omaa ja muiden ryhmän jäsenten roolia,
+  osaamista ja osaamisen kehittymistä projektissa sekä perustella antamansa arvosanat.`,
   weight: 20,
   options: [
-    { grade: 0, desc: "Ei itsearviointia." },
+    {
+      grade: 0,
+      desc: "Arvosanan 1 kriteerit eivät täyty tai työtunnit alittavat minimivaatimuksen.",
+    },
     {
       grade: 1,
-      desc: "Omaa/tiimin tekemistä ei ole arvioitu kuin numerolla.",
+      desc: "Opiskelija on laatinut itse- ja vertaisarvioinnin.",
     },
     {
       grade: 2,
-      desc: "Omaa/tiimin tekemistä on arvioitu sanallisesti listaten tai toteavasti.",
+      desc: intermediateGradeDescription(1, 3),
     },
-    { grade: 3, desc: "Omaa tai tiimin tekemistä arvioitu realistisesti." },
+    {
+      grade: 3,
+      desc: `Opiskelija kykenee arvioimaan omaa ja muiden ryhmän jäsenten roolia
+      projektissa. Itse- ja vertaisarvioinnissa annetut arvosanat on perusteltu.`,
+    },
     {
       grade: 4,
-      desc: `Omaa/tiimin tekemistä ja arvioitu realistisesti, mutta 
-      parantamisen kohteet ja saavutetut opit ovat jääneet tunnistamatta.`,
+      desc: intermediateGradeDescription(3, 5),
     },
     {
       grade: 5,
-      desc: "Mietitty miten omaa/tiimin tekemistä olisi voinut parantaa ja mitä opittiin.",
+      desc: `Opiskelija arvioi sekä oman että muiden projektiin osallistuneiden
+      opiskelijoiden osaamisen kehittymistä monipuolisesti ja kriittisesti.`,
     },
   ],
 };
 
-const criterion_hours: BooleanCriteria = {
-  id: "criterion_hours",
-  title: "Työtunnit",
-  description: `Opiskelija on todistettavasti työskennellyt sovitun määrän (vakio: 100h/5op).`,
-};
-
 export {
-  criterion_aihe,
-  criterion_dokumentointi,
-  criterion_koodi,
+  criterion_loppuraportti,
+  criterion_demot,
   criterion_tulokset,
-  criterion_itsearviointi,
-  criterion_hours,
+  criterion_itse_ja_vertaisarviointi,
 };

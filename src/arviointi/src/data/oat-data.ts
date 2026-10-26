@@ -11,23 +11,26 @@ import criterion_code_quality from "./oat-videoesitys/code_quality";
 import criterion_structure_quality from "./oat-videoesitys/video_structure_quality";
 
 import {
-  criterion_aihe,
-  criterion_dokumentointi,
-  criterion_koodi,
+  criterion_loppuraportti,
+  criterion_demot,
   criterion_tulokset,
-  criterion_itsearviointi,
-  criterion_hours,
+  criterion_itse_ja_vertaisarviointi,
 } from "./oat-aiproject/ai_project_all";
+
+import {
+  criterion_project2_unique,
+  criterion_ai_asiakasprojekti_unique,
+} from "./oat-aiproject/ai_project_uniques";
 
 const oppimispaivakirja: OatGradeType = {
   id: "learning_journal",
   title: "📓 Oppimispäiväkirja",
   description: `
-  Oppimispäiväkirja on opiskelijan itsenäinen kirjoitus, jota kirjoitetaan viikko viikolta kurssin edetessä 
+  Oppimispäiväkirja on opiskelijan itsenäinen kirjoitus, jota kirjoitetaan viikko viikolta kurssin edetessä
   Oppimispäiväkirja 101 -ohjeistuksen mukaan. Kukin muutos tallennetaan versionhallintaan.
-  Yksittäinen merkintä edustaa kyseisen viikon aihetta ja opittuja asioita. Siinä näkyvät sekä tehdyt tehtävät että 
-  saavutettu ymmärrys. Keskeinen osa on itsearviointi, jossa opiskelija esittää itselleen arvosanan ja perustelee sen alla 
-  olevien kriteereiden avulla. Opiskelijan on suositeltavaa ottaa kriteereistä kuvakaappaus tai tekstimuotoien kopio ja 
+  Yksittäinen merkintä edustaa kyseisen viikon aihetta ja opittuja asioita. Siinä näkyvät sekä tehdyt tehtävät että
+  saavutettu ymmärrys. Keskeinen osa on itsearviointi, jossa opiskelija esittää itselleen arvosanan ja perustelee sen alla
+  olevien kriteereiden avulla. Opiskelijan on suositeltavaa ottaa kriteereistä kuvakaappaus tai tekstimuotoinen kopio ja
   perustella arvosanansa niiden pohjalta. Muista katsoa aloitusluento, jossa tätä käsitellään! Tutustu Oppimispäiväkirja 101
   -ohjeistukseen ennen aloittamista.`,
   numerical_criteria: [
@@ -61,25 +64,41 @@ const videoesitys: OatGradeType = {
   ],
 };
 
+const project2ML: OatGradeType = {
+  id: "project2_ml",
+  title: "🤖 Project 2 ML",
+  description: `Project 2 ML -opintojakson projektin arviointi. Arviointi koostuu
+  opintojaksokohtaisesta kriteeristä sekä kaikille projektiopintojaksoille yhteisistä
+  loppuraportin, demojen, tulosten sekä itse- ja vertaisarvioinnin kriteereistä.`,
+  numerical_criteria: [
+    { ...criterion_project2_unique, weight: 20 },
+    { ...criterion_loppuraportti, weight: 20 },
+    { ...criterion_demot, weight: 20 },
+    { ...criterion_tulokset, weight: 20 },
+    { ...criterion_itse_ja_vertaisarviointi, weight: 20 },
+  ],
+};
+
 const aiProject: OatGradeType = {
   id: "ai_project",
-  title: "🤖 AI-projekti",
-  description: `Datasta tekoälyyn ryhmän projekti esimerkiksi AI Asiakasprojekti X -kurssille. Jos data tai lähdekoodi on
-  salassapidettävää, tulee opiskelijan esitellä ratkaistut ongelmat muilla keinoin. Raportoinnissa on tällöin
-  suositeltavaa käyttää dummy-dataa, joka muistuttaa rakenteeltaan alkuperäistä paljastamatta yksityiskohtia.`,
+  title: "🤖 AI-asiakasprojekti",
+  description: `Datasta tekoälyyn -ryhmän projekti esimerkiksi AI-asiakasprojektit-opintojaksolle.
+  Jos data tai lähdekoodi on salassapidettävää, opiskelijan tulee esitellä ratkaistut ongelmat
+  muilla keinoin. Raportoinnissa on tällöin suositeltavaa käyttää dummy-dataa, joka muistuttaa
+  rakenteeltaan alkuperäistä dataa paljastamatta salassa pidettäviä yksityiskohtia.`,
   numerical_criteria: [
-    { ...criterion_aihe, weight: 20 },
-    { ...criterion_dokumentointi, weight: 20 },
-    { ...criterion_koodi, weight: 20 },
+    { ...criterion_ai_asiakasprojekti_unique, weight: 20 },
+    { ...criterion_loppuraportti, weight: 20 },
+    { ...criterion_demot, weight: 20 },
     { ...criterion_tulokset, weight: 20 },
-    { ...criterion_itsearviointi, weight: 20 },
+    { ...criterion_itse_ja_vertaisarviointi, weight: 20 },
   ],
-  boolean_criteria: [criterion_hours],
 };
 
 export const OAT_GRADE_TYPES: OatGradeType[] = [
   oppimispaivakirja,
   videoesitys,
+  project2ML,
   aiProject,
   // Additional grade types...
 ];
