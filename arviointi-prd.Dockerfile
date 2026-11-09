@@ -1,4 +1,4 @@
-FROM node:22 AS build
+FROM node:26 AS build
 
 WORKDIR /app
 ARG REACT_DIR=src/arviointi
