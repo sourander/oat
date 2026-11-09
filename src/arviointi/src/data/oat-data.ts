@@ -82,7 +82,7 @@ const project2ML: OatGradeType = {
 const aiProject: OatGradeType = {
   id: "ai_project",
   title: "🤖 AI-asiakasprojekti",
-  description: `Datasta tekoälyyn -ryhmän projekti esimerkiksi AI-asiakasprojektit-opintojaksolle.
+  description: `Datasta tekoälyyn -suuntautumisvaihtoehdon projekti AI-asiakasprojektit 1, 2 tai N opintojaksolle.
   Jos data tai lähdekoodi on salassapidettävää, opiskelijan tulee esitellä ratkaistut ongelmat
   muilla keinoin. Raportoinnissa on tällöin suositeltavaa käyttää dummy-dataa, joka muistuttaa
   rakenteeltaan alkuperäistä dataa paljastamatta salassa pidettäviä yksityiskohtia.`,

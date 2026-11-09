@@ -46,17 +46,18 @@ const criterion_project2_unique: NumericalCriteria = {
 
 const criterion_ai_asiakasprojekti_unique: NumericalCriteria = {
   id: "criterion_ai_asiakasprojekti",
-  title: "TODO tämä tarkentuu myöhemmin",
-  description: "TODO tämä tarkentuu myöhemmin",
+  title: "Projektin yhteys työelämään",
+  description: `Projektin aihe on ajankohtainen ja tulokset ovat hyödynnettävissä 
+  työelämässä joko yleisesti tai valitun toimeksiantajan näkökulmasta.`,
   weight: 20,
   options: [
     {
       grade: 0,
-      desc: "TODO tämä tarkentuu myöhemmin",
+      desc: "Työn tuloksilla ei ole selkeää hyötyä työelämälle tai toimeksiantajalle.",
     },
     {
       grade: 1,
-      desc: "TODO tämä tarkentuu myöhemmin",
+      desc: "Työn tulosten hyödynnettävyys ja tavoitteen saavuttaminen jää heikoksi",
     },
     {
       grade: 2,
@@ -64,7 +65,7 @@ const criterion_ai_asiakasprojekti_unique: NumericalCriteria = {
     },
     {
       grade: 3,
-      desc: "TODO tämä tarkentuu myöhemmin",
+      desc: "Työn tulokset hyödyttävät työelämää tai toimeksiantajaa.",
     },
     {
       grade: 4,
@@ -72,7 +73,7 @@ const criterion_ai_asiakasprojekti_unique: NumericalCriteria = {
     },
     {
       grade: 5,
-      desc: "TODO tämä tarkentuu myöhemmin",
+      desc: "Työ ja sen tulokset ovat merkittävät työelämälle tai toimeksiantajalle. Työn avulla voi olla mahdollista saavuttaa prosessien tehostamista ja / tai taloudellista hyötyä",
     },
   ],
 };
